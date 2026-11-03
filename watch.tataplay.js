@@ -20,7 +20,7 @@ async function generateEPG() {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="TataPlay-EPG-Custom">\n';
 
-  // 1. सर्व चॅनेल XML मध्ये जोडणे
+  // 1. चॅनेल XML मध्ये जोडणे
   channels.forEach(ch => {
     xml += `  <channel id="${ch.site_id}">\n`;
     xml += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
@@ -30,7 +30,7 @@ async function generateEPG() {
     xml += `  </channel>\n`;
   });
 
-  // फक्त आजचा दिवस (Present day)
+  // आजचा दिवस (Present day)
   const today = dayjs().tz('Asia/Kolkata');
   const dateStr = today.format('DD-MM-YYYY');
   console.log(`Processing EPG for Present Day: ${dateStr}`);
@@ -77,15 +77,14 @@ async function generateEPG() {
       failCount++;
     }
 
-    // रिपोर्टसाठी डेटा गोळा करणे
     reportData.push({
       id: ch.site_id,
       name: ch.name,
       epg_generated: hasEpg
     });
 
-    // सर्व्हरवर ताण येऊ नये म्हणून ५० मिलिसेकंदाचा डिले
-    await sleep(50);
+    // 429 एरर टाळण्यासाठी प्रत्येक चॅनेलमध्ये १५० मिलीसेकंद डिले
+    await sleep(150);
   }
 
   xml += '</tv>';
@@ -94,12 +93,9 @@ async function generateEPG() {
     fs.mkdirSync('./epg');
   }
 
-  // XML आणि GZ फाईल्स सेव्ह करणे
   fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
   const gzipContent = zlib.gzipSync(xml);
   fs.writeFileSync('./epg/tataplay.xml.gz', gzipContent);
-
-  // चॅनेल रिपोर्ट JSON फाईल सेव्ह करणे
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportData, null, 2), 'utf-8');
 
   console.log(`EPG generated! Success: ${successCount}, Failed/No EPG: ${failCount}`);
@@ -108,8 +104,8 @@ async function generateEPG() {
 async function fetchChannels() {
   let channels = [];
   let offset = 0;
-  let limit = 50; // एकाच वेळी जास्त चॅनेल्स फेच करण्यासाठी लिमिट वाढवली आहे
-  let total = 836; // स्क्रीनशॉटमधील एकूण चॅनेल्सची संख्या
+  let limit = 20; // छोट्या बॅचमध्ये चॅनेल फेच करू जेणेकरून 429 एरर येणार नाही
+  let total = 836;
 
   while (offset < total) {
     try {
@@ -137,7 +133,7 @@ async function fetchChannels() {
     }
 
     offset += limit;
-    await sleep(100);
+    await sleep(200); // चॅनेल लिस्ट फेच करताना डिले
   }
 
   return channels;
