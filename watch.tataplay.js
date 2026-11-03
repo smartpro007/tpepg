@@ -3,127 +3,130 @@ const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
+const fs = require('fs');
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
 dayjs.extend(customParseFormat);
 
-module.exports = {
-  site: 'watch.tataplay.com',
-  days: 5, // Catchup (2 दिवस) + Present (1 दिवस) + Future (2 दिवस) = एकूण 5 दिवस
-  url: function ({ date }) {
-    return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format('DD-MM-YYYY')}`;
-  },
-  request: {
-    method: 'POST',
-    headers: function() {
-      return setHeaders();
-    },
-    data({ channel, date }) {
-      return {
-        id: channel.site_id
-      };
+async function generateEPG() {
+  console.log('Fetching channels...');
+  const channels = await fetchChannels();
+  
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<tv generator-info-name="TataPlay-EPG-Custom">\n';
+
+  // Add channels to XML
+  channels.forEach(ch => {
+    xml += `  <channel id="${ch.site_id}">\n`;
+    xml += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
+    if (ch.logo) {
+      xml += `    <icon src="${escapeXML(ch.logo)}" />\n`;
     }
-  },
-  parser: function({ content }) {
-    let programs = [];
-    const items = parseItems(content);
-    items.forEach(item => {
-      programs.push({
-        title: item.title,
-        description: item.desc,
-        icon: item.boxCoverImage,
-        start: parseStart(item),
-        stop: parseStop(item)
-      });
-    });
-    return programs;
-  },
-  async channels() {
-    const totalPages = await fetchPages();
-    const channels = [];
-    let newOffset = 0;
-    for (let i = 0; i < totalPages; i += 20) {
+    xml += `  </channel>\n`;
+  });
+
+  // Calculate dates: 2 days past, today, 2 days future (Total 5 days)
+  const today = dayjs().tz('Asia/Kolkata');
+  for (let d = -2; d <= 2; d++) {
+    const targetDate = today.add(d, 'day');
+    const dateStr = targetDate.format('DD-MM-YYYY');
+    console.log(`Fetching schedule for date: ${dateStr}`);
+
+    for (const ch of channels) {
       try {
-        const resp = await axios.get(
-          `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=${newOffset}`,
+        const response = await axios.post(
+          'https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule',
+          { id: ch.site_id },
           {
-            headers: await setHeaders()
+            params: { date: dateStr },
+            headers: setHeaders()
           }
         );
-        resp.data.data.channelList.forEach(channel => {
-          if (channel.title !== '.') {
-            channels.push({
-              lang: 'en',
-              site_id: channel.id,
-              name: channel.title,
-              logo: escapeAmpersands(channel.transparentImageUrl) ? escapeAmpersands(channel.transparentImageUrl) : channel.thumbnailImage
-            });
+
+        const items = response.data?.data?.epg || [];
+        items.forEach(item => {
+          const start = dayjs(item.startTime).format('YYYYMMDDHHmmss ZZ');
+          const stop = dayjs(item.endTime).format('YYYYMMDDHHmmss ZZ');
+          
+          xml += `  <programme start="${start}" stop="${stop}" channel="${ch.site_id}">\n`;
+          xml += `    <title lang="en">${escapeXML(item.title || '')}</title>\n`;
+          if (item.desc) {
+            xml += `    <desc lang="en">${escapeXML(item.desc)}</desc>\n`;
           }
+          if (item.boxCoverImage) {
+            xml += `    <icon src="${escapeXML(item.boxCoverImage)}" />\n`;
+          }
+          xml += `  </programme>\n`;
         });
-      } catch (error) {
-        console.error(`Error fetching channels on offset ${newOffset}:`, error.message);
+      } catch (err) {
+        // Skip channel schedule errors silently to keep process running
       }
-      newOffset += 20;
     }
-    return channels;
   }
-};
 
-function parseStart(item) {
-  return dayjs(item.startTime).format('YYYY-MM-DDTHH:mm:ss');
+  xml += '</tv>';
+  fs.writeFileSync('guide.xml', xml);
+  console.log('guide.xml generated successfully!');
 }
 
-function parseStop(item) {
-  return dayjs(item.endTime).format('YYYY-MM-DDTHH:mm:ss');
-}
+async function fetchChannels() {
+  let channels = [];
+  let offset = 0;
+  let total = 20;
 
-function parseItems(content) {
   try {
-    const data = JSON.parse(content);
-    const epg = data.data.epg;
-    return epg;
-  } catch (e) {
-    return [];
+    const firstResp = await axios.get(
+      `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=0`,
+      { headers: setHeaders() }
+    );
+    total = firstResp.data.data.total || 100;
+  } catch (e) {}
+
+  while (offset < total) {
+    try {
+      const resp = await axios.get(
+        `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=${offset}`,
+        { headers: setHeaders() }
+      );
+      resp.data.data.channelList.forEach(channel => {
+        if (channel.title !== '.') {
+          channels.push({
+            site_id: channel.id,
+            name: channel.title,
+            logo: channel.transparentImageUrl || channel.thumbnailImage || ''
+          });
+        }
+      });
+    } catch (error) {}
+    offset += 20;
   }
+  return channels;
 }
 
-async function fetchPages() {
-  const url = 'https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=0';
-  const params = {
-    headers: await setHeaders()
-  };
-  try {
-    const response = await axios.get(url, params);
-    return response.data.data.total;
-  } catch (error) {
-    console.error('Error fetching total pages:', error.message);
-    return 0;
-  }
-}
-
-function escapeAmpersands(text) {
-  return text.replace(/&(?!amp;|lt;|gt;|quot;|apos;)/g, '&amp;');
+function escapeXML(str) {
+  return str.replace(/[<>&'"]/g, c => {
+    switch (c) {
+      case '<': return '&lt;';
+      case '>': return '&gt;';
+      case '&': return '&amp;';
+      case '\'': return '&apos;';
+      case '"': return '&quot;';
+    }
+  });
 }
 
 function setHeaders() {
   return {
     'Accept': '*/*',
     'Accept-Language': 'en-US,en;q=0.9',
-    'Cache-Control': 'no-cache',
-    'Connection': 'keep-alive',
     'Origin': 'https://watch.tataplay.com',
-    'Pragma': 'no-cache',
     'Referer': 'https://watch.tataplay.com/',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'cross-site',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
     'content-type': 'application/json',
     'locale': 'ENG',
-    'platform': 'web',
-    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Windows"'
+    'platform': 'web'
   };
 }
+
+generateEPG();
