@@ -13,8 +13,8 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Fetching all channels from Tata Play safely...');
-  const channels = await fetchChannels();
+  console.log('Fetching all channels in a single/optimized request...');
+  const channels = await fetchChannelsDirectly();
   console.log(`Total channels successfully fetched: ${channels.length}`);
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -81,8 +81,8 @@ async function generateEPG() {
       epg_generated: hasEpg
     });
 
-    // 429 एरर टाळण्यासाठी डिले ३०० मिलीसेकंद केला आहे
-    await sleep(300);
+    // प्रोग्राम शेड्यूल फेच करताना थोडा वेळ देणे
+    await sleep(200);
   }
 
   xml += '</tv>';
@@ -99,39 +99,27 @@ async function generateEPG() {
   console.log(`EPG generated! Success: ${successCount}, Failed/No EPG: ${failCount}`);
 }
 
-async function fetchChannels() {
+async function fetchChannelsDirectly() {
   let channels = [];
-  let offset = 0;
-  let limit = 10; // एका वेळी फक्त १० चॅनेल्स मागवू जेणेकरून 429 एरर येणार नाही
-  let total = 836;
-
-  while (offset < total) {
-    try {
-      const resp = await axios.get(
-        `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=${limit}&offset=${offset}`,
-        { headers: setHeaders() }
-      );
-      
-      const channelList = resp.data?.data?.channelList || [];
-      if (channelList.length === 0) break;
-
-      channelList.forEach(channel => {
-        if (channel.title && channel.title !== '.') {
-          channels.push({
-            site_id: channel.id,
-            name: channel.title,
-            logo: channel.transparentImageUrl || channel.thumbnailImage || ''
-          });
-        }
-      });
-
-      total = resp.data?.data?.total || total;
-    } catch (error) {
-      console.error(`Error fetching channels at offset ${offset}:`, error.message);
-    }
-
-    offset += limit;
-    await sleep(500); // चॅनेल लिस्ट लोड करताना अर्धा सेकंद गॅप ठेवला आहे
+  try {
+    // एकाच रिक्वेस्टमध्ये जास्तीत जास्त चॅनेल्स मागवण्यासाठी limit 1000 सेट केली आहे
+    const resp = await axios.get(
+      `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=1000&offset=0`,
+      { headers: setHeaders() }
+    );
+    
+    const channelList = resp.data?.data?.channelList || [];
+    channelList.forEach(channel => {
+      if (channel.title && channel.title !== '.') {
+        channels.push({
+          site_id: channel.id,
+          name: channel.title,
+          logo: channel.transparentImageUrl || channel.thumbnailImage || ''
+        });
+      }
+    });
+  } catch (error) {
+    console.error('Error fetching all channels at once:', error.message);
   }
 
   return channels;
