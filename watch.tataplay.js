@@ -10,7 +10,6 @@ dayjs.extend(utc);
 dayjs.extend(timezone);
 dayjs.extend(customParseFormat);
 
-// रिक्वेस्ट्समध्ये अंतर ठेवण्यासाठी डिले फंक्शन
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
@@ -21,7 +20,7 @@ async function generateEPG() {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="TataPlay-EPG-Custom">\n';
 
-  // 1. चॅनेल टॅग्ज जोडणे
+  // 1. सर्व चॅनेल XML मध्ये जोडणे
   channels.forEach(ch => {
     xml += `  <channel id="${ch.site_id}">\n`;
     xml += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
@@ -31,25 +30,28 @@ async function generateEPG() {
     xml += `  </channel>\n`;
   });
 
-  // 2. दिनांक मर्यादा: मागील २ दिवस ते पुढील दिवस (एकूण ५ दिवस)
+  // फक्त आजचा दिवस (Present day)
   const today = dayjs().tz('Asia/Kolkata');
-  for (let d = -2; d <= 2; d++) {
-    const targetDate = today.add(d, 'day');
-    const dateStr = targetDate.format('DD-MM-YYYY');
-    console.log(`Processing date: ${dateStr}`);
+  const dateStr = today.format('DD-MM-YYYY');
+  console.log(`Processing EPG for Present Day: ${dateStr}`);
 
-    for (const ch of channels) {
-      try {
-        const response = await axios.post(
-          'https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule',
-          { id: ch.site_id },
-          {
-            params: { date: dateStr },
-            headers: setHeaders()
-          }
-        );
+  let reportData = [];
 
-        const items = response.data?.data?.epg || [];
+  for (const ch of channels) {
+    let hasEpg = false;
+    try {
+      const response = await axios.post(
+        'https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule',
+        { id: ch.site_id },
+        {
+          params: { date: dateStr },
+          headers: setHeaders()
+        }
+      );
+
+      const items = response.data?.data?.epg || [];
+      if (items.length > 0) {
+        hasEpg = true;
         items.forEach(item => {
           const start = dayjs(item.startTime).format('YYYYMMDDHHmmss ZZ');
           const stop = dayjs(item.endTime).format('YYYYMMDDHHmmss ZZ');
@@ -64,13 +66,20 @@ async function generateEPG() {
           }
           xml += `  </programme>\n`;
         });
-
-        // सर्व्हरवर लोड येऊ नये म्हणून प्रत्येक चॅनेलमध्ये १०० मिलिसेकंदाचा डिले दिला आहे
-        await sleep(100);
-      } catch (err) {
-        // एरर आल्यास पुढील चॅनेलवर जाणे
       }
+    } catch (err) {
+      hasEpg = false;
     }
+
+    // रिपोर्टसाठी डेटा गोळा करणे
+    reportData.push({
+      id: ch.site_id,
+      name: ch.name,
+      epg_generated: hasEpg
+    });
+
+    // सर्व्हर ब्लॉक करू नये म्हणून छोटा डिले
+    await sleep(80);
   }
 
   xml += '</tv>';
@@ -79,12 +88,15 @@ async function generateEPG() {
     fs.mkdirSync('./epg');
   }
 
+  // XML आणि GZ फाईल्स सेव्ह करणे
   fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
-  
   const gzipContent = zlib.gzipSync(xml);
   fs.writeFileSync('./epg/tataplay.xml.gz', gzipContent);
 
-  console.log('EPG generated and compressed successfully in ./epg/ !');
+  // चॅनेल रिपोर्ट JSON फाईल सेव्ह करणे
+  fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportData, null, 2), 'utf-8');
+
+  console.log('EPG and Report generated successfully in ./epg/ !');
 }
 
 async function fetchChannels() {
