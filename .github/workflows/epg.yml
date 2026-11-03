@@ -2,12 +2,13 @@ name: Generate Tata Play EPG
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *' # दररोज रात्री १२ वाजता ऑटोमॅटिक रन होईल
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 60 # वर्कफ्लो १ तास चालू राहू शकतो
 
     permissions:
       contents: write
@@ -35,6 +36,6 @@ jobs:
           git pull origin main --rebase || true
           git stash pop || true
           git add epg/tataplay.xml epg/tataplay.xml.gz epg/channels_report.json
-          git commit -m "Auto-update Tata Play Present Day EPG & Report [skip ci]" || exit 0
+          git commit -m "Auto-update 3-Day Tata Play EPG & Report [skip ci]" || exit 0
           git push origin main
           
