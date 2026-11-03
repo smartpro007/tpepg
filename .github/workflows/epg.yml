@@ -1,0 +1,40 @@
+name: Generate Tata Play EPG
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # दररोज रात्री १२ वाजता ऑटोमॅटिक रन होईल
+  workflow_dispatch: # GitHub डॅशबोर्डवरून मॅन्युअली रन करण्यासाठी 'Run workflow' बटण मिळेल
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install axios dayjs
+
+      # जर तुम्ही iptv-org/epg फ्रेमवर्क वापरत असाल तर ही कमांड वापरा:
+      # - name: Run EPG Grabber
+      #   run: npm run grab --- --site=watch.tataplay.com --days=5
+
+      # किंवा जर तुम्ही थेट नोड स्क्रिप्ट वापरत असाल तर तुमच्या मुख्य फाईलचे नाव इथे टाका (उदा. index.js किंवा generate.js)
+      - name: Run EPG Script
+        run: |
+          node index.js
+
+      - name: Commit and Push EPG
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add guide.xml
+          git commit -m "Auto-update Tata Play EPG (5 Days) [skip ci]" || exit 0
+          git push
+          
