@@ -13,76 +13,89 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Fetching all channels in a single/optimized request...');
-  const channels = await fetchChannelsDirectly();
-  console.log(`Total channels successfully fetched: ${channels.length}`);
+  console.log('Fetching all channels and EPG data in one go from Tata Play...');
+  
+  let channels = [];
+  let reportData = [];
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="TataPlay-EPG-Custom">\n';
 
-  channels.forEach(ch => {
-    xml += `  <channel id="${ch.site_id}">\n`;
-    xml += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
-    if (ch.logo) {
-      xml += `    <icon src="${escapeXML(ch.logo)}" />\n`;
-    }
-    xml += `  </channel>\n`;
-  });
+  try {
+    // सरळ एकाच यूआरएलवरून सर्व चॅनेल्स आणि त्यांचा ईपीजी डेटा मिळवणे (पेज बाय पेज लूप करून)
+    let offset = 0;
+    let limit = 100; // एका वेळी १०० चॅनेल्स मागवणे
+    let total = 836;
 
-  const today = dayjs().tz('Asia/Kolkata');
-  const dateStr = today.format('DD-MM-YYYY');
-  console.log(`Processing EPG for Present Day: ${dateStr}`);
-
-  let reportData = [];
-  let successCount = 0;
-  let failCount = 0;
-
-  for (const ch of channels) {
-    let hasEpg = false;
-    try {
-      const response = await axios.post(
-        'https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule',
-        { id: ch.site_id },
-        {
-          params: { date: dateStr },
-          headers: setHeaders()
-        }
+    while (offset < total) {
+      const resp = await axios.get(
+        `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=${limit}&offset=${offset}`,
+        { headers: setHeaders() }
       );
 
-      const items = response.data?.data?.epg || [];
-      if (items.length > 0) {
-        hasEpg = true;
-        successCount++;
-        items.forEach(item => {
-          const start = dayjs(item.startTime).format('YYYYMMDDHHmmss ZZ');
-          const stop = dayjs(item.endTime).format('YYYYMMDDHHmmss ZZ');
-          
-          xml += `  <programme start="${start}" stop="${stop}" channel="${ch.site_id}">\n`;
-          xml += `    <title lang="en">${escapeXML(item.title || '')}</title>\n`;
-          if (item.desc) {
-            xml += `    <desc lang="en">${escapeXML(item.desc)}</desc>\n`;
+      const data = resp.data?.data;
+      if (!data || !data.channelList) break;
+
+      total = data.total || total;
+      const channelList = data.channelList;
+
+      channelList.forEach(channel => {
+        if (channel.title && channel.title !== '.') {
+          const site_id = channel.id;
+          const name = channel.title;
+          const logo = channel.transparentImageUrl || channel.thumbnailImage || '';
+          const items = channel.epg || [];
+
+          // 1. चॅनेल टॅग XML मध्ये जोडणे
+          xml += `  <channel id="${site_id}">\n`;
+          xml += `    <display-name>${escapeXML(name)}</display-name>\n`;
+          if (logo) {
+            xml += `    <icon src="${escapeXML(logo)}" />\n`;
           }
-          if (item.boxCoverImage) {
-            xml += `    <icon src="${escapeXML(item.boxCoverImage)}" />\n`;
+          xml += `  </channel>\n`;
+
+          let hasEpg = false;
+
+          // 2. त्या चॅनेलचे प्रोग्राम्स (EPG) XML मध्ये जोडणे
+          if (items.length > 0) {
+            hasEpg = true;
+            items.forEach(item => {
+              // मिलिसेकंदात असणारा टाईम व्यवस्थित फॉरमॅट करणे
+              const startTime = dayjs(Number(item.startTime));
+              const endTime = dayjs(Number(item.endTime));
+              
+              const start = startTime.isValid() ? startTime.format('YYYYMMDDHHmmss ZZ') : '';
+              const stop = endTime.isValid() ? endTime.format('YYYYMMDDHHmmss ZZ') : '';
+
+              if (start && stop) {
+                xml += `  <programme start="${start}" stop="${stop}" channel="${site_id}">\n`;
+                xml += `    <title lang="en">${escapeXML(item.title || '')}</title>\n`;
+                if (item.desc) {
+                  xml += `    <desc lang="en">${escapeXML(item.desc)}</desc>\n`;
+                }
+                if (item.boxCoverImage) {
+                  xml += `    <icon src="${escapeXML(item.boxCoverImage)}" />\n`;
+                }
+                xml += `  </programme>\n`;
+              }
+            });
           }
-          xml += `  </programme>\n`;
-        });
-      } else {
-        failCount++;
-      }
-    } catch (err) {
-      hasEpg = false;
-      failCount++;
+
+          // रिपोर्टसाठी डेटा साठवणे
+          reportData.push({
+            id: site_id,
+            name: name,
+            epg_generated: hasEpg
+          });
+        }
+      });
+
+      offset += limit;
+      await sleep(200); // सर्व्हरवर ताण येऊ नये म्हणून छोटा डिले
     }
 
-    reportData.push({
-      id: ch.site_id,
-      name: ch.name,
-      epg_generated: hasEpg
-    });
-
-    // प्रोग्राम शेड्यूल फेच करताना थोडा वेळ देणे
-    await sleep(200);
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
   }
 
   xml += '</tv>';
@@ -91,42 +104,18 @@ async function generateEPG() {
     fs.mkdirSync('./epg');
   }
 
+  // फाईल्स सेव्ह करणे
   fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
   const gzipContent = zlib.gzipSync(xml);
   fs.writeFileSync('./epg/tataplay.xml.gz', gzipContent);
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportData, null, 2), 'utf-8');
 
-  console.log(`EPG generated! Success: ${successCount}, Failed/No EPG: ${failCount}`);
-}
-
-async function fetchChannelsDirectly() {
-  let channels = [];
-  try {
-    // एकाच रिक्वेस्टमध्ये जास्तीत जास्त चॅनेल्स मागवण्यासाठी limit 1000 सेट केली आहे
-    const resp = await axios.get(
-      `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=1000&offset=0`,
-      { headers: setHeaders() }
-    );
-    
-    const channelList = resp.data?.data?.channelList || [];
-    channelList.forEach(channel => {
-      if (channel.title && channel.title !== '.') {
-        channels.push({
-          site_id: channel.id,
-          name: channel.title,
-          logo: channel.transparentImageUrl || channel.thumbnailImage || ''
-        });
-      }
-    });
-  } catch (error) {
-    console.error('Error fetching all channels at once:', error.message);
-  }
-
-  return channels;
+  console.log(`Successfully processed ${reportData.length} channels and generated EPG files!`);
 }
 
 function escapeXML(str) {
-  return str.replace(/[<>&'"]/g, c => {
+  if (!str) return '';
+  return String(str).replace(/[<>&'"]/g, c => {
     switch (c) {
       case '<': return '&lt;';
       case '>': return '&gt;';
