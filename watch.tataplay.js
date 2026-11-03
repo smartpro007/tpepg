@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Starting EPG generation with full debugging...');
+  console.log('Starting EPG generation with fixed offset stepping...');
   
   let channels = [];
   let reportData = [];
@@ -23,11 +23,11 @@ async function generateEPG() {
 
   try {
     let offset = 0;
-    let limit = 50; // सुरक्षितपणे ५० च्या बॅचमध्ये डेटा मागवू
+    let limit = 20; // टाटा प्ले सर्व्हर नियमानुसार एका वेळी २० चॅनेल्स देतो
     let total = 836;
 
     while (offset < total) {
-      console.log(`Fetching channels from offset: ${offset} (Limit: ${limit})...`);
+      console.log(`Fetching channels from offset: ${offset}...`);
       
       try {
         const resp = await axios.get(
@@ -36,8 +36,8 @@ async function generateEPG() {
         );
 
         const data = resp.data?.data;
-        if (!data || !data.channelList) {
-          console.log(`No channel list found at offset ${offset}. Response:`, JSON.stringify(resp.data));
+        if (!data || !data.channelList || data.channelList.length === 0) {
+          console.log(`No more channels found at offset ${offset}. Ending loop.`);
           break;
         }
 
@@ -94,19 +94,23 @@ async function generateEPG() {
           }
         });
 
+        // यशस्वीरीत्या डिक्रीमेंट/इन्क्रिमेंट झाल्यावर ऑफसेट २० ने पुढे सरकवणे
+        offset += limit;
+
       } catch (err) {
         console.error(`Error at offset ${offset}:`, err.response?.status || err.message);
-        // 429 आल्यास १० सेकंद थांबून पुन्हा प्रयत्न करू (Rate limit cooldown)
         if (err.response?.status === 429) {
-          console.log('Rate limited (429). Waiting for 10 seconds before retrying...');
-          await sleep(10000);
-          continue; // तीच स्टेप पुन्हा प्रयत्न करण्यासाठी
+          console.log('Rate limited (429). Waiting for 15 seconds before retrying...');
+          await sleep(15000);
+          continue; // तोच ऑफसेट पुन्हा प्रयत्न करणे
+        } else {
+          // इतर एरर आल्यास पुढे जाणे जेणेकरून लूप अडकणार नाही
+          offset += limit;
         }
       }
 
-      offset += limit;
-      // प्रत्येक रिक्वेस्टनंतर १ सेकंदाचा मोठा डिले जेणेकरून 429 एरर येणार नाही
-      await sleep(1000);
+      // सर्व्हरवर ताण येऊ नये म्हणून प्रत्येक पानामध्ये ८०० मिलीसेकंद गॅप ठेवणे
+      await sleep(800);
     }
 
   } catch (error) {
@@ -124,7 +128,7 @@ async function generateEPG() {
   fs.writeFileSync('./epg/tataplay.xml.gz', gzipContent);
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportData, null, 2), 'utf-8');
 
-  console.log(`Debugging completed. Total processed channels in report: ${reportData.length}`);
+  console.log(`Generation completed. Total processed channels in report: ${reportData.length}`);
 }
 
 function escapeXML(str) {
