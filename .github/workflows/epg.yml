@@ -21,14 +21,9 @@ jobs:
       - name: Install Dependencies
         run: npm install axios dayjs
 
-      # जर तुम्ही iptv-org/epg फ्रेमवर्क वापरत असाल तर ही कमांड वापरा:
-      # - name: Run EPG Grabber
-      #   run: npm run grab --- --site=watch.tataplay.com --days=5
-
-      # किंवा जर तुम्ही थेट नोड स्क्रिप्ट वापरत असाल तर तुमच्या मुख्य फाईलचे नाव इथे टाका (उदा. index.js किंवा generate.js)
-      - name: Run EPG Script
+      - name: Run Epg Script
         run: |
-          node index.js
+          node watch.tataplay.js
 
       - name: Commit and Push EPG
         run: |
