@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1301,
+    "name": "Tata Play 4K",
+    "epg_generated": true
+  },
+  {
+    "id": 121,
+    "name": "Tata Play Fitness",
+    "epg_generated": true
+  },
+  {
+    "id": 618,
+    "name": "Tata Play Beauty",
+    "epg_generated": true
+  },
+  {
+    "id": 641,
+    "name": "Tata Play Cooking",
+    "epg_generated": true
+  },
+  {
+    "id": 959,
+    "name": "Tata Play Romance",
+    "epg_generated": true
+  },
+  {
+    "id": 550,
+    "name": "STAR Plus",
+    "epg_generated": true
+  },
+  {
+    "id": 1390,
+    "name": "Tata Play Superhits Serials",
+    "epg_generated": true
+  },
+  {
+    "id": 86,
+    "name": "Star Bharat",
+    "epg_generated": true
+  },
+  {
+    "id": 15,
+    "name": "SET HD",
+    "epg_generated": true
+  },
+  {
+    "id": 556,
+    "name": "SET",
+    "epg_generated": true
+  },
+  {
+    "id": 48,
+    "name": "SONY SAB HD",
+    "epg_generated": true
+  },
+  {
+    "id": 559,
+    "name": "SONY SAB",
+    "epg_generated": true
+  },
+  {
+    "id": 744,
+    "name": "Tata Play Comedy",
+    "epg_generated": true
+  },
+  {
+    "id": 40,
+    "name": "&tv HD",
+    "epg_generated": true
+  },
+  {
+    "id": 578,
+    "name": "&TV",
+    "epg_generated": true
+  },
+  {
+    "id": 63,
+    "name": "Zee TV HD",
+    "epg_generated": true
+  },
+  {
+    "id": 557,
+    "name": "Zee TV",
+    "epg_generated": true
+  },
+  {
+    "id": 811,
+    "name": "Tata Play Adbhut Kahaniyan",
+    "epg_generated": true
+  },
+  {
+    "id": 943,
+    "name": "Tata Play K-Dramas",
+    "epg_generated": true
+  },
+  {
+    "id": 964,
+    "name": "Tata Play Classic TV",
+    "epg_generated": true
+  },
+  {
+    "id": 986,
+    "name": "Tata Play Zindagi",
+    "epg_generated": true
+  },
+  {
+    "id": 1276,
+    "name": "Investigation Discovery HD",
+    "epg_generated": true
+  },
+  {
+    "id": 633,
+    "name": "Investigation Discovery",
+    "epg_generated": true
+  },
+  {
+    "id": 523,
+    "name": "Anmol TV",
+    "epg_generated": true
+  },
+  {
+    "id": 554,
+    "name": "Sony Pal",
+    "epg_generated": true
+  },
+  {
+    "id": 51,
+    "name": "Dangal",
+    "epg_generated": true
+  },
+  {
+    "id": 180,
+    "name": "Anjan TV",
+    "epg_generated": true
+  },
+  {
+    "id": 818,
+    "name": "Shemaroo TV",
+    "epg_generated": true
+  },
+  {
+    "id": 888,
+    "name": "EPIC Parivar",
+    "epg_generated": true
+  },
+  {
+    "id": 194,
+    "name": "Dangal 2",
+    "epg_generated": true
+  },
+  {
+    "id": 1184,
+    "name": "EPIC Bharat",
+    "epg_generated": false
+  },
+  {
+    "id": 1370,
+    "name": "Sun Neo HD",
+    "epg_generated": false
+  },
+  {
+    "id": 1369,
+    "name": "Sun Neo",
+    "epg_generated": false
+  },
+  {
+    "id": 1218,
+    "name": "DD National HD",
+    "epg_generated": false
+  },
+  {
+    "id": 191,
+    "name": "DD National",
+    "epg_generated": false
+  },
+  {
+    "id": 326,
+    "name": "DD Kisan",
+    "epg_generated": false
+  },
+  {
+    "id": 265,
+    "name": "Disney International HD",
+    "epg_generated": false
+  },
+  {
+    "id": 319,
+    "name": "Tata Play Bollywood Premiere HD",
+    "epg_generated": false
+  },
+  {
+    "id": 486,
+    "name": "Tata Play Bollywood Premiere",
+    "epg_generated": false
+  },
+  {
+    "id": 789,
+    "name": "Tata Play Hollywood Local",
+    "epg_generated": false
+  },
+  {
+    "id": 164,
+    "name": "STAR Gold",
+    "epg_generated": false
+  },
+  {
+    "id": 1130,
+    "name": "Tata Play Bollywood Masala",
+    "epg_generated": true
+  },
+  {
+    "id": 80,
+    "name": "SONY MAX HD",
+    "epg_generated": true
+  },
+  {
+    "id": 132,
+    "name": "SONY MAX",
+    "epg_generated": true
+  },
+  {
+    "id": 1258,
+    "name": "Tata Play Filmy Safar",
+    "epg_generated": true
+  },
+  {
+    "id": 1072,
+    "name": "Star Gold 2 HD",
+    "epg_generated": true
+  },
+  {
+    "id": 163,
+    "name": "Star Gold 2",
+    "epg_generated": true
+  },
+  {
+    "id": 741,
+    "name": "Tata Play Classic Cinema",
+    "epg_generated": true
+  },
+  {
+    "id": 503,
+    "name": "Zee Cinema HD",
+    "epg_generated": true
+  },
+  {
+    "id": 123,
+    "name": "Zee Cinema",
+    "epg_generated": true
+  },
+  {
+    "id": 493,
+    "name": "Star Gold Romance",
+    "epg_generated": true
+  },
+  {
+    "id": 175,
+    "name": "Zee Bollywood",
+    "epg_generated": true
+  },
+  {
+    "id": 727,
+    "name": "Zee Classic",
+    "epg_generated": true
+  },
+  {
+    "id": 666,
+    "name": "Tata Play Theatre HD",
+    "epg_generated": true
+  },
+  {
+    "id": 267,
+    "name": "&pictures HD",
+    "epg_generated": true
+  },
+  {
+    "id": 148,
+    "name": "&pictures",
+    "epg_generated": true
+  },
+  {
+    "id": 1183,
+    "name": "&Xplor HD",
+    "epg_generated": true
+  },
+  {
+    "id": 677,
+    "name": "Tata Play ShortsTV",
+    "epg_generated": true
+  },
+  {
+    "id": 494,
+    "name": "Star Gold Thrills",
+    "epg_generated": true
+  },
+  {
+    "id": 730,
+    "name": "B4U Kadak",
+    "epg_generated": true
+  },
+  {
+    "id": 100,
+    "name": "Action Cinema",
+    "epg_generated": true
+  },
+  {
+    "id": 1003,
+    "name": "Tata Play South Talkies",
+    "epg_generated": true
+  },
+  {
+    "id": 56,
+    "name": "Sony Wah",
+    "epg_generated": true
+  },
+  {
+    "id": 7,
+    "name": "B4U Movies",
+    "epg_generated": true
+  },
+  {
+    "id": 120,
+    "name": "SONY MAX 2",
+    "epg_generated": true
+  },
+  {
+    "id": 595,
+    "name": "Star Gold Select HD",
+    "epg_generated": true
+  },
+  {
+    "id": 461,
+    "name": "Star Gold Select",
+    "epg_generated": true
+  },
+  {
+    "id": 470,
+    "name": "STAR Utsav Movies",
+    "epg_generated": true
+  },
+  {
+    "id": 64,
+    "name": "Anmol Cinema",
+    "epg_generated": true
+  },
+  {
+    "id": 1025,
+    "name": "Colors Cineplex Superhits",
+    "epg_generated": true
+  },
+  {
+    "id": 1321,
+    "name": "ALL Time MOVIES",
+    "epg_generated": true
+  },
+  {
+    "id": 823,
+    "name": "Goldmines",
+    "epg_generated": false
+  },
+  {
+    "id": 731,
+    "name": "Manoranjan TV",
+    "epg_generated": false
+  },
+  {
+    "id": 12,
+    "name": "Anmol Cinema 2",
+    "epg_generated": false
+  },
+  {
+    "id": 1269,
+    "name": "Shemaroo Josh",
+    "epg_generated": false
+  },
+  {
+    "id": 1499,
+    "name": "Goldmines Movies",
+    "epg_generated": false
+  },
+  {
+    "id": 1717,
+    "name": "SONY MAX 1",
+    "epg_generated": false
+  },
+  {
+    "id": 297,
+    "name": "Big Magic",
+    "epg_generated": false
+  },
+  {
+    "id": 560,
+    "name": "STAR Movies HD",
+    "epg_generated": false
+  },
+  {
+    "id": 273,
+    "name": "STAR Movies",
+    "epg_generated": false
+  },
+  {
+    "id": 32,
+    "name": "SONY PIX HD",
+    "epg_generated": false
+  },
+  {
+    "id": 558,
+    "name": "SONY PIX",
+    "epg_generated": false
+  },
+  {
+    "id": 593,
+    "name": "STAR Movies Select HD",
+    "epg_generated": false
+  },
+  {
+    "id": 1069,
+    "name": "Star Movies Select",
+    "epg_generated": false
+  },
+  {
+    "id": 562,
+    "name": "Movies Now HD",
+    "epg_generated": false
+  },
+  {
+    "id": 173,
+    "name": "Movies Now",
+    "epg_generated": false
+  },
+  {
+    "id": 210,
+    "name": "MN+ HD",
+    "epg_generated": false
+  },
+  {
+    "id": 599,
+    "name": "MNX HD",
+    "epg_generated": false
+  },
+  {
+    "id": 234,
+    "name": "MNX",
+    "epg_generated": false
+  },
+  {
+    "id": 174,
+    "name": "Romedy Now",
+    "epg_generated": false
+  },
+  {
+    "id": 1191,
+    "name": "DD Sports HD",
+    "epg_generated": false
+  },
+  {
+    "id": 223,
+    "name": "DD Sports",
+    "epg_generated": false
+  },
+  {
+    "id": 600,
+    "name": "STAR Sports 1",
+    "epg_generated": false
+  },
+  {
+    "id": 609,
+    "name": "STAR Sports 2",
+    "epg_generated": false
+  },
+  {
+    "id": 601,
+    "name": "Star Sports 1 Hindi",
+    "epg_generated": false
+  },
+  {
+    "id": 141,
+    "name": "Star Sports Select 1",
+    "epg_generated": false
+  },
+  {
+    "id": 81,
+    "name": "SONY SPORTS TEN 1 HD",
+    "epg_generated": false
+  },
+  {
+    "id": 150,
+    "name": "SONY SPORTS TEN 1",
+    "epg_generated": false
+  },
+  {
+    "id": 462,
+    "name": "SONY SPORTS TEN 2 HD",
+    "epg_generated": false
+  },
+  {
+    "id": 170,
+    "name": "SONY SPORTS TEN 2",
+    "epg_generated": false
+  }
+]
