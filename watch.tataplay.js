@@ -13,9 +13,9 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Fetching channels...');
+  console.log('Fetching all channels from Tata Play...');
   const channels = await fetchChannels();
-  console.log(`Total channels found: ${channels.length}`);
+  console.log(`Total channels successfully fetched: ${channels.length}`);
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="TataPlay-EPG-Custom">\n';
@@ -36,6 +36,8 @@ async function generateEPG() {
   console.log(`Processing EPG for Present Day: ${dateStr}`);
 
   let reportData = [];
+  let successCount = 0;
+  let failCount = 0;
 
   for (const ch of channels) {
     let hasEpg = false;
@@ -52,6 +54,7 @@ async function generateEPG() {
       const items = response.data?.data?.epg || [];
       if (items.length > 0) {
         hasEpg = true;
+        successCount++;
         items.forEach(item => {
           const start = dayjs(item.startTime).format('YYYYMMDDHHmmss ZZ');
           const stop = dayjs(item.endTime).format('YYYYMMDDHHmmss ZZ');
@@ -66,9 +69,12 @@ async function generateEPG() {
           }
           xml += `  </programme>\n`;
         });
+      } else {
+        failCount++;
       }
     } catch (err) {
       hasEpg = false;
+      failCount++;
     }
 
     // रिपोर्टसाठी डेटा गोळा करणे
@@ -78,8 +84,8 @@ async function generateEPG() {
       epg_generated: hasEpg
     });
 
-    // सर्व्हर ब्लॉक करू नये म्हणून छोटा डिले
-    await sleep(80);
+    // सर्व्हरवर ताण येऊ नये म्हणून ५० मिलिसेकंदाचा डिले
+    await sleep(50);
   }
 
   xml += '</tv>';
@@ -96,30 +102,27 @@ async function generateEPG() {
   // चॅनेल रिपोर्ट JSON फाईल सेव्ह करणे
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportData, null, 2), 'utf-8');
 
-  console.log('EPG and Report generated successfully in ./epg/ !');
+  console.log(`EPG generated! Success: ${successCount}, Failed/No EPG: ${failCount}`);
 }
 
 async function fetchChannels() {
   let channels = [];
   let offset = 0;
-  let total = 20;
-
-  try {
-    const firstResp = await axios.get(
-      `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=0`,
-      { headers: setHeaders() }
-    );
-    total = firstResp.data.data.total || 100;
-  } catch (e) {}
+  let limit = 50; // एकाच वेळी जास्त चॅनेल्स फेच करण्यासाठी लिमिट वाढवली आहे
+  let total = 836; // स्क्रीनशॉटमधील एकूण चॅनेल्सची संख्या
 
   while (offset < total) {
     try {
       const resp = await axios.get(
-        `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=${offset}`,
+        `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=${limit}&offset=${offset}`,
         { headers: setHeaders() }
       );
-      resp.data.data.channelList.forEach(channel => {
-        if (channel.title !== '.') {
+      
+      const channelList = resp.data?.data?.channelList || [];
+      if (channelList.length === 0) break;
+
+      channelList.forEach(channel => {
+        if (channel.title && channel.title !== '.') {
           channels.push({
             site_id: channel.id,
             name: channel.title,
@@ -127,10 +130,16 @@ async function fetchChannels() {
           });
         }
       });
-    } catch (error) {}
-    offset += 20;
-    await sleep(50);
+
+      total = resp.data?.data?.total || total;
+    } catch (error) {
+      console.error(`Error fetching channels at offset ${offset}:`, error.message);
+    }
+
+    offset += limit;
+    await sleep(100);
   }
+
   return channels;
 }
 
