@@ -4,6 +4,7 @@ const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
 const fs = require('fs');
+const zlib = require('zlib');
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -16,7 +17,7 @@ async function generateEPG() {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="TataPlay-EPG-Custom">\n';
 
-  // Add channels to XML
+  // 1. चॅनेल टॅग्ज आधी जोडणे (जसे DishTV मध्ये होते)
   channels.forEach(ch => {
     xml += `  <channel id="${ch.site_id}">\n`;
     xml += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
@@ -26,12 +27,12 @@ async function generateEPG() {
     xml += `  </channel>\n`;
   });
 
-  // Calculate dates: 2 days past, today, 2 days future (Total 5 days)
+  // 2. दिनांक मर्यादा: मागील २ दिवस ते पुढील २ दिवस (एकूण ५ दिवस Catchup + Present + Future)
   const today = dayjs().tz('Asia/Kolkata');
   for (let d = -2; d <= 2; d++) {
     const targetDate = today.add(d, 'day');
     const dateStr = targetDate.format('DD-MM-YYYY');
-    console.log(`Fetching schedule for date: ${dateStr}`);
+    console.log(`Processing date: ${dateStr}`);
 
     for (const ch of channels) {
       try {
@@ -46,6 +47,7 @@ async function generateEPG() {
 
         const items = response.data?.data?.epg || [];
         items.forEach(item => {
+          // DishTV प्रमाणे टाईम फॉर्मेट जुळवणे (YYYYMMDDHHmmss ZZ)
           const start = dayjs(item.startTime).format('YYYYMMDDHHmmss ZZ');
           const stop = dayjs(item.endTime).format('YYYYMMDDHHmmss ZZ');
           
@@ -60,14 +62,26 @@ async function generateEPG() {
           xml += `  </programme>\n`;
         });
       } catch (err) {
-        // Skip channel schedule errors silently to keep process running
+        // एरर आल्यास स्किप करणे जेणेकरून प्रोसेस थांबणार नाही
       }
     }
   }
 
   xml += '</tv>';
-  fs.writeFileSync('guide.xml', xml);
-  console.log('guide.xml generated successfully!');
+
+  // epg फोल्डर तयार करणे
+  if (!fs.existsSync('./epg')) {
+    fs.mkdirSync('./epg');
+  }
+
+  // XML फाईल सेव्ह करणे
+  fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
+  
+  // GZ (gzip) कॉम्प्रेस करून फाईल सेव्ह करणे
+  const gzipContent = zlib.gzipSync(xml);
+  fs.writeFileSync('./epg/tataplay.xml.gz', gzipContent);
+
+  console.log('EPG generated and compressed successfully in ./epg/ !');
 }
 
 async function fetchChannels() {
