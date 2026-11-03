@@ -13,14 +13,13 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Fetching all channels from Tata Play...');
+  console.log('Fetching all channels from Tata Play safely...');
   const channels = await fetchChannels();
   console.log(`Total channels successfully fetched: ${channels.length}`);
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="TataPlay-EPG-Custom">\n';
 
-  // 1. चॅनेल XML मध्ये जोडणे
   channels.forEach(ch => {
     xml += `  <channel id="${ch.site_id}">\n`;
     xml += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
@@ -30,7 +29,6 @@ async function generateEPG() {
     xml += `  </channel>\n`;
   });
 
-  // आजचा दिवस (Present day)
   const today = dayjs().tz('Asia/Kolkata');
   const dateStr = today.format('DD-MM-YYYY');
   console.log(`Processing EPG for Present Day: ${dateStr}`);
@@ -83,8 +81,8 @@ async function generateEPG() {
       epg_generated: hasEpg
     });
 
-    // 429 एरर टाळण्यासाठी प्रत्येक चॅनेलमध्ये १५० मिलीसेकंद डिले
-    await sleep(150);
+    // 429 एरर टाळण्यासाठी डिले ३०० मिलीसेकंद केला आहे
+    await sleep(300);
   }
 
   xml += '</tv>';
@@ -104,7 +102,7 @@ async function generateEPG() {
 async function fetchChannels() {
   let channels = [];
   let offset = 0;
-  let limit = 20; // छोट्या बॅचमध्ये चॅनेल फेच करू जेणेकरून 429 एरर येणार नाही
+  let limit = 10; // एका वेळी फक्त १० चॅनेल्स मागवू जेणेकरून 429 एरर येणार नाही
   let total = 836;
 
   while (offset < total) {
@@ -133,7 +131,7 @@ async function fetchChannels() {
     }
 
     offset += limit;
-    await sleep(200); // चॅनेल लिस्ट फेच करताना डिले
+    await sleep(500); // चॅनेल लिस्ट लोड करताना अर्धा सेकंद गॅप ठेवला आहे
   }
 
   return channels;
