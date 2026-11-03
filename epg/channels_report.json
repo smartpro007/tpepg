@@ -100,54 +100,204 @@
     "epg_generated": true
   },
   {
+    "id": 986,
+    "name": "Tata Play Zindagi",
+    "epg_generated": true
+  },
+  {
+    "id": 1276,
+    "name": "Investigation Discovery HD",
+    "epg_generated": true
+  },
+  {
+    "id": 633,
+    "name": "Investigation Discovery",
+    "epg_generated": true
+  },
+  {
+    "id": 523,
+    "name": "Anmol TV",
+    "epg_generated": true
+  },
+  {
+    "id": 554,
+    "name": "Sony Pal",
+    "epg_generated": true
+  },
+  {
+    "id": 51,
+    "name": "Dangal",
+    "epg_generated": true
+  },
+  {
+    "id": 180,
+    "name": "Anjan TV",
+    "epg_generated": true
+  },
+  {
+    "id": 818,
+    "name": "Shemaroo TV",
+    "epg_generated": true
+  },
+  {
+    "id": 888,
+    "name": "EPIC Parivar",
+    "epg_generated": true
+  },
+  {
+    "id": 194,
+    "name": "Dangal 2",
+    "epg_generated": true
+  },
+  {
+    "id": 1184,
+    "name": "EPIC Bharat",
+    "epg_generated": false
+  },
+  {
+    "id": 1370,
+    "name": "Sun Neo HD",
+    "epg_generated": false
+  },
+  {
+    "id": 1369,
+    "name": "Sun Neo",
+    "epg_generated": false
+  },
+  {
+    "id": 1218,
+    "name": "DD National HD",
+    "epg_generated": false
+  },
+  {
+    "id": 191,
+    "name": "DD National",
+    "epg_generated": false
+  },
+  {
+    "id": 326,
+    "name": "DD Kisan",
+    "epg_generated": false
+  },
+  {
+    "id": 265,
+    "name": "Disney International HD",
+    "epg_generated": false
+  },
+  {
+    "id": 319,
+    "name": "Tata Play Bollywood Premiere HD",
+    "epg_generated": false
+  },
+  {
+    "id": 486,
+    "name": "Tata Play Bollywood Premiere",
+    "epg_generated": false
+  },
+  {
+    "id": 789,
+    "name": "Tata Play Hollywood Local",
+    "epg_generated": false
+  },
+  {
+    "id": 164,
+    "name": "STAR Gold",
+    "epg_generated": false
+  },
+  {
+    "id": 1130,
+    "name": "Tata Play Bollywood Masala",
+    "epg_generated": false
+  },
+  {
+    "id": 80,
+    "name": "SONY MAX HD",
+    "epg_generated": false
+  },
+  {
+    "id": 132,
+    "name": "SONY MAX",
+    "epg_generated": false
+  },
+  {
+    "id": 1258,
+    "name": "Tata Play Filmy Safar",
+    "epg_generated": false
+  },
+  {
+    "id": 1072,
+    "name": "Star Gold 2 HD",
+    "epg_generated": false
+  },
+  {
+    "id": 163,
+    "name": "Star Gold 2",
+    "epg_generated": false
+  },
+  {
+    "id": 741,
+    "name": "Tata Play Classic Cinema",
+    "epg_generated": false
+  },
+  {
+    "id": 503,
+    "name": "Zee Cinema HD",
+    "epg_generated": false
+  },
+  {
+    "id": 123,
+    "name": "Zee Cinema",
+    "epg_generated": false
+  },
+  {
     "id": 493,
     "name": "Star Gold Romance",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 175,
     "name": "Zee Bollywood",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 727,
     "name": "Zee Classic",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 666,
     "name": "Tata Play Theatre HD",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 267,
     "name": "&pictures HD",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 148,
     "name": "&pictures",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1183,
     "name": "&Xplor HD",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 677,
     "name": "Tata Play ShortsTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 494,
     "name": "Star Gold Thrills",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 730,
     "name": "B4U Kadak",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 100,
@@ -200,303 +350,653 @@
     "epg_generated": false
   },
   {
-    "id": 464,
-    "name": "SONY SPORTS TEN 3 Hindi HD",
+    "id": 1321,
+    "name": "ALL Time MOVIES",
     "epg_generated": false
   },
   {
-    "id": 171,
-    "name": "SONY SPORTS TEN 3 Hindi",
+    "id": 823,
+    "name": "Goldmines",
     "epg_generated": false
   },
   {
-    "id": 35,
-    "name": "SONY SPORTS TEN 5 HD",
+    "id": 731,
+    "name": "Manoranjan TV",
     "epg_generated": false
   },
   {
-    "id": 610,
-    "name": "SONY SPORTS TEN 5",
+    "id": 12,
+    "name": "Anmol Cinema 2",
     "epg_generated": false
   },
   {
-    "id": 1786,
-    "name": "Tata Play Fancode Sports +1",
+    "id": 1269,
+    "name": "Shemaroo Josh",
     "epg_generated": false
   },
   {
-    "id": 603,
-    "name": "Star Sports Select 2",
+    "id": 1499,
+    "name": "Goldmines Movies",
     "epg_generated": false
   },
   {
-    "id": 812,
-    "name": "Eurosport HD",
+    "id": 1717,
+    "name": "SONY MAX 1",
     "epg_generated": false
   },
   {
-    "id": 693,
-    "name": "Eurosport",
+    "id": 297,
+    "name": "Big Magic",
     "epg_generated": false
   },
   {
-    "id": 1494,
-    "name": "Star Sports Khel",
+    "id": 560,
+    "name": "STAR Movies HD",
     "epg_generated": false
   },
   {
-    "id": 506,
-    "name": "Unite8 Sports 2 HD",
+    "id": 273,
+    "name": "STAR Movies",
     "epg_generated": false
   },
   {
-    "id": 592,
-    "name": "Unite8 Sports 2",
-    "epg_generated": false
-  },
-  {
-    "id": 502,
-    "name": "Unite8 Sports 1 HD",
-    "epg_generated": false
-  },
-  {
-    "id": 602,
-    "name": "Unite8 Sports 1",
-    "epg_generated": false
-  },
-  {
-    "id": 691,
-    "name": "DD News HD",
-    "epg_generated": false
-  },
-  {
-    "id": 322,
-    "name": "DD News",
-    "epg_generated": false
-  },
-  {
-    "id": 783,
-    "name": "Tata Play Seniors",
-    "epg_generated": false
-  },
-  {
-    "id": 177,
-    "name": "ABP News",
-    "epg_generated": false
-  },
-  {
-    "id": 179,
-    "name": "NDTV India",
-    "epg_generated": false
-  },
-  {
-    "id": 689,
-    "name": "Aaj Tak HD",
-    "epg_generated": false
-  },
-  {
-    "id": 153,
-    "name": "Aaj Tak",
-    "epg_generated": false
-  },
-  {
-    "id": 848,
-    "name": "Network 10",
-    "epg_generated": false
-  },
-  {
-    "id": 701,
-    "name": "Jantantra TV",
-    "epg_generated": false
-  },
-  {
-    "id": 1274,
-    "name": "Swadesh News",
-    "epg_generated": false
-  },
-  {
-    "id": 1872,
-    "name": "Bharat Update",
-    "epg_generated": false
-  },
-  {
-    "id": 1874,
-    "name": "News TV India",
-    "epg_generated": false
-  },
-  {
-    "id": 260,
-    "name": "Zee Business",
-    "epg_generated": false
-  },
-  {
-    "id": 950,
-    "name": "ET Now Swadesh",
-    "epg_generated": false
-  },
-  {
-    "id": 1368,
-    "name": "Sansad TV 1 HD",
-    "epg_generated": false
-  },
-  {
-    "id": 1032,
-    "name": "Sansad TV 2 HD",
-    "epg_generated": false
-  },
-  {
-    "id": 213,
-    "name": "Sansad TV 1",
-    "epg_generated": false
-  },
-  {
-    "id": 212,
-    "name": "Sansad TV 2",
-    "epg_generated": false
-  },
-  {
-    "id": 208,
-    "name": "NDTV",
-    "epg_generated": false
-  },
-  {
-    "id": 547,
-    "name": "Times Now World",
+    "id": 32,
+    "name": "SONY PIX HD",
     "epg_generated": true
   },
   {
-    "id": 90,
-    "name": "TIMES NOW",
+    "id": 558,
+    "name": "SONY PIX",
     "epg_generated": true
   },
   {
-    "id": 1,
-    "name": "INDIA TODAY",
+    "id": 593,
+    "name": "STAR Movies Select HD",
     "epg_generated": true
   },
   {
-    "id": 189,
-    "name": "NewsX",
+    "id": 1069,
+    "name": "Star Movies Select",
     "epg_generated": true
   },
   {
-    "id": 591,
-    "name": "Mirror Now",
+    "id": 562,
+    "name": "Movies Now HD",
     "epg_generated": true
   },
   {
-    "id": 255,
-    "name": "WION",
+    "id": 173,
+    "name": "Movies Now",
     "epg_generated": true
   },
   {
-    "id": 72,
-    "name": "REPUBLIC TV",
+    "id": 210,
+    "name": "MN+ HD",
     "epg_generated": true
   },
   {
-    "id": 1487,
-    "name": "NewsX World",
+    "id": 599,
+    "name": "MNX HD",
     "epg_generated": true
   },
   {
-    "id": 1340,
-    "name": "ETV Bal Bharat HD",
+    "id": 234,
+    "name": "MNX",
     "epg_generated": true
   },
   {
-    "id": 905,
-    "name": "ETV Bal Bharat",
+    "id": 174,
+    "name": "Romedy Now",
     "epg_generated": true
   },
   {
-    "id": 144,
-    "name": "Disney Junior",
+    "id": 1191,
+    "name": "DD Sports HD",
     "epg_generated": true
   },
   {
-    "id": 816,
-    "name": "CBeeBies",
+    "id": 223,
+    "name": "DD Sports",
     "epg_generated": true
   },
   {
-    "id": 383,
-    "name": "Kushi TV",
+    "id": 600,
+    "name": "STAR Sports 1",
     "epg_generated": true
   },
   {
-    "id": 302,
-    "name": "Chutti TV",
+    "id": 609,
+    "name": "STAR Sports 2",
     "epg_generated": true
   },
   {
-    "id": 561,
-    "name": "Chintu TV",
+    "id": 601,
+    "name": "Star Sports 1 Hindi",
     "epg_generated": true
   },
   {
-    "id": 82,
-    "name": "Kochu TV",
+    "id": 141,
+    "name": "Star Sports Select 1",
     "epg_generated": true
   },
   {
-    "id": 1164,
-    "name": "Unique TV",
+    "id": 81,
+    "name": "SONY SPORTS TEN 1 HD",
     "epg_generated": true
   },
   {
-    "id": 111,
-    "name": "Tata Play Smart Manager",
+    "id": 150,
+    "name": "SONY SPORTS TEN 1",
     "epg_generated": true
   },
   {
-    "id": 167,
-    "name": "Tata Play Vedic Maths",
+    "id": 462,
+    "name": "SONY SPORTS TEN 2 HD",
     "epg_generated": true
   },
   {
-    "id": 605,
-    "name": "National Geographic HD",
+    "id": 170,
+    "name": "SONY SPORTS TEN 2",
     "epg_generated": true
   },
   {
-    "id": 137,
-    "name": "National Geographic",
+    "id": 101,
+    "name": "Rang",
     "epg_generated": true
   },
   {
-    "id": 184,
-    "name": "Nat Geo Wild",
+    "id": 214,
+    "name": "Rengoni TV",
     "epg_generated": true
   },
   {
-    "id": 341,
-    "name": "Discovery HD World",
+    "id": 1082,
+    "name": "Tata Play Asomiya Monoronjan",
     "epg_generated": true
   },
   {
-    "id": 219,
-    "name": "Discovery Channel",
+    "id": 29,
+    "name": "Assam Talks",
+    "epg_generated": false
+  },
+  {
+    "id": 353,
+    "name": "DY 365",
     "epg_generated": true
   },
   {
-    "id": 287,
-    "name": "Animal Planet HD",
+    "id": 226,
+    "name": "NEWS LIVE",
     "epg_generated": true
   },
   {
-    "id": 130,
-    "name": "Animal Planet",
+    "id": 221,
+    "name": "Protidin Time",
     "epg_generated": true
   },
   {
-    "id": 113,
-    "name": "Discovery Science",
+    "id": 423,
+    "name": "Prag News",
     "epg_generated": true
   },
   {
-    "id": 172,
-    "name": "History TV18",
+    "id": 417,
+    "name": "North East Live",
     "epg_generated": true
+  },
+  {
+    "id": 894,
+    "name": "NKTV PLUS",
+    "epg_generated": true
+  },
+  {
+    "id": 898,
+    "name": "Hornbill TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1076,
+    "name": "Asom Live 24",
+    "epg_generated": false
+  },
+  {
+    "id": 1484,
+    "name": "Assam Talks",
+    "epg_generated": false
+  },
+  {
+    "id": 833,
+    "name": "DD Port Blair",
+    "epg_generated": false
+  },
+  {
+    "id": 758,
+    "name": "DD Arunprabha",
+    "epg_generated": false
+  },
+  {
+    "id": 329,
+    "name": "DD Manipur",
+    "epg_generated": false
+  },
+  {
+    "id": 331,
+    "name": "DD North East",
+    "epg_generated": false
+  },
+  {
+    "id": 325,
+    "name": "DD Kashir",
+    "epg_generated": false
+  },
+  {
+    "id": 449,
+    "name": "Ramdhenu",
+    "epg_generated": false
+  },
+  {
+    "id": 991,
+    "name": "DD Meghalaya",
+    "epg_generated": false
+  },
+  {
+    "id": 1210,
+    "name": "DD Tripura",
+    "epg_generated": false
+  },
+  {
+    "id": 1211,
+    "name": "DD Mizoram",
+    "epg_generated": false
+  },
+  {
+    "id": 1214,
+    "name": "DD Nagaland",
+    "epg_generated": false
+  },
+  {
+    "id": 1215,
+    "name": "DD Goa",
+    "epg_generated": false
+  },
+  {
+    "id": 1302,
+    "name": "Decode - Data",
+    "epg_generated": false
+  },
+  {
+    "id": 1285,
+    "name": "Sana TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1284,
+    "name": "Sana Plus TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1281,
+    "name": "Samachar 24 News",
+    "epg_generated": false
+  },
+  {
+    "id": 1278,
+    "name": "Prime TV",
+    "epg_generated": false
+  },
+  {
+    "id": 849,
+    "name": "Kashi Vishwanath Temple, Varanasi",
+    "epg_generated": false
+  },
+  {
+    "id": 930,
+    "name": "Buletin India",
+    "epg_generated": false
+  },
+  {
+    "id": 791,
+    "name": "Fateh TV",
+    "epg_generated": false
+  },
+  {
+    "id": 912,
+    "name": "Haryana Beats",
+    "epg_generated": false
+  },
+  {
+    "id": 807,
+    "name": "In Goa 24x7",
+    "epg_generated": false
+  },
+  {
+    "id": 782,
+    "name": "Namma TV",
+    "epg_generated": false
+  },
+  {
+    "id": 819,
+    "name": "RDX Goa",
+    "epg_generated": false
+  },
+  {
+    "id": 1290,
+    "name": "TVRI World",
+    "epg_generated": false
+  },
+  {
+    "id": 821,
+    "name": "Headlines Tripura",
+    "epg_generated": false
+  },
+  {
+    "id": 865,
+    "name": "Bangla Bhakti",
+    "epg_generated": false
+  },
+  {
+    "id": 866,
+    "name": "Tara News",
+    "epg_generated": false
+  },
+  {
+    "id": 887,
+    "name": "Garv Gurbani",
+    "epg_generated": false
+  },
+  {
+    "id": 883,
+    "name": "Swar Shree",
+    "epg_generated": false
+  },
+  {
+    "id": 908,
+    "name": "Nimbark TV",
+    "epg_generated": false
+  },
+  {
+    "id": 910,
+    "name": "C News Bharat",
+    "epg_generated": false
+  },
+  {
+    "id": 1380,
+    "name": "News 21",
+    "epg_generated": false
+  },
+  {
+    "id": 1372,
+    "name": "Bhaktisagar",
+    "epg_generated": false
+  },
+  {
+    "id": 1371,
+    "name": "BVG",
+    "epg_generated": false
+  },
+  {
+    "id": 1254,
+    "name": "National News Live",
+    "epg_generated": false
+  },
+  {
+    "id": 1256,
+    "name": "Oye Music",
+    "epg_generated": false
+  },
+  {
+    "id": 1257,
+    "name": "Sangam TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1255,
+    "name": "Update India",
+    "epg_generated": false
+  },
+  {
+    "id": 842,
+    "name": "Somnath Temple",
+    "epg_generated": false
+  },
+  {
+    "id": 1382,
+    "name": "DHARSAN TV",
+    "epg_generated": false
+  },
+  {
+    "id": 840,
+    "name": "Shirdi Sai Baba",
+    "epg_generated": false
+  },
+  {
+    "id": 931,
+    "name": "Green Chillies TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1338,
+    "name": "TV 45 News",
+    "epg_generated": false
+  },
+  {
+    "id": 1335,
+    "name": "Shiksha TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1332,
+    "name": "AB STAR News",
+    "epg_generated": false
+  },
+  {
+    "id": 1334,
+    "name": "KBC News",
+    "epg_generated": false
+  },
+  {
+    "id": 1333,
+    "name": "ABC News",
+    "epg_generated": false
+  },
+  {
+    "id": 947,
+    "name": "Live Patna Sahib Patna",
+    "epg_generated": true
+  },
+  {
+    "id": 1337,
+    "name": "Sristi TV",
+    "epg_generated": true
+  },
+  {
+    "id": 960,
+    "name": "Atmadarshan",
+    "epg_generated": true
+  },
+  {
+    "id": 1753,
+    "name": "Zee Cinema Geo",
+    "epg_generated": true
+  },
+  {
+    "id": 1002,
+    "name": "Saileela TV",
+    "epg_generated": true
+  },
+  {
+    "id": 1004,
+    "name": "Mahavir Temple, Patna.",
+    "epg_generated": true
+  },
+  {
+    "id": 1008,
+    "name": "Naga Sai Temple",
+    "epg_generated": true
+  },
+  {
+    "id": 1007,
+    "name": "Shri Ashtavinayak Mahaganpati, Ranjangaon",
+    "epg_generated": true
+  },
+  {
+    "id": 1035,
+    "name": "Khandoba Temple, Jejuri",
+    "epg_generated": true
+  },
+  {
+    "id": 1058,
+    "name": "Aaj Ki Khabar",
+    "epg_generated": true
+  },
+  {
+    "id": 1059,
+    "name": "Indian News",
+    "epg_generated": true
+  },
+  {
+    "id": 1386,
+    "name": "NTV",
+    "epg_generated": true
+  },
+  {
+    "id": 1070,
+    "name": "MEDIA 9",
+    "epg_generated": true
+  },
+  {
+    "id": 1079,
+    "name": "TTN 24",
+    "epg_generated": true
+  },
+  {
+    "id": 1080,
+    "name": "U Bangla TV",
+    "epg_generated": true
+  },
+  {
+    "id": 1171,
+    "name": "Shree Ichchhapuran Balaji Mandir",
+    "epg_generated": true
+  },
+  {
+    "id": 1196,
+    "name": "Ekamra Bharat Odia",
+    "epg_generated": true
+  },
+  {
+    "id": 1197,
+    "name": "Ekamra Nilachakra",
+    "epg_generated": true
+  },
+  {
+    "id": 1198,
+    "name": "Ekamra Cynema",
+    "epg_generated": true
+  },
+  {
+    "id": 1199,
+    "name": "Ekamra  Music",
+    "epg_generated": true
+  },
+  {
+    "id": 1200,
+    "name": "Ekamra Jatra",
+    "epg_generated": true
+  },
+  {
+    "id": 1201,
+    "name": "Ekamra Paramatma",
+    "epg_generated": true
+  },
+  {
+    "id": 1202,
+    "name": "Ekamra One paschima",
+    "epg_generated": true
+  },
+  {
+    "id": 1205,
+    "name": "Lokmanch",
+    "epg_generated": true
+  },
+  {
+    "id": 1206,
+    "name": "LNI",
+    "epg_generated": true
+  },
+  {
+    "id": 1207,
+    "name": "Ekamra Manoranjan",
+    "epg_generated": true
+  },
+  {
+    "id": 1208,
+    "name": "Rajya 24",
+    "epg_generated": true
+  },
+  {
+    "id": 1209,
+    "name": "Samrat News",
+    "epg_generated": true
+  },
+  {
+    "id": 1245,
+    "name": "National Today 24x7",
+    "epg_generated": true
+  },
+  {
+    "id": 1247,
+    "name": "35 MM",
+    "epg_generated": true
+  },
+  {
+    "id": 1242,
+    "name": "In24 News",
+    "epg_generated": false
+  },
+  {
+    "id": 1246,
+    "name": "Vande Bharat News",
+    "epg_generated": false
+  },
+  {
+    "id": 1253,
+    "name": "Jeewan Bhakti",
+    "epg_generated": false
+  },
+  {
+    "id": 1383,
+    "name": "NIJAM TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1384,
+    "name": "SURIYAN TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1385,
+    "name": "SUBIN TV",
+    "epg_generated": false
+  },
+  {
+    "id": 1388,
+    "name": "UTV",
+    "epg_generated": false
+  },
+  {
+    "id": 1392,
+    "name": "Sadvidya",
+    "epg_generated": false
+  },
+  {
+    "id": 1393,
+    "name": "In24 Live News",
+    "epg_generated": false
+  },
+  {
+    "id": 1448,
+    "name": "The Voice TV",
+    "epg_generated": false
   }
 ]
