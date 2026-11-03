@@ -3,7 +3,7 @@ name: Generate Tata Play EPG
 on:
   schedule:
     - cron: '0 0 * * *' # दररोज रात्री १२ वाजता ऑटोमॅटिक रन होईल
-  workflow_dispatch: # GitHub डॅशबोर्डवरून मॅन्युअली रन करण्यासाठी 'Run workflow' बटण मिळेल
+  workflow_dispatch: # मॅन्युअली रन करण्यासाठी
 
 jobs:
   build:
@@ -21,9 +21,8 @@ jobs:
       - name: Install Dependencies
         run: npm install axios dayjs
 
-      - name: Run Epg Script
-        run: |
-          node watch.tataplay.js
+      - name: Run EPG Generator Script
+        run: node watch.tataplay.com.js # टीप: जर तुमच्या फाईलचे नाव watch.tataplay.js असेल तर खालीलप्रमाणे watch.tataplay.js ठेवा
 
       - name: Commit and Push EPG
         run: |
