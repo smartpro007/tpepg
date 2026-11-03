@@ -22,7 +22,7 @@ jobs:
         run: npm install axios dayjs
 
       - name: Run EPG Generator Script
-        run: node watch.tataplay.com.js # टीप: जर तुमच्या फाईलचे नाव watch.tataplay.js असेल तर खालीलप्रमाणे watch.tataplay.js ठेवा
+        run: node watch.tataplay.js
 
       - name: Commit and Push EPG
         run: |
@@ -31,4 +31,3 @@ jobs:
           git add guide.xml
           git commit -m "Auto-update Tata Play EPG (5 Days) [skip ci]" || exit 0
           git push
-          
