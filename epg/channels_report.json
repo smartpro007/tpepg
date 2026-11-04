@@ -2900,11 +2900,6 @@
     "epg_generated": true
   },
   {
-    "id": 972,
-    "name": "Khabar Fast",
-    "epg_generated": true
-  },
-  {
     "id": 974,
     "name": "1st Gujarat",
     "epg_generated": true
@@ -3822,7 +3817,7 @@
   {
     "id": 1731,
     "name": "Alias-3 of 2725",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1732,
@@ -3837,22 +3832,22 @@
   {
     "id": 1734,
     "name": "OSD - 3",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": 1735,
     "name": "Alias-3 of 2715",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1736,
     "name": "Alias-2 of 2715",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1737,
     "name": "Alias-1 of 2715",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1738,
@@ -3862,17 +3857,17 @@
   {
     "id": 1739,
     "name": "Alias-3 of 2714",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1740,
     "name": "Alias-2 of 2714",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1741,
     "name": "Alias-1 of 2714",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1742,
