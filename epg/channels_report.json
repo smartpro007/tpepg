@@ -3832,7 +3832,7 @@
   {
     "id": 1734,
     "name": "OSD - 3",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1735,
@@ -3852,7 +3852,7 @@
   {
     "id": 1738,
     "name": "OSD - 2",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": 1739,
