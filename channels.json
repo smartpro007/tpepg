@@ -1,0 +1,2260 @@
+{
+    "total_jiotv_only": 451,
+    "channels": [
+        {
+            "channel_id": 3338,
+            "channel_name": "NH BollyGold",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3467,
+            "channel_name": "Green Gold TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3336,
+            "channel_name": "NH BollyFlix",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3535,
+            "channel_name": "Mr. Bean",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3069,
+            "channel_name": "Captain",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 250,
+            "channel_name": "Music India",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 741,
+            "channel_name": "Sangeet Bhojpuri",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1780,
+            "channel_name": "HooplaKidz TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3561,
+            "channel_name": "ETV Comedy",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3083,
+            "channel_name": "Sundrani TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 142,
+            "channel_name": "BBC World News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 155,
+            "channel_name": "Sony Ten 5 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 162,
+            "channel_name": "Sony Ten 1 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 193,
+            "channel_name": "CNN",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 400,
+            "channel_name": "PM e Vidya 01",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 401,
+            "channel_name": "Swayam Prabha 19",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 402,
+            "channel_name": "PM e Vidya 02",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 403,
+            "channel_name": "Swayam Prabha 20",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 404,
+            "channel_name": "PM e Vidya 07",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 405,
+            "channel_name": "PM e Vidya 03",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 406,
+            "channel_name": "PM e Vidya 04",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 407,
+            "channel_name": "PM e Vidya 05",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 408,
+            "channel_name": "PM e Vidya 06",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 409,
+            "channel_name": "PM e Vidya 08",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 410,
+            "channel_name": "PM e Vidya 09",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 411,
+            "channel_name": "PM e Vidya 10",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 440,
+            "channel_name": "9X Jalwa",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 441,
+            "channel_name": "9x Jhakaas",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 472,
+            "channel_name": "And TV HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 486,
+            "channel_name": "Bhojpuri Cinema",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 488,
+            "channel_name": "Zee Action",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 510,
+            "channel_name": "VIP News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 514,
+            "channel_name": "Sony Ten 1",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 523,
+            "channel_name": "Ten 2",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 524,
+            "channel_name": "Sony Ten 3 Hindi",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 525,
+            "channel_name": "Sony Ten 5",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 548,
+            "channel_name": "Nickelodeon Jr.",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 551,
+            "channel_name": "TEST14 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 555,
+            "channel_name": "Chintu TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 556,
+            "channel_name": "Kochu TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 557,
+            "channel_name": "Chutti TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 558,
+            "channel_name": "Kushi TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 572,
+            "channel_name": "Zee UP UK",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 591,
+            "channel_name": "E 24",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 594,
+            "channel_name": "Aastha Bhajan",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 595,
+            "channel_name": "Prarthana Life",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 596,
+            "channel_name": "Jinvani TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 598,
+            "channel_name": "Sri Venkateshwar Bhakti",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 599,
+            "channel_name": "Disha tv",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 602,
+            "channel_name": "Paras tv",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 608,
+            "channel_name": "Shubhsandesh TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 631,
+            "channel_name": "MBC",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 642,
+            "channel_name": "VTV Gujarati",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 643,
+            "channel_name": "GS TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 658,
+            "channel_name": "Zee MP Chattisgarh",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 670,
+            "channel_name": "6 TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 702,
+            "channel_name": "DD Oriya",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 704,
+            "channel_name": "OTV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 709,
+            "channel_name": "Adithya TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 713,
+            "channel_name": "DD9 chandana (kannada)",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 719,
+            "channel_name": "Nepal one",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 732,
+            "channel_name": "9X Tashan",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 733,
+            "channel_name": "Sun Udaya Comedy",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 738,
+            "channel_name": "Fakt Marathi",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 742,
+            "channel_name": "mh1 (Music)",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 764,
+            "channel_name": "Channel News Asia International",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 765,
+            "channel_name": "Jonack",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 772,
+            "channel_name": "CVR OM Spiritual",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 774,
+            "channel_name": "CVR Health",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 775,
+            "channel_name": "Vanitha",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 779,
+            "channel_name": "Prameya News 7",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 784,
+            "channel_name": "CVR News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 786,
+            "channel_name": "Kappa TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 787,
+            "channel_name": "CVR English",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 789,
+            "channel_name": "JK 24x7 News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 791,
+            "channel_name": "Taaza TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 795,
+            "channel_name": "testa",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 803,
+            "channel_name": "Tunes 6",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 824,
+            "channel_name": "Puthu Yugam",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 837,
+            "channel_name": "Euro News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 843,
+            "channel_name": "Madhimugam TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 856,
+            "channel_name": "Vedic TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 886,
+            "channel_name": "Lakshya TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 887,
+            "channel_name": "Vedant Ras Swar Shree",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 891,
+            "channel_name": "Sony Ten 2 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 892,
+            "channel_name": "Sony Ten 3 HD Hindi",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 907,
+            "channel_name": "GoodNews Channel",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 924,
+            "channel_name": "Mercy TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 933,
+            "channel_name": "4 TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 946,
+            "channel_name": "Pitaara",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 953,
+            "channel_name": "Propex TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 956,
+            "channel_name": "TV 5 Kannada",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 958,
+            "channel_name": "DNN",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 959,
+            "channel_name": "JUS PUNJABI HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 961,
+            "channel_name": "JUS ONE HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 962,
+            "channel_name": "Boogle Bollywood",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 964,
+            "channel_name": "Om Shanti",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 971,
+            "channel_name": "Vaanavil TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 972,
+            "channel_name": "Sarv Dharam Sangam",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 978,
+            "channel_name": "TEST1 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 979,
+            "channel_name": "TEST2 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 980,
+            "channel_name": "Swayam Prabha 01",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 981,
+            "channel_name": "Swayam Prabha 02",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 982,
+            "channel_name": "Swayam Prabha 03",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 983,
+            "channel_name": "Swayam Prabha 08",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 984,
+            "channel_name": "Swayam Prabha 04",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 985,
+            "channel_name": "Swayam Prabha 07",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 986,
+            "channel_name": "Swayam Prabha 05",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 987,
+            "channel_name": "Swayam Prabha 06",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 988,
+            "channel_name": "Swayam Prabha 09",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 989,
+            "channel_name": "Swayam Prabha 10",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 990,
+            "channel_name": "Swayam Prabha 11",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 991,
+            "channel_name": "Swayam Prabha 12",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 992,
+            "channel_name": "Swayam Prabha 13",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 993,
+            "channel_name": "Swayam Prabha 14",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 994,
+            "channel_name": "Swayam Prabha 16",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 995,
+            "channel_name": "Swayam Prabha 15",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 996,
+            "channel_name": "Swayam Prabha 17",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 997,
+            "channel_name": "Swayam Prabha 21",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 998,
+            "channel_name": "Swayam Prabha 22",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 999,
+            "channel_name": "Swayam Prabha 18",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1059,
+            "channel_name": "TEST3 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1061,
+            "channel_name": "TEST5 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1062,
+            "channel_name": "TEST6 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1069,
+            "channel_name": "Vande Gujarat 1",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1070,
+            "channel_name": "Vande Gujarat 2",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1071,
+            "channel_name": "Vande Gujarat 4",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1078,
+            "channel_name": "Soham TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1082,
+            "channel_name": "Vande Gujarat 3",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1083,
+            "channel_name": "Vande Gujarat 5",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1084,
+            "channel_name": "Vande Gujarat 6",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1085,
+            "channel_name": "Vande Gujarat 7",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1086,
+            "channel_name": "Vande Gujarat 8",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1087,
+            "channel_name": "Vande Gujarat 9",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1088,
+            "channel_name": "Vande Gujarat 10",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1089,
+            "channel_name": "Vande Gujarat 11",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1090,
+            "channel_name": "Vande Gujarat 12",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1091,
+            "channel_name": "Vande Gujarat 13",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1092,
+            "channel_name": "Vande Gujarat 14",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1093,
+            "channel_name": "Vande Gujarat 15",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1094,
+            "channel_name": "Vande Gujarat 16",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1148,
+            "channel_name": "TEST8 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1151,
+            "channel_name": "Rangamanch",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1159,
+            "channel_name": "Tulja Bhavani",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1163,
+            "channel_name": "JioGames HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1186,
+            "channel_name": "Kartavya TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1187,
+            "channel_name": "Valam TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1192,
+            "channel_name": "Brit Asia",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1205,
+            "channel_name": "ABP Ganga",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1210,
+            "channel_name": "Kalaignar Seithigal ",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1212,
+            "channel_name": "Hare Krsna Pravachan",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1220,
+            "channel_name": "Rajyoga TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1221,
+            "channel_name": "Rajyoga TV Kannada",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1227,
+            "channel_name": "Digishala",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1229,
+            "channel_name": "TEST9 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1232,
+            "channel_name": "Hi Dost!",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1240,
+            "channel_name": "TEST10 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1252,
+            "channel_name": "Tehzeeb TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1265,
+            "channel_name": "Global Sanjh",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1273,
+            "channel_name": "Gomantak TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1274,
+            "channel_name": "Studio One",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1278,
+            "channel_name": "Prarthana Bhawan",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1284,
+            "channel_name": "Vignesh TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1286,
+            "channel_name": "Insync",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1315,
+            "channel_name": "HHDL",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1319,
+            "channel_name": "Zee Cafe HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1322,
+            "channel_name": "And Flix HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1341,
+            "channel_name": "Nick Bangla",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1355,
+            "channel_name": "ALI TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1364,
+            "channel_name": "Zee Cafe SD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1410,
+            "channel_name": "PM e Vidya 11",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1411,
+            "channel_name": "SongDew TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1415,
+            "channel_name": "Ganga Darshan Varanasi",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1418,
+            "channel_name": "Ichhapuran Balaji Rajasthan",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1429,
+            "channel_name": "KITE VICTERS",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1440,
+            "channel_name": "Krishna Vani",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1453,
+            "channel_name": "Balle Balle TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1455,
+            "channel_name": "Janapriyam",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1458,
+            "channel_name": "Gurkibani",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1475,
+            "channel_name": "TEST11 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1476,
+            "channel_name": "TEST12 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1514,
+            "channel_name": "Kannur One",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1518,
+            "channel_name": "Moon TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1525,
+            "channel_name": "TEST13 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1527,
+            "channel_name": "Haryanvi Hits",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1532,
+            "channel_name": "PM e Vidya 12",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1537,
+            "channel_name": "RadheKrishna TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1543,
+            "channel_name": "Subharti",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1545,
+            "channel_name": "Punjab School TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1549,
+            "channel_name": "Dharm Granth TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1552,
+            "channel_name": "Malanadu TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1598,
+            "channel_name": "FTV HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1607,
+            "channel_name": "Manav Dharam",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1634,
+            "channel_name": "Siri Kannada",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1644,
+            "channel_name": "Powervision TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1647,
+            "channel_name": "MK Six",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1662,
+            "channel_name": "Sun Surya Comedy",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1668,
+            "channel_name": "And Xplor HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1690,
+            "channel_name": "BVTV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1698,
+            "channel_name": "IND 24",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1705,
+            "channel_name": "Shri Hingulambika Devi Temple",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1706,
+            "channel_name": "Shri Mangal Dev Grah Temple",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1733,
+            "channel_name": "ND 24",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1736,
+            "channel_name": "LUXE TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1738,
+            "channel_name": "Hosanna TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1740,
+            "channel_name": "Purnima TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1742,
+            "channel_name": "Sanskrit Ganga",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1764,
+            "channel_name": "Dada Bhagwan Foundation",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1772,
+            "channel_name": "Sony Ten 4 HD Tamil",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1773,
+            "channel_name": "Sony Ten 4 HD Telugu",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1774,
+            "channel_name": "Sony Ten 4 Tamil",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1775,
+            "channel_name": "Sony Ten 4 Telugu",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1788,
+            "channel_name": "Yeshuaa TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1789,
+            "channel_name": "Dada Bhagwan Foundation Gujarati",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1794,
+            "channel_name": "Mangalmay Live",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1797,
+            "channel_name": "DA News Plus",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1799,
+            "channel_name": "Studio Yuva",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1826,
+            "channel_name": "Swaralasika Sangeetalaya",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1855,
+            "channel_name": "NL TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1868,
+            "channel_name": "Punjab Plus",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1885,
+            "channel_name": "Kripa TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1886,
+            "channel_name": "Sansad TV Rajya Sabha",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1901,
+            "channel_name": "Adhyatma TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1925,
+            "channel_name": "MH1 Dil Se",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1958,
+            "channel_name": "Sidharth Bhakti",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1962,
+            "channel_name": "Amar Bangla TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1967,
+            "channel_name": "PMC Hindi",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1974,
+            "channel_name": "Gujarat 1st 24x7",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1975,
+            "channel_name": "PMC Telugu",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 1999,
+            "channel_name": "Raftaar Media",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2001,
+            "channel_name": "PlusTest2 HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2003,
+            "channel_name": "3.0 TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2017,
+            "channel_name": "Munsif TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2021,
+            "channel_name": "HNN 24x7",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2024,
+            "channel_name": "And TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2029,
+            "channel_name": "Aaryaa Bhakti",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2031,
+            "channel_name": "Fashion India",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2064,
+            "channel_name": "Merchant Records",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2082,
+            "channel_name": "22Scope News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2189,
+            "channel_name": "Aaryaa Cinema",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2225,
+            "channel_name": "TV24",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2229,
+            "channel_name": "Bhojpuri Junction",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2252,
+            "channel_name": "Desi Music Station",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2258,
+            "channel_name": "Animax",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2325,
+            "channel_name": "Punjabi Melodies",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2326,
+            "channel_name": "Firstpost",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2327,
+            "channel_name": "Lionsgate Play",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2328,
+            "channel_name": "CyberPeace TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2434,
+            "channel_name": "M Nadu",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2435,
+            "channel_name": "Spondon",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2437,
+            "channel_name": "Wild Earth",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2686,
+            "channel_name": "Jyothishavartha",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2751,
+            "channel_name": "Saga Music Haryanvi",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2752,
+            "channel_name": "Ghaint Punjab",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2754,
+            "channel_name": "Sikh Ratnavali",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2765,
+            "channel_name": "BSTV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2766,
+            "channel_name": "BRAVE TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2774,
+            "channel_name": "Power Kids TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2775,
+            "channel_name": "Grace TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2778,
+            "channel_name": "Tabbar Hits",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2779,
+            "channel_name": "Red Bull TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2783,
+            "channel_name": "Big TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2784,
+            "channel_name": "ISKCON Bangalore",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2854,
+            "channel_name": "KCM",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2916,
+            "channel_name": "Daily Post News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2918,
+            "channel_name": "WPN World Punjabi News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2932,
+            "channel_name": "99 TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2934,
+            "channel_name": "Punjabi Hits",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2958,
+            "channel_name": "Tamilan Television",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 2962,
+            "channel_name": "NoFilterNeha",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3004,
+            "channel_name": "Velicham Tv",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3006,
+            "channel_name": "Dhoom Music Bangla",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3007,
+            "channel_name": "AMV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3011,
+            "channel_name": "Lancs TV HD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3017,
+            "channel_name": "News Hour",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3024,
+            "channel_name": "India TV Yoga Channel",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3025,
+            "channel_name": "India TV Aap Ki Adalat",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3028,
+            "channel_name": "BH Style Icons Awards",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3037,
+            "channel_name": "Kalyan TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3039,
+            "channel_name": "Garvi Gujarat",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3046,
+            "channel_name": "& flix SD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3047,
+            "channel_name": "Zee Picchar SD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3058,
+            "channel_name": "News Capital Gujarat",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3074,
+            "channel_name": "Shemaroo Filmy Gaane",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3075,
+            "channel_name": "Shemaroo Bollywood",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3086,
+            "channel_name": "NAXATRA SAMACHAR PLUS",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3091,
+            "channel_name": "RedBull UltraView",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3092,
+            "channel_name": "RedBull 360degree",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3093,
+            "channel_name": "RedBull Cam01",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3094,
+            "channel_name": "RedBull Cam02",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3107,
+            "channel_name": "Bhakthi Siri ",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3108,
+            "channel_name": "Garvi Gujarat Gujarati",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3112,
+            "channel_name": "Sanmarg Tv",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3118,
+            "channel_name": "DD Swayam Prabha 23",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3119,
+            "channel_name": "DD Swayam Prabha 24",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3120,
+            "channel_name": "DD Swayam Prabha 25",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3121,
+            "channel_name": "DD Swayam Prabha 26",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3122,
+            "channel_name": "DD Swayam Prabha 27",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3123,
+            "channel_name": "DD Swayam Prabha 28",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3124,
+            "channel_name": "DD Swayam Prabha 29",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3125,
+            "channel_name": "DD Swayam Prabha 30",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3126,
+            "channel_name": "DD Swayam Prabha 31",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3127,
+            "channel_name": "DD Swayam Prabha 32",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3128,
+            "channel_name": "DD Swayam Prabha 33",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3129,
+            "channel_name": "DD Swayam Prabha 34",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3130,
+            "channel_name": "DD Swayam Prabha 35",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3131,
+            "channel_name": "DD Swayam Prabha 36",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3132,
+            "channel_name": "DD Swayam Prabha 37",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3133,
+            "channel_name": "DD Swayam Prabha 38",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3134,
+            "channel_name": "DD Swayam Prabha 39",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3135,
+            "channel_name": "DD Swayam Prabha 40",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3136,
+            "channel_name": "DD Sathee 1",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3137,
+            "channel_name": "DD Sathee 2",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3138,
+            "channel_name": "DD Sathee 3",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3139,
+            "channel_name": "DD Sathee 4",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3140,
+            "channel_name": "DD Sathee 5",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3141,
+            "channel_name": "DD Sathee 6",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3142,
+            "channel_name": "DD Sathee 7",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3143,
+            "channel_name": "Mahaa Max",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3145,
+            "channel_name": "DD Sathee 8",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3146,
+            "channel_name": "All Women's Sports Network",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3147,
+            "channel_name": "RedBull Cam03",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3154,
+            "channel_name": "Bloomberg Originals",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3155,
+            "channel_name": "Bloomberg TV+",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3162,
+            "channel_name": "Prabhu Vani Tv",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3174,
+            "channel_name": "Malyalam Naaptol",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3175,
+            "channel_name": "Tamil Naaptol",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3176,
+            "channel_name": "Telugu Naaptol",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3177,
+            "channel_name": "Adhya Bhakti",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3187,
+            "channel_name": "Prabhu Sandesh",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3204,
+            "channel_name": "Penta TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3205,
+            "channel_name": "Taaza Khabrein on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3206,
+            "channel_name": "Pramukha Suddi on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3207,
+            "channel_name": "Ungal Seithigal on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3208,
+            "channel_name": "Itivali Varthalu on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3209,
+            "channel_name": "Taajya Baatmya on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3210,
+            "channel_name": "Tatka Sangbad on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3211,
+            "channel_name": "Taaza Samachar on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3212,
+            "channel_name": "Puthiya Varthakal on JioNews",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3213,
+            "channel_name": "Gusto TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3216,
+            "channel_name": "Krishi Pitaara",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3221,
+            "channel_name": "Sri Naga Sai Mandir",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3223,
+            "channel_name": "Shark Tank India S5",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3231,
+            "channel_name": "Apex Entertainment",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3232,
+            "channel_name": "Sadhguru Television Dolby",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3236,
+            "channel_name": "Bhakti Dhara",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3237,
+            "channel_name": "Namma Bangalore",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3238,
+            "channel_name": "Yoga for Beginners",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3239,
+            "channel_name": "Mahaa Bhakthi",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3243,
+            "channel_name": "Pickleball Now",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3246,
+            "channel_name": "Sabka Bazaar",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3247,
+            "channel_name": "Manage Stress",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3248,
+            "channel_name": "Weight Loss Yoga",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3249,
+            "channel_name": "Guided Meditation",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3250,
+            "channel_name": "Flexibility Yoga",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3251,
+            "channel_name": "Restful Sleep",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3252,
+            "channel_name": "Muscle Strength",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3259,
+            "channel_name": "Pocket Films",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3260,
+            "channel_name": "Sanatan Sandesh TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3262,
+            "channel_name": "Jio Adipoli Movies",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3263,
+            "channel_name": "VROTT",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3264,
+            "channel_name": "Jio Semma Cinema",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3279,
+            "channel_name": "OM TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3281,
+            "channel_name": "Mahua Play",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3285,
+            "channel_name": "Stingray Naturescape",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3286,
+            "channel_name": "ZenLIFE by Stingray",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3287,
+            "channel_name": "Holidaycapes by Stingray",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3288,
+            "channel_name": "Movie Music by Stingray",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3289,
+            "channel_name": "Qello Concerts by Stingray",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3290,
+            "channel_name": "Stingray Djazz",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3297,
+            "channel_name": "Amar Digital TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3302,
+            "channel_name": "T SAT Nipuna",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3313,
+            "channel_name": "LOVEWORLD TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3314,
+            "channel_name": "Gujarat  Wild TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3321,
+            "channel_name": "ZB Cartoon",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3323,
+            "channel_name": "Stingray The Spa",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3324,
+            "channel_name": "Stingray Todays K-Pop",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3325,
+            "channel_name": "Stingray Easy Listening",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3327,
+            "channel_name": "Stingray 2000s",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3333,
+            "channel_name": "Popli Live",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3334,
+            "channel_name": "Sanatan Vedic TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3343,
+            "channel_name": "NH BollyRaga",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3345,
+            "channel_name": "Superfine Films",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3346,
+            "channel_name": "Yahoo Finance",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3354,
+            "channel_name": "Fast1",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3356,
+            "channel_name": "Rock TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3358,
+            "channel_name": "Bhagyam TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3370,
+            "channel_name": "Gospel TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3381,
+            "channel_name": "Brio TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3389,
+            "channel_name": "INWILD",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3393,
+            "channel_name": "NTC TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3395,
+            "channel_name": "Aaryaa TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3396,
+            "channel_name": "Ultimate TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3401,
+            "channel_name": "Swastik Stories",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3402,
+            "channel_name": "DocuBay",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3440,
+            "channel_name": "TOI Global",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3459,
+            "channel_name": "Swastik TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3471,
+            "channel_name": "Punjabi Shorts",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3473,
+            "channel_name": "Jio Home",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3478,
+            "channel_name": "Stingray Classic Rock",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3479,
+            "channel_name": "Stingray Greatest Hits",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3481,
+            "channel_name": "Stingray Cozy Cafe",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3483,
+            "channel_name": "Amar Ujala",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3492,
+            "channel_name": "Alright TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3497,
+            "channel_name": "Village TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3498,
+            "channel_name": "India Ahead",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3499,
+            "channel_name": "World Chess",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3508,
+            "channel_name": "Valam TV Dayro",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3509,
+            "channel_name": "SET HD STB",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3518,
+            "channel_name": "Cine Jomjomat",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3519,
+            "channel_name": "Shree Salangpur Dham",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3524,
+            "channel_name": "Journy",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3530,
+            "channel_name": "UIPM Pentathlon World Cup",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3533,
+            "channel_name": "Dice Media",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3534,
+            "channel_name": "FilterCopy",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3536,
+            "channel_name": "Anand Wari TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3537,
+            "channel_name": "Duck TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3538,
+            "channel_name": "R Plus Gold",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3540,
+            "channel_name": "TV5 Voyage",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3541,
+            "channel_name": "TV5 Info",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3542,
+            "channel_name": "TV5 Chefs",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3543,
+            "channel_name": "Eros Universe Bollywood Cinema",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3544,
+            "channel_name": "Eros Universe Entertainment",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3546,
+            "channel_name": "FIA TCR World Tour",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3548,
+            "channel_name": "NKR TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3553,
+            "channel_name": "Padel Time TV ",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3554,
+            "channel_name": "Vedant Ras",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3555,
+            "channel_name": "Knock TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3559,
+            "channel_name": "ETV Beats",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3560,
+            "channel_name": "ETV Josh",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3562,
+            "channel_name": "Akhon Kolkata Plus",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3563,
+            "channel_name": "Pure Pink",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3566,
+            "channel_name": "Knock Bhakti",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3568,
+            "channel_name": "Onkar News",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3570,
+            "channel_name": "ANN Entertainment",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3571,
+            "channel_name": "Panjab TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3572,
+            "channel_name": "Focus Plus TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3584,
+            "channel_name": "News Capital Market",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3587,
+            "channel_name": "JOJO TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3588,
+            "channel_name": "FAST TEST",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3589,
+            "channel_name": "Divya Bhajan",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3591,
+            "channel_name": "Pitaara Comedy",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3592,
+            "channel_name": "Vietnam Today",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3594,
+            "channel_name": "TeluguOne",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3595,
+            "channel_name": "Khabhar Bharat 360",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3601,
+            "channel_name": "Icarus Sports",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3605,
+            "channel_name": "ID TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3610,
+            "channel_name": "Dhool TV",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3611,
+            "channel_name": "Hello Meghalaya",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3617,
+            "channel_name": "Jallosh",
+            "available_on": "JioTV Only"
+        },
+        {
+            "channel_id": 3623,
+            "channel_name": "Mantra TV",
+            "available_on": "JioTV Only"
+        }
+    ]
+}
