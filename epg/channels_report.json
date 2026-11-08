@@ -4382,7 +4382,7 @@
   {
     "id": "1732",
     "name": "Alias-2 of 2725",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1733",
@@ -4392,7 +4392,7 @@
   {
     "id": "1734",
     "name": "OSD - 3",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1735",
@@ -4407,7 +4407,7 @@
   {
     "id": "1737",
     "name": "Alias-1 of 2715",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1738",
@@ -4427,7 +4427,7 @@
   {
     "id": "1741",
     "name": "Alias-1 of 2714",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1742",
@@ -4572,7 +4572,7 @@
   {
     "id": "1825",
     "name": "A ONE NEWS",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1826",
@@ -4747,12 +4747,12 @@
   {
     "id": "1944",
     "name": "Yug Abhiyan Times",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1945",
     "name": "Growth Now News",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1946",
@@ -4762,17 +4762,17 @@
   {
     "id": "1947",
     "name": "Newz Room Gujarat",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1948",
     "name": "Rashtram",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1949",
     "name": "S Bharat News",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1950",
@@ -5362,7 +5362,7 @@
   {
     "id": "3209",
     "name": "Taajya Baatmya on JioNews",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3210",
