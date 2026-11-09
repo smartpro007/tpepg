@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Starting EPG Generation (TataPlay Preserved & JioTV 3-Day Fetching)...');
+  console.log('Starting EPG Generation (JioTV 3-Day Fetching)...');
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="Combined-EPG-Generator">\n';
@@ -22,7 +22,7 @@ async function generateEPG() {
   let reportDataDict = {};  
 
   // ==========================================
-  // १. JIOTV EPG FETCHING (Past 1, Present, Future 1 - Offset -1, 0, 1)
+  // JIOTV EPG FETCHING (Past 1, Present, Future 1 - Offset -1, 0, 1)
   // ==========================================
   console.log(`\n==================================================`);
   console.log(`>>> Processing JioTV Channels EPG (Past 1, Present, Future 1)`);
@@ -33,7 +33,7 @@ async function generateEPG() {
     const jioParsed = JSON.parse(jioFileContent);
     const jioChannels = jioParsed.channels || [];
 
-    console.log(`Found ${jioChannels.length} JioTV channels to process from jio-tv.json.`);
+    console.log(`Found ${jioChannels.length} JioTV channels to process from jiotv.json.`);
     const jioOffsets = [-1, 0, 1]; // -1: काल, 0: आज, 1: उद्या
 
     for (const jioCh of jioChannels) {
@@ -75,7 +75,7 @@ async function generateEPG() {
   console.log('\nAll JioTV Data Fetched! Assembling XML...');
 
   // ==========================================
-  // २. XML स्ट्रक्चर व टाईम रिटेन्शन (Past 8 Days to Future 1 Day)
+  // XML स्ट्रक्चर व टाईम रिटेन्शन (Past 8 Days to Future 1 Day)
   // ==========================================
   const now = dayjs();
   const maxPastTime = now.subtract(8, 'day'); 
@@ -127,7 +127,7 @@ async function generateEPG() {
   xml += '</tv>';
 
   // ==========================================
-  // ३. फोल्डर आणि फाईल्स सेव्ह करणे
+  // फोल्डर आणि फाईल्स सेव्ह करणे
   // ==========================================
   if (!fs.existsSync('./epg')) {
     fs.mkdirSync('./epg');
