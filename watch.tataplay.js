@@ -32,7 +32,7 @@ async function generateEPG() {
   let reportDataDict = {};  // चॅनेल रिपोर्ट साठवण्यासाठी
 
   // ==========================================
-  // १. TATA PLAY EPG FETCHING
+  // १. TATA PLAY EPG FETCHING (Via PHP Bridge)
   // ==========================================
   for (const dateStr of datesToFetch) {
     console.log(`\n==================================================`);
@@ -53,16 +53,16 @@ async function generateEPG() {
       while (retries > 0) {
         try {
           const resp = await axios.get(
-            `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=${dateStr}&languageFilters=&genreFilters=&limit=${limit}&offset=${offset}`,
-            { headers: setHeaders(), timeout: 15000 }
+            `https://iptvmax.site/api/epg/tata.php?date=${dateStr}&limit=${limit}&offset=${offset}`,
+            { timeout: 15000 }
           );
           responseData = resp.data?.data;
           break;
         } catch (err) {
           retries--;
           console.error(`--> Error at offset ${offset}. Status: ${err.response?.status || err.message}`);
-          console.log(`--> Waiting 60 seconds before retrying... (Retries left: ${retries})`);
-          await sleep(60000);
+          console.log(`--> Waiting 30 seconds before retrying... (Retries left: ${retries})`);
+          await sleep(30000);
         }
       }
 
@@ -101,10 +101,11 @@ async function generateEPG() {
       offset += limit;
       requestCount++;
 
+      // स्पीड फास्ट ठेवण्यासाठी स्लीप वेळ कमी केली आहे
       if (requestCount % 5 === 0) {
-        await sleep(45000);
+        await sleep(10000);
       } else {
-        await sleep(2000);
+        await sleep(1000);
       }
     }
   }
@@ -135,11 +136,9 @@ async function generateEPG() {
       }
 
       try {
-        // तुमच्या सांगितलेल्या जिओटीव्ही एपीआयवरून डेटा फेच करणे
         const jioResp = await axios.get(`https://iptvmax.site/api/epg/epg.php?id=${jioId}`, { timeout: 10000 });
         const jioEpgData = jioResp.data;
 
-        // जिओटीव्हीच्या JSON मध्ये 'epg' नावाच्या ॲरेमध्ये डेटा असतो
         const programs = Array.isArray(jioEpgData) ? jioEpgData : (jioEpgData.epg || []);
 
         if (programs.length > 0) {
@@ -155,7 +154,7 @@ async function generateEPG() {
         console.error(`--> Error fetching JioTV EPG for ID ${jioId}: ${err.message}`);
       }
 
-      await sleep(1000); // सर्व्हरवर लोड येऊ नये म्हणून १ सेकंद थांबणे
+      await sleep(500); // फास्ट प्रोसेसिंगसाठी वेळ अर्धा सेकंद केला आहे
     }
   } else {
     console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
@@ -201,7 +200,6 @@ async function generateEPG() {
       } else if (item.type === 'jiotv') {
         const prog = item.data;
         
-        // तुम्ही पाठवलेल्या JSON नुसार startEpoch आणि endEpoch मिलिसेकंदमध्ये आहेत
         const startTime = dayjs(Number(prog.startEpoch));
         const endTime = dayjs(Number(prog.endEpoch));
         
@@ -259,19 +257,6 @@ function escapeXML(str) {
       case '"': return '&quot;';
     }
   });
-}
-
-function setHeaders() {
-  return {
-    'Accept': '*/*',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Origin': 'https://watch.tataplay.com',
-    'Referer': 'https://watch.tataplay.com/',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-    'content-type': 'application/json',
-    'locale': 'ENG',
-    'me': 'web'
-  };
 }
 
 generateEPG();
