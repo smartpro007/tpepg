@@ -10,18 +10,8 @@
     "epg_generated": true
   },
   {
-    "id": "6",
-    "name": "News18 Gujarati",
-    "epg_generated": true
-  },
-  {
     "id": "7",
     "name": "B4U Movies",
-    "epg_generated": true
-  },
-  {
-    "id": "8",
-    "name": "STAR Plus HD",
     "epg_generated": true
   },
   {
@@ -65,28 +55,18 @@
     "epg_generated": true
   },
   {
-    "id": "23",
-    "name": "News18 Bangla",
-    "epg_generated": true
-  },
-  {
-    "id": "24",
-    "name": "Star Sports 1 Hindi HD",
-    "epg_generated": true
-  },
-  {
     "id": "25",
     "name": "Kairali TV",
     "epg_generated": true
   },
   {
-    "id": "26",
-    "name": "Colors Bangla",
+    "id": "27",
+    "name": "IBC 24",
     "epg_generated": true
   },
   {
-    "id": "27",
-    "name": "IBC 24",
+    "id": "28",
+    "name": "Alankar",
     "epg_generated": true
   },
   {
@@ -145,11 +125,6 @@
     "epg_generated": true
   },
   {
-    "id": "41",
-    "name": "News18 Odia",
-    "epg_generated": true
-  },
-  {
     "id": "43",
     "name": "Sanskar",
     "epg_generated": true
@@ -175,18 +150,13 @@
     "epg_generated": true
   },
   {
+    "id": "50",
+    "name": "Tarang Music",
+    "epg_generated": true
+  },
+  {
     "id": "51",
     "name": "Dangal",
-    "epg_generated": true
-  },
-  {
-    "id": "52",
-    "name": "Colors HD",
-    "epg_generated": true
-  },
-  {
-    "id": "53",
-    "name": "Colors Cineplex",
     "epg_generated": true
   },
   {
@@ -200,18 +170,8 @@
     "epg_generated": true
   },
   {
-    "id": "58",
-    "name": "News18 Tamil Nadu",
-    "epg_generated": true
-  },
-  {
     "id": "60",
     "name": "DW",
-    "epg_generated": true
-  },
-  {
-    "id": "61",
-    "name": "Colors Cineplex HD",
     "epg_generated": true
   },
   {
@@ -227,16 +187,6 @@
   {
     "id": "65",
     "name": "TV5 Monde Asie",
-    "epg_generated": true
-  },
-  {
-    "id": "66",
-    "name": "News18 Kerala",
-    "epg_generated": true
-  },
-  {
-    "id": "68",
-    "name": "News18 Assam North East",
     "epg_generated": true
   },
   {
@@ -265,16 +215,6 @@
     "epg_generated": true
   },
   {
-    "id": "78",
-    "name": "Star Sports 1 HD",
-    "epg_generated": true
-  },
-  {
-    "id": "79",
-    "name": "News18 Uttar Pradesh Uttarakhand",
-    "epg_generated": true
-  },
-  {
     "id": "80",
     "name": "SONY MAX HD",
     "epg_generated": true
@@ -285,13 +225,13 @@
     "epg_generated": true
   },
   {
-    "id": "83",
-    "name": "ETV Telangana",
+    "id": "82",
+    "name": "Kochu TV",
     "epg_generated": true
   },
   {
-    "id": "85",
-    "name": "News18 Kannada",
+    "id": "83",
+    "name": "ETV Telangana",
     "epg_generated": true
   },
   {
@@ -370,28 +310,8 @@
     "epg_generated": true
   },
   {
-    "id": "103",
-    "name": "MTV",
-    "epg_generated": true
-  },
-  {
     "id": "104",
     "name": "India TV",
-    "epg_generated": true
-  },
-  {
-    "id": "106",
-    "name": "News18 India",
-    "epg_generated": true
-  },
-  {
-    "id": "107",
-    "name": "Colors Gujarati",
-    "epg_generated": true
-  },
-  {
-    "id": "108",
-    "name": "Colors Kannada",
     "epg_generated": true
   },
   {
@@ -412,11 +332,6 @@
   {
     "id": "117",
     "name": "Food Food",
-    "epg_generated": true
-  },
-  {
-    "id": "118",
-    "name": "Nick Jr",
     "epg_generated": true
   },
   {
@@ -450,11 +365,6 @@
     "epg_generated": true
   },
   {
-    "id": "127",
-    "name": "Sonic",
-    "epg_generated": true
-  },
-  {
     "id": "128",
     "name": "ETV Cinema",
     "epg_generated": true
@@ -480,11 +390,6 @@
     "epg_generated": true
   },
   {
-    "id": "134",
-    "name": "Colors Marathi",
-    "epg_generated": true
-  },
-  {
     "id": "135",
     "name": "TLC",
     "epg_generated": true
@@ -500,18 +405,8 @@
     "epg_generated": true
   },
   {
-    "id": "138",
-    "name": "Nick",
-    "epg_generated": true
-  },
-  {
     "id": "139",
     "name": "9XM",
-    "epg_generated": true
-  },
-  {
-    "id": "140",
-    "name": "NEWS18 MARATHI",
     "epg_generated": true
   },
   {
@@ -615,18 +510,8 @@
     "epg_generated": true
   },
   {
-    "id": "166",
-    "name": "News18 Bihar Jharkhand",
-    "epg_generated": true
-  },
-  {
     "id": "167",
     "name": "Tata Play Vedic Maths",
-    "epg_generated": true
-  },
-  {
-    "id": "168",
-    "name": "CNBC TV18",
     "epg_generated": true
   },
   {
@@ -690,16 +575,6 @@
     "epg_generated": true
   },
   {
-    "id": "187",
-    "name": "Colors Infinity HD",
-    "epg_generated": true
-  },
-  {
-    "id": "188",
-    "name": "BBC News",
-    "epg_generated": true
-  },
-  {
     "id": "189",
     "name": "NewsX",
     "epg_generated": true
@@ -750,26 +625,6 @@
     "epg_generated": true
   },
   {
-    "id": "203",
-    "name": "News18 Madhya Pradesh Chhattisgarh",
-    "epg_generated": true
-  },
-  {
-    "id": "204",
-    "name": "CNBC Awaaz",
-    "epg_generated": true
-  },
-  {
-    "id": "205",
-    "name": "News18 Rajasthan",
-    "epg_generated": true
-  },
-  {
-    "id": "206",
-    "name": "CNN News18",
-    "epg_generated": true
-  },
-  {
     "id": "208",
     "name": "NDTV",
     "epg_generated": true
@@ -812,6 +667,11 @@
   {
     "id": "217",
     "name": "Sangeet Marathi",
+    "epg_generated": true
+  },
+  {
+    "id": "218",
+    "name": "SVBC",
     "epg_generated": true
   },
   {
@@ -875,11 +735,6 @@
     "epg_generated": true
   },
   {
-    "id": "232",
-    "name": "News18 Punjab Haryana",
-    "epg_generated": true
-  },
-  {
     "id": "233",
     "name": "Jai Maharashtra",
     "epg_generated": true
@@ -890,8 +745,8 @@
     "epg_generated": true
   },
   {
-    "id": "235",
-    "name": "Star Sports 2 HD",
+    "id": "237",
+    "name": "Tarang TV",
     "epg_generated": true
   },
   {
@@ -907,16 +762,6 @@
   {
     "id": "243",
     "name": "CNN International",
-    "epg_generated": true
-  },
-  {
-    "id": "244",
-    "name": "Star Bharat HD",
-    "epg_generated": true
-  },
-  {
-    "id": "246",
-    "name": "Star Sports Select 1 HD",
     "epg_generated": true
   },
   {
@@ -1060,6 +905,11 @@
     "epg_generated": true
   },
   {
+    "id": "284",
+    "name": "Adithya TV",
+    "epg_generated": true
+  },
+  {
     "id": "285",
     "name": "Aradana TV",
     "epg_generated": true
@@ -1095,8 +945,8 @@
     "epg_generated": true
   },
   {
-    "id": "292",
-    "name": "Asianet HD",
+    "id": "294",
+    "name": "Asianet Plus",
     "epg_generated": true
   },
   {
@@ -1105,23 +955,13 @@
     "epg_generated": true
   },
   {
-    "id": "303",
-    "name": "CNBC Bajaar",
+    "id": "302",
+    "name": "Chutti TV",
     "epg_generated": true
   },
   {
     "id": "304",
     "name": "CNBC TV18 Prime HD",
-    "epg_generated": true
-  },
-  {
-    "id": "305",
-    "name": "Colors Bangla HD",
-    "epg_generated": true
-  },
-  {
-    "id": "308",
-    "name": "Colors Marathi HD",
     "epg_generated": true
   },
   {
@@ -1290,11 +1130,6 @@
     "epg_generated": true
   },
   {
-    "id": "354",
-    "name": "News18 Delhi NCR Jammu Kashmir",
-    "epg_generated": true
-  },
-  {
     "id": "355",
     "name": "Sun Gemini HD",
     "epg_generated": true
@@ -1312,6 +1147,11 @@
   {
     "id": "359",
     "name": "ETV HD",
+    "epg_generated": true
+  },
+  {
+    "id": "360",
+    "name": "Sun Gemini Comedy",
     "epg_generated": true
   },
   {
@@ -1397,6 +1237,11 @@
   {
     "id": "382",
     "name": "Zee Zest HD",
+    "epg_generated": true
+  },
+  {
+    "id": "383",
+    "name": "Kushi TV",
     "epg_generated": true
   },
   {
@@ -1486,7 +1331,7 @@
   },
   {
     "id": "406",
-    "name": "MTV HD",
+    "name": "PM e Vidya 04",
     "epg_generated": true
   },
   {
@@ -1527,11 +1372,6 @@
   {
     "id": "417",
     "name": "North East Live",
-    "epg_generated": true
-  },
-  {
-    "id": "418",
-    "name": "Colors Tamil",
     "epg_generated": true
   },
   {
@@ -1590,11 +1430,6 @@
     "epg_generated": true
   },
   {
-    "id": "433",
-    "name": "Nick HD+",
-    "epg_generated": true
-  },
-  {
     "id": "434",
     "name": "Jothi TV",
     "epg_generated": true
@@ -1607,11 +1442,6 @@
   {
     "id": "436",
     "name": "Safari TV",
-    "epg_generated": true
-  },
-  {
-    "id": "438",
-    "name": "Colors Rishtey",
     "epg_generated": true
   },
   {
@@ -1630,8 +1460,8 @@
     "epg_generated": true
   },
   {
-    "id": "443",
-    "name": "Sun News",
+    "id": "442",
+    "name": "Sun Udaya Music",
     "epg_generated": true
   },
   {
@@ -1720,21 +1550,6 @@
     "epg_generated": true
   },
   {
-    "id": "467",
-    "name": "Star Suvarna HD",
-    "epg_generated": true
-  },
-  {
-    "id": "468",
-    "name": "Star Jalsha HD",
-    "epg_generated": true
-  },
-  {
-    "id": "469",
-    "name": "Star Pravah HD",
-    "epg_generated": true
-  },
-  {
     "id": "470",
     "name": "STAR Utsav Movies",
     "epg_generated": true
@@ -1760,8 +1575,23 @@
     "epg_generated": true
   },
   {
+    "id": "479",
+    "name": "Sun Surya HD",
+    "epg_generated": true
+  },
+  {
     "id": "480",
     "name": "TLC HD",
+    "epg_generated": true
+  },
+  {
+    "id": "481",
+    "name": "Sun Surya Comedy",
+    "epg_generated": true
+  },
+  {
+    "id": "483",
+    "name": "Sun Surya Music",
     "epg_generated": true
   },
   {
@@ -1795,6 +1625,11 @@
     "epg_generated": true
   },
   {
+    "id": "491",
+    "name": "Sun Udaya Comedy",
+    "epg_generated": true
+  },
+  {
     "id": "492",
     "name": "Sun Udaya HD",
     "epg_generated": true
@@ -1807,11 +1642,6 @@
   {
     "id": "494",
     "name": "Star Gold Thrills",
-    "epg_generated": true
-  },
-  {
-    "id": "496",
-    "name": "Star Vijay HD",
     "epg_generated": true
   },
   {
@@ -1837,6 +1667,11 @@
   {
     "id": "503",
     "name": "Zee Cinema HD",
+    "epg_generated": true
+  },
+  {
+    "id": "504",
+    "name": "Zee Zest",
     "epg_generated": true
   },
   {
@@ -1875,11 +1710,6 @@
     "epg_generated": true
   },
   {
-    "id": "516",
-    "name": "STAR Maa HD",
-    "epg_generated": true
-  },
-  {
     "id": "517",
     "name": "Zing",
     "epg_generated": true
@@ -1887,6 +1717,11 @@
   {
     "id": "518",
     "name": "Salaam TV",
+    "epg_generated": true
+  },
+  {
+    "id": "520",
+    "name": "Sun Music HD",
     "epg_generated": true
   },
   {
@@ -1925,38 +1760,13 @@
     "epg_generated": true
   },
   {
-    "id": "533",
-    "name": "Colors SUPER",
-    "epg_generated": true
-  },
-  {
-    "id": "537",
-    "name": "Jalsha Movies HD",
-    "epg_generated": true
-  },
-  {
     "id": "538",
     "name": "STAR Maa",
     "epg_generated": true
   },
   {
-    "id": "540",
-    "name": "Star Suvarna Plus",
-    "epg_generated": true
-  },
-  {
     "id": "541",
     "name": "Raj Musix Malayalam",
-    "epg_generated": true
-  },
-  {
-    "id": "543",
-    "name": "Colors",
-    "epg_generated": true
-  },
-  {
-    "id": "544",
-    "name": "Colors Infinity",
     "epg_generated": true
   },
   {
@@ -1981,7 +1791,7 @@
   },
   {
     "id": "551",
-    "name": "STAR Utsav",
+    "name": "TEST14 HD",
     "epg_generated": true
   },
   {
@@ -2030,6 +1840,11 @@
     "epg_generated": true
   },
   {
+    "id": "561",
+    "name": "Chintu TV",
+    "epg_generated": true
+  },
+  {
     "id": "562",
     "name": "Movies Now HD",
     "epg_generated": true
@@ -2037,6 +1852,11 @@
   {
     "id": "567",
     "name": "Nepal 1",
+    "epg_generated": true
+  },
+  {
+    "id": "568",
+    "name": "Prarthana Life",
     "epg_generated": true
   },
   {
@@ -2165,6 +1985,11 @@
     "epg_generated": true
   },
   {
+    "id": "605",
+    "name": "National Geographic HD",
+    "epg_generated": true
+  },
+  {
     "id": "608",
     "name": "Zee Tamil HD",
     "epg_generated": true
@@ -2182,11 +2007,6 @@
   {
     "id": "611",
     "name": "Sirippoli",
-    "epg_generated": true
-  },
-  {
-    "id": "612",
-    "name": "Colors Kannada HD",
     "epg_generated": true
   },
   {
@@ -2237,11 +2057,6 @@
   {
     "id": "631",
     "name": "MBC",
-    "epg_generated": true
-  },
-  {
-    "id": "632",
-    "name": "Star GOLD HD",
     "epg_generated": true
   },
   {
@@ -2345,28 +2160,13 @@
     "epg_generated": true
   },
   {
-    "id": "664",
-    "name": "Star Sports 3",
-    "epg_generated": true
-  },
-  {
     "id": "666",
     "name": "Tata Play Theatre HD",
     "epg_generated": true
   },
   {
-    "id": "667",
-    "name": "Colors Kannada Cinema",
-    "epg_generated": true
-  },
-  {
     "id": "670",
     "name": "6 TV",
-    "epg_generated": true
-  },
-  {
-    "id": "674",
-    "name": "Colors Tamil HD",
     "epg_generated": true
   },
   {
@@ -2417,11 +2217,6 @@
   {
     "id": "691",
     "name": "DD News HD",
-    "epg_generated": true
-  },
-  {
-    "id": "692",
-    "name": "Colors Gujarati Cinema",
     "epg_generated": true
   },
   {
@@ -2756,7 +2551,7 @@
   },
   {
     "id": "837",
-    "name": "Hare Krsna",
+    "name": "Euro News",
     "epg_generated": true
   },
   {
@@ -2875,11 +2670,6 @@
     "epg_generated": true
   },
   {
-    "id": "896",
-    "name": "Colors Bangla Cinema",
-    "epg_generated": true
-  },
-  {
     "id": "898",
     "name": "Hornbill TV",
     "epg_generated": true
@@ -2976,7 +2766,7 @@
   },
   {
     "id": "933",
-    "name": "Asianet Movies",
+    "name": "4 TV",
     "epg_generated": true
   },
   {
@@ -3026,12 +2816,7 @@
   },
   {
     "id": "953",
-    "name": "Asianet Plus",
-    "epg_generated": true
-  },
-  {
-    "id": "954",
-    "name": "Star Maa Gold",
+    "name": "Propex TV",
     "epg_generated": true
   },
   {
@@ -3041,12 +2826,7 @@
   },
   {
     "id": "956",
-    "name": "STAR Maa HD",
-    "epg_generated": true
-  },
-  {
-    "id": "957",
-    "name": "Star Maa Movies HD",
+    "name": "TV 5 Kannada",
     "epg_generated": true
   },
   {
@@ -3126,7 +2906,7 @@
   },
   {
     "id": "980",
-    "name": "Star Sports 2 Hindi",
+    "name": "Swayam Prabha 01",
     "epg_generated": true
   },
   {
@@ -3225,11 +3005,6 @@
     "epg_generated": true
   },
   {
-    "id": "1000",
-    "name": "Colors Cineplex Bollywood",
-    "epg_generated": true
-  },
-  {
     "id": "1002",
     "name": "Saileela TV",
     "epg_generated": true
@@ -3265,11 +3040,6 @@
     "epg_generated": true
   },
   {
-    "id": "1019",
-    "name": "7x Music",
-    "epg_generated": true
-  },
-  {
     "id": "1025",
     "name": "Colors Cineplex Superhits",
     "epg_generated": true
@@ -3290,18 +3060,8 @@
     "epg_generated": true
   },
   {
-    "id": "1033",
-    "name": "Star Sports 2 Hindi HD",
-    "epg_generated": true
-  },
-  {
     "id": "1035",
     "name": "Khandoba Temple, Jejuri",
-    "epg_generated": true
-  },
-  {
-    "id": "1044",
-    "name": "Global India",
     "epg_generated": true
   },
   {
@@ -3372,11 +3132,6 @@
   {
     "id": "1073",
     "name": "Tata Play Telugu Classics",
-    "epg_generated": true
-  },
-  {
-    "id": "1075",
-    "name": "Sach Bedhadak",
     "epg_generated": true
   },
   {
@@ -3535,16 +3290,6 @@
     "epg_generated": true
   },
   {
-    "id": "1167",
-    "name": "Tata Play Hollywood Local Tamil",
-    "epg_generated": true
-  },
-  {
-    "id": "1168",
-    "name": "Tata Play Hollywood Local Telugu",
-    "epg_generated": true
-  },
-  {
     "id": "1169",
     "name": "Jay Jagannath.",
     "epg_generated": true
@@ -3575,18 +3320,33 @@
     "epg_generated": true
   },
   {
+    "id": "1181",
+    "name": "Zee Power HD",
+    "epg_generated": true
+  },
+  {
+    "id": "1182",
+    "name": "Zee Thirai HD",
+    "epg_generated": true
+  },
+  {
+    "id": "1183",
+    "name": "&Xplor HD",
+    "epg_generated": true
+  },
+  {
     "id": "1184",
     "name": "EPIC Bharat",
     "epg_generated": true
   },
   {
     "id": "1186",
-    "name": "Star Sports 2 Telugu",
+    "name": "Kartavya TV",
     "epg_generated": true
   },
   {
     "id": "1187",
-    "name": "Star Sports 2 Tamil",
+    "name": "Valam TV",
     "epg_generated": true
   },
   {
@@ -3726,7 +3486,12 @@
   },
   {
     "id": "1221",
-    "name": "Rajyoga TV Kannada",
+    "name": "Sun Marathi HD",
+    "epg_generated": true
+  },
+  {
+    "id": "1222",
+    "name": "Sun Bangla HD",
     "epg_generated": true
   },
   {
@@ -3815,6 +3580,11 @@
     "epg_generated": true
   },
   {
+    "id": "1266",
+    "name": "Sun Gemini Music HD",
+    "epg_generated": true
+  },
+  {
     "id": "1267",
     "name": "HNN News",
     "epg_generated": true
@@ -3885,6 +3655,11 @@
     "epg_generated": true
   },
   {
+    "id": "1302",
+    "name": "Decode - Data",
+    "epg_generated": false
+  },
+  {
     "id": "1309",
     "name": "SS1 HD Hindi Geo",
     "epg_generated": false
@@ -3935,6 +3710,11 @@
     "epg_generated": true
   },
   {
+    "id": "1324",
+    "name": "Raj Nagaichuvai",
+    "epg_generated": true
+  },
+  {
     "id": "1330",
     "name": "Raj Pariwar",
     "epg_generated": true
@@ -3975,8 +3755,18 @@
     "epg_generated": true
   },
   {
+    "id": "1340",
+    "name": "ETV Bal Bharat HD",
+    "epg_generated": true
+  },
+  {
     "id": "1341",
-    "name": "Nick Bangla",
+    "name": "ETV Cinema HD",
+    "epg_generated": true
+  },
+  {
+    "id": "1342",
+    "name": "ETV Plus HD",
     "epg_generated": true
   },
   {
@@ -3987,11 +3777,6 @@
   {
     "id": "1355",
     "name": "ALI TV",
-    "epg_generated": true
-  },
-  {
-    "id": "1363",
-    "name": "Tata Play Anime Local",
     "epg_generated": true
   },
   {
@@ -4012,6 +3797,11 @@
   {
     "id": "1369",
     "name": "Sun Neo",
+    "epg_generated": true
+  },
+  {
+    "id": "1370",
+    "name": "Sun Neo HD",
     "epg_generated": true
   },
   {
@@ -4235,11 +4025,6 @@
     "epg_generated": true
   },
   {
-    "id": "1489",
-    "name": "Tata Play Fancode Sports",
-    "epg_generated": true
-  },
-  {
     "id": "1494",
     "name": "Star Sports Khel",
     "epg_generated": true
@@ -4372,11 +4157,6 @@
   {
     "id": "1717",
     "name": "SONY MAX 1",
-    "epg_generated": true
-  },
-  {
-    "id": "1731",
-    "name": "Alias-3 of 2725",
     "epg_generated": true
   },
   {
@@ -4685,18 +4465,8 @@
     "epg_generated": true
   },
   {
-    "id": "1880",
-    "name": "Rozana Spokesman",
-    "epg_generated": true
-  },
-  {
     "id": "1881",
     "name": "Sampoorna News",
-    "epg_generated": true
-  },
-  {
-    "id": "1882",
-    "name": "Sri Jagannath Dham",
     "epg_generated": true
   },
   {
@@ -4715,11 +4485,6 @@
     "epg_generated": true
   },
   {
-    "id": "1887",
-    "name": "News Leader",
-    "epg_generated": true
-  },
-  {
     "id": "1901",
     "name": "Adhyatma TV",
     "epg_generated": true
@@ -4727,21 +4492,6 @@
   {
     "id": "1925",
     "name": "MH1 Dil Se",
-    "epg_generated": true
-  },
-  {
-    "id": "1936",
-    "name": "Tata Crucible",
-    "epg_generated": true
-  },
-  {
-    "id": "1941",
-    "name": "Rashtra TV",
-    "epg_generated": true
-  },
-  {
-    "id": "1942",
-    "name": "Tata Play Reality TV",
     "epg_generated": true
   },
   {
@@ -4770,11 +4520,6 @@
     "epg_generated": true
   },
   {
-    "id": "1949",
-    "name": "S Bharat News",
-    "epg_generated": true
-  },
-  {
     "id": "1950",
     "name": "SONY VIZHA HD",
     "epg_generated": true
@@ -4787,11 +4532,6 @@
   {
     "id": "1952",
     "name": "TV7 Bharat",
-    "epg_generated": true
-  },
-  {
-    "id": "1953",
-    "name": "R Business",
     "epg_generated": true
   },
   {
@@ -5792,7 +5532,7 @@
   {
     "id": "3538",
     "name": "R Plus Gold",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3540",
