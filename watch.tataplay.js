@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Starting Combined TataPlay & JioTV EPG Generation (Advanced Multi-Day & Retention)...');
+  console.log('Starting Combined TataPlay & JioTV EPG Generation...');
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="Combined-EPG-Generator">\n';
@@ -32,128 +32,143 @@ async function generateEPG() {
   let reportDataDict = {};  // चॅनेल रिपोर्ट साठवण्यासाठी
 
   // ==========================================
-  // १. TATA PLAY EPG FETCHING (With Future check)
+  // १. TATA PLAY EPG FETCHING (With Clear Logs)
   // ==========================================
-  const fetchTataPlay = async () => {
-    console.log(`\n>>> Starting TataPlay EPG Fetching...`);
-    for (const dateStr of datesToFetch) {
-      let offset = 0;
-      let limit = 20;
-      let total = 836;
+  for (const dateStr of datesToFetch) {
+    console.log(`\n==================================================`);
+    console.log(`>>> Processing TataPlay Date: ${dateStr}`);
+    console.log(`==================================================`);
 
-      while (offset < total) {
-        let responseData = null;
-        let retries = 3;
+    let offset = 0;
+    let limit = 20;
+    let total = 836;
+    let requestCount = 0;
 
-        while (retries > 0) {
-          try {
-            const resp = await axios.get(
-              `https://iptvmax.site/api/epg/tata.php?date=${dateStr}&limit=${limit}&offset=${offset}`,
-              { timeout: 15000 }
-            );
-            responseData = resp.data?.data;
-            break;
-          } catch (err) {
-            retries--;
-            await sleep(15000);
-          }
+    while (offset < total) {
+      console.log(`[TataPlay - ${dateStr}] Fetching channels offset ${offset} of ${total}...`);
+      
+      let responseData = null;
+      let retries = 3;
+
+      while (retries > 0) {
+        try {
+          const resp = await axios.get(
+            `https://iptvmax.site/api/epg/tata.php?date=${dateStr}&limit=${limit}&offset=${offset}`,
+            { timeout: 15000 }
+          );
+          responseData = resp.data?.data;
+          break;
+        } catch (err) {
+          retries--;
+          console.error(`--> TataPlay Error at offset ${offset}. Status: ${err.response?.status || err.message}`);
+          console.log(`--> Waiting 15 seconds before retrying... (Retries left: ${retries})`);
+          await sleep(15000);
         }
+      }
 
-        if (responseData && responseData.channelList) {
-          total = responseData.total || total;
-          responseData.channelList.forEach(channel => {
-            if (channel.title && channel.title !== '.') {
-              const site_id = String(channel.id);
-              const name = channel.title;
-              const logo = channel.transparentImageUrl || channel.thumbnailImage || '';
-              const items = channel.epg || [];
-
-              if (!allChannelsDict[site_id]) {
-                allChannelsDict[site_id] = { id: site_id, name: name, logo: logo, epgItems: [] };
-                reportDataDict[site_id] = { id: site_id, name: name, epg_generated: false };
-              }
-
-              if (items.length > 0) {
-                reportDataDict[site_id].epg_generated = true;
-                items.forEach(item => {
-                  // फ्युचर डेटा असल्यास किंवा नॉर्मल डेटा असल्यास तपासणी करून समाविष्ट करणे
-                  if (item.startTime) {
-                    allChannelsDict[site_id].epgItems.push({ type: 'tataplay', data: item });
-                  }
-                });
-              }
-            }
-          });
-        }
+      if (!responseData || !responseData.channelList || responseData.channelList.length === 0) {
         offset += limit;
-        await sleep(500);
+        continue;
       }
-    }
-    console.log(`>>> TataPlay EPG Fetching Completed.`);
-  };
 
-  // ==========================================
-  // २. JIOTV EPG FETCHING (Past 1, Present, Future 1 Days)
-  // ==========================================
-  const fetchJioTV = async () => {
-    console.log(`\n>>> Starting JioTV EPG Fetching (Past, Present, Future)...`);
-    if (fs.existsSync('./jiotv.json')) {
-      const jioFileContent = fs.readFileSync('./jiotv.json', 'utf-8');
-      const jioParsed = JSON.parse(jioFileContent);
-      const jioChannels = jioParsed.channels || [];
+      total = responseData.total || total;
+      const channelList = responseData.channelList;
 
-      // जिओटीव्हीसाठी ३ दिवसांचे ऑफसेट्स: -1 (काल), 0 (आज), 1 (उद्या)
-      const jioOffsets = [-1, 0, 1];
-      const batchSize = 10; 
+      channelList.forEach(channel => {
+        if (channel.title && channel.title !== '.') {
+          const site_id = String(channel.id);
+          const name = channel.title;
+          const logo = channel.transparentImageUrl || channel.thumbnailImage || '';
+          const items = channel.epg || [];
 
-      for (let i = 0; i < jioChannels.length; i += batchSize) {
-        const batch = jioChannels.slice(i, i + batchSize);
-
-        await Promise.all(batch.map(async (jioCh) => {
-          const jioId = String(jioCh.channel_id);
-          const jioName = jioCh.channel_name;
-
-          if (!allChannelsDict[jioId]) {
-            allChannelsDict[jioId] = { id: jioId, name: jioName, logo: '', epgItems: [] };
-            reportDataDict[jioId] = { id: jioId, name: jioName, epg_generated: false };
+          if (!allChannelsDict[site_id]) {
+            allChannelsDict[site_id] = { id: site_id, name: name, logo: logo, epgItems: [] };
+            reportDataDict[site_id] = { id: site_id, name: name, epg_generated: false };
           }
 
-          // तिन्ही दिवसांसाठी लूप करून डेटा फेच करणे
-          for (const off of jioOffsets) {
-            try {
-              const jioResp = await axios.get(`https://iptvmax.site/api/epg/epg.php?id=${jioId}&offset=${off}`, { timeout: 10000 });
-              const jioEpgData = jioResp.data;
-              const programs = Array.isArray(jioEpgData) ? jioEpgData : (jioEpgData.epg || []);
-
-              if (programs.length > 0) {
-                reportDataDict[jioId].epg_generated = true;
-                programs.forEach(prog => {
-                  allChannelsDict[jioId].epgItems.push({ type: 'jiotv', data: prog });
-                });
-              }
-            } catch (err) {
-              // एरर आल्यास इग्नोर करून पुढे जाणे
-            }
+          if (items.length > 0) {
+            reportDataDict[site_id].epg_generated = true;
+            items.forEach(item => {
+              allChannelsDict[site_id].epgItems.push({
+                type: 'tataplay',
+                data: item
+              });
+            });
           }
-        }));
+        }
+      });
 
-        await sleep(500);
+      offset += limit;
+      requestCount++;
+
+      if (requestCount % 5 === 0) {
+        await sleep(5000);
+      } else {
+        await sleep(1000);
       }
     }
-    console.log(`>>> JioTV EPG Fetching Completed.`);
-  };
+  }
 
-  // दोन्ही प्रोव्हायडर्स एकत्र समांतर रन करणे
-  await Promise.all([fetchTataPlay(), fetchJioTV()]);
+  // ==========================================
+  // २. JIOTV EPG FETCHING (Past, Present, Future with Clear Logs)
+  // ==========================================
+  console.log(`\n==================================================`);
+  console.log(`>>> Processing JioTV Channels EPG (Past, Present, Future)`);
+  console.log(`==================================================`);
 
-  console.log('\nAll Data Fetched! Filtering Retention (Past 8 Days & Future 1 Day) & Assembling XML...');
+  if (fs.existsSync('./jiotv.json')) {
+    const jioFileContent = fs.readFileSync('./jiotv.json', 'utf-8');
+    const jioParsed = JSON.parse(jioFileContent);
+    const jioChannels = jioParsed.channels || [];
+
+    console.log(`Found ${jioChannels.length} JioTV channels to process.`);
+    const jioOffsets = [-1, 0, 1]; // -1: काल, 0: आज, 1: उद्या
+
+    for (const jioCh of jioChannels) {
+      const jioId = String(jioCh.channel_id);
+      const jioName = jioCh.channel_name;
+
+      if (!allChannelsDict[jioId]) {
+        allChannelsDict[jioId] = { id: jioId, name: jioName, logo: '', epgItems: [] };
+        reportDataDict[jioId] = { id: jioId, name: jioName, epg_generated: false };
+      }
+
+      // तिन्ही दिवसांसाठी (काल, आज, उद्या) डेटा फेच करणे
+      for (const off of jioOffsets) {
+        try {
+          console.log(`Fetching JioTV EPG for: ${jioName} (ID: ${jioId}) [Offset: ${off}]`);
+          const jioResp = await axios.get(`https://iptvmax.site/api/epg/epg.php?id=${jioId}&offset=${off}`, { timeout: 10000 });
+          const jioEpgData = jioResp.data;
+          const programs = Array.isArray(jioEpgData) ? jioEpgData : (jioEpgData.epg || []);
+
+          if (programs.length > 0) {
+            reportDataDict[jioId].epg_generated = true;
+            programs.forEach(prog => {
+              allChannelsDict[jioId].epgItems.push({
+                type: 'jiotv',
+                data: prog
+              });
+            });
+          }
+        } catch (err) {
+          console.error(`--> Error fetching JioTV EPG for ID ${jioId} at offset ${off}: ${err.message}`);
+        }
+      }
+
+      await sleep(300); // सर्व्हरवर लोड येऊ नये म्हणून छोटा पॉझ
+    }
+  } else {
+    console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
+  }
+
+  console.log('\nAll Data Fetched! Filtering Retention & Assembling XML...');
 
   // ==========================================
   // ३. XML स्ट्रक्चर व टाईम रिटेन्शन फिल्टरिंग (Past 8 Days to Future 1 Day)
   // ==========================================
   const now = dayjs();
-  const maxPastTime = now.subtract(8, 'day'); // मागील ८ दिवसांपेक्षा जुना डेटा नको
-  const maxFutureTime = now.add(2, 'day');    // पुढील १-२ दिवसांपेक्षा जास्त पुढचा नको
+  const maxPastTime = now.subtract(8, 'day');
+  const maxFutureTime = now.add(2, 'day');
 
   // A) चॅनेल्स टॅग
   Object.values(allChannelsDict).forEach(ch => {
@@ -165,11 +180,10 @@ async function generateEPG() {
     xml += `  </channel>\n`;
   });
 
-  // B) प्रोग्राम्स टॅग (रिटेन्शन नियम लागू करून)
+  // B) प्रोग्राम्स टॅग
   Object.values(allChannelsDict).forEach(ch => {
     ch.epgItems.forEach(item => {
       let startTime, endTime, title, desc, icon;
-      let isValidTime = false;
 
       if (item.type === 'tataplay') {
         const epgItem = item.data;
@@ -188,7 +202,6 @@ async function generateEPG() {
       }
 
       if (startTime && startTime.isValid() && endTime && endTime.isValid()) {
-        // रिटेन्शन नियम: प्रोग्राम थांबण्याची वेळ मागील ८ दिवसांपेक्षा जास्त असावी आणि भविष्यातील मर्यादेत असावी
         if (endTime.isAfter(maxPastTime) && startTime.isBefore(maxFutureTime)) {
           const start = startTime.format('YYYYMMDDHHmmss ZZ');
           const stop = endTime.format('YYYYMMDDHHmmss ZZ');
@@ -224,7 +237,7 @@ async function generateEPG() {
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportList, null, 2), 'utf-8');
 
   console.log(`\n==================================================`);
-  console.log(`SUCCESS! Combined EPG generated with Retention Rules.`);
+  console.log(`SUCCESS! Combined EPG generated for ${reportList.length} total channels.`);
   console.log(`Files saved: ./epg/tataplay.xml, ./epg/tataplay.xml.gz, ./epg/channels_report.json`);
   console.log(`==================================================`);
 }
