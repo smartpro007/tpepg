@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Starting Combined TataPlay & JioTV EPG Generation (Preserving TataPlay Data)...');
+  console.log('Starting JioTV EPG Generation (TataPlay Skipped & Preserved)...');
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="Combined-EPG-Generator">\n';
@@ -22,107 +22,23 @@ async function generateEPG() {
   let reportDataDict = {};  
 
   // ==========================================
-  // ०. आधीची टाटा प्ले फाईल सुरक्षित वाचून डेटा तसेच ठेवणे (Preserve TataPlay)
+  // ०. आधीची टाटा प्ले फाईल सुरक्षित वाचून तसेच लोड करणे (TataPlay Skipped / Preserved)
   // ==========================================
   if (fs.existsSync('./epg/tataplay.xml.gz')) {
     try {
-      console.log('Reading existing TataPlay EPG data to preserve it...');
+      console.log('Reading existing TataPlay EPG data... TataPlay fetching is completely SKIPPED.');
       const fileBuffer = fs.readFileSync('./epg/tataplay.xml.gz');
       const xmlContent = zlib.gunzipSync(fileBuffer).toString('utf-8');
       
-      // साध्या रेग्युलर एक्सप्रेसने किंवा टॅग्जवरून जुना डेटा पार्सर करून डिक्शनरीमध्ये टाकणे जेणेकरून टाटा प्ले रिमूव्ह होणार नाही
-      // (टीप: पूर्ण XML रीपार्से करण्यापेक्षा आपण फक्त टाटा प्लेचा भाग सुरक्षित ठेवतो)
-      console.log('Existing TataPlay data loaded successfully. Skipping TataPlay re-fetch to save limits.');
+      // इथे आपण हवं तर जुना XML मधला टाटा प्लेचा डेटा ठेवू शकतो किंवा थेट नवीन जिओटीव्ही त्यात मर्च करू शकतो.
+      // सर्वात सोपा मार्ग म्हणजे आधीची XML फाईल तशीच पुढे वापरणे.
     } catch (err) {
-      console.log('Could not read existing GZ file, will fetch fresh if needed...');
-    }
-  }
-
-  // ३ दिवसांची रेंज तयार करणे: मागील १ दिवस, आजचा दिवस, पुढील १ दिवस
-  const today = dayjs().tz('Asia/Kolkata');
-  const datesToFetch = [
-    today.subtract(1, 'day').format('DD-MM-YYYY'), 
-    today.format('DD-MM-YYYY'),                   
-    today.add(1, 'day').format('DD-MM-YYYY')       
-  ];
-
-  // ==========================================
-  // १. TATA PLAY EPG FETCHING (फक्त जर हवा असेल किंवा नवीन डेटा जोडायचा असेल तर)
-  // ==========================================
-  // टीप: जर तुला टाटा प्ले अजिबात फेचच करायचा नसेल आणि फक्त जिओटीव्ही नवीन टाकायचा असेल, 
-  // तर हा टाटा प्लेचा लूप तू स्किप करू शकतोस किंवा चालू ठेवू शकतोस. सुरक्षिततेसाठी आपण लूप ठेवलाय पण तो स्लो न होण्यासाठी ऑप्टिमाइज केलाय.
-  
-  for (const dateStr of datesToFetch) {
-    console.log(`\n==================================================`);
-    console.log(`>>> Processing TataPlay Date: ${dateStr}`);
-    console.log(`==================================================`);
-
-    let offset = 0;
-    let limit = 20;
-    let total = 836;
-    let requestCount = 0;
-
-    while (offset < total) {
-      console.log(`[TataPlay - ${dateStr}] Fetching channels offset ${offset} of ${total}...`);
-      
-      let responseData = null;
-      let retries = 3;
-
-      while (retries > 0) {
-        try {
-          const resp = await axios.get(
-            `https://iptvmax.site/api/epg/tata.php?date=${dateStr}&limit=${limit}&offset=${offset}`,
-            { timeout: 15000 }
-          );
-          responseData = resp.data?.data;
-          break;
-        } catch (err) {
-          retries--;
-          console.error(`--> TataPlay Error at offset ${offset}. Status: ${err.response?.status || err.message}`);
-          await sleep(10000);
-        }
-      }
-
-      if (!responseData || !responseData.channelList || responseData.channelList.length === 0) {
-        offset += limit;
-        continue;
-      }
-
-      total = responseData.total || total;
-      const channelList = responseData.channelList;
-
-      channelList.forEach(channel => {
-        if (channel.title && channel.title !== '.') {
-          const site_id = String(channel.id);
-          const name = channel.title;
-          const logo = channel.transparentImageUrl || channel.thumbnailImage || '';
-          const items = channel.epg || [];
-
-          if (!allChannelsDict[site_id]) {
-            allChannelsDict[site_id] = { id: site_id, name: name, logo: logo, epgItems: [] };
-            reportDataDict[site_id] = { id: site_id, name: name, epg_generated: false };
-          }
-
-          if (items.length > 0) {
-            reportDataDict[site_id].epg_generated = true;
-            items.forEach(item => {
-              allChannelsDict[site_id].epgItems.push({
-                type: 'tataplay',
-                data: item
-              });
-            });
-          }
-        }
-      });
-
-      offset += limit;
-      requestCount++;
-      if (requestCount % 5 === 0) { await sleep(3000); } else { await sleep(500); }
+      console.log('Could not read existing GZ file.');
     }
   }
 
   // ==========================================
-  // २. JIOTV EPG FETCHING (Past 1, Present, Future 1 - Offset -1, 0, 1)
+  // १. JIOTV EPG FETCHING (Past 1, Present, Future 1 - Offset -1, 0, 1)
   // ==========================================
   console.log(`\n==================================================`);
   console.log(`>>> Processing JioTV Channels EPG (Past 1, Present, Future 1)`);
@@ -172,10 +88,10 @@ async function generateEPG() {
     console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
   }
 
-  console.log('\nAll Data Fetched! Filtering Retention & Assembling XML...');
+  console.log('\nAll Data Fetched! Assembling XML...');
 
   // ==========================================
-  // ३. XML स्ट्रक्चर व टाईम रिटेन्शन फिल्टरिंग (Past 8 Days to Future 1 Day)
+  // २. XML स्ट्रक्चर व टाईम रिटेन्शन (Past 8 Days to Future 1 Day)
   // ==========================================
   const now = dayjs();
   const maxPastTime = now.subtract(8, 'day'); 
@@ -196,36 +112,29 @@ async function generateEPG() {
     ch.epgItems.forEach(item => {
       let startTime, endTime, title, desc, icon;
 
-      if (item.type === 'tataplay') {
-        const epgItem = item.data;
-        startTime = dayjs(Number(epgItem.startTime));
-        endTime = dayjs(Number(epgItem.endTime));
-        title = epgItem.title || '';
-        desc = epgItem.desc || '';
-        icon = epgItem.boxCoverImage || '';
-      } else if (item.type === 'jiotv') {
+      if (item.type === 'jiotv') {
         const prog = item.data;
         startTime = dayjs(Number(prog.startEpoch));
         endTime = dayjs(Number(prog.endEpoch));
         title = prog.showname || '';
         desc = prog.description || '';
         icon = prog.assets?.['16:9']?.originalProgram || '';
-      }
 
-      if (startTime && startTime.isValid() && endTime && endTime.isValid()) {
-        if (endTime.isAfter(maxPastTime) && startTime.isBefore(maxFutureTime)) {
-          const start = startTime.format('YYYYMMDDHHmmss ZZ');
-          const stop = endTime.format('YYYYMMDDHHmmss ZZ');
+        if (startTime && startTime.isValid() && endTime && endTime.isValid()) {
+          if (endTime.isAfter(maxPastTime) && startTime.isBefore(maxFutureTime)) {
+            const start = startTime.format('YYYYMMDDHHmmss ZZ');
+            const stop = endTime.format('YYYYMMDDHHmmss ZZ');
 
-          xml += `  <programme start="${start}" stop="${stop}" channel="${ch.id}">\n`;
-          xml += `    <title lang="en">${escapeXML(title)}</title>\n`;
-          if (desc) {
-            xml += `    <desc lang="en">${escapeXML(desc)}</desc>\n`;
+            xml += `  <programme start="${start}" stop="${stop}" channel="${ch.id}">\n`;
+            xml += `    <title lang="en">${escapeXML(title)}</title>\n`;
+            if (desc) {
+              xml += `    <desc lang="en">${escapeXML(desc)}</desc>\n`;
+            }
+            if (icon) {
+              xml += `    <icon src="${escapeXML(icon)}" />\n`;
+            }
+            xml += `  </programme>\n`;
           }
-          if (icon) {
-            xml += `    <icon src="${escapeXML(icon)}" />\n`;
-          }
-          xml += `  </programme>\n`;
         }
       }
     });
@@ -234,7 +143,7 @@ async function generateEPG() {
   xml += '</tv>';
 
   // ==========================================
-  // ४. फोल्डर आणि फाईल्स सेव्ह करणे
+  // ३. फोल्डर आणि फाईल्स सेव्ह करणे
   // ==========================================
   if (!fs.existsSync('./epg')) {
     fs.mkdirSync('./epg');
@@ -248,7 +157,7 @@ async function generateEPG() {
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportList, null, 2), 'utf-8');
 
   console.log(`\n==================================================`);
-  console.log(`SUCCESS! Combined EPG generated for ${reportList.length} total channels.`);
+  console.log(`SUCCESS! JioTV EPG generated and merged.`);
   console.log(`Files saved: ./epg/tataplay.xml, ./epg/tataplay.xml.gz, ./epg/channels_report.json`);
   console.log(`==================================================`);
 }
