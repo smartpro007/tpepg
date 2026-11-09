@@ -14,6 +14,28 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
   console.log('Starting Combined TataPlay & JioTV EPG Generation...');
+
+  // ==========================================
+  // ०. स्मार्ट चेक: फाईल आधीच हयात आहे का आणि अप-टू-डेट आहे का तपणे
+  // ==========================================
+  const todayStr = dayjs().tz('Asia/Kolkata').format('YYYYMMDD');
+  if (fs.existsSync('./epg/tataplay.xml.gz')) {
+    try {
+      const fileBuffer = fs.readFileSync('./epg/tataplay.xml.gz');
+      const xmlContent = zlib.gunzipSync(fileBuffer).toString('utf-8');
+      
+      // जर फाईलमध्ये आजचा डेटा आधीपासूनच उपलब्ध असेल तर फेचिंग स्किप करणे
+      if (xmlContent.includes(todayStr)) {
+        console.log(`\n==================================================`);
+        console.log(`>>> EPG file already exists and contains today's data (${todayStr})!`);
+        console.log(`>>> Skipping fetching process to save time and avoid rate limits.`);
+        console.log(`==================================================`);
+        return;
+      }
+    } catch (err) {
+      console.log('--> Could not read existing GZ file, proceeding with fresh fetch...');
+    }
+  }
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="Combined-EPG-Generator">\n';
@@ -32,7 +54,7 @@ async function generateEPG() {
   let reportDataDict = {};  // चॅनेल रिपोर्ट साठवण्यासाठी
 
   // ==========================================
-  // १. TATA PLAY EPG FETCHING (With Clear Logs)
+  // १. TATA PLAY EPG FETCHING
   // ==========================================
   for (const dateStr of datesToFetch) {
     console.log(`\n==================================================`);
@@ -110,7 +132,7 @@ async function generateEPG() {
   }
 
   // ==========================================
-  // २. JIOTV EPG FETCHING (Past, Present, Future with Clear Logs)
+  // २. JIOTV EPG FETCHING (Past, Present, Future)
   // ==========================================
   console.log(`\n==================================================`);
   console.log(`>>> Processing JioTV Channels EPG (Past, Present, Future)`);
@@ -133,7 +155,6 @@ async function generateEPG() {
         reportDataDict[jioId] = { id: jioId, name: jioName, epg_generated: false };
       }
 
-      // तिन्ही दिवसांसाठी (काल, आज, उद्या) डेटा फेच करणे
       for (const off of jioOffsets) {
         try {
           console.log(`Fetching JioTV EPG for: ${jioName} (ID: ${jioId}) [Offset: ${off}]`);
@@ -155,7 +176,7 @@ async function generateEPG() {
         }
       }
 
-      await sleep(300); // सर्व्हरवर लोड येऊ नये म्हणून छोटा पॉझ
+      await sleep(300);
     }
   } else {
     console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
@@ -256,3 +277,4 @@ function escapeXML(str) {
 }
 
 generateEPG();
+          
