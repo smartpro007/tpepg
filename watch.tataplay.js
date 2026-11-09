@@ -22,23 +22,6 @@ async function generateEPG() {
   let reportDataDict = {};  
 
   // ==========================================
-  // ०. जुनी XML/GZ फाईल वाचून टाटा प्लेचा जुना डेटा जतन करणे
-  // ==========================================
-  if (fs.existsSync('./epg/tataplay.xml.gz')) {
-    try {
-      console.log('Reading existing TataPlay EPG data from storage...');
-      const fileBuffer = fs.readFileSync('./epg/tataplay.xml.gz');
-      const xmlContent = zlib.gunzipSync(fileBuffer).toString('utf-8');
-      
-      // टीप: हवं असल्यास आपण जुन्या फाईलमधले चॅनेल्स काढू शकतो, 
-      // पण इथे आपण थेट नवीन जिओटीव्हीचा डेटा ॲड करून XML फ्रेश बनवतोय.
-      console.log('Existing TataPlay compressed archive loaded.');
-    } catch (err) {
-      console.log('Could not read existing GZ file, proceeding with fresh XML structure.');
-    }
-  }
-
-  // ==========================================
   // १. JIOTV EPG FETCHING (Past 1, Present, Future 1 - Offset -1, 0, 1)
   // ==========================================
   console.log(`\n==================================================`);
@@ -50,11 +33,10 @@ async function generateEPG() {
     const jioParsed = JSON.parse(jioFileContent);
     const jioChannels = jioParsed.channels || [];
 
-    console.log(`Found ${jioChannels.length} JioTV channels to process from jio.json.`);
+    console.log(`Found ${jioChannels.length} JioTV channels to process from jio-tv.json.`);
     const jioOffsets = [-1, 0, 1]; // -1: काल, 0: आज, 1: उद्या
 
     for (const jioCh of jioChannels) {
-      // इथे जिएटीव्हीच्या JSON मधील योग्य की वापरली आहे (channel_id आणि channel_name)
       const jioId = String(jioCh.channel_id || jioCh.id);
       const jioName = jioCh.channel_name || jioCh.name;
 
@@ -84,7 +66,7 @@ async function generateEPG() {
         }
       }
 
-      await sleep(200); // स्पीड फास्ट ठेवण्यासाठी छोटा पॉझ
+      await sleep(200);
     }
   } else {
     console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
