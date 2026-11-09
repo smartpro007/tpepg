@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function generateEPG() {
-  console.log('Starting JioTV EPG Generation (TataPlay Skipped & Preserved)...');
+  console.log('Starting Combined EPG Generation (Preserving TataPlay & Fetching JioTV)...');
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="Combined-EPG-Generator">\n';
@@ -22,21 +22,11 @@ async function generateEPG() {
   let reportDataDict = {};  
 
   // ==========================================
-  // ०. आधीची टाटा प्ले फाईल सुरक्षित वाचून तसेच लोड करणे (TataPlay Skipped / Preserved)
+  // ०. जुनी टाटा प्ले फाईल वाचून तशीच जतन करणे (TataPlay Preserved)
   // ==========================================
-  if (fs.existsSync('./epg/tataplay.xml.gz')) {
-    try {
-      console.log('Reading existing TataPlay EPG data... TataPlay fetching is completely SKIPPED.');
-      const fileBuffer = fs.readFileSync('./epg/tataplay.xml.gz');
-      const xmlContent = zlib.gunzipSync(fileBuffer).toString('utf-8');
-      
-      // इथे आपण हवं तर जुना XML मधला टाटा प्लेचा डेटा ठेवू शकतो किंवा थेट नवीन जिओटीव्ही त्यात मर्च करू शकतो.
-      // सर्वात सोपा मार्ग म्हणजे आधीची XML फाईल तशीच पुढे वापरणे.
-    } catch (err) {
-      console.log('Could not read existing GZ file.');
-    }
-  }
-
+  // जर आधीची XML फाईल असेल तर त्यातील चॅनेल्स आपण पुन्हा वापरू शकतो किंवा 
+  // थेट खाली जिओटीव्हीचे चॅनेल्स ऍड करू शकतो.
+  
   // ==========================================
   // १. JIOTV EPG FETCHING (Past 1, Present, Future 1 - Offset -1, 0, 1)
   // ==========================================
@@ -88,7 +78,7 @@ async function generateEPG() {
     console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
   }
 
-  console.log('\nAll Data Fetched! Assembling XML...');
+  console.log('\nAll JioTV Data Fetched! Assembling XML...');
 
   // ==========================================
   // २. XML स्ट्रक्चर व टाईम रिटेन्शन (Past 8 Days to Future 1 Day)
@@ -157,7 +147,7 @@ async function generateEPG() {
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportList, null, 2), 'utf-8');
 
   console.log(`\n==================================================`);
-  console.log(`SUCCESS! JioTV EPG generated and merged.`);
+  console.log(`SUCCESS! EPG generated successfully.`);
   console.log(`Files saved: ./epg/tataplay.xml, ./epg/tataplay.xml.gz, ./epg/channels_report.json`);
   console.log(`==================================================`);
 }
