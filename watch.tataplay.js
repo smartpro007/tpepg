@@ -17,6 +17,8 @@ async function runGenerator() {
   
   let allChannelsDict = {}; 
   let reportDataDict = {};  
+  let tataChannelCount = 0;
+  let jioChannelCount = 0;
 
   const today = dayjs().tz('Asia/Kolkata');
   const datesToFetch = [
@@ -26,7 +28,7 @@ async function runGenerator() {
   ];
 
   // ==========================================
-  // १. TATA PLAY EPG FETCHING (Strict Offset: 0, 20, 40, 60...)
+  // १. TATA PLAY EPG FETCHING
   // ==========================================
   console.log('\n=== STEP 1: Fetching TataPlay EPG (Strict +20 Offset) ===');
 
@@ -49,13 +51,11 @@ async function runGenerator() {
           break;
         } catch (err) {
           attempts--;
-          console.error(`TataPlay Error at offset ${currentOffset} (Date: ${dateStr}): ${err.message}. Retries left: ${attempts}`);
-          await sleep(10000);
+          await sleep(5000);
         }
       }
 
       if (!responseData || !Array.isArray(responseData.channelList) || responseData.channelList.length === 0) {
-        console.log(`No data at offset ${currentOffset}, moving to next batch.`);
         currentOffset += batchLimit;
         continue;
       }
@@ -72,7 +72,8 @@ async function runGenerator() {
 
           if (!allChannelsDict[site_id]) {
             allChannelsDict[site_id] = { id: site_id, name: name, logo: logo, epgItems: [] };
-            reportDataDict[site_id] = { id: site_id, name: name, epg_generated: false };
+            reportDataDict[site_id] = { id: site_id, name: name, provider: 'TataPlay', epg_generated: false };
+            tataChannelCount++;
           }
 
           if (items.length > 0) {
@@ -84,20 +85,16 @@ async function runGenerator() {
         }
       });
 
-      console.log(`Successfully fetched TataPlay offset ${currentOffset} / ${totalChannels}`);
-      currentOffset += batchLimit; // इथे अगदी काटेकोरपणे फक्त 20 नेच पुढे जाईल
+      currentOffset += batchLimit;
       fetchedCount++;
-
-      if (fetchedCount % 5 === 0) {
-        await sleep(5000);
-      } else {
-        await sleep(1000);
-      }
+      await sleep(1000);
     }
   }
 
+  console.log(`\n>>> TataPlay Fetch Completed! Total Unique Channels: ${tataChannelCount}`);
+
   // ==========================================
-  // २. JIOTV EPG FETCHING (20-Channel Batching, Offset -1, 0, 1)
+  // २. JIOTV EPG FETCHING
   // ==========================================
   console.log('\n=== STEP 2: Fetching JioTV EPG (20-Channel Batches) ===');
 
@@ -106,7 +103,7 @@ async function runGenerator() {
     const parsedJson = JSON.parse(fileContent);
     const jioChannels = parsedJson.channels || [];
 
-    console.log(`Found ${jioChannels.length} JioTV channels to process.`);
+    console.log(`Found ${jioChannels.length} JioTV channels in jiotv.json to process.`);
     const offsets = [-1, 0, 1];
     const chunk = 20;
 
@@ -120,7 +117,8 @@ async function runGenerator() {
 
         if (!allChannelsDict[jioId]) {
           allChannelsDict[jioId] = { id: jioId, name: jioName, logo: jioCh.logo || '', epgItems: [] };
-          reportDataDict[jioId] = { id: jioId, name: jioName, epg_generated: false };
+          reportDataDict[jioId] = { id: jioId, name: jioName, provider: 'JioTV', epg_generated: false };
+          jioChannelCount++;
         }
 
         for (const off of offsets) {
@@ -146,6 +144,8 @@ async function runGenerator() {
   } else {
     console.log('--> jiotv.json file not found! Skipping JioTV.');
   }
+
+  console.log(`\n>>> JioTV Fetch Completed! Total Unique Channels: ${jioChannelCount}`);
 
   // ==========================================
   // ३. XML असेंब्ली व रिटेन्शन विंडो
@@ -212,13 +212,20 @@ async function runGenerator() {
     fs.mkdirSync('./epg');
   }
 
+  // फाईल साईजचा इश्यू सोडवण्यासाठी अनकम्प्रेस्ड XML फाईल न ठेवता किंवा Git मुळे अडचण येऊ नये म्हणून काळजी घेऊया
   fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
   fs.writeFileSync('./epg/tataplay.xml.gz', zlib.gzipSync(xml));
   
   const reportList = Object.values(reportDataDict);
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportList, null, 2), 'utf-8');
 
-  console.log(`\nSUCCESS! Generated EPG for ${reportList.length} total channels.`);
+  console.log(`\n==================================================`);
+  console.log(`SUMMARY REPORT:`);
+  console.log(`- TataPlay Channels Processed: ${tataChannelCount}`);
+  console.log(`- JioTV Channels Processed: ${jioChannelCount}`);
+  console.log(`- Total Combined Channels: ${reportList.length}`);
+  console.log(`SUCCESS! All files saved successfully.`);
+  console.log(`==================================================`);
 }
 
 function escapeXML(str) {
