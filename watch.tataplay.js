@@ -12,8 +12,8 @@ dayjs.extend(customParseFormat);
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function generateCompleteCombinedEPG() {
-  console.log('Starting Complete Combined TataPlay & JioTV EPG Generation...');
+async function runGenerator() {
+  console.log('Starting Clean Combined TataPlay & JioTV EPG Script...');
   
   let allChannelsDict = {}; 
   let reportDataDict = {};  
@@ -25,55 +25,50 @@ async function generateCompleteCombinedEPG() {
     today.add(1, 'day').format('DD-MM-YYYY')       // Tomorrow (+1)
   ];
 
-  console.log(`Target Dates: ${datesToFetch.join(', ')}`);
-
   // ==========================================
-  // १. TATA PLAY EPG FETCHING (Fixed Offset: 0, 20, 40, 60...)
+  // १. TATA PLAY EPG FETCHING (Strict Offset: 0, 20, 40, 60...)
   // ==========================================
-  console.log(`\n==================================================`);
-  console.log(`>>> Processing TataPlay EPG (3-Day Window)`);
-  console.log(`==================================================`);
+  console.log('\n=== STEP 1: Fetching TataPlay EPG (Strict +20 Offset) ===');
 
   for (const dateStr of datesToFetch) {
     console.log(`\n--- TataPlay Date: ${dateStr} ---`);
-    let offset = 0;
-    const limit = 20;
-    let total = 836;
-    let requestCount = 0;
+    let currentOffset = 0;
+    const batchLimit = 20;
+    let totalChannels = 836;
+    let fetchedCount = 0;
 
-    while (offset < total) {
+    while (currentOffset < totalChannels) {
       let responseData = null;
-      let retries = 3;
+      let attempts = 3;
 
-      while (retries > 0) {
+      while (attempts > 0) {
         try {
-          const resp = await axios.get(
-            `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=${dateStr}&languageFilters=&genreFilters=&limit=${limit}&offset=${offset}`,
-            { headers: setHeaders(), timeout: 15000 }
-          );
+          const url = `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=${dateStr}&languageFilters=&genreFilters=&limit=${batchLimit}&offset=${currentOffset}`;
+          const resp = await axios.get(url, { headers: getTataHeaders(), timeout: 15000 });
           responseData = resp.data?.data;
           break;
         } catch (err) {
-          retries--;
-          console.error(`--> TataPlay Error at offset ${offset} (Date: ${dateStr}). Retries left: ${retries}`);
+          attempts--;
+          console.error(`TataPlay Error at offset ${currentOffset} (Date: ${dateStr}): ${err.message}. Retries left: ${attempts}`);
           await sleep(10000);
         }
       }
 
-      if (!responseData || !responseData.channelList || responseData.channelList.length === 0) {
-        offset += limit; // इथे offset बरोबर 20 ने पुढे जाईल
+      if (!responseData || !Array.isArray(responseData.channelList) || responseData.channelList.length === 0) {
+        console.log(`No data at offset ${currentOffset}, moving to next batch.`);
+        currentOffset += batchLimit;
         continue;
       }
 
-      total = responseData.total || total;
-      const channelList = responseData.channelList;
+      totalChannels = responseData.total || totalChannels;
+      const channels = responseData.channelList;
 
-      channelList.forEach(channel => {
-        if (channel.title && channel.title !== '.') {
-          const site_id = `tp_${String(channel.id)}`;
-          const name = channel.title;
-          const logo = channel.transparentImageUrl || channel.thumbnailImage || '';
-          const items = channel.epg || [];
+      channels.forEach(ch => {
+        if (ch.title && ch.title !== '.') {
+          const site_id = `tp_${String(ch.id)}`;
+          const name = ch.title;
+          const logo = ch.transparentImageUrl || ch.thumbnailImage || '';
+          const items = ch.epg || [];
 
           if (!allChannelsDict[site_id]) {
             allChannelsDict[site_id] = { id: site_id, name: name, logo: logo, epgItems: [] };
@@ -83,20 +78,18 @@ async function generateCompleteCombinedEPG() {
           if (items.length > 0) {
             reportDataDict[site_id].epg_generated = true;
             items.forEach(item => {
-              allChannelsDict[site_id].epgItems.push({
-                type: 'tataplay',
-                data: item
-              });
+              allChannelsDict[site_id].epgItems.push({ type: 'tataplay', data: item });
             });
           }
         }
       });
 
-      offset += limit; // अचूक 20 ने वाढवणे
-      requestCount++;
+      console.log(`Successfully fetched TataPlay offset ${currentOffset} / ${totalChannels}`);
+      currentOffset += batchLimit; // इथे अगदी काटेकोरपणे फक्त 20 नेच पुढे जाईल
+      fetchedCount++;
 
-      if (requestCount % 5 === 0) {
-        await sleep(5000); 
+      if (fetchedCount % 5 === 0) {
+        await sleep(5000);
       } else {
         await sleep(1000);
       }
@@ -106,24 +99,22 @@ async function generateCompleteCombinedEPG() {
   // ==========================================
   // २. JIOTV EPG FETCHING (20-Channel Batching, Offset -1, 0, 1)
   // ==========================================
-  console.log(`\n==================================================`);
-  console.log(`>>> Processing JioTV EPG (Batches of 20 Channels)`);
-  console.log(`==================================================`);
+  console.log('\n=== STEP 2: Fetching JioTV EPG (20-Channel Batches) ===');
 
   if (fs.existsSync('./jiotv.json')) {
-    const jioFileContent = fs.readFileSync('./jiotv.json', 'utf-8');
-    const jioParsed = JSON.parse(jioFileContent);
-    const jioChannels = jioParsed.channels || [];
+    const fileContent = fs.readFileSync('./jiotv.json', 'utf-8');
+    const parsedJson = JSON.parse(fileContent);
+    const jioChannels = parsedJson.channels || [];
 
     console.log(`Found ${jioChannels.length} JioTV channels to process.`);
-    const jioOffsets = [-1, 0, 1]; 
-    const batchSize = 20;
+    const offsets = [-1, 0, 1];
+    const chunk = 20;
 
-    for (let i = 0; i < jioChannels.length; i += batchSize) {
-      const batch = jioChannels.slice(i, i + batchSize);
-      console.log(`Processing JioTV Batch ${Math.floor(i / batchSize) + 1} of ${Math.ceil(jioChannels.length / batchSize)}...`);
+    for (let i = 0; i < jioChannels.length; i += chunk) {
+      const batchChannels = jioChannels.slice(i, i + chunk);
+      console.log(`Processing JioTV Batch ${Math.floor(i / chunk) + 1} of ${Math.ceil(jioChannels.length / chunk)}...`);
 
-      await Promise.all(batch.map(async (jioCh) => {
+      await Promise.all(batchChannels.map(async (jioCh) => {
         const jioId = String(jioCh.channel_id || jioCh.id);
         const jioName = jioCh.channel_name || jioCh.name;
 
@@ -132,23 +123,20 @@ async function generateCompleteCombinedEPG() {
           reportDataDict[jioId] = { id: jioId, name: jioName, epg_generated: false };
         }
 
-        for (const off of jioOffsets) {
+        for (const off of offsets) {
           try {
-            const jioResp = await axios.get(`https://iptvmax.site/api/epg/epg.php?id=${jioId}&offset=${off}`, { timeout: 10000 });
-            const jioEpgData = jioResp.data;
-            const programs = Array.isArray(jioEpgData) ? jioEpgData : (jioEpgData.epg || []);
+            const resp = await axios.get(`https://iptvmax.site/api/epg/epg.php?id=${jioId}&offset=${off}`, { timeout: 10000 });
+            const data = resp.data;
+            const programs = Array.isArray(data) ? data : (data.epg || []);
 
             if (programs.length > 0) {
               reportDataDict[jioId].epg_generated = true;
               programs.forEach(prog => {
-                allChannelsDict[jioId].epgItems.push({
-                  type: 'jiotv',
-                  data: prog
-                });
+                allChannelsDict[jioId].epgItems.push({ type: 'jiotv', data: prog });
               });
             }
-          } catch (err) {
-            // एरर इग्नोर करून पुढे जाणे
+          } catch (e) {
+            // Ignore error
           }
         }
       }));
@@ -156,22 +144,20 @@ async function generateCompleteCombinedEPG() {
       await sleep(300);
     }
   } else {
-    console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
+    console.log('--> jiotv.json file not found! Skipping JioTV.');
   }
 
-  console.log('\nAll Data Fetched! Filtering Retention & Assembling XML...');
-
   // ==========================================
-  // ३. XML स्ट्रक्चर व टाईम रिटेन्शन (Past 8 Days to Future 1 Day)
+  // ३. XML असेंब्ली व रिटेन्शन विंडो
   // ==========================================
+  console.log('\n=== STEP 3: Assembling XML & Saving Files ===');
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<tv generator-info-name="Combined-TataPlay-JioTV-Generator">\n';
+  xml += '<tv generator-info-name="Clean-Combined-EPG">\n';
 
   const now = dayjs();
   const maxPastTime = now.subtract(8, 'day'); 
   const maxFutureTime = now.add(2, 'day');    
 
-  // A) चॅनेल्स टॅग
   Object.values(allChannelsDict).forEach(ch => {
     xml += `  <channel id="${ch.id}">\n`;
     xml += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
@@ -181,18 +167,17 @@ async function generateCompleteCombinedEPG() {
     xml += `  </channel>\n`;
   });
 
-  // B) प्रोग्राम्स टॅग
   Object.values(allChannelsDict).forEach(ch => {
     ch.epgItems.forEach(item => {
       let startTime, endTime, title, desc, icon;
 
       if (item.type === 'tataplay') {
-        const epgItem = item.data;
-        startTime = dayjs(Number(epgItem.startTime));
-        endTime = dayjs(Number(epgItem.endTime));
-        title = epgItem.title || '';
-        desc = epgItem.desc || '';
-        icon = epgItem.boxCoverImage || '';
+        const epg = item.data;
+        startTime = dayjs(Number(epg.startTime));
+        endTime = dayjs(Number(epg.endTime));
+        title = epg.title || '';
+        desc = epg.desc || '';
+        icon = epg.boxCoverImage || '';
       } else if (item.type === 'jiotv') {
         const prog = item.data;
         startTime = dayjs(Number(prog.startEpoch));
@@ -204,10 +189,10 @@ async function generateCompleteCombinedEPG() {
 
       if (startTime && startTime.isValid() && endTime && endTime.isValid()) {
         if (endTime.isAfter(maxPastTime) && startTime.isBefore(maxFutureTime)) {
-          const start = startTime.format('YYYYMMDDHHmmss ZZ');
-          const stop = endTime.format('YYYYMMDDHHmmss ZZ');
+          const startStr = startTime.format('YYYYMMDDHHmmss ZZ');
+          const stopStr = endTime.format('YYYYMMDDHHmmss ZZ');
 
-          xml += `  <programme start="${start}" stop="${stop}" channel="${ch.id}">\n`;
+          xml += `  <programme start="${startStr}" stop="${stopStr}" channel="${ch.id}">\n`;
           xml += `    <title lang="en">${escapeXML(title)}</title>\n`;
           if (desc) {
             xml += `    <desc lang="en">${escapeXML(desc)}</desc>\n`;
@@ -223,24 +208,17 @@ async function generateCompleteCombinedEPG() {
 
   xml += '</tv>';
 
-  // ==========================================
-  // ४. फोल्डर आणि फाईल्स सेव्ह करणे
-  // ==========================================
   if (!fs.existsSync('./epg')) {
     fs.mkdirSync('./epg');
   }
 
   fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
-  const gzipContent = zlib.gzipSync(xml);
-  fs.writeFileSync('./epg/tataplay.xml.gz', gzipContent);
+  fs.writeFileSync('./epg/tataplay.xml.gz', zlib.gzipSync(xml));
   
   const reportList = Object.values(reportDataDict);
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportList, null, 2), 'utf-8');
 
-  console.log(`\n==================================================`);
-  console.log(`SUCCESS! Combined EPG generated for ${reportList.length} channels.`);
-  console.log(`Files saved: ./epg/tataplay.xml, ./epg/tataplay.xml.gz, ./epg/channels_report.json`);
-  console.log(`==================================================`);
+  console.log(`\nSUCCESS! Generated EPG for ${reportList.length} total channels.`);
 }
 
 function escapeXML(str) {
@@ -256,7 +234,7 @@ function escapeXML(str) {
   });
 }
 
-function setHeaders() {
+function getTataHeaders() {
   return {
     'Accept': '*/*',
     'Accept-Language': 'en-US,en;q=0.9',
@@ -269,4 +247,4 @@ function setHeaders() {
   };
 }
 
-generateCompleteCombinedEPG();
+runGenerator();
