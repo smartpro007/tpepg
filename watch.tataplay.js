@@ -12,8 +12,8 @@ dayjs.extend(customParseFormat);
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function generateCompleteEPG() {
-  console.log('Starting Complete Combined TataPlay & JioTV EPG Generation (3-Day Window)...');
+async function generateCompleteCombinedEPG() {
+  console.log('Starting Complete Combined TataPlay & JioTV EPG Generation...');
   
   let allChannelsDict = {}; 
   let reportDataDict = {};  
@@ -25,11 +25,13 @@ async function generateCompleteEPG() {
     today.add(1, 'day').format('DD-MM-YYYY')       // Tomorrow (+1)
   ];
 
+  console.log(`Target Dates: ${datesToFetch.join(', ')}`);
+
   // ==========================================
-  // १. TATA PLAY EPG FETCHING (Complete 3-Day Window with 20-Channel Batching)
+  // १. TATA PLAY EPG FETCHING (Prefix 'tp_' added to Channel ID)
   // ==========================================
   console.log(`\n==================================================`);
-  console.log(`>>> Processing Full TataPlay EPG (3-Day Window)`);
+  console.log(`>>> Processing TataPlay EPG (3-Day Window)`);
   console.log(`==================================================`);
 
   for (const dateStr of datesToFetch) {
@@ -37,6 +39,7 @@ async function generateCompleteEPG() {
     let offset = 0;
     let limit = 20;
     let total = 836;
+    let requestCount = 0;
 
     while (offset < total) {
       let responseData = null;
@@ -45,14 +48,15 @@ async function generateCompleteEPG() {
       while (retries > 0) {
         try {
           const resp = await axios.get(
-            `https://iptvmax.site/api/epg/tata.php?date=${dateStr}&limit=${limit}&offset=${offset}`,
-            { timeout: 15000 }
+            `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=${dateStr}&languageFilters=&genreFilters=&limit=${limit}&offset=${offset}`,
+            { headers: setHeaders(), timeout: 15000 }
           );
           responseData = resp.data?.data;
           break;
         } catch (err) {
           retries--;
-          await sleep(5000);
+          console.error(`--> TataPlay Error at offset ${offset} (Date: ${dateStr}). Retries left: ${retries}`);
+          await sleep(15000);
         }
       }
 
@@ -66,7 +70,8 @@ async function generateCompleteEPG() {
 
       channelList.forEach(channel => {
         if (channel.title && channel.title !== '.') {
-          const site_id = String(channel.id);
+          // टाटा प्ले आयडीच्या आधी 'tp_' जोडणे जेणेकरून जिओटीव्हीसोबत घोळ होणार नाही
+          const site_id = `tp_${String(channel.id)}`;
           const name = channel.title;
           const logo = channel.transparentImageUrl || channel.thumbnailImage || '';
           const items = channel.epg || [];
@@ -89,15 +94,21 @@ async function generateCompleteEPG() {
       });
 
       offset += limit;
-      await sleep(200);
+      requestCount++;
+
+      if (requestCount % 5 === 0) {
+        await sleep(10000); 
+      } else {
+        await sleep(1000);
+      }
     }
   }
 
   // ==========================================
-  // २. JIOTV EPG FETCHING (Complete 3-Day Window, Batches of 20)
+  // २. JIOTV EPG FETCHING (20-Channel Batching, Offset -1, 0, 1)
   // ==========================================
   console.log(`\n==================================================`);
-  console.log(`>>> Processing Full JioTV EPG (Batches of 20 Channels, Offset -1, 0, 1)`);
+  console.log(`>>> Processing JioTV EPG (Batches of 20 Channels)`);
   console.log(`==================================================`);
 
   if (fs.existsSync('./jiotv.json')) {
@@ -155,7 +166,7 @@ async function generateCompleteEPG() {
   // ३. XML स्ट्रक्चर व टाईम रिटेन्शन (Past 8 Days to Future 1 Day)
   // ==========================================
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<tv generator-info-name="Complete-Combined-EPG-Generator">\n';
+  xml += '<tv generator-info-name="Combined-TataPlay-JioTV-Generator">\n';
 
   const now = dayjs();
   const maxPastTime = now.subtract(8, 'day'); 
@@ -228,7 +239,7 @@ async function generateCompleteEPG() {
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportList, null, 2), 'utf-8');
 
   console.log(`\n==================================================`);
-  console.log(`SUCCESS! Complete Combined EPG generated for ${reportList.length} channels.`);
+  console.log(`SUCCESS! Combined EPG generated for ${reportList.length} channels.`);
   console.log(`Files saved: ./epg/tataplay.xml, ./epg/tataplay.xml.gz, ./epg/channels_report.json`);
   console.log(`==================================================`);
 }
@@ -246,4 +257,17 @@ function escapeXML(str) {
   });
 }
 
-generateCompleteEPG();
+function setHeaders() {
+  return {
+    'Accept': '*/*',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Origin': 'https://watch.tataplay.com',
+    'Referer': 'https://watch.tataplay.com/',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'content-type': 'application/json',
+    'locale': 'ENG',
+    'me': 'web'
+  };
+}
+
+generateCompleteCombinedEPG();
