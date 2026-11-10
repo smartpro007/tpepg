@@ -33,13 +33,15 @@ async function runGenerator() {
   console.log('\n=== STEP 1: Fetching TataPlay EPG (Strict +20 Offset) ===');
 
   for (const dateStr of datesToFetch) {
-    console.log(`\n--- TataPlay Date: ${dateStr} ---`);
+    console.log(`\n--- Processing TataPlay Date: ${dateStr} ---`);
     let currentOffset = 0;
     const batchLimit = 20;
     let totalChannels = 836;
     let fetchedCount = 0;
 
     while (currentOffset < totalChannels) {
+      console.log(`[TataPlay] Fetching Date: ${dateStr} | Offset: ${currentOffset} / ${totalChannels}`);
+      
       let responseData = null;
       let attempts = 3;
 
@@ -51,11 +53,13 @@ async function runGenerator() {
           break;
         } catch (err) {
           attempts--;
+          console.error(`[TataPlay Error] Offset ${currentOffset} failed: ${err.message}. Retries left: ${attempts}`);
           await sleep(5000);
         }
       }
 
       if (!responseData || !Array.isArray(responseData.channelList) || responseData.channelList.length === 0) {
+        console.log(`[TataPlay] No data found at offset ${currentOffset}, moving to next.`);
         currentOffset += batchLimit;
         continue;
       }
@@ -85,9 +89,14 @@ async function runGenerator() {
         }
       });
 
-      currentOffset += batchLimit;
+      currentOffset += batchLimit; // काटेकोरपणे 20 ने पुढे जाईल
       fetchedCount++;
-      await sleep(1000);
+
+      if (fetchedCount % 5 === 0) {
+        await sleep(5000);
+      } else {
+        await sleep(1000);
+      }
     }
   }
 
@@ -212,7 +221,6 @@ async function runGenerator() {
     fs.mkdirSync('./epg');
   }
 
-  // फाईल साईजचा इश्यू सोडवण्यासाठी अनकम्प्रेस्ड XML फाईल न ठेवता किंवा Git मुळे अडचण येऊ नये म्हणून काळजी घेऊया
   fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
   fs.writeFileSync('./epg/tataplay.xml.gz', zlib.gzipSync(xml));
   
