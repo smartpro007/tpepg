@@ -1,9 +1,9 @@
-name: Generate Extra EPG
+name: Generate Master EPG
 
 on:
   schedule:
-    - cron: '0 3 * * *' # दररोज सकाळी ३ वाजता रन होईल
-  workflow_dispatch: # हाताने (Manual) पण रन करता येईल
+    - cron: '0 3 * * *' # दररोज सकाळी ३ वाजता ऑटोमॅटिक रन होईल
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,14 +21,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run EPG Generator Script
-        run: node extra_epg.js
+      - name: Run Master EPG Generator
+        run: node master_epg.js
 
       - name: Commit and Push EPG
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add epg/extra_epg.xml.gz
-          git commit -m "Auto-update Extra EPG (Samsung & MAC)" || exit 0
+          git add epg/tataplay.xml.gz epg/channels_report.json
+          git commit -m "Auto-update Master EPG (TataPlay + JioTV + Samsung + MAC)" || exit 0
           git push
           
