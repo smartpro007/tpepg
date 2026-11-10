@@ -12,34 +12,11 @@ dayjs.extend(customParseFormat);
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function generateSmartCombinedEPG() {
-  console.log('Starting Smart Incremental EPG Generation (Skipping Existing Data)...');
+async function generateCompleteEPG() {
+  console.log('Starting Complete Combined TataPlay & JioTV EPG Generation (3-Day Window)...');
   
   let allChannelsDict = {}; 
   let reportDataDict = {};  
-  let existingProgramKeys = new Set(); // आधीच फेच झालेला डेटा ट्रॅक करण्यासाठी
-
-  // ==========================================
-  // ०. आधीची XML फाईल वाचून हयात डेटा जतन करणे (Smart Skip Check)
-  // ==========================================
-  if (fs.existsSync('./epg/tataplay.xml.gz')) {
-    try {
-      console.log('Reading existing EPG archive to identify already fetched data...');
-      const fileBuffer = fs.readFileSync('./epg/tataplay.xml.gz');
-      const xmlContent = zlib.gunzipSync(fileBuffer).toString('utf-8');
-      
-      // साध्या रेग्युलर एक्सप्रेसने जुन्या ፕሮग्राम्सचे चॅनेल आणि टाईम स्टॅम्प ट्रॅक करणे जेणेकरून ड्युप्लिकेट फेच टाळता येईल
-      const progRegex = /<programme start="([^"]+)" stop="([^"]+)" channel="([^"]+)">/g;
-      let match;
-      while ((match = progRegex.exec(xmlContent)) !== null) {
-        const key = `${match[3]}_${match[1]}`; // channelId_startTime
-        existingProgramKeys.add(key);
-      }
-      console.log(`Loaded ${existingProgramKeys.size} existing unique programme entries from storage.`);
-    } catch (err) {
-      console.log('Could not read existing EPG archive, proceeding with fresh fetch.');
-    }
-  }
 
   const today = dayjs().tz('Asia/Kolkata');
   const datesToFetch = [
@@ -49,10 +26,10 @@ async function generateSmartCombinedEPG() {
   ];
 
   // ==========================================
-  // १. TATA PLAY EPG FETCHING (Smart Batching)
+  // १. TATA PLAY EPG FETCHING (Complete 3-Day Window with 20-Channel Batching)
   // ==========================================
   console.log(`\n==================================================`);
-  console.log(`>>> Processing TataPlay EPG (Smart Incremental)`);
+  console.log(`>>> Processing Full TataPlay EPG (3-Day Window)`);
   console.log(`==================================================`);
 
   for (const dateStr of datesToFetch) {
@@ -102,18 +79,10 @@ async function generateSmartCombinedEPG() {
           if (items.length > 0) {
             reportDataDict[site_id].epg_generated = true;
             items.forEach(item => {
-              const startTime = dayjs(Number(item.startTime));
-              if (startTime.isValid()) {
-                const startStr = startTime.format('YYYYMMDDHHmmss ZZ');
-                const uniqueKey = `${site_id}_${startStr}`;
-
-                // जर हा प्रोग्राम आधीच अस्तित्वात असेल तर तो पुन्हा ऍड होणार नाही (Smart Skip)
-                allChannelsDict[site_id].epgItems.push({
-                  type: 'tataplay',
-                  data: item,
-                  isExisting: existingProgramKeys.has(uniqueKey)
-                });
-              }
+              allChannelsDict[site_id].epgItems.push({
+                type: 'tataplay',
+                data: item
+              });
             });
           }
         }
@@ -125,10 +94,10 @@ async function generateSmartCombinedEPG() {
   }
 
   // ==========================================
-  // २. JIOTV EPG FETCHING (Smart Offset Fetching)
+  // २. JIOTV EPG FETCHING (Complete 3-Day Window, Batches of 20)
   // ==========================================
   console.log(`\n==================================================`);
-  console.log(`>>> Processing JioTV EPG (Smart Incremental Batches)`);
+  console.log(`>>> Processing Full JioTV EPG (Batches of 20 Channels, Offset -1, 0, 1)`);
   console.log(`==================================================`);
 
   if (fs.existsSync('./jiotv.json')) {
@@ -137,7 +106,7 @@ async function generateSmartCombinedEPG() {
     const jioChannels = jioParsed.channels || [];
 
     console.log(`Found ${jioChannels.length} JioTV channels to process.`);
-    const jioOffsets = [-1, 0, 1]; 
+    const jioOffsets = [-1, 0, 1]; // -1: काल, 0: आज, 1: उद्या
     const batchSize = 20;
 
     for (let i = 0; i < jioChannels.length; i += batchSize) {
@@ -162,17 +131,10 @@ async function generateSmartCombinedEPG() {
             if (programs.length > 0) {
               reportDataDict[jioId].epg_generated = true;
               programs.forEach(prog => {
-                const startTime = dayjs(Number(prog.startEpoch));
-                if (startTime.isValid()) {
-                  const startStr = startTime.format('YYYYMMDDHHmmss ZZ');
-                  const uniqueKey = `${jioId}_${startStr}`;
-
-                  allChannelsDict[jioId].epgItems.push({
-                    type: 'jiotv',
-                    data: prog,
-                    isExisting: existingProgramKeys.has(uniqueKey)
-                  });
-                }
+                allChannelsDict[jioId].epgItems.push({
+                  type: 'jiotv',
+                  data: prog
+                });
               });
             }
           } catch (err) {
@@ -187,13 +149,13 @@ async function generateSmartCombinedEPG() {
     console.log('--> jiotv.json file not found! Skipping JioTV EPG.');
   }
 
-  console.log('\nAll Data Processed! Assembling XML with Retention Window...');
+  console.log('\nAll Data Fetched! Filtering Retention & Assembling XML...');
 
   // ==========================================
   // ३. XML स्ट्रक्चर व टाईम रिटेन्शन (Past 8 Days to Future 1 Day)
   // ==========================================
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<tv generator-info-name="Smart-Combined-EPG-Generator">\n';
+  xml += '<tv generator-info-name="Complete-Combined-EPG-Generator">\n';
 
   const now = dayjs();
   const maxPastTime = now.subtract(8, 'day'); 
@@ -209,7 +171,7 @@ async function generateSmartCombinedEPG() {
     xml += `  </channel>\n`;
   });
 
-  // B) प्रोग्राम्स टॅग (जुन्या आणि नवीन डेटाचे स्मार्ट मर्जींग)
+  // B) प्रोग्राम्स टॅग
   Object.values(allChannelsDict).forEach(ch => {
     ch.epgItems.forEach(item => {
       let startTime, endTime, title, desc, icon;
@@ -266,7 +228,7 @@ async function generateSmartCombinedEPG() {
   fs.writeFileSync('./epg/channels_report.json', JSON.stringify(reportList, null, 2), 'utf-8');
 
   console.log(`\n==================================================`);
-  console.log(`SUCCESS! Smart Combined EPG generated for ${reportList.length} channels.`);
+  console.log(`SUCCESS! Complete Combined EPG generated for ${reportList.length} channels.`);
   console.log(`Files saved: ./epg/tataplay.xml, ./epg/tataplay.xml.gz, ./epg/channels_report.json`);
   console.log(`==================================================`);
 }
@@ -284,4 +246,4 @@ function escapeXML(str) {
   });
 }
 
-generateSmartCombinedEPG();
+generateCompleteEPG();
