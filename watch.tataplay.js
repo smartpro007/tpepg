@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function runGenerator() {
-  console.log('Starting Clean Combined TataPlay & JioTV EPG Script...');
+  console.log('Starting Safe Rate-Limited Combined EPG Script...');
   
   let allChannelsDict = {}; 
   let reportDataDict = {};  
@@ -28,9 +28,9 @@ async function runGenerator() {
   ];
 
   // ==========================================
-  // १. TATA PLAY EPG FETCHING
+  // १. TATA PLAY EPG FETCHING (Safe Rate-Limited)
   // ==========================================
-  console.log('\n=== STEP 1: Fetching TataPlay EPG (Strict +20 Offset) ===');
+  console.log('\n=== STEP 1: Fetching TataPlay EPG (Safe Mode) ===');
 
   for (const dateStr of datesToFetch) {
     console.log(`\n--- Processing TataPlay Date: ${dateStr} ---`);
@@ -40,34 +40,42 @@ async function runGenerator() {
     let fetchedCount = 0;
 
     while (currentOffset < totalChannels) {
-      console.log(`[TataPlay] Fetching Date: ${dateStr} | Offset: ${currentOffset} / ${totalChannels}`);
+      console.log(`[TataPlay] Date: ${dateStr} | Offset: ${currentOffset} / ${totalChannels}`);
       
       let responseData = null;
-      let attempts = 3;
+      let attempts = 5; // प्रयत्न ५ वेळा वाढवले
 
       while (attempts > 0) {
         try {
           const url = `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=${dateStr}&languageFilters=&genreFilters=&limit=${batchLimit}&offset=${currentOffset}`;
-          const resp = await axios.get(url, { headers: getTataHeaders(), timeout: 15000 });
+          const resp = await axios.get(url, { headers: getTataHeaders(), timeout: 20000 });
           responseData = resp.data?.data;
           break;
         } catch (err) {
           attempts--;
-          console.error(`[TataPlay Error] Offset ${currentOffset} failed: ${err.message}. Retries left: ${attempts}`);
-          await sleep(5000);
+          const status = err.response?.status;
+          console.error(`[TataPlay Error] Offset ${currentOffset} failed (Status: ${status || err.message}). Retries left: ${attempts}`);
+          
+          if (status === 429) {
+            console.log('--> Rate limit hit (429)! Cooling down for 30 seconds...');
+            await sleep(30000); // 429 आल्यास ३० सेकंद पूर्ण थांबणे
+          } else {
+            await sleep(10000);
+          }
         }
       }
 
       if (!responseData || !Array.isArray(responseData.channelList) || responseData.channelList.length === 0) {
-        console.log(`[TataPlay] No data found at offset ${currentOffset}, moving to next.`);
+        console.log(`[TataPlay] No data at offset ${currentOffset}, moving forward.`);
         currentOffset += batchLimit;
+        await sleep(3000);
         continue;
       }
 
       totalChannels = responseData.total || totalChannels;
       const channels = responseData.channelList;
 
-      channels.forEach(ch => {
+      channels.hash = channels.forEach(ch => {
         if (ch.title && ch.title !== '.') {
           const site_id = `tp_${String(ch.id)}`;
           const name = ch.title;
@@ -89,14 +97,11 @@ async function runGenerator() {
         }
       });
 
-      currentOffset += batchLimit; // काटेकोरपणे 20 ने पुढे जाईल
+      currentOffset += batchLimit; 
       fetchedCount++;
 
-      if (fetchedCount % 5 === 0) {
-        await sleep(5000);
-      } else {
-        await sleep(1000);
-      }
+      // प्रत्येक रिक्वेस्टनंतर ३ सेकंदाचा सुरक्षित गॅप (429 एरर टाळण्यासाठी)
+      await sleep(3000); 
     }
   }
 
@@ -148,7 +153,7 @@ async function runGenerator() {
         }
       }));
 
-      await sleep(300);
+      await sleep(500);
     }
   } else {
     console.log('--> jiotv.json file not found! Skipping JioTV.');
