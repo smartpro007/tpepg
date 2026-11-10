@@ -28,7 +28,7 @@ async function generateCompleteCombinedEPG() {
   console.log(`Target Dates: ${datesToFetch.join(', ')}`);
 
   // ==========================================
-  // १. TATA PLAY EPG FETCHING (Prefix 'tp_' added to Channel ID)
+  // १. TATA PLAY EPG FETCHING (Fixed Offset: 0, 20, 40, 60...)
   // ==========================================
   console.log(`\n==================================================`);
   console.log(`>>> Processing TataPlay EPG (3-Day Window)`);
@@ -37,7 +37,7 @@ async function generateCompleteCombinedEPG() {
   for (const dateStr of datesToFetch) {
     console.log(`\n--- TataPlay Date: ${dateStr} ---`);
     let offset = 0;
-    let limit = 20;
+    const limit = 20;
     let total = 836;
     let requestCount = 0;
 
@@ -56,12 +56,12 @@ async function generateCompleteCombinedEPG() {
         } catch (err) {
           retries--;
           console.error(`--> TataPlay Error at offset ${offset} (Date: ${dateStr}). Retries left: ${retries}`);
-          await sleep(15000);
+          await sleep(10000);
         }
       }
 
       if (!responseData || !responseData.channelList || responseData.channelList.length === 0) {
-        offset += limit;
+        offset += limit; // इथे offset बरोबर 20 ने पुढे जाईल
         continue;
       }
 
@@ -70,7 +70,6 @@ async function generateCompleteCombinedEPG() {
 
       channelList.forEach(channel => {
         if (channel.title && channel.title !== '.') {
-          // टाटा प्ले आयडीच्या आधी 'tp_' जोडणे जेणेकरून जिओटीव्हीसोबत घोळ होणार नाही
           const site_id = `tp_${String(channel.id)}`;
           const name = channel.title;
           const logo = channel.transparentImageUrl || channel.thumbnailImage || '';
@@ -93,11 +92,11 @@ async function generateCompleteCombinedEPG() {
         }
       });
 
-      offset += limit;
+      offset += limit; // अचूक 20 ने वाढवणे
       requestCount++;
 
       if (requestCount % 5 === 0) {
-        await sleep(10000); 
+        await sleep(5000); 
       } else {
         await sleep(1000);
       }
@@ -117,7 +116,7 @@ async function generateCompleteCombinedEPG() {
     const jioChannels = jioParsed.channels || [];
 
     console.log(`Found ${jioChannels.length} JioTV channels to process.`);
-    const jioOffsets = [-1, 0, 1]; // -1: काल, 0: आज, 1: उद्या
+    const jioOffsets = [-1, 0, 1]; 
     const batchSize = 20;
 
     for (let i = 0; i < jioChannels.length; i += batchSize) {
