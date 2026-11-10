@@ -1,0 +1,853 @@
+[
+    {
+        "channel_id": "IN4900003U3",
+        "name": "ETV Comedy",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN4900004LP",
+        "name": "ETV Josh",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN4900002RV",
+        "name": "ETV Beats",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN3800010SH",
+        "name": "Hollywood Desi",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN4600009F9",
+        "name": "Hooray Kids",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN4600007TC",
+        "name": "Hooray Rhymes",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "INBD4700015M0",
+        "name": "Music India",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN400061DB",
+        "name": "NH Tamil Gold",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN21000014R",
+        "name": "Zee Cine Classic",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN2100002GD",
+        "name": "Zee Comedy Nation",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN2100003OJ",
+        "name": "Zee Dil Se",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN2100004C4",
+        "name": "Zee Horror Nights",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN2100005T2",
+        "name": "Zee South Flix",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN38000072R",
+        "name": "The Movie Club",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN40000100Y",
+        "name": "The Movie Club+2",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "IN3800008CX",
+        "name": "South Station",
+        "source": "samsungtvplus"
+    },
+    {
+        "channel_id": "76265",
+        "name": "HINDI UPCOMING MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71568",
+        "name": "HINDI LATEST MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71489",
+        "name": "HINDI BOX OFFICE COLLECTION",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71490",
+        "name": "FILMFARE WINNING MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76221",
+        "name": "HINDI SUPERHIT MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76948",
+        "name": "HINDI NETFLIX MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76949",
+        "name": "HINDI AMAZON MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76950",
+        "name": "HINDI DISNEY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76224",
+        "name": "HINDI CLASSIC BLOCKBUSTER",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71491",
+        "name": "HINDI ALL TIME HIT MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3543",
+        "name": "HINDI ACTION MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3522",
+        "name": "HINDI ADVENTURE MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71744",
+        "name": "HINDI COMEDY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3544",
+        "name": "HINDI CRIME MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71745",
+        "name": "HINDI FAMILY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71747",
+        "name": "HINDI HISTORICAL MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71746",
+        "name": "HINDI FANTASY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71748",
+        "name": "HINDI ROMANTIC MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71750",
+        "name": "HINDI SUSPENCEFUL MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71749",
+        "name": "HINDI THRILLER MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72512",
+        "name": "HINDI SUBTITLE 2026 - 2020",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72513",
+        "name": "HINDI SUBTITLE 2019 - 2010",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72514",
+        "name": "HINDI SUBTITLE 2009 - 2000",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72515",
+        "name": "HINDI SUBTITLE BEFORE 2000",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71577",
+        "name": "HINDI OLD COLLECTION 1",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71578",
+        "name": "HINDI OLD COLLECTION 2",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71579",
+        "name": "HINDI OLD COLLECTION 3",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71580",
+        "name": "HINDI OLD COLLECTION 4",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71537",
+        "name": "HINDI ENGLISH DUBBED MOVIES 1",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71538",
+        "name": "HINDI ENGLISH DUBBED MOVIES 2",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71539",
+        "name": "HINDI ENGLISH DUBBED MOVIES 3",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71540",
+        "name": "HINDI ENGLISH DUBBED MOVIES 4",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "71541",
+        "name": "HINDI ENGLISH DUBBED MOVIES 5",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3974",
+        "name": "HINDI SOUTH DUBBED MOVIES 1",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3975",
+        "name": "HINDI SOUTH DUBBED MOVIES 2",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3976",
+        "name": "HINDI SOUTH DUBBED MOVIES 3",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4076",
+        "name": "HINDI SOUTH DUBBED MOVIES 4",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4077",
+        "name": "HINDI SOUTH DUBBED MOVIES 5",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3523",
+        "name": "HINDI MOVIES 2025",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3524",
+        "name": "HINDI MOVIES 2024",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3525",
+        "name": "HINDI MOVIES 2023",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3526",
+        "name": "HINDI MOVIES 2022",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3527",
+        "name": "HINDI MOVIES 2021",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3528",
+        "name": "HINDI MOVIES 2020",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3529",
+        "name": "HINDI MOVIES 2019",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3530",
+        "name": "HINDI MOVIES 2018",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3531",
+        "name": "HINDI MOVIES 2017",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3532",
+        "name": "HINDI MOVIES 2016",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3533",
+        "name": "HINDI MOVIES 2015",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3534",
+        "name": "HINDI MOVIES 2014",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3535",
+        "name": "HINDI MOVIES 2013",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3536",
+        "name": "HINDI MOVIES 2012",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3537",
+        "name": "HINDI MOVIES 2011",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3538",
+        "name": "HINDI MOVIES 2010",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3539",
+        "name": "HINDI MOVIES 2009",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3540",
+        "name": "HINDI MOVIES 2008",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3541",
+        "name": "HINDI MOVIES 2007",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3542",
+        "name": "HINDI MOVIES 2006",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78297",
+        "name": "HINDI MOVIES 2005",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78298",
+        "name": "HINDI MOVIES 2004",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78299",
+        "name": "HINDI MOVIES 2003",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78300",
+        "name": "HINDI MOVIES 2002",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78301",
+        "name": "HINDI MOVIES 2001",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78302",
+        "name": "HINDI MOVIES 2000",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77844",
+        "name": "HINDI KIDS LATEST MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77845",
+        "name": "HINDI KIDS MOVIES 2024 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77846",
+        "name": "HINDI KIDS MOVIES 2023 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77847",
+        "name": "HINDI KIDS MOVIES 2022 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77848",
+        "name": "HINDI KIDS MOVIES 2021 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77849",
+        "name": "HINDI KIDS MOVIES 2020 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77850",
+        "name": "HINDI KIDS MOVIES 2019 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77851",
+        "name": "HINDI KIDS MOVIES 2018 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77852",
+        "name": "HINDI KIDS MOVIES 2017 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77853",
+        "name": "HINDI KIDS MOVIES 2016 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77857",
+        "name": "HINDI KIDS MOVIES 2015 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77858",
+        "name": "HINDI KIDS MOVIES 2014 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77859",
+        "name": "HINDI KIDS MOVIES 2013 (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77860",
+        "name": "HINDI KIDS NETFLIX MOVIES (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77861",
+        "name": "HINDI KIDS AMAZON MOVIES (4K)",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76311",
+        "name": "MARATHI UPCOMING MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78243",
+        "name": "MARATHI MOVIES LATEST 4K",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78537",
+        "name": "MARATHI CRIME MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78538",
+        "name": "MARATHI COMEDY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78539",
+        "name": "MARATHI BOX OFFICE MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78540",
+        "name": "MARATHI ROMANTIC MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78541",
+        "name": "MARATHI THRILLER MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "70886",
+        "name": "MARATHI MOVIES 2026",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "70887",
+        "name": "MARATHI MOVIES 2025",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "70888",
+        "name": "MARATHI MOVIES 2024",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "70889",
+        "name": "MARATHI MOVIES 2023",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "70890",
+        "name": "MARATHI MOVIES 2022",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74214",
+        "name": "MARATHI MOVIES 2021",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74215",
+        "name": "MARATHI MOVIES 2020",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74216",
+        "name": "MARATHI MOVIES 2019",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74217",
+        "name": "MARATHI MOVIES 2018",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74218",
+        "name": "MARATHI MOVIES 2017",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74219",
+        "name": "MARATHI MOVIES 2016",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74220",
+        "name": "MARATHI MOVIES 2015",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74221",
+        "name": "MARATHI MOVIES 2014",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76604",
+        "name": "BENGALI UPCOMING MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77772",
+        "name": "BENGALI MOVIES 2026",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77773",
+        "name": "BENGALI MOVIES 2025-2024",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4764",
+        "name": "BENGALI MOVIES 2023-2022",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4763",
+        "name": "BENGALI MOVIES 2021-2020",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77775",
+        "name": "BENGALI MOVIES 2019-2018",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4762",
+        "name": "BENGALI MOVIE 2017-2016",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4761",
+        "name": "BENGALI MOVIE 2015-2014",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74225",
+        "name": "BENGALI ACTION MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74226",
+        "name": "BENGALI COMEDY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74227",
+        "name": "BENGALI CRIME MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74228",
+        "name": "BENGALI ROMANTIC MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74229",
+        "name": "BENGALI SUSPENCEFUL MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "74230",
+        "name": "BENGALI THRILLER MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76312",
+        "name": "KANNADA UPCOMING MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78242",
+        "name": "KANNADA MOVIES LATEST 4K",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72522",
+        "name": "KANNADA BOX OFFICE 1",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72523",
+        "name": "KANNADA ACTION MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72524",
+        "name": "KANNADA COMEDY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72525",
+        "name": "KANNADA ROMANTIC MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "72526",
+        "name": "KANNADA SUSPENCFULL MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4155",
+        "name": "KANNADA MOVIES 2025",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4156",
+        "name": "KANNADA MOVIES 2024",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4157",
+        "name": "KANNADA MOVIES 2023",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4158",
+        "name": "KANNADA MOVIES 2022",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4159",
+        "name": "KANNADA MOVIES 2021",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4160",
+        "name": "KANNADA MOVIES 2020",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4161",
+        "name": "KANNADA MOVIES 2019",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4162",
+        "name": "KANNADA MOVIES 2018",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4163",
+        "name": "KANNADA MOVIES 2017",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4164",
+        "name": "KANNADA MOVIES 2016",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4165",
+        "name": "KANNADA MOVIE # 11",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4166",
+        "name": "KANNADA MOVIE # 12",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4167",
+        "name": "KANNADA MOVIE # 13",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4168",
+        "name": "KANNADA MOVIE # 14",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "4169",
+        "name": "KANNADA MOVIE # 15",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "76310",
+        "name": "MALAYALAM UPCOMING MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77926",
+        "name": "MALAYALAM BOX OFFICE MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77953",
+        "name": "MALAYALAM COMEDY MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77932",
+        "name": "MALAYALAM ROMANTIC MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77954",
+        "name": "MALAYALAM ACTION MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77931",
+        "name": "MALAYALAM CRIME MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77952",
+        "name": "MALAYALAM SUSPENSEFUL MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77933",
+        "name": "MALAYALAM THRILLER MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77928",
+        "name": "MALAYALAM ALL TIME HIT MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77955",
+        "name": "MALAYALAM DUBBED MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77927",
+        "name": "MALAYALAM OLD COLLECTION MOVIES",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3767",
+        "name": "MALAYALAM MOVIES 2026",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77929",
+        "name": "MALAYALAM MOVIES 2025",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77925",
+        "name": "MALAYALAM MOVIES 2024",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "77930",
+        "name": "MALAYALAM MOVIES 2023",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78063",
+        "name": "MALAYALAM MOVIES 2022",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78062",
+        "name": "MALAYALAM MOVIES 2021",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3763",
+        "name": "MALAYALAM MOVIES 2020",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "78060",
+        "name": "MALAYALAM MOVIES 2019",
+        "source": "4k.tvstb.me"
+    },
+    {
+        "channel_id": "3764",
