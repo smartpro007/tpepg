@@ -41,15 +41,6 @@ function normalizeName(value) {
         .replace(/[^a-z0-9]/g, '');
 }
 
-function xmlEscape(value) {
-    return String(value ?? '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
-}
-
 function makeDate(timestamp) {
     return new Date(timestamp * 1000)
         .toISOString()
@@ -210,13 +201,14 @@ async function fetchStalkerEPG(targetChannels, config) {
         'Connection': 'keep-alive'
     };
 
-    // 1. Handshake with Safe Try-Catch (HTTP 403 / Cloudflare Protection Handling)
+    // 1. Handshake with cURL-style Prehash (Removing colons for success)
     console.log('Stalker: Handshake...');
+    const cleanMacForPrehash = mac.replace(/:/g, '');
 
     const handshakeURL = new URL(baseUrl);
     handshakeURL.searchParams.set('type', 'stb');
     handshakeURL.searchParams.set('action', 'handshake');
-    handshakeURL.searchParams.set('prehash', mac);
+    handshakeURL.searchParams.set('prehash', cleanMacForPrehash);
     handshakeURL.searchParams.set('token', '');
     handshakeURL.searchParams.set('JsHttpRequest', '1-xml');
 
@@ -228,7 +220,7 @@ async function fetchStalkerEPG(targetChannels, config) {
             timeout
         );
     } catch (error) {
-        console.log('Stalker Handshake Blocked (HTTP 403 / Cloudflare):', error.message);
+        console.log('Stalker Handshake Error:', error.message);
         return { channels: [], programmes: [], failed: 0 };
     }
 
@@ -238,6 +230,8 @@ async function fetchStalkerEPG(targetChannels, config) {
         console.log('Stalker Handshake Token not received, skipping Stalker.');
         return { channels: [], programmes: [], failed: 0 };
     }
+
+    console.log('Stalker Handshake Successful! Token acquired.');
 
     // 2. Authorization
     const authHeaders = {
@@ -636,3 +630,4 @@ generateMasterEPG().catch(error => {
     console.error('FATAL ERROR:', error.message);
     process.exitCode = 1;
 });
+        
