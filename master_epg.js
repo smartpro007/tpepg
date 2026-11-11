@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
@@ -201,7 +200,6 @@ async function fetchStalkerEPG(targetChannels, config) {
     const referer = portal.referer ||
         'http://4k.tvstb.me/stalker_portal/c/';
 
-    // PHP प्रमाणेच Cookie आणि headers
     const headers = {
         'User-Agent': userAgent,
         'X-User-Agent': headerConfig.x_user_agent ||
@@ -212,7 +210,7 @@ async function fetchStalkerEPG(targetChannels, config) {
         'Connection': 'keep-alive'
     };
 
-    // 1. Handshake
+    // 1. Handshake with Safe Try-Catch (HTTP 403 / Cloudflare Protection Handling)
     console.log('Stalker: Handshake...');
 
     const handshakeURL = new URL(baseUrl);
@@ -222,16 +220,23 @@ async function fetchStalkerEPG(targetChannels, config) {
     handshakeURL.searchParams.set('token', '');
     handshakeURL.searchParams.set('JsHttpRequest', '1-xml');
 
-    const handshake = await requestPortal(
-        handshakeURL.toString(),
-        headers,
-        timeout
-    );
+    let handshake;
+    try {
+        handshake = await requestPortal(
+            handshakeURL.toString(),
+            headers,
+            timeout
+        );
+    } catch (error) {
+        console.log('Stalker Handshake Blocked (HTTP 403 / Cloudflare):', error.message);
+        return { channels: [], programmes: [], failed: 0 };
+    }
 
     const token = handshake?.js?.token || handshake?.token || '';
 
     if (!token) {
-        throw new Error('Handshake token not received');
+        console.log('Stalker Handshake Token not received, skipping Stalker.');
+        return { channels: [], programmes: [], failed: 0 };
     }
 
     // 2. Authorization
@@ -252,11 +257,12 @@ async function fetchStalkerEPG(targetChannels, config) {
     profileURL.searchParams.set('signature', device.signature || '263');
     profileURL.searchParams.set('JsHttpRequest', '1-xml');
 
-    await requestPortal(
-        profileURL.toString(),
-        authHeaders,
-        timeout
-    );
+    try {
+        await requestPortal(profileURL.toString(), authHeaders, timeout);
+    } catch (e) {
+        console.log('Stalker Profile Error:', e.message);
+        return { channels: [], programmes: [], failed: 0 };
+    }
 
     await sleep(delay);
 
@@ -268,16 +274,19 @@ async function fetchStalkerEPG(targetChannels, config) {
     channelsURL.searchParams.set('action', 'get_all_channels');
     channelsURL.searchParams.set('JsHttpRequest', '1-xml');
 
-    const channelResponse = await requestPortal(
-        channelsURL.toString(),
-        authHeaders,
-        timeout
-    );
+    let channelResponse;
+    try {
+        channelResponse = await requestPortal(channelsURL.toString(), authHeaders, timeout);
+    } catch (e) {
+        console.log('Stalker Channel List Error:', e.message);
+        return { channels: [], programmes: [], failed: 0 };
+    }
 
     const portalChannels = getStalkerChannels(channelResponse);
 
     if (!portalChannels.length) {
-        throw new Error('Stalker channel list is empty or invalid');
+        console.log('Stalker channel list is empty or invalid');
+        return { channels: [], programmes: [], failed: 0 };
     }
 
     console.log(`Stalker: Portal channels found: ${portalChannels.length}`);
@@ -302,30 +311,24 @@ async function fetchStalkerEPG(targetChannels, config) {
     let failed = 0;
     let matched = 0;
 
-    // 5. Match channels and get EPG
+    // 5. Match channels by ID directly and get EPG
     for (const target of targetChannels) {
-        const targetId = String(target.channel_id ?? '');
+        const targetId = String(target.channel_id ?? '').trim();
         const targetName = String(target.name ?? '');
+
+        if (!targetId) continue;
 
         let portalChannel = portalById.get(targetId);
 
         if (!portalChannel) {
-            portalChannel = portalByName.get(
-                normalizeName(targetName)
-            );
+            portalChannel = portalChannels.find(sc => String(sc.id ?? sc.ch_id ?? '').trim() === targetId);
         }
 
         if (!portalChannel) {
-            console.log(`Stalker: Channel not matched: ${targetName}`);
             continue;
         }
 
-        const apiId = String(
-            portalChannel.id ??
-            portalChannel.ch_id ??
-            ''
-        );
-
+        const apiId = String(portalChannel.id ?? portalChannel.ch_id ?? '').trim();
         if (!apiId) continue;
 
         matched++;
@@ -361,14 +364,10 @@ async function fetchStalkerEPG(targetChannels, config) {
 
         } catch (error) {
             failed++;
-            console.log(
-                `Stalker EPG failed for ${targetName}: ${error.message}`
-            );
         }
     }
 
     console.log(`Stalker matched channels: ${matched}`);
-    console.log(`Stalker failed EPG requests: ${failed}`);
     console.log(`Stalker programmes received: ${outputProgrammes.length}`);
 
     return {
@@ -389,7 +388,6 @@ async function fetchSamsungEPG(targetChannels) {
 
     let buffer = Buffer.from(response.data);
 
-    // GZIP असल्यास decompress करा
     if (buffer[0] === 0x1f && buffer[1] === 0x8b) {
         buffer = zlib.gunzipSync(buffer);
     }
@@ -508,7 +506,6 @@ async function mergeMasterEPG(managedChannels, newProgrammes) {
         managedChannels.map(channel => String(channel.id))
     );
 
-    // आधीच्या managed channels आणि programmes काढा
     tv.channel = tv.channel.filter(
         channel => !managedIds.has(String(channel?.$?.id || ''))
     );
@@ -519,12 +516,10 @@ async function mergeMasterEPG(managedChannels, newProgrammes) {
         )
     );
 
-    // नवीन channel definitions
     for (const channel of managedChannels) {
         tv.channel.push(buildChannel(channel));
     }
 
-    // नवीन programmes
     tv.programme.push(...newProgrammes);
 
     const builder = new xml2js.Builder({
@@ -588,7 +583,6 @@ async function generateMasterEPG() {
     let samsungResult = { channels: [], programmes: [] };
     let stalkerResult = { channels: [], programmes: [], failed: 0 };
 
-    // Samsung EPG
     if (samsungTargets.length) {
         try {
             samsungResult = await fetchSamsungEPG(samsungTargets);
@@ -597,7 +591,6 @@ async function generateMasterEPG() {
         }
     }
 
-    // Stalker Portal EPG
     if (stalkerTargets.length) {
         try {
             stalkerResult = await fetchStalkerEPG(
