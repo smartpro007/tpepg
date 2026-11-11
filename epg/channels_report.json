@@ -9981,7 +9981,7 @@
     "id": "tp_1067",
     "name": "Star Sports 1 Tamil HD",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_77",
@@ -11745,7 +11745,7 @@
     "id": "tp_1738",
     "name": "OSD - 2",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1737",
@@ -11763,7 +11763,7 @@
     "id": "tp_1735",
     "name": "Alias-3 of 2715",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1734",
