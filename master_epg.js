@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
-const axios = require('axios');
 const xml2js = require('xml2js');
 
 const ROOT = __dirname;
@@ -127,37 +126,34 @@ function buildProgramme(channelId, programme) {
     return item;
 }
 
-async function requestPortal(url, headers, timeout) {
-    const response = await axios.get(url, {
-        headers,
-        timeout,
-        responseType: 'text',
-        transformResponse: [data => data],
-        maxRedirects: 5,
-        decompress: true,
-        validateStatus: () => true
-    });
-
-    if (response.status !== 200) {
-        const action = new URL(url).searchParams.get('action') || 'unknown';
-        const body = String(response.data || '').slice(0, 250);
-
-        throw new Error(
-            `Portal HTTP ${response.status} | Action: ${action} | Response: ${body}`
-        );
-    }
-
-    if (typeof response.data !== 'string') {
-        throw new Error('Portal returned an invalid response');
-    }
+// Axios ऐवजी नेटिव्ह fetch वापरून Cloudflare बायपास करणारे फंक्शन
+async function requestPortal(url, headers, timeout = 20000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
 
     try {
-        return JSON.parse(response.data);
-    } catch {
-        throw new Error(
-            'Portal JSON parsing failed: ' +
-            response.data.slice(0, 200)
-        );
+        const response = await global.fetch(url, {
+            headers,
+            signal: controller.signal
+        });
+
+        clearTimeout(timer);
+
+        const text = await response.text();
+
+        if (response.status !== 200) {
+            const action = new URL(url).searchParams.get('action') || 'unknown';
+            throw new Error(`Portal HTTP ${response.status} | Action: ${action} | Response: ${text.slice(0, 200)}`);
+        }
+
+        try {
+            return JSON.parse(text);
+        } catch {
+            throw new Error('Portal JSON parsing failed: ' + text.slice(0, 200));
+        }
+    } catch (err) {
+        clearTimeout(timer);
+        throw err;
     }
 }
 
@@ -197,11 +193,10 @@ async function fetchStalkerEPG(targetChannels, config) {
             'Model: MAG250; Link: WiFi',
         'Referer': referer,
         'Cookie': `mac=${mac}; stb_lang=${headerConfig.language || 'en'}; timezone=${headerConfig.timezone || 'Asia/Kolkata'}`,
-        'Accept': '*/*',
-        'Connection': 'keep-alive'
+        'Accept': '*/*'
     };
 
-    // 1. Handshake with cURL-style Prehash (Removing colons for success)
+    // 1. Handshake with Native Fetch (Cloudflare Bypass)
     console.log('Stalker: Handshake...');
     const cleanMacForPrehash = mac.replace(/:/g, '');
 
@@ -374,13 +369,9 @@ async function fetchStalkerEPG(targetChannels, config) {
 async function fetchSamsungEPG(targetChannels) {
     console.log('Fetching Samsung TV Plus EPG...');
 
-    const response = await axios.get(SAMSUNG_URL, {
-        responseType: 'arraybuffer',
-        timeout: 30000,
-        maxRedirects: 5
-    });
-
-    let buffer = Buffer.from(response.data);
+    const response = await global.fetch(SAMSUNG_URL);
+    const arrayBuffer = await response.arrayBuffer();
+    let buffer = Buffer.from(arrayBuffer);
 
     if (buffer[0] === 0x1f && buffer[1] === 0x8b) {
         buffer = zlib.gunzipSync(buffer);
@@ -630,4 +621,4 @@ generateMasterEPG().catch(error => {
     console.error('FATAL ERROR:', error.message);
     process.exitCode = 1;
 });
-        
+                            
