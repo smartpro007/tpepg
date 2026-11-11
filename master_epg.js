@@ -1,179 +1,528 @@
+
 const axios = require('axios');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
 const fs = require('fs');
 const zlib = require('zlib');
 const xml2js = require('xml2js');
 
 dayjs.extend(utc);
-dayjs.extend(timezone);
 
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-async function generateMasterEPG() {
-  console.log('Starting Master EPG Generation (Samsung + MAC merging into tataplay.xml.gz)...');
-
-  if (!fs.existsSync('./channels.json')) {
-    console.log('channels.json not found!');
-    return;
-  }
-
-  const channelsList = JSON.parse(fs.readFileSync('./channels.json', 'utf-8'));
-  let samsungIds = [];
-  let macChannels = [];
-  let extraXmlSnippet = '';
-
-  channelsList.forEach(ch => {
-    extraXmlSnippet += `  <channel id="${ch.channel_id}">\n`;
-    extraXmlSnippet += `    <display-name>${escapeXML(ch.name)}</display-name>\n`;
-    if (ch.logo) extraXmlSnippet += `    <icon src="${escapeXML(ch.logo)}" />\n`;
-    extraXmlSnippet += `  </channel>\n`;
-
-    if (ch.source === 'samsungtvplus') {
-      samsungIds.push(ch.channel_id);
-    } else if (ch.source === '4k.tvstb.me') {
-      macChannels.push(ch);
+const parser = new xml2js.Parser();
+const builder = new xml2js.Builder({
+    xmldec: {
+        version: '1.0',
+        encoding: 'UTF-8'
+    },
+    renderOpts: {
+        pretty: true,
+        indent: '  ',
+        newline: '\n'
     }
-  });
+});
 
-  // ==========================================
-  // १. SAMSUNG TV PLUS (Extracting from .xml.gz URL)
-  // ==========================================
-  console.log('Fetching & Extracting Samsung TV Plus EPG...');
-  try {
-    const samsungResp = await axios.get('https://i.mjh.nz/SamsungTVPlus/in.xml.gz', {
-      responseType: 'arraybuffer',
-      timeout: 25000
+function escapeXML(value) {
+    return String(value ?? '').replace(/[<>&'"]/g, c => ({
+        '<': '&lt;',
+        '>': '&gt;',
+        '&': '&amp;',
+        "'": '&apos;',
+        '"': '&quot;'
+    })[c]);
+}
+
+function getText(value) {
+    if (Array.isArray(value)) {
+        return value[0] ?? '';
+    }
+    return value ?? '';
+}
+
+function extractArray(data) {
+    const candidates = [
+        data?.js?.data?.data,
+        data?.js?.data,
+        data?.js
+    ];
+
+    for (const item of candidates) {
+        if (Array.isArray(item)) return item;
+    }
+
+    return [];
+}
+
+function normalizeName(name) {
+    return String(name || '')
+        .toLowerCase()
+        .replace(/&amp;/g, '&')
+        .replace(/[^a-z0-9]/g, '');
+}
+
+async function apiRequest(url, headers, timeout = 20000) {
+    const response = await axios.get(url, {
+        headers,
+        timeout,
+        responseType: 'text',
+        transformResponse: [data => data]
     });
 
-    const unzippedXml = zlib.gunzipSync(samsungResp.data).toString('utf-8');
-    const parser = new xml2js.Parser();
-    const parsedXml = await parser.parseStringPromise(unzippedXml);
-
-    if (parsedXml?.tv?.programme) {
-      parsedXml.tv.programme.forEach(prog => {
-        const chId = prog.$.channel;
-        if (samsungIds.includes(chId)) {
-          extraXmlSnippet += `  <programme start="${prog.$.start}" stop="${prog.$.stop}" channel="${chId}">\n`;
-          if (prog.title) extraXmlSnippet += `    <title lang="en">${escapeXML(prog.title[0])}</title>\n`;
-          if (prog.desc) extraXmlSnippet += `    <desc lang="en">${escapeXML(prog.desc[0])}</desc>\n`;
-          extraXmlSnippet += `  </programme>\n`;
-        }
-      });
-      console.log('Samsung TV Plus EPG extracted successfully.');
+    if (typeof response.data !== 'string') {
+        return response.data;
     }
-  } catch (err) {
-    console.log('Samsung EPG Error:', err.message);
-  }
 
-  // ==========================================
-  // २. MAC PORTAL (4k.tvstb.me - Stalker API)
-  // ==========================================
-  console.log('Connecting to MAC Portal (Stalker API)...');
-  const portalBase = "http://4k.tvstb.me/stalker_portal/server/load.php";
-  const mac = "00:1A:79:00:81:91";
-  const macHeaders = [
-    "User-Agent: Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stb app ver: 2 rev: 250 Safari/533.3",
-    "X-User-Agent: Model: MAG250; Link: WiFi",
-    "Referer: http://4k.tvstb.me/stalker_portal/c/",
-    `Cookie: mac=${mac}; stb_lang=en; timezone=Asia/Kolkata`
-  ];
+    try {
+        return JSON.parse(response.data);
+    } catch {
+        throw new Error('Invalid JSON response from Portal');
+    }
+}
 
-  try {
-    const handshakeUrl = `${portalBase}?type=stb&action=handshake&prehash=${encodeURIComponent(mac)}&token=&JsHttpRequest=1-xml`;
-    const hsResp = await axios.get(handshakeUrl, { headers: macHeaders, timeout: 15000 });
-    const token = hsResp.data?.js?.token || hsResp.data?.token;
+async function generateMasterEPG() {
 
-    if (token) {
-      const authHeaders = [...macHeaders, `Authorization: Bearer ${token}`];
-      const channelsUrl = `${portalBase}?type=itv&action=get_all_channels&JsHttpRequest=1-xml`;
-      const chResp = await axios.get(channelsUrl, { headers: authHeaders, timeout: 15000 });
-      
-      const channelData = chResp.data;
-      let allStalkerChannels = [];
-      if (channelData?.js?.data && Array.isArray(channelData.js.data)) {
-        allStalkerChannels = channelData.js.data;
-      } else if (Array.isArray(channelData?.js)) {
-        allStalkerChannels = channelData.js;
-      }
+    console.log('Starting Master EPG Generation (Samsung + MAC)...');
 
-      if (allStalkerChannels.length > 0) {
-        for (const targetCh of macChannels) {
-          const matched = allStalkerChannels.find(sc => 
-            sc && typeof sc === 'object' && (
-              (sc.name && typeof sc.name === 'string' && sc.name.toLowerCase() === targetCh.name.toLowerCase()) || 
-              (sc.id && String(sc.id) === String(targetCh.channel_id))
-            )
-          );
+    if (!fs.existsSync('./channels.json')) {
+        throw new Error('channels.json not found!');
+    }
 
-          if (matched && matched.id) {
-            const epgUrl = `${portalBase}?type=itv&action=get_short_epg&tv_genre_id=0&not_ended=1&ch_id=${matched.id}&JsHttpRequest=1-xml`;
-            
-            try {
-              const epgResp = await axios.get(epgUrl, { headers: authHeaders, timeout: 10000 });
-              const epgJson = epgResp.data;
-              let programs = [];
-              
-              if (epgJson?.js?.data && Array.isArray(epgJson.js.data)) {
-                programs = epgJson.js.data;
-              } else if (Array.isArray(epgJson?.js)) {
-                programs = epgJson.js;
-              }
+    const channelsList = JSON.parse(
+        fs.readFileSync('./channels.json', 'utf8')
+    );
 
-              programs.forEach(prog => {
-                if (prog && typeof prog === 'object') {
-                  const startTs = Number(prog.start_timestamp);
-                  const stopTs = Number(prog.stop_timestamp);
+    if (!Array.isArray(channelsList)) {
+        throw new Error('Invalid channels.json format');
+    }
 
-                  if (startTs > 0 && stopTs > startTs) {
-                    const start = dayjs.unix(startTs).utc().format('YYYYMMDDHHmmss ZZ');
-                    const stop = dayjs.unix(stopTs).utc().format('YYYYMMDDHHmmss ZZ');
-                    const title = prog.name || 'Unknown';
-                    const desc = prog.descr || '';
+    const samsungChannels = channelsList.filter(
+        ch => ch.source === 'samsungtvplus'
+    );
 
-                    extraXmlSnippet += `  <programme start="${start}" stop="${stop}" channel="${targetCh.channel_id}">\n`;
-                    extraXmlSnippet += `    <title lang="en">${escapeXML(title)}</title>\n`;
-                    if (desc) extraXmlSnippet += `    <desc lang="en">${escapeXML(desc)}</desc>\n`;
-                    extraXmlSnippet += `  </programme>\n`;
-                  }
+    const macChannels = channelsList.filter(
+        ch => ch.source === '4k.tvstb.me'
+    );
+
+    const managedIds = new Set(
+        channelsList
+            .map(ch => String(ch.channel_id || ''))
+            .filter(Boolean)
+    );
+
+    const newChannels = [];
+    const newProgrammes = [];
+
+    const samsungIds = new Set(
+        samsungChannels.map(ch => String(ch.channel_id))
+    );
+
+    // ==========================================
+    // 1. CHANNEL DEFINITIONS
+    // ==========================================
+
+    for (const ch of channelsList) {
+
+        if (!ch.channel_id || !ch.name) continue;
+
+        const channel = {
+            $: {
+                id: String(ch.channel_id)
+            },
+            'display-name': [String(ch.name)]
+        };
+
+        if (ch.logo) {
+            channel.icon = [{
+                $: {
+                    src: String(ch.logo)
                 }
-              });
-            } catch (err) {}
-          }
-          await sleep(150);
+            }];
         }
-      }
-      console.log('MAC Portal EPG extracted successfully.');
+
+        newChannels.push(channel);
     }
-  } catch (err) {
-    console.log('MAC Portal Error:', err.message);
-  }
 
-  // ==========================================
-  // ३. MERGE INTO tataplay.xml.gz
-  // ==========================================
-  const targetFile = './epg/tataplay.xml';
-  if (fs.existsSync(targetFile)) {
-    let existingXml = fs.readFileSync(targetFile, 'utf-8');
-    existingXml = existingXml.replace('</tv>', extraXmlSnippet + '</tv>');
+    // ==========================================
+    // 2. SAMSUNG TV PLUS EPG
+    // ==========================================
 
-    fs.writeFileSync(targetFile, existingXml, 'utf-8');
-    fs.writeFileSync('./epg/tataplay.xml.gz', zlib.gzipSync(existingXml));
-    console.log('Successfully merged Samsung & MAC EPG into tataplay.xml.gz!');
-  } else {
-    console.log('tataplay.xml not found for merging!');
-  }
+    console.log('Fetching Samsung TV Plus EPG...');
+
+    try {
+
+        const samsungResp = await axios.get(
+            'https://i.mjh.nz/SamsungTVPlus/in.xml.gz',
+            {
+                responseType: 'arraybuffer',
+                timeout: 30000
+            }
+        );
+
+        const unzippedXml = zlib
+            .gunzipSync(samsungResp.data)
+            .toString('utf8');
+
+        const parsedSamsung = await parser.parseStringPromise(
+            unzippedXml
+        );
+
+        const samsungProgrammes =
+            parsedSamsung?.tv?.programme || [];
+
+        let samsungCount = 0;
+
+        for (const prog of samsungProgrammes) {
+
+            const chId = String(prog?.$?.channel || '');
+
+            if (!samsungIds.has(chId)) continue;
+
+            newProgrammes.push(prog);
+            samsungCount++;
+        }
+
+        console.log(
+            `Samsung EPG extracted: ${samsungCount} programmes`
+        );
+
+    } catch (err) {
+        console.log('Samsung EPG Error:', err.message);
+    }
+
+    // ==========================================
+    // 3. STALKER MAC PORTAL
+    // ==========================================
+
+    console.log('Connecting to MAC Portal...');
+
+    const portalBase =
+        'http://4k.tvstb.me/stalker_portal/server/load.php';
+
+    // Use GitHub Repository Secrets
+    const mac = process.env.STALKER_MAC || '';
+    const sn = process.env.STALKER_SN || '';
+    const deviceId = process.env.STALKER_DEVICE_ID || '';
+    const deviceId2 = process.env.STALKER_DEVICE_ID2 || '';
+    const signature = process.env.STALKER_SIGNATURE || '263';
+
+    // Axios requires a key-value headers object
+    const macHeaders = {
+        'User-Agent':
+            'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stb app ver: 2 rev: 250 Safari/533.3',
+
+        'X-User-Agent': 'Model: MAG250; Link: WiFi',
+
+        'Referer':
+            'http://4k.tvstb.me/stalker_portal/c/',
+
+        'Cookie':
+            `mac=${mac}; stb_lang=en; timezone=Asia/Kolkata`,
+
+        'Accept': 'application/json, text/javascript, */*'
+    };
+
+    if (macChannels.length > 0 && !mac) {
+        throw new Error('STALKER_MAC GitHub Secret is missing');
+    }
+
+    if (macChannels.length > 0) {
+
+        try {
+
+            // 3.1 Handshake
+            const handshakeUrl =
+                `${portalBase}?type=stb&action=handshake` +
+                `&prehash=${encodeURIComponent(mac)}` +
+                '&token=&JsHttpRequest=1-xml';
+
+            const hsResp = await apiRequest(
+                handshakeUrl,
+                macHeaders
+            );
+
+            const token =
+                hsResp?.js?.token ||
+                hsResp?.token ||
+                '';
+
+            if (!token) {
+                throw new Error('Handshake Token Failed');
+            }
+
+            console.log('MAC Portal Handshake Successful');
+
+            const authHeaders = {
+                ...macHeaders,
+                'Authorization': `Bearer ${token}`
+            };
+
+            // 3.2 Optional Profile Request
+            if (sn && deviceId && deviceId2) {
+
+                const profileUrl =
+                    `${portalBase}?type=stb&action=get_profile` +
+                    `&sn=${encodeURIComponent(sn)}` +
+                    `&device_id=${encodeURIComponent(deviceId)}` +
+                    `&device_id2=${encodeURIComponent(deviceId2)}` +
+                    `&signature=${encodeURIComponent(signature)}` +
+                    '&JsHttpRequest=1-xml';
+
+                try {
+                    await apiRequest(profileUrl, authHeaders);
+                    console.log('Profile Request Completed');
+                } catch (err) {
+                    console.log('Profile Warning:', err.message);
+                }
+            }
+
+            // 3.3 Get Channel List
+            const channelsUrl =
+                `${portalBase}?type=itv&action=get_all_channels` +
+                '&JsHttpRequest=1-xml';
+
+            const channelData = await apiRequest(
+                channelsUrl,
+                authHeaders
+            );
+
+            const allStalkerChannels = extractArray(channelData);
+
+            if (!allStalkerChannels.length) {
+                throw new Error('Stalker Channel List Empty');
+            }
+
+            console.log(
+                `Portal Channels Found: ${allStalkerChannels.length}`
+            );
+
+            let matchedCount = 0;
+            let programmeCount = 0;
+            let unmatchedCount = 0;
+
+            // 3.4 Match and Fetch EPG
+            for (const targetCh of macChannels) {
+
+                const targetName = normalizeName(targetCh.name);
+                const targetId = String(targetCh.channel_id);
+
+                const matched = allStalkerChannels.find(sc => {
+
+                    if (!sc || typeof sc !== 'object') {
+                        return false;
+                    }
+
+                    const portalName = normalizeName(sc.name);
+                    const portalId = String(sc.id || '');
+
+                    return (
+                        (portalId && portalId === targetId) ||
+                        (portalName && portalName === targetName)
+                    );
+                });
+
+                if (!matched?.id) {
+
+                    console.log(
+                        `Channel Not Matched: ${targetCh.name}`
+                    );
+
+                    unmatchedCount++;
+                    continue;
+                }
+
+                matchedCount++;
+
+                console.log(
+                    `Fetching EPG: ${targetCh.name} [${matched.id}]`
+                );
+
+                const epgUrl =
+                    `${portalBase}?type=itv&action=get_short_epg` +
+                    '&tv_genre_id=0&not_ended=1' +
+                    `&ch_id=${encodeURIComponent(matched.id)}` +
+                    '&JsHttpRequest=1-xml';
+
+                try {
+
+                    const epgJson = await apiRequest(
+                        epgUrl,
+                        authHeaders,
+                        15000
+                    );
+
+                    const programmes = extractArray(epgJson);
+
+                    let channelProgrammeCount = 0;
+
+                    for (const prog of programmes) {
+
+                        if (!prog || typeof prog !== 'object') {
+                            continue;
+                        }
+
+                        const startTs = Number(
+                            prog.start_timestamp || 0
+                        );
+
+                        const stopTs = Number(
+                            prog.stop_timestamp || 0
+                        );
+
+                        if (
+                            !Number.isFinite(startTs) ||
+                            !Number.isFinite(stopTs) ||
+                            startTs <= 0 ||
+                            stopTs <= startTs
+                        ) {
+                            continue;
+                        }
+
+                        const start = dayjs
+                            .unix(startTs)
+                            .utc()
+                            .format('YYYYMMDDHHmmss ZZ');
+
+                        const stop = dayjs
+                            .unix(stopTs)
+                            .utc()
+                            .format('YYYYMMDDHHmmss ZZ');
+
+                        const programme = {
+                            $: {
+                                start,
+                                stop,
+                                channel: targetId
+                            },
+                            title: [
+                                {
+                                    _: String(prog.name || 'Unknown'),
+                                    $: { lang: 'en' }
+                                }
+                            ]
+                        };
+
+                        if (prog.descr) {
+                            programme.desc = [
+                                {
+                                    _: String(prog.descr),
+                                    $: { lang: 'en' }
+                                }
+                            ];
+                        }
+
+                        newProgrammes.push(programme);
+                        channelProgrammeCount++;
+                    }
+
+                    programmeCount += channelProgrammeCount;
+
+                    console.log(
+                        `EPG Found: ${channelProgrammeCount} programmes`
+                    );
+
+                } catch (err) {
+
+                    console.log(
+                        `EPG Error (${targetCh.name}): ${err.message}`
+                    );
+                }
+
+                await sleep(250);
+            }
+
+            console.log(
+                `MAC Summary: Matched=${matchedCount}, ` +
+                `Programmes=${programmeCount}, ` +
+                `Unmatched=${unmatchedCount}`
+            );
+
+        } catch (err) {
+
+            console.log('MAC Portal Error:', err.message);
+        }
+    }
+
+    // ==========================================
+    // 4. MERGE INTO MASTER XML
+    // ==========================================
+
+    const targetFile = './epg/tataplay.xml';
+    const gzipFile = './epg/tataplay.xml.gz';
+
+    if (!fs.existsSync(targetFile)) {
+        throw new Error('tataplay.xml not found for merging!');
+    }
+
+    console.log('Merging EPG into Master XML...');
+
+    const existingXml = fs.readFileSync(
+        targetFile,
+        'utf8'
+    );
+
+    const master = await parser.parseStringPromise(existingXml);
+
+    if (!master?.tv) {
+        throw new Error('Invalid Master XML: tv root not found');
+    }
+
+    if (!Array.isArray(master.tv.channel)) {
+        master.tv.channel = [];
+    }
+
+    if (!Array.isArray(master.tv.programme)) {
+        master.tv.programme = [];
+    }
+
+    // Remove previously generated entries for managed IDs
+    master.tv.channel = master.tv.channel.filter(ch => {
+        const id = String(ch?.$?.id || '');
+        return !managedIds.has(id);
+    });
+
+    master.tv.programme = master.tv.programme.filter(prog => {
+        const id = String(prog?.$?.channel || '');
+        return !managedIds.has(id);
+    });
+
+    // Add updated channels and programmes
+    master.tv.channel.push(...newChannels);
+    master.tv.programme.push(...newProgrammes);
+
+    // Build final XML
+    const finalXml = builder.buildObject(master);
+
+    // Validate generated XML before writing
+    await parser.parseStringPromise(finalXml);
+
+    // Ensure output directory exists
+    fs.mkdirSync('./epg', { recursive: true });
+
+    // Write XML and GZIP
+    const tempXml = targetFile + '.tmp';
+    const tempGzip = gzipFile + '.tmp';
+
+    fs.writeFileSync(tempXml, finalXml, 'utf8');
+
+    fs.writeFileSync(
+        tempGzip,
+        zlib.gzipSync(Buffer.from(finalXml, 'utf8'))
+    );
+
+    fs.renameSync(tempXml, targetFile);
+    fs.renameSync(tempGzip, gzipFile);
+
+    console.log('----------------------------------');
+    console.log('MASTER EPG GENERATION COMPLETED');
+    console.log(`Channels Added: ${newChannels.length}`);
+    console.log(`Programmes Added: ${newProgrammes.length}`);
+    console.log('XML: epg/tataplay.xml');
+    console.log('GZIP: epg/tataplay.xml.gz');
+    console.log('----------------------------------');
 }
 
-function escapeXML(str) {
-  if (!str) return '';
-  return String(str).replace(/[<>&'"]/g, c => {
-    switch (c) {
-      case '<': return '&lt;'; case '>': return '&gt;';
-      case '&': return '&amp;'; case '\'': return '&apos;'; case '"': return '&quot;';
-    }
-  });
-}
-
-generateMasterEPG();
+generateMasterEPG().catch(err => {
+    console.error('MASTER EPG FATAL ERROR:', err.message);
+    process.exitCode = 1;
+});
