@@ -26,7 +26,8 @@ def get_headers(token=None):
     return headers
 
 def main():
-    if not os.path.exists(CHANNELS_DIR):
+    # इथे CHANNELS_DIR ऐवजी अचूक CHANNELS_FILE केले आहे
+    if not os.path.exists(CHANNELS_FILE):
         print("Error: channels.json not found!")
         return
 
@@ -110,7 +111,7 @@ def main():
             for prog in programmes:
                 start_ts = int(prog.get("start_timestamp", 0))
                 stop_ts = int(prog.get("stop_timestamp", 0))
-                if start_ts <= 0 or stop_ts <= start_ts:
+                if start_ts <= 0 || stop_ts <= start_ts:
                     continue
 
                 title = prog.get("name", "Unknown")
@@ -136,3 +137,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
