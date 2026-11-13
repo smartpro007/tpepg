@@ -13,12 +13,14 @@ dayjs.extend(customParseFormat);
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function runGenerator() {
-  console.log('Starting Safe Rate-Limited Combined EPG Script...');
+  console.log('Starting Safe Rate-Linked Combined EPG Script with Samsung & Elitebeam...');
   
   let allChannelsDict = {}; 
   let reportDataDict = {};  
   let tataChannelCount = 0;
   let jioChannelCount = 0;
+  let samsungChannelCount = 0;
+  let elitebeamChannelCount = 0;
 
   const today = dayjs().tz('Asia/Kolkata');
   const datesToFetch = [
@@ -43,7 +45,7 @@ async function runGenerator() {
       console.log(`[TataPlay] Date: ${dateStr} | Offset: ${currentOffset} / ${totalChannels}`);
       
       let responseData = null;
-      let attempts = 5; // प्रयत्न ५ वेळा वाढवले
+      let attempts = 5;
 
       while (attempts > 0) {
         try {
@@ -58,7 +60,7 @@ async function runGenerator() {
           
           if (status === 429) {
             console.log('--> Rate limit hit (429)! Cooling down for 30 seconds...');
-            await sleep(30000); // 429 आल्यास ३० सेकंद पूर्ण थांबणे
+            await sleep(30000);
           } else {
             await sleep(10000);
           }
@@ -75,7 +77,7 @@ async function runGenerator() {
       totalChannels = responseData.total || totalChannels;
       const channels = responseData.channelList;
 
-      channels.hash = channels.forEach(ch => {
+      channels.forEach(ch => {
         if (ch.title && ch.title !== '.') {
           const site_id = `tp_${String(ch.id)}`;
           const name = ch.title;
@@ -99,8 +101,6 @@ async function runGenerator() {
 
       currentOffset += batchLimit; 
       fetchedCount++;
-
-      // प्रत्येक रिक्वेस्टनंतर ३ सेकंदाचा सुरक्षित गॅप (429 एरर टाळण्यासाठी)
       await sleep(3000); 
     }
   }
@@ -108,52 +108,59 @@ async function runGenerator() {
   console.log(`\n>>> TataPlay Fetch Completed! Total Unique Channels: ${tataChannelCount}`);
 
   // ==========================================
-  // २. JIOTV EPG FETCHING
+  // २. JIOTV EPG FETCHING (from jiotv.json)
   // ==========================================
   console.log('\n=== STEP 2: Fetching JioTV EPG (20-Channel Batches) ===');
 
+  let masterChannelsList = [];
+  
+  // JioTV channels source check
   if (fs.existsSync('./jiotv.json')) {
-    const fileContent = fs.readFileSync('./jiotv.json', 'utf-8');
-    const parsedJson = JSON.parse(fileContent);
-    const jioChannels = parsedJson.channels || [];
+    try {
+      const fileContent = fs.readFileSync('./jiotv.json', 'utf-8');
+      const parsedJson = JSON.parse(fileContent);
+      const jioChannelsList = parsedJson.channels || [];
 
-    console.log(`Found ${jioChannels.length} JioTV channels in jiotv.json to process.`);
-    const offsets = [-1, 0, 1];
-    const chunk = 20;
+      console.log(`Found ${jioChannelsList.length} JioTV channels in jiotv.json to process.`);
+      const offsets = [-1, 0, 1];
+      const chunk = 20;
 
-    for (let i = 0; i < jioChannels.length; i += chunk) {
-      const batchChannels = jioChannels.slice(i, i + chunk);
-      console.log(`Processing JioTV Batch ${Math.floor(i / chunk) + 1} of ${Math.ceil(jioChannels.length / chunk)}...`);
+      for (let i = 0; i < jioChannelsList.length; i += chunk) {
+        const batchChannels = jioChannelsList.slice(i, i + chunk);
+        console.log(`Processing JioTV Batch ${Math.floor(i / chunk) + 1} of ${Math.ceil(jioChannelsList.length / chunk)}...`);
 
-      await Promise.all(batchChannels.map(async (jioCh) => {
-        const jioId = String(jioCh.channel_id || jioCh.id);
-        const jioName = jioCh.channel_name || jioCh.name;
+        await Promise.all(batchChannels.map(async (jioCh) => {
+          const jioId = String(jioCh.channel_id || jioCh.id);
+          const jioName = jioCh.channel_name || jioCh.name;
 
-        if (!allChannelsDict[jioId]) {
-          allChannelsDict[jioId] = { id: jioId, name: jioName, logo: jioCh.logo || '', epgItems: [] };
-          reportDataDict[jioId] = { id: jioId, name: jioName, provider: 'JioTV', epg_generated: false };
-          jioChannelCount++;
-        }
-
-        for (const off of offsets) {
-          try {
-            const resp = await axios.get(`https://iptvmax.site/api/epg/epg.php?id=${jioId}&offset=${off}`, { timeout: 10000 });
-            const data = resp.data;
-            const programs = Array.isArray(data) ? data : (data.epg || []);
-
-            if (programs.length > 0) {
-              reportDataDict[jioId].epg_generated = true;
-              programs.forEach(prog => {
-                allChannelsDict[jioId].epgItems.push({ type: 'jiotv', data: prog });
-              });
-            }
-          } catch (e) {
-            // Ignore error
+          if (!allChannelsDict[jioId]) {
+            allChannelsDict[jioId] = { id: jioId, name: jioName, logo: jioCh.logo || '', epgItems: [] };
+            reportDataDict[jioId] = { id: jioId, name: jioName, provider: 'JioTV', epg_generated: false };
+            jioChannelCount++;
           }
-        }
-      }));
 
-      await sleep(500);
+          for (const off of offsets) {
+            try {
+              const resp = await axios.get(`https://iptvmax.site/api/epg/epg.php?id=${jioId}&offset=${off}`, { timeout: 10000 });
+              const data = resp.data;
+              const programs = Array.isArray(data) ? data : (data.epg || []);
+
+              if (programs.length > 0) {
+                reportDataDict[jioId].epg_generated = true;
+                programs.forEach(prog => {
+                  allChannelsDict[jioId].epgItems.push({ type: 'jiotv', data: prog });
+                });
+              }
+            } catch (e) {
+              // Ignore error
+            }
+          }
+        }));
+
+        await sleep(500);
+      }
+    } catch (err) {
+      console.log('--> Error reading jiotv.json:', err.message);
     }
   } else {
     console.log('--> jiotv.json file not found! Skipping JioTV.');
@@ -162,9 +169,136 @@ async function runGenerator() {
   console.log(`\n>>> JioTV Fetch Completed! Total Unique Channels: ${jioChannelCount}`);
 
   // ==========================================
-  // ३. XML असेंब्ली व रिटेन्शन विंडो
+  // ३. SAMSUNG TV PLUS EPG FETCHING (from channels.json)
   // ==========================================
-  console.log('\n=== STEP 3: Assembling XML & Saving Files ===');
+  console.log('\n=== STEP 3: Fetching Samsung TV Plus EPG (from channels.json) ===');
+  
+  if (fs.existsSync('./channels.json')) {
+    try {
+      const channelsFileContent = fs.readFileSync('./channels.json', 'utf-8');
+      // channels.json direct array असू शकते किंवा object मध्ये असू शकते म्हणून खालीलप्रमाणे हाताळू
+      const parsedChannels = JSON.parse(channelsFileContent);
+      masterChannelsList = Array.isArray(parsedChannels) ? parsedChannels : (parsedChannels.channels || []);
+
+      const samsungChannelIds = new Set();
+      masterChannelsList.forEach(ch => {
+        if (ch.source === 'samsungtvplus') {
+          const sId = String(ch.channel_id || ch.id);
+          samsungChannelIds.add(sId);
+          const sName = ch.name || 'Samsung Channel';
+
+          if (!allChannelsDict[sId]) {
+            allChannelsDict[sId] = { id: sId, name: sName, logo: ch.logo || '', epgItems: [] };
+            reportDataDict[sId] = { id: sId, name: sName, provider: 'SamsungTVPlus', epg_generated: false };
+            samsungChannelCount++;
+          }
+        }
+      });
+
+      if (samsungChannelIds.size > 0) {
+        console.log(`Found ${samsungChannelIds.size} Samsung TV Plus channels in channels.json. Fetching XML...`);
+        const samsungRes = await axios.get('https://i.mjh.nz/SamsungTVPlus/in.xml.gz', { responseType: 'arraybuffer', timeout: 30000 });
+        const samsungXmlUnzipped = zlib.gunzipSync(Buffer.from(samsungRes.data)).toString('utf-8');
+
+        samsungChannelIds.forEach(sId => {
+          const progRegex = new RegExp(`<programme\\s+start="([^"]+)"\\s+stop="([^"]+)"\\s+channel="${sId}">([\\s\\S]*?)<\/programme>`, 'g');
+          let match;
+          let count = 0;
+          while ((match = progRegex.exec(samsungXmlUnzipped)) !== null) {
+            const startStr = match[1];
+            const stopStr = match[2];
+            const innerContent = match[3];
+
+            const titleMatch = /<title[^>]*>(.*?)<\/title>/.exec(innerContent);
+            const descMatch = /<desc[^>]*>(.*?)<\/desc>/.exec(innerContent);
+            const iconMatch = /<icon\\s+src="([^"]+)"/.exec(innerContent);
+
+            const title = titleMatch ? titleMatch[1] : '';
+            const desc = descMatch ? descMatch[1] : '';
+            const icon = iconMatch ? iconMatch[1] : '';
+
+            const parseStartTime = dayjs(startStr, 'YYYYMMDDHHmmss ZZ', true);
+            const parseEndTime = dayjs(stopStr, 'YYYYMMDDHHmmss ZZ', true);
+
+            if (parseStartTime.isValid() && parseEndTime.isValid()) {
+              allChannelsDict[sId].epgItems.push({
+                type: 'samsung',
+                data: {
+                  startTime: parseStartTime.valueOf(),
+                  endTime: parseEndTime.valueOf(),
+                  title: title,
+                  desc: desc,
+                  icon: icon
+                }
+              });
+              count++;
+            }
+          }
+
+          if (count > 0 && reportDataDict[sId]) {
+            reportDataDict[sId].epg_generated = true;
+          }
+        });
+      } else {
+        console.log('--> No channels with source: "samsungtvplus" found in channels.json.');
+      }
+    } catch (err) {
+      console.error('[SamsungTVPlus Error] Failed to process channels.json or Samsung EPG:', err.message);
+    }
+  } else {
+    console.log('--> channels.json file not found! Skipping Samsung TV Plus.');
+  }
+
+  console.log(`\n>>> Samsung TV Plus Processed! Total Channels Added: ${samsungChannelCount}`);
+
+  // ==========================================
+  // ४. ELITEBEAM CUSTOM MANUAL EPG GENERATION
+  // ==========================================
+  console.log('\n=== STEP 4: Generating Elitebeam Custom EPG (Movies & Music) ===');
+  
+  const elitebeamChannels = [
+    { id: 'Elitebeam_Movies', name: 'Elitebeam Movies' },
+    { id: 'Elitebeam_Music', name: 'Elitebeam Music' }
+  ];
+
+  elitebeamChannels.forEach(eb => {
+    if (!allChannelsDict[eb.id]) {
+      allChannelsDict[eb.id] = { id: eb.id, name: eb.name, logo: '', epgItems: [] };
+      reportDataDict[eb.id] = { id: eb.id, name: eb.name, provider: 'Elitebeam', epg_generated: true };
+      elitebeamChannelCount++;
+
+      let loopTime = today.subtract(2, 'day').startOf('day');
+      const endTimeLimit = today.add(3, 'day').endOf('day');
+
+      while (loopTime.isBefore(endTimeLimit)) {
+        const blockStart = loopTime;
+        const blockEnd = loopTime.add(2, 'hour');
+
+        let progTitle = eb.id === 'Elitebeam_Movies' ? 'Blockbuster Movie Stream' : 'Non-Stop Music Playlist';
+        let progDesc = `Enjoy non-stop entertainment on ${eb.name}.`;
+
+        allChannelsDict[eb.id].epgItems.push({
+          type: 'elitebeam',
+          data: {
+            startTime: blockStart.valueOf(),
+            endTime: blockEnd.valueOf(),
+            title: progTitle,
+            desc: progDesc,
+            icon: ''
+          }
+        });
+
+        loopTime = blockEnd;
+      }
+    }
+  });
+
+  console.log(`\n>>> Elitebeam Custom EPG Generated! Total Channels: ${elitebeamChannelCount}`);
+
+  // ==========================================
+  // ५. XML असेंब्ली व रिटेन्शन विंडो
+  // ==========================================
+  console.log('\n=== STEP 5: Assembling XML & Saving Files ===');
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<tv generator-info-name="Clean-Combined-EPG">\n';
 
@@ -199,6 +333,13 @@ async function runGenerator() {
         title = prog.showname || '';
         desc = prog.description || '';
         icon = prog.assets?.['16:9']?.originalProgram || '';
+      } else if (item.type === 'samsung' || item.type === 'elitebeam') {
+        const prog = item.data;
+        startTime = dayjs(Number(prog.startTime));
+        endTime = dayjs(Number(prog.endTime));
+        title = prog.title || '';
+        desc = prog.desc || '';
+        icon = prog.icon || '';
       }
 
       if (startTime && startTime.isValid() && endTime && endTime.isValid()) {
@@ -223,7 +364,7 @@ async function runGenerator() {
   xml += '</tv>';
 
   if (!fs.existsSync('./epg')) {
-    fs.mkdirSync('./epg');
+    fs.mkdirScan ? fs.mkdirSync('./epg', { recursive: true }) : fs.mkdirSync('./epg');
   }
 
   fs.writeFileSync('./epg/tataplay.xml', xml, 'utf-8');
@@ -236,6 +377,8 @@ async function runGenerator() {
   console.log(`SUMMARY REPORT:`);
   console.log(`- TataPlay Channels Processed: ${tataChannelCount}`);
   console.log(`- JioTV Channels Processed: ${jioChannelCount}`);
+  console.log(`- Samsung TV Plus Channels Processed: ${samsungChannelCount}`);
+  console.log(`- Elitebeam Custom Channels Processed: ${elitebeamChannelCount}`);
   console.log(`- Total Combined Channels: ${reportList.length}`);
   console.log(`SUCCESS! All files saved successfully.`);
   console.log(`==================================================`);
