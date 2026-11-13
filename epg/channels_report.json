@@ -11715,7 +11715,7 @@
     "id": "tp_1742",
     "name": "OSD - 1",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1741",
@@ -11853,7 +11853,7 @@
     "id": "tp_1825",
     "name": "A ONE NEWS",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1826",
@@ -11931,13 +11931,13 @@
     "id": "tp_1948",
     "name": "Rashtram",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1947",
     "name": "Newz Room Gujarat",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1946",
@@ -11949,19 +11949,19 @@
     "id": "tp_1945",
     "name": "Growth Now News",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1944",
     "name": "Yug Abhiyan Times",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1949",
     "name": "S Bharat News",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1752",
