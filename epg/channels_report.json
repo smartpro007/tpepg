@@ -11973,97 +11973,97 @@
     "id": "IN4900003U3",
     "name": "ETV Comedy",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN4900004LP",
     "name": "ETV Josh",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN4900002RV",
     "name": "ETV Beats",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN3800010SH",
     "name": "Hollywood Desi",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN4600009F9",
     "name": "Hooray Kids",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN4600007TC",
     "name": "Hooray Rhymes",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "INBD4700015M0",
     "name": "Music India",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN400061DB",
     "name": "NH Tamil Gold",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN21000014R",
     "name": "Zee Cine Classic",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN2100002GD",
     "name": "Zee Comedy Nation",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN2100003OJ",
     "name": "Zee Dil Se",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN2100004C4",
     "name": "Zee Horror Nights",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN2100005T2",
     "name": "Zee South Flix",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN38000072R",
     "name": "The Movie Club",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN40000100Y",
     "name": "The Movie Club+2",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "IN3800008CX",
     "name": "South Station",
     "provider": "SamsungTVPlus",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "Elitebeam_Movies",
