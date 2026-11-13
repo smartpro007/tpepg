@@ -1,0 +1,1623 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tv generator-info-name="EliteBeam Smart Matched EPG">
+  <channel id="76265">
+    <display-name>HINDI UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="71568">
+    <display-name>HINDI LATEST MOVIES (4K)</display-name>
+  </channel>
+  <channel id="71489">
+    <display-name>HINDI BOX OFFICE COLLECTION (4K)</display-name>
+  </channel>
+  <channel id="71490">
+    <display-name>FILMFARE WINNING MOVIES</display-name>
+  </channel>
+  <channel id="76221">
+    <display-name>HINDI SUPERHIT MOVIES</display-name>
+  </channel>
+  <channel id="76948">
+    <display-name>HINDI NETFLIX MOVIES</display-name>
+  </channel>
+  <channel id="76949">
+    <display-name>HINDI AMAZON MOVIES</display-name>
+  </channel>
+  <channel id="76950">
+    <display-name>HINDI DISNEY MOVIES</display-name>
+  </channel>
+  <channel id="76224">
+    <display-name>HINDI CLASSIC BLOCKBUSTER</display-name>
+  </channel>
+  <channel id="71491">
+    <display-name>HINDI ALL TIME HIT MOVIES</display-name>
+  </channel>
+  <channel id="3543">
+    <display-name>HINDI ACTION MOVIES</display-name>
+  </channel>
+  <channel id="3522">
+    <display-name>HINDI ADVENTURE MOVIES</display-name>
+  </channel>
+  <channel id="71744">
+    <display-name>HINDI COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="3544">
+    <display-name>HINDI CRIME MOVIES</display-name>
+  </channel>
+  <channel id="71745">
+    <display-name>HINDI FAMILY MOVIES</display-name>
+  </channel>
+  <channel id="71747">
+    <display-name>HINDI HISTORICAL MOVIES</display-name>
+  </channel>
+  <channel id="71746">
+    <display-name>HINDI FANTASY MOVIES</display-name>
+  </channel>
+  <channel id="71748">
+    <display-name>HINDI ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="71750">
+    <display-name>HINDI SUSPENCEFUL MOVIES</display-name>
+  </channel>
+  <channel id="71749">
+    <display-name>HINDI THRILLER MOVIES</display-name>
+  </channel>
+  <channel id="72512">
+    <display-name>HINDI SUBTITLE 2026 - 2020</display-name>
+  </channel>
+  <channel id="72513">
+    <display-name>HINDI SUBTITLE 2019 - 2010</display-name>
+  </channel>
+  <channel id="72514">
+    <display-name>HINDI SUBTITLE 2009 - 2000</display-name>
+  </channel>
+  <channel id="72515">
+    <display-name>HINDI SUBTITLE BEFORE 2000</display-name>
+  </channel>
+  <channel id="71577">
+    <display-name>HINDI OLD COLLECTION 1</display-name>
+  </channel>
+  <channel id="71578">
+    <display-name>HINDI OLD COLLECTION 2</display-name>
+  </channel>
+  <channel id="71579">
+    <display-name>HINDI OLD COLLECTION 3</display-name>
+  </channel>
+  <channel id="71580">
+    <display-name>HINDI OLD COLLECTION 4</display-name>
+  </channel>
+  <channel id="71537">
+    <display-name>HINDI ENGLISH DUBBED MOVIES 1</display-name>
+  </channel>
+  <channel id="71538">
+    <display-name>HINDI ENGLISH DUBBED MOVIES 2</display-name>
+  </channel>
+  <channel id="71539">
+    <display-name>HINDI ENGLISH DUBBED MOVIES 3</display-name>
+  </channel>
+  <channel id="71540">
+    <display-name>HINDI ENGLISH DUBBED MOVIES 4</display-name>
+  </channel>
+  <channel id="71541">
+    <display-name>HINDI ENGLISH DUBBED MOVIES 5</display-name>
+  </channel>
+  <channel id="3974">
+    <display-name>HINDI SOUTH DUBBED MOVIES 1</display-name>
+  </channel>
+  <channel id="3975">
+    <display-name>HINDI SOUTH DUBBED MOVIES 2</display-name>
+  </channel>
+  <channel id="3976">
+    <display-name>HINDI SOUTH DUBBED MOVIES 3</display-name>
+  </channel>
+  <channel id="4076">
+    <display-name>HINDI SOUTH DUBBED MOVIES 4</display-name>
+  </channel>
+  <channel id="4077">
+    <display-name>HINDI SOUTH DUBBED MOVIES 5</display-name>
+  </channel>
+  <channel id="3523">
+    <display-name>HINDI MOVIES 2025</display-name>
+  </channel>
+  <channel id="3524">
+    <display-name>HINDI MOVIES 2024</display-name>
+  </channel>
+  <channel id="3525">
+    <display-name>HINDI MOVIES 2023</display-name>
+  </channel>
+  <channel id="3526">
+    <display-name>HINDI MOVIES 2022</display-name>
+  </channel>
+  <channel id="3527">
+    <display-name>HINDI MOVIES 2021</display-name>
+  </channel>
+  <channel id="3528">
+    <display-name>HINDI MOVIES 2020</display-name>
+  </channel>
+  <channel id="3529">
+    <display-name>HINDI MOVIES 2019</display-name>
+  </channel>
+  <channel id="3530">
+    <display-name>HINDI MOVIES 2018</display-name>
+  </channel>
+  <channel id="3531">
+    <display-name>HINDI MOVIES 2017</display-name>
+  </channel>
+  <channel id="3532">
+    <display-name>HINDI MOVIES 2016</display-name>
+  </channel>
+  <channel id="3533">
+    <display-name>HINDI MOVIES 2015</display-name>
+  </channel>
+  <channel id="3534">
+    <display-name>HINDI MOVIES 2014</display-name>
+  </channel>
+  <channel id="3535">
+    <display-name>HINDI MOVIES 2013</display-name>
+  </channel>
+  <channel id="3536">
+    <display-name>HINDI MOVIES 2012</display-name>
+  </channel>
+  <channel id="3537">
+    <display-name>HINDI MOVIES 2011</display-name>
+  </channel>
+  <channel id="3538">
+    <display-name>HINDI MOVIES 2010</display-name>
+  </channel>
+  <channel id="3539">
+    <display-name>HINDI MOVIES 2009</display-name>
+  </channel>
+  <channel id="3540">
+    <display-name>HINDI MOVIES 2008</display-name>
+  </channel>
+  <channel id="3541">
+    <display-name>HINDI MOVIES 2007</display-name>
+  </channel>
+  <channel id="3542">
+    <display-name>HINDI MOVIES 2006</display-name>
+  </channel>
+  <channel id="78297">
+    <display-name>HINDI MOVIES 2005</display-name>
+  </channel>
+  <channel id="78298">
+    <display-name>HINDI MOVIES 2004</display-name>
+  </channel>
+  <channel id="78299">
+    <display-name>HINDI MOVIES 2003</display-name>
+  </channel>
+  <channel id="78300">
+    <display-name>HINDI MOVIES 2002</display-name>
+  </channel>
+  <channel id="78301">
+    <display-name>HINDI MOVIES 2001</display-name>
+  </channel>
+  <channel id="78302">
+    <display-name>HINDI MOVIES 2000</display-name>
+  </channel>
+  <channel id="77844">
+    <display-name>HINDI KIDS LATEST MOVIES</display-name>
+  </channel>
+  <channel id="77845">
+    <display-name>HINDI KIDS MOVIES 2024 (4K)</display-name>
+  </channel>
+  <channel id="77846">
+    <display-name>HINDI KIDS MOVIES 2023 (4K)</display-name>
+  </channel>
+  <channel id="77847">
+    <display-name>HINDI KIDS MOVIES 2022 (4K)</display-name>
+  </channel>
+  <channel id="77848">
+    <display-name>HINDI KIDS MOVIES 2021 (4K)</display-name>
+  </channel>
+  <channel id="77849">
+    <display-name>HINDI KIDS MOVIES 2020 (4K)</display-name>
+  </channel>
+  <channel id="77850">
+    <display-name>HINDI KIDS MOVIES 2019 (4K)</display-name>
+  </channel>
+  <channel id="77851">
+    <display-name>HINDI KIDS MOVIES 2018 (4K)</display-name>
+  </channel>
+  <channel id="77852">
+    <display-name>HINDI KIDS MOVIES 2017 (4K)</display-name>
+  </channel>
+  <channel id="77853">
+    <display-name>HINDI KIDS MOVIES 2016 (4K)</display-name>
+  </channel>
+  <channel id="77857">
+    <display-name>HINDI KIDS MOVIES 2015 (4K)</display-name>
+  </channel>
+  <channel id="77858">
+    <display-name>HINDI KIDS MOVIES 2014 (4K)</display-name>
+  </channel>
+  <channel id="77859">
+    <display-name>HINDI KIDS MOVIES 2013 (4K)</display-name>
+  </channel>
+  <channel id="77860">
+    <display-name>HINDI KIDS NETFLIX MOVIES (4K)</display-name>
+  </channel>
+  <channel id="77861">
+    <display-name>HINDI KIDS AMAZON MOVIES (4K)</display-name>
+  </channel>
+  <channel id="76311">
+    <display-name>MARATHI UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="78537">
+    <display-name>MARATHI CRIME MOVIES</display-name>
+  </channel>
+  <channel id="78538">
+    <display-name>MARATHI COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="78539">
+    <display-name>MARATHI BOX OFFICE MOVIES</display-name>
+  </channel>
+  <channel id="78540">
+    <display-name>MARATHI ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="78541">
+    <display-name>MARATHI THRILLER MOVIES</display-name>
+  </channel>
+  <channel id="70887">
+    <display-name>MARATHI MOVIES 2025</display-name>
+  </channel>
+  <channel id="70887">
+    <display-name>MARATHI MOVIES 2025</display-name>
+  </channel>
+  <channel id="70889">
+    <display-name>MARATHI MOVIES 2023</display-name>
+  </channel>
+  <channel id="70889">
+    <display-name>MARATHI MOVIES 2023</display-name>
+  </channel>
+  <channel id="74214">
+    <display-name>MARATHI MOVIES 2021</display-name>
+  </channel>
+  <channel id="74214">
+    <display-name>MARATHI MOVIES 2021</display-name>
+  </channel>
+  <channel id="74216">
+    <display-name>MARATHI MOVIES 2019</display-name>
+  </channel>
+  <channel id="74216">
+    <display-name>MARATHI MOVIES 2019</display-name>
+  </channel>
+  <channel id="74218">
+    <display-name>MARATHI MOVIES 2017</display-name>
+  </channel>
+  <channel id="74218">
+    <display-name>MARATHI MOVIES 2017</display-name>
+  </channel>
+  <channel id="74220">
+    <display-name>MARATHI MOVIES 2015</display-name>
+  </channel>
+  <channel id="74220">
+    <display-name>MARATHI MOVIES 2015</display-name>
+  </channel>
+  <channel id="76604">
+    <display-name>BENGALI UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="77772">
+    <display-name>BENGALI MOVIES 2026</display-name>
+  </channel>
+  <channel id="77773">
+    <display-name>BENGALI MOVIES 2025-2024</display-name>
+  </channel>
+  <channel id="4764">
+    <display-name>BENGALI MOVIES 2023-2022</display-name>
+  </channel>
+  <channel id="4763">
+    <display-name>BENGALI MOVIES 2021-2020</display-name>
+  </channel>
+  <channel id="77775">
+    <display-name>BENGALI MOVIES 2019-2018</display-name>
+  </channel>
+  <channel id="4762">
+    <display-name>BENGALI MOVIE 2017-2016</display-name>
+  </channel>
+  <channel id="4761">
+    <display-name>BENGALI MOVIE 2015-2014</display-name>
+  </channel>
+  <channel id="74225">
+    <display-name>BENGALI ACTION MOVIES</display-name>
+  </channel>
+  <channel id="74226">
+    <display-name>BENGALI COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="74227">
+    <display-name>BENGALI CRIME MOVIES</display-name>
+  </channel>
+  <channel id="74228">
+    <display-name>BENGALI ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="74229">
+    <display-name>BENGALI SUSPENCEFUL MOVIES</display-name>
+  </channel>
+  <channel id="74230">
+    <display-name>BENGALI THRILLER MOVIES</display-name>
+  </channel>
+  <channel id="76312">
+    <display-name>KANNADA UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="72522">
+    <display-name>KANNADA BOX OFFICE 1</display-name>
+  </channel>
+  <channel id="72523">
+    <display-name>KANNADA ACTION MOVIES</display-name>
+  </channel>
+  <channel id="72524">
+    <display-name>KANNADA COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="72525">
+    <display-name>KANNADA ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="72526">
+    <display-name>KANNADA SUSPENCFULL MOVIES</display-name>
+  </channel>
+  <channel id="4155">
+    <display-name>KANNADA MOVIES 2025</display-name>
+  </channel>
+  <channel id="4155">
+    <display-name>KANNADA MOVIES 2025</display-name>
+  </channel>
+  <channel id="4157">
+    <display-name>KANNADA MOVIES 2023</display-name>
+  </channel>
+  <channel id="4157">
+    <display-name>KANNADA MOVIES 2023</display-name>
+  </channel>
+  <channel id="4159">
+    <display-name>KANNADA MOVIES 2021</display-name>
+  </channel>
+  <channel id="4159">
+    <display-name>KANNADA MOVIES 2021</display-name>
+  </channel>
+  <channel id="4161">
+    <display-name>KANNADA MOVIES 2019</display-name>
+  </channel>
+  <channel id="4161">
+    <display-name>KANNADA MOVIES 2019</display-name>
+  </channel>
+  <channel id="4163">
+    <display-name>KANNADA MOVIES 2017</display-name>
+  </channel>
+  <channel id="4163">
+    <display-name>KANNADA MOVIES 2017</display-name>
+  </channel>
+  <channel id="4169">
+    <display-name>KANNADA MOVIE # 15</display-name>
+  </channel>
+  <channel id="76310">
+    <display-name>MALAYALAM UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="77926">
+    <display-name>MALAYALAM BOX OFFICE MOVIES</display-name>
+  </channel>
+  <channel id="77953">
+    <display-name>MALAYALAM COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="77932">
+    <display-name>MALAYALAM ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="77954">
+    <display-name>MALAYALAM ACTION MOVIES</display-name>
+  </channel>
+  <channel id="77931">
+    <display-name>MALAYALAM CRIME MOVIES</display-name>
+  </channel>
+  <channel id="77952">
+    <display-name>MALAYALAM SUSPENSEFUL MOVIES</display-name>
+  </channel>
+  <channel id="77933">
+    <display-name>MALAYALAM THRILLER MOVIES</display-name>
+  </channel>
+  <channel id="77928">
+    <display-name>MALAYALAM ALL TIME HIT MOVIES</display-name>
+  </channel>
+  <channel id="77955">
+    <display-name>MALAYALAM DUBBED MOVIES</display-name>
+  </channel>
+  <channel id="77927">
+    <display-name>MALAYALAM OLD COLLECTION MOVIES</display-name>
+  </channel>
+  <channel id="77929">
+    <display-name>MALAYALAM MOVIES 2025</display-name>
+  </channel>
+  <channel id="77925">
+    <display-name>MALAYALAM MOVIES 2024</display-name>
+  </channel>
+  <channel id="77930">
+    <display-name>MALAYALAM MOVIES 2023</display-name>
+  </channel>
+  <channel id="78063">
+    <display-name>MALAYALAM MOVIES 2022</display-name>
+  </channel>
+  <channel id="78062">
+    <display-name>MALAYALAM MOVIES 2021</display-name>
+  </channel>
+  <channel id="3763">
+    <display-name>MALAYALAM MOVIES 2020</display-name>
+  </channel>
+  <channel id="78060">
+    <display-name>MALAYALAM MOVIES 2019</display-name>
+  </channel>
+  <channel id="3764">
+    <display-name>MALAYALAM MOVIES 2018</display-name>
+  </channel>
+  <channel id="78061">
+    <display-name>MALAYALAM MOVIES 2016</display-name>
+  </channel>
+  <channel id="3765">
+    <display-name>MALAYALAM MOVIES 2015</display-name>
+  </channel>
+  <channel id="3766">
+    <display-name>MALAYALAM MOVIES 2014</display-name>
+  </channel>
+  <channel id="3750">
+    <display-name>MOHANLAL</display-name>
+  </channel>
+  <channel id="3751">
+    <display-name>DULQUESR SALMAAN</display-name>
+  </channel>
+  <channel id="3752">
+    <display-name>PRITHVIRAJ SUKUMARAN</display-name>
+  </channel>
+  <channel id="3753">
+    <display-name>MUKESH.</display-name>
+  </channel>
+  <channel id="3754">
+    <display-name>TOVINO THOMAS</display-name>
+  </channel>
+  <channel id="3755">
+    <display-name>FAHADH FAASIL</display-name>
+  </channel>
+  <channel id="3756">
+    <display-name>DHYAN SREENIVASAN</display-name>
+  </channel>
+  <channel id="3757">
+    <display-name>BASIL JOSEPH</display-name>
+  </channel>
+  <channel id="3758">
+    <display-name>SHARAF U DHEEN</display-name>
+  </channel>
+  <channel id="3759">
+    <display-name>ARJUN ASHOKAN</display-name>
+  </channel>
+  <channel id="3760">
+    <display-name>SUNNY WAYNE</display-name>
+  </channel>
+  <channel id="3761">
+    <display-name>ASIF ALI</display-name>
+  </channel>
+  <channel id="3762">
+    <display-name>KUNCHACKO BOBAN</display-name>
+  </channel>
+  <channel id="76307">
+    <display-name>TELUGU UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="78241">
+    <display-name>TELUGU LATEST  MOVIES 2026</display-name>
+  </channel>
+  <channel id="72066">
+    <display-name>TELUGU BOX OFFICE</display-name>
+  </channel>
+  <channel id="71585">
+    <display-name>TELUGU ACTION MOVIES</display-name>
+  </channel>
+  <channel id="71586">
+    <display-name>TELUGU COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="71588">
+    <display-name>TELUGU ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="71587">
+    <display-name>TELUGU CRIME MOVIES</display-name>
+  </channel>
+  <channel id="71589">
+    <display-name>TELUGU SUSPENCEFUL MOVIES</display-name>
+  </channel>
+  <channel id="71590">
+    <display-name>TELUGU THRILLER MOVIES (4K)</display-name>
+  </channel>
+  <channel id="72067">
+    <display-name>TELUGU OLD COLLECTION</display-name>
+  </channel>
+  <channel id="71584">
+    <display-name>TELUGU DUBBED MOVIES</display-name>
+  </channel>
+  <channel id="72063">
+    <display-name>TELUGU MOVIES 2025</display-name>
+  </channel>
+  <channel id="72063">
+    <display-name>TELUGU MOVIES 2025</display-name>
+  </channel>
+  <channel id="71591">
+    <display-name>TELUGU MOVIES 2019</display-name>
+  </channel>
+  <channel id="71591">
+    <display-name>TELUGU MOVIES 2019</display-name>
+  </channel>
+  <channel id="71594">
+    <display-name>TELUGU MOVIES 2015</display-name>
+  </channel>
+  <channel id="71594">
+    <display-name>TELUGU MOVIES 2015</display-name>
+  </channel>
+  <channel id="76306">
+    <display-name>TAMIL UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="72148">
+    <display-name>TAMIL BOX OFFICE</display-name>
+  </channel>
+  <channel id="71491">
+    <display-name>HINDI ALL TIME HIT MOVIES</display-name>
+  </channel>
+  <channel id="3609">
+    <display-name>TAMIL ACTION MOVIES</display-name>
+  </channel>
+  <channel id="3610">
+    <display-name>TAMIL COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="3613">
+    <display-name>TAMIL ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="3611">
+    <display-name>TAMIL CRIME MOVIES</display-name>
+  </channel>
+  <channel id="3614">
+    <display-name>TAMIL SUSPENCEFUL MOVIES</display-name>
+  </channel>
+  <channel id="3612">
+    <display-name>TAMIL THRILLER MOVIES</display-name>
+  </channel>
+  <channel id="72149">
+    <display-name>TAMIL OLD COLLECTION</display-name>
+  </channel>
+  <channel id="3608">
+    <display-name>TAMIL DUBBED MOVIES</display-name>
+  </channel>
+  <channel id="72145">
+    <display-name>TAMIL MOVIES 2025</display-name>
+  </channel>
+  <channel id="72145">
+    <display-name>TAMIL MOVIES 2025</display-name>
+  </channel>
+  <channel id="76611">
+    <display-name>GUJARATI UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="78157">
+    <display-name>GUJARATI ACTION MOVIES</display-name>
+  </channel>
+  <channel id="78159">
+    <display-name>GUJARATI CRIME MOVIES</display-name>
+  </channel>
+  <channel id="78158">
+    <display-name>GUJARATI COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="78160">
+    <display-name>GUJARATI ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="78163">
+    <display-name>GUJARATI MOVIES 2019</display-name>
+  </channel>
+  <channel id="78163">
+    <display-name>GUJARATI MOVIES 2019</display-name>
+  </channel>
+  <channel id="78166">
+    <display-name>GUJARATI MOVIE 5</display-name>
+  </channel>
+  <channel id="76293">
+    <display-name>PUNJABI UPCOMING MOVIES</display-name>
+  </channel>
+  <channel id="72057">
+    <display-name>PUNJABI LATEST MOVIES 2026</display-name>
+  </channel>
+  <channel id="77862">
+    <display-name>PUNJABI BOX OFFICE MOVIES</display-name>
+  </channel>
+  <channel id="4117">
+    <display-name>PUNJABI COMEDY MOVIES</display-name>
+  </channel>
+  <channel id="4126">
+    <display-name>PUNJABI ROMANTIC MOVIES</display-name>
+  </channel>
+  <channel id="71635">
+    <display-name>PUNJABI ACTION MOVIES</display-name>
+  </channel>
+  <channel id="4121">
+    <display-name>PUNJABI CRIME MOVIES</display-name>
+  </channel>
+  <channel id="4120">
+    <display-name>PUNJABI SUSPENCEFUL MOVIES</display-name>
+  </channel>
+  <channel id="4119">
+    <display-name>PUNJABI THRILLER MOVIES</display-name>
+  </channel>
+  <channel id="4124">
+    <display-name>PUNJABI MOVIES 2024-2025</display-name>
+  </channel>
+  <channel id="4125">
+    <display-name>PUNJABI MOVIES 2022-2023</display-name>
+  </channel>
+  <channel id="72058">
+    <display-name>PUNJABI MOVIES 2020-2021</display-name>
+  </channel>
+  <channel id="72061">
+    <display-name>PUNJABI MOVIES 2018-2019</display-name>
+  </channel>
+  <channel id="4113">
+    <display-name>PUNJABI MOVIES 2016-2017</display-name>
+  </channel>
+  <channel id="4938">
+    <display-name>GIPPY GREWAL HD</display-name>
+  </channel>
+  <channel id="4933">
+    <display-name>AMMY VIRK HD</display-name>
+  </channel>
+  <channel id="4934">
+    <display-name>AMRINDER GILL HD</display-name>
+  </channel>
+  <channel id="4935">
+    <display-name>BINNU DHILLON HD</display-name>
+  </channel>
+  <channel id="76700">
+    <display-name>SONAM BAJWA HD</display-name>
+  </channel>
+  <channel id="76695">
+    <display-name>JASSIE GILL HD</display-name>
+  </channel>
+  <channel id="4936">
+    <display-name>B N SHARMA HD</display-name>
+  </channel>
+  <channel id="4937">
+    <display-name>DILJIT DOSANJH HD</display-name>
+  </channel>
+  <channel id="4939">
+    <display-name>GUGU GILL HD</display-name>
+  </channel>
+  <channel id="4940">
+    <display-name>GURPREET GHUGGI HD</display-name>
+  </channel>
+  <channel id="4944">
+    <display-name>SARDAR SOHI HD</display-name>
+  </channel>
+  <channel id="4945">
+    <display-name>SHAVINDER MAHAL HD</display-name>
+  </channel>
+  <channel id="76692">
+    <display-name>JAGJEET SANDHU HD</display-name>
+  </channel>
+  <channel id="76693">
+    <display-name>HARBY SANGHA HD</display-name>
+  </channel>
+  <channel id="76701">
+    <display-name>TARSEM JASSAR HD</display-name>
+  </channel>
+  <channel id="4941">
+    <display-name>JASWINDER BHALLA HD</display-name>
+  </channel>
+  <channel id="76694">
+    <display-name>KARAMJIT ANMOL HD</display-name>
+  </channel>
+  <channel id="76697">
+    <display-name>NIRMAL RISHI HD</display-name>
+  </channel>
+  <channel id="76696">
+    <display-name>NEERU BAJWA HD</display-name>
+  </channel>
+  <channel id="76699">
+    <display-name>PARMISH VERMA HD</display-name>
+  </channel>
+  <channel id="76698">
+    <display-name>PUKHRAJ BHALLA HD</display-name>
+  </channel>
+  <channel id="76703">
+    <display-name>YOGRAJ SINGH HD</display-name>
+  </channel>
+  <channel id="76702">
+    <display-name>WAMIQA GABBI HD</display-name>
+  </channel>
+  <channel id="4932">
+    <display-name>AMBERDEEP SINGH HD</display-name>
+  </channel>
+  <channel id="76704">
+    <display-name>DEV KHAROUD HD</display-name>
+  </channel>
+  <programme start="20261112233448 +0000" stop="20261113025635 +0000" channel="71568">
+    <title lang="en">Border 2 (2026)</title>
+    <desc lang="en">Three idealistic soldiers in the Indian army, navy and air force face grueling combat conditions in this film set during the 1971 Indo-Pak war.</desc>
+  </programme>
+  <programme start="20261113025635 +0000" stop="20261113043658 +0000" channel="71568">
+    <title lang="en">Candy And The Pizza Ggirl (2026)</title>
+    <desc lang="en">Candy and the Pizza Ggirl is A Hindi Movie.  The story unfolds over one surreal, chaotic full-moon Saturday night in Mumbai, where a single small mistake or catastrophic incident triggers a chain reaction of interconnected, absurd, and unpredictable events. Multiple eccentric characters' lives collide in a fragmented, neon-lit world of illusion, bad decisions, excess, and blurring realities. No one is truly in control; everyone lives in their own version of reality, and chaos spirals as parallel paths overlap.</desc>
+  </programme>
+  <programme start="20261113043658 +0000" stop="20261113070712 +0000" channel="71568">
+    <title lang="en">Cocktail 2 (2026)</title>
+    <desc lang="en">A vacation in Sicily forces longtime partners Diya and Kunal to question their love and commitment after they reunite with Diya's old friend Ally.</desc>
+  </programme>
+  <programme start="20261113070712 +0000" stop="20261113084852 +0000" channel="71568">
+    <title lang="en">Delivery Boy Pizza On Time (2026)</title>
+    <desc lang="en">When Riya’s husband is away, an ordinary evening takes an unexpected turn. Out of boredom, she begins chatting online with a stranger — someone charming yet mysterious. But soon, a pizza delivery boy shows up at her door with an order she never placed. As the night progresses, strange events begin to unfold. The delivery boy insists she accept the pizza, and the online stranger seems to know more about her than she ever shared. Caught between reality and suspicion, Riya must uncover who is behind the web of deceit — the delivery boy, the man on the cam, or someone else entirely. A gripping mystery–thriller where every message, every knock, and every face hides a secret.</desc>
+  </programme>
+  <programme start="20261113084852 +0000" stop="20261113110339 +0000" channel="71568">
+    <title lang="en">Do Deewane Seher Mein (2026)</title>
+    <desc lang="en">Two socially awkward millennials in Mumbai find love while struggling with self-acceptance. As they battle insecurities and societal pressure, their journey takes them from city chaos to mountain serenity.</desc>
+  </programme>
+  <programme start="20261112225943 +0000" stop="20261113013405 +0000" channel="71489">
+    <title lang="en">Bharat (2019)</title>
+    <desc lang="en">At the cusp of India's birth as an Independent nation, a family makes an arduous journey to freedom at a cost. A young boy Bharat, makes a promise to his Father that he will keep his family together no matter what.</desc>
+  </programme>
+  <programme start="20261113013405 +0000" stop="20261113041209 +0000" channel="71489">
+    <title lang="en">Bhool Bhulaiyaa 3 (2024)</title>
+    <desc lang="en">Rooh Baba ventures into a haunted mansion in the kingdom of Raktaghat in West Bengal, where he confronts two vengeful spirits, both asserting to be Manjulika.</desc>
+  </programme>
+  <programme start="20261113041209 +0000" stop="20261113073356 +0000" channel="71489">
+    <title lang="en">Border 2 (2026)</title>
+    <desc lang="en">Three idealistic soldiers in the Indian army, navy and air force face grueling combat conditions in this film set during the 1971 Indo-Pak war.</desc>
+  </programme>
+  <programme start="20261113073356 +0000" stop="20261113102251 +0000" channel="71489">
+    <title lang="en">Brahmastra Partone Shiva (2022)</title>
+    <desc lang="en">HINDI BOX OFFICE COLLECTION — Brahmastra Partone Shiva (2022)</desc>
+  </programme>
+  <programme start="20261113102251 +0000" stop="20261113130049 +0000" channel="71489">
+    <title lang="en">Chhaava (2025)</title>
+    <desc lang="en">Shivaji's death sparks the Maratha-Mughal conflict. His son Sambhaji leads resistance against Aurangzeb's forces. Amid battles and intrigue, both sides face challenges in a struggle for power.</desc>
+  </programme>
+  <programme start="20261113011337 +0000" stop="20261113031758 +0000" channel="71490">
+    <title lang="en">Black (2005)</title>
+    <desc lang="en">Jonathan Cold returns, this time he goes Undercover to stop a group of Terrorists before they bomb Los Angeles.</desc>
+  </programme>
+  <programme start="20261113031758 +0000" stop="20261113052402 +0000" channel="71490">
+    <title lang="en">Dabangg (2010)</title>
+    <desc lang="en">A troubled relationship with his younger half-brother and stepfather compels Chulbul Pandey to become a corrupt but fearless cop whose life changes when he locks horns with a corrupt political leader.</desc>
+  </programme>
+  <programme start="20261113052402 +0000" stop="20261113080503 +0000" channel="71490">
+    <title lang="en">Dangal (2016)</title>
+    <desc lang="en">Dangal is an extraordinary true story based on the life of Mahavir Singh and his two daughters, Geeta and Babita Phogat. The film traces the inspirational journey of a father who trains his daughters to become world class wrestlers.</desc>
+  </programme>
+  <programme start="20261113080503 +0000" stop="20261113110804 +0000" channel="71490">
+    <title lang="en">Devdas (2002)</title>
+    <desc lang="en">FILMFARE WINNING MOVIES — Devdas (2002)</desc>
+  </programme>
+  <programme start="20261113110804 +0000" stop="20261113140736 +0000" channel="71490">
+    <title lang="en">Dil To Pagal Hai (1997)</title>
+    <desc lang="en">Rahul, the director of a successful dance troupe, considers Nisha his best friend, though secretly, she is madly in love with him. He then falls for Pooja, who is engaged to Ajay.</desc>
+  </programme>
+  <programme start="20261113005241 +0000" stop="20261113033759 +0000" channel="76221">
+    <title lang="en">Gadar 2 (2023)</title>
+    <desc lang="en">When Tara Singh goes missing during a skirmish and is believed to be captured in Pakistan, his son Jeete sets out to rescue him and enters a labyrinth from which they both must escape at all costs.</desc>
+  </programme>
+  <programme start="20261113033759 +0000" stop="20261113063453 +0000" channel="76221">
+    <title lang="en">Gadar Ek Prem Katha (2001)</title>
+    <desc lang="en">During the partition, Tara marries Sakina and they live a happy life. However their happiness is short-lived when Sakina's father forces her to stay in Pakistan and separates her from her family.</desc>
+  </programme>
+  <programme start="20261113063453 +0000" stop="20261113093958 +0000" channel="76221">
+    <title lang="en">Ghajini (2008)</title>
+    <desc lang="en">A man suffering from anterograde amnesia as a result of a violent attack in the past sets out to avenge his girlfriend's death with the aid of photographs, notes and tattoos all over his body.</desc>
+  </programme>
+  <programme start="20261113093958 +0000" stop="20261113115337 +0000" channel="76221">
+    <title lang="en">Hera Pheri (2000)</title>
+    <desc lang="en">Two tenants and a landlord, in desperate need of money, chance upon a ransom call via a cross connection. They hatch a plan to claim the ransom for themselves.</desc>
+  </programme>
+  <programme start="20261113115337 +0000" stop="20261113140550 +0000" channel="76221">
+    <title lang="en">Hindi Medium (2017)</title>
+    <desc lang="en">Mita and Raj Batra, an affluent couple from Delhi’s Chandni Chowk, are grappling with getting their daughter admission into an English medium school. But there is one big problem. Their zubaan is Hindi, and the elitist snobs won’t let the Hindi speaking hoi-polloi fit in.</desc>
+  </programme>
+  <programme start="20261113012457 +0000" stop="20261113033221 +0000" channel="76948">
+    <title lang="en">Do Patti (2024)</title>
+    <desc lang="en">A puzzling investigation leads a no-nonsense cop down a dark path involving the vicious rivalry between twin sisters and the volatile man they both love.</desc>
+  </programme>
+  <programme start="20261113033221 +0000" stop="20261113055139 +0000" channel="76948">
+    <title lang="en">Jaane Jaan (2023)</title>
+    <desc lang="en">When a single mother her teenage daughter becomes ensnared in a deadly crime,  find an unexpected ally in their neighbor, a simple, doting but genius teacher math teacher comes to aid, while a tenacious cop digs into the case.</desc>
+  </programme>
+  <programme start="20261113055139 +0000" stop="20261113083011 +0000" channel="76948">
+    <title lang="en">Khufiya (2023)</title>
+    <desc lang="en">When a mole in an intelligence unit leads to the murder of an undercover spy, a hardened agent relentlessly pursues him to avenge the death.</desc>
+  </programme>
+  <programme start="20261113083011 +0000" stop="20261113102327 +0000" channel="76948">
+    <title lang="en">Made In Korea (2026)</title>
+    <desc lang="en">A woman from a small town in Tamil Nadu moves to South Korea — a place she always dreamed of — but struggles to find her footing in a foreign land.</desc>
+  </programme>
+  <programme start="20261113102327 +0000" stop="20261113124003 +0000" channel="76948">
+    <title lang="en">Raat Akeli Hai The Bansal Murders (2025)</title>
+    <desc lang="en">When members of the Bansal family are found murdered, Inspector Jatil Yadav uncovers a trail of greed, betrayal and secrets tied to a deadly conspiracy.</desc>
+  </programme>
+  <programme start="20261113011930 +0000" stop="20261113030505 +0000" channel="76949">
+    <title lang="en">Raksha Bandhan (2022)</title>
+    <desc lang="en">Lala Kedarnath is blessed with 4 sisters. But his only worry is to find suitable grooms for each of them, as only then can he marry his childhood love. To what lengths will he go to succeed?</desc>
+  </programme>
+  <programme start="20261113030505 +0000" stop="20261113052841 +0000" channel="76949">
+    <title lang="en">Rowdy Rathore (2012)</title>
+    <desc lang="en">A small-time thug comes across a young girl who claims him to be her father, following which he realizes he has a lookalike who's being hunted by goons.</desc>
+  </programme>
+  <programme start="20261113052841 +0000" stop="20261113074954 +0000" channel="76949">
+    <title lang="en">Satyameva Jayate 2 (2021)</title>
+    <desc lang="en">Satya Azad, an upright Home Minister wants to cleanse the country of corruption with his Anti-Corruption Bill. However, it fails to get enough ‘Ayes’, not only from his allies, but also from his wife Vidya a member of the Opposition, who votes ‘Nay’ in the Vidhan Sabha. When a couple of gruesome killings take place in the city, ACP Jay Azad is brought in to nab the murderer, never mind his motive.</desc>
+  </programme>
+  <programme start="20261113074954 +0000" stop="20261113095802 +0000" channel="76949">
+    <title lang="en">Shaitaan (2024)</title>
+    <desc lang="en">Kabir and his family's fun weekend retreat takes terrifying turn when an intruder takes over the control of the  body of his teenage daughter, putting her at the mercy of his increasingly sinister orders.</desc>
+  </programme>
+  <programme start="20261113095802 +0000" stop="20261113121143 +0000" channel="76949">
+    <title lang="en">Sikandar (2025)</title>
+    <desc lang="en">A tragic accident pushes the powerful Sikandar to protect the less fortunate by standing up to corruption and greed — using any means necessary.</desc>
+  </programme>
+  <programme start="20261113000840 +0000" stop="20261113023024 +0000" channel="76950">
+    <title lang="en">Housefull 4 (2019)</title>
+    <desc lang="en">Three couples who get separated from each other due to an evil ploy, reincarnate after 600 years and meet each other as history repeats itself again and their respective partners get mixed up this time.</desc>
+  </programme>
+  <programme start="20261113023024 +0000" stop="20261113044721 +0000" channel="76950">
+    <title lang="en">Jolly Llb 2 (2017)</title>
+    <desc lang="en">A blunt, abrasive and yet oddly compassionate Jagdishwar Mishra aka Jolly, a small-time struggling lawyer who moves from Kanpur to the city of Nawabs to pursue his dream of becoming a big-time lawyer.</desc>
+  </programme>
+  <programme start="20261113044721 +0000" stop="20261113065552 +0000" channel="76950">
+    <title lang="en">Jolly Llb (2013)</title>
+    <desc lang="en">Wanting to earn fame and fortune, a small time lawyer files a PIL for an infamous hit-and-run, and thus learns what it really is like to be a lawyer.</desc>
+  </programme>
+  <programme start="20261113065552 +0000" stop="20261113090931 +0000" channel="76950">
+    <title lang="en">Kaun Pravin Tambe (2022)</title>
+    <desc lang="en">Mumbai-born leg-spinner Pravin Tambe made his debut in professional cricket at the age of 41 in the IPL for Rajasthan Royals in 2013 not having played any international or even first-class cricket before that. The story traces the extraordinary journey of Tambe as he became the oldest debutant - at an age when most cricketers have retired or are on the verge of retirement - a modern-day fable of an underdog who fought against his destiny.</desc>
+  </programme>
+  <programme start="20261113090931 +0000" stop="20261113112215 +0000" channel="76950">
+    <title lang="en">Kesari Chapter 2 The Untold Story Of Jallianwala Bagh (2025)</title>
+    <desc lang="en">A dramatization of the life story of C. Sankaran Nair, the lawyer who fought for the truth behind the Jallianwala Bagh massacre.</desc>
+  </programme>
+  <programme start="20261113004031 +0000" stop="20261113025902 +0000" channel="76224">
+    <title lang="en">Race 2 (2013)</title>
+    <desc lang="en">Ranvir Singh encounters the Indian mafia in Turkey as he carries out a mission to avenge his lover's death.</desc>
+  </programme>
+  <programme start="20261113025902 +0000" stop="20261113052021 +0000" channel="76224">
+    <title lang="en">Chennai Express (2013)</title>
+    <desc lang="en">Rahul embarks on a journey to a small town in Tamil Nadu to fulfill the last wish of his grandfather: to have his ashes immersed in the Holy water of Rameshwaram. En route, he meets a woman hailing from a unique family down South. As they find love through this journey in the exuberant lands of South India, an unanticipated drive awaits them.</desc>
+  </programme>
+  <programme start="20261113052021 +0000" stop="20261113081129 +0000" channel="76224">
+    <title lang="en">3 Idiots (2009)</title>
+    <desc lang="en">Rascal. Joker. Dreamer. Genius... You've never met a college student quite like "Rancho." From the moment he arrives at India's most prestigious university, Rancho's outlandish schemes turn the campus upside down—along with the lives of his two newfound best friends. Together, they make life miserable for "Virus," the school’s uptight and heartless dean. But when Rancho catches the eye of the dean's daughter, Virus sets his sights on flunking out the "3 idiots" once and for all.</desc>
+  </programme>
+  <programme start="20261113081129 +0000" stop="20261113113247 +0000" channel="76224">
+    <title lang="en">Animal (2023)</title>
+    <desc lang="en">HINDI CLASSIC BLOCKBUSTER — Animal (2023)</desc>
+  </programme>
+  <programme start="20261113113247 +0000" stop="20261113142711 +0000" channel="76224">
+    <title lang="en">Baadshah (1999)</title>
+    <desc lang="en">A small time detective is mistaken as a CBI agent and gets embroiled in a deadly mission to save the Chief Minister from an assassination attempt.</desc>
+  </programme>
+  <programme start="20261112233307 +0000" stop="20261113022346 +0000" channel="71491">
+    <title lang="en">Jawan (2023)</title>
+    <desc lang="en">An emotional journey of a prison warden, driven by a personal vendetta while keeping up to a promise made years ago, recruits inmates to commit outrageous crimes that shed light on corruption and injustice, in an attempt to get even with his past,  and that leads him to an unexpected reunion.</desc>
+  </programme>
+  <programme start="20261113022346 +0000" stop="20261113060710 +0000" channel="71491">
+    <title lang="en">Lagaan (2001)</title>
+    <desc lang="en">The year is 1893 and India is under British occupation. In a small village, the tyrannical Captain Russell has imposed an unprecedented land tax on its citizens. Outraged, Bhuvan, a rebellious farmer, rallies the villagers to publicly oppose the tax. Russell offers a novel way to settle the dispute: he challenges Bhuvan and his men to a game of cricket, a sport completely foreign to India. If Bhuvan and his men can defeat Russell's team, the tax will be repealed.</desc>
+  </programme>
+  <programme start="20261113060710 +0000" stop="20261113094253 +0000" channel="71491">
+    <title lang="en">Mohabbatein (2000)</title>
+    <desc lang="en">At a prestigious all-male university, three friends seek love outside of the school grounds; at the same time, a newly-hired music teacher seeks to befriend and loosen up the militantly strict headmaster.</desc>
+  </programme>
+  <programme start="20261113094253 +0000" stop="20261113121511 +0000" channel="71491">
+    <title lang="en">Pk (2014)</title>
+    <desc lang="en">A stranger in the city asks questions no one has asked before. Known only by his initials, the man's innocent questions and childlike curiosity take him on a journey of love, laughter and letting go.</desc>
+  </programme>
+  <programme start="20261113121511 +0000" stop="20261113143853 +0000" channel="71491">
+    <title lang="en">Raees (2017)</title>
+    <desc lang="en">Set in the early ’80s and ’90s in Gujarat, India, ‘Raees’ is a fictitious story of a crime lord named Raees, who builds an entire empire from scratch, and a police officer who is determined to bring him down.</desc>
+  </programme>
+  <programme start="20261112230731 +0000" stop="20261113015103 +0000" channel="3543">
+    <title lang="en">Sarfarosh (1999)</title>
+    <desc lang="en">When terrorists kill a cop's brother and disable his father, he fights back against the smuggling of guns and drugs which plagues his country.</desc>
+  </programme>
+  <programme start="20261113015103 +0000" stop="20261113041216 +0000" channel="3543">
+    <title lang="en">Satyameva Jayate 2 (2021)</title>
+    <desc lang="en">Satya Azad, an upright Home Minister wants to cleanse the country of corruption with his Anti-Corruption Bill. However, it fails to get enough ‘Ayes’, not only from his allies, but also from his wife Vidya a member of the Opposition, who votes ‘Nay’ in the Vidhan Sabha. When a couple of gruesome killings take place in the city, ACP Jay Azad is brought in to nab the murderer, never mind his motive.</desc>
+  </programme>
+  <programme start="20261113041216 +0000" stop="20261113063946 +0000" channel="3543">
+    <title lang="en">Shootout At Wadala (2013)</title>
+    <desc lang="en">The first-ever registered encounter by the Mumbai Police, which took place on November 1, 1982.</desc>
+  </programme>
+  <programme start="20261113063946 +0000" stop="20261113090442 +0000" channel="3543">
+    <title lang="en">Singham Again (2024)</title>
+    <desc lang="en">The cop universe expands with newer additions while the old ones return led by Bajirao Singham. Singham Again interweaves the mythological epic Ramayana's good vs evil narrative when his wife Avni Kamath gets abducted by Danger Lanka setting Bajirao and his gang of Sangram Bhalerao and Veer Sooryavanshi along with Satya and Shakti Shetty on a mission to rescue her.</desc>
+  </programme>
+  <programme start="20261113090442 +0000" stop="20261113110717 +0000" channel="3543">
+    <title lang="en">Sky Force (2025)</title>
+    <desc lang="en">In the 1965 Indo-Pak War, India faces a devastating surprise attack. Wing Commander Ahuja leads a retaliatory strike, but Squadron Leader Vijaya goes missing after a heroic solo engagement against a superior enemy jet. Ahuja spends 23 years seeking the truth and uncovering a cover-up.</desc>
+  </programme>
+  <programme start="20261112224634 +0000" stop="20261113021209 +0000" channel="3522">
+    <title lang="en">Dhurandhar (2025)</title>
+    <desc lang="en">In the early 2000s, an undercover operative infiltrates Karachi's underworld, breaking into its inner circle to dismantle a violent nexus from within.</desc>
+  </programme>
+  <programme start="20261113021209 +0000" stop="20261113051208 +0000" channel="3522">
+    <title lang="en">Dil Chahta Hai (2001)</title>
+    <desc lang="en">Three inseparable childhood friends are just out of college. Nothing comes between them - until they each fall in love, and their wildly different approaches to relationships creates tension.</desc>
+  </programme>
+  <programme start="20261113051208 +0000" stop="20261113075621 +0000" channel="3522">
+    <title lang="en">Fighter (2024)</title>
+    <desc lang="en">As India faces a militant attack in Kashmir, the country’s best combat aviators join forces under a reckless yet brilliant squadron leader to form 'Air Dragons', faces mortal dangers and their inner demons.</desc>
+  </programme>
+  <programme start="20261113075621 +0000" stop="20261113093825 +0000" channel="3522">
+    <title lang="en">Go Goa Gone (2013)</title>
+    <desc lang="en">A rave party off the coast of Goa goes horrifyingly and hilariously wrong when the island is overrun with zombies.</desc>
+  </programme>
+  <programme start="20261113093825 +0000" stop="20261113120404 +0000" channel="3522">
+    <title lang="en">Ikkis (2026)</title>
+    <desc lang="en">Second Lieutenant and India's youngest Param Vir Chakra recipient, Arun Khetarpal, gave his life fighting for his battalion and the country during the 1971 Battle of Basantar. Ikkis also takes a reflective look at the futility of war through the eyes of Khetarpal's father, who visits his ancestral home in Sargodha and Alma Mater for reunion, which now happens to be in post-partition Pakistan, 30 years later.</desc>
+  </programme>
+  <programme start="20261113004141 +0000" stop="20261113030046 +0000" channel="71744">
+    <title lang="en">Singh Is Bliing (2015)</title>
+    <desc lang="en">Raftaar Singh is always looking to have fun and runs away from responsibility. Fed up, his father orders Raftaar to go to Goa and work, and learn to take on responsibility. Once in Goa, he impresses his new boss with his enthusiasm and creative thinking. Soon he gets an assignment, and meets Sara Amy Jackson - and thus begins their unique love story. What ensues is a great comedy of errors, as one hilarious situation after another unfolds. Raftaar falls head over heels for this exotic, mysterious girl. The romance takes a deadly turn when he realizes that Sara is not who he thinks she is and has an agenda, which takes him to Romania. Will Raftaar be able to win her over in a distant and dangerous land?</desc>
+  </programme>
+  <programme start="20261113030046 +0000" stop="20261113052541 +0000" channel="71744">
+    <title lang="en">Singham Again (2024)</title>
+    <desc lang="en">The cop universe expands with newer additions while the old ones return led by Bajirao Singham. Singham Again interweaves the mythological epic Ramayana's good vs evil narrative when his wife Avni Kamath gets abducted by Danger Lanka setting Bajirao and his gang of Sangram Bhalerao and Veer Sooryavanshi along with Satya and Shakti Shetty on a mission to rescue her.</desc>
+  </programme>
+  <programme start="20261113052541 +0000" stop="20261113075014 +0000" channel="71744">
+    <title lang="en">Son Of Sardaar 2 (2025)</title>
+    <desc lang="en">Years after settling an epic family feud and surviving house arrest in Punjab, Jassi Singh Randhawa returns this time chasing love, not trouble. But when he lands in Scotland to win back his estranged wife, he stumbles into a hostage crisis, a mafia war and the most bizarre Sardaar wedding of the century.</desc>
+  </programme>
+  <programme start="20261113075014 +0000" stop="20261113101054 +0000" channel="71744">
+    <title lang="en">Son Of Sardaar (2012)</title>
+    <desc lang="en">A Punjabi man returning to India falls in love with a woman whose family welcomes him as a guest before realizing he is the man they need to kill in order to avenge their loved ones.</desc>
+  </programme>
+  <programme start="20261113101054 +0000" stop="20261113123401 +0000" channel="71744">
+    <title lang="en">Stree 2 (2024)</title>
+    <desc lang="en">Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.</desc>
+  </programme>
+  <programme start="20261113005052 +0000" stop="20261113025901 +0000" channel="3544">
+    <title lang="en">Shaitaan (2024)</title>
+    <desc lang="en">Kabir and his family's fun weekend retreat takes terrifying turn when an intruder takes over the control of the  body of his teenage daughter, putting her at the mercy of his increasingly sinister orders.</desc>
+  </programme>
+  <programme start="20261113025901 +0000" stop="20261113052356 +0000" channel="3544">
+    <title lang="en">Singham Again (2024)</title>
+    <desc lang="en">The cop universe expands with newer additions while the old ones return led by Bajirao Singham. Singham Again interweaves the mythological epic Ramayana's good vs evil narrative when his wife Avni Kamath gets abducted by Danger Lanka setting Bajirao and his gang of Sangram Bhalerao and Veer Sooryavanshi along with Satya and Shakti Shetty on a mission to rescue her.</desc>
+  </programme>
+  <programme start="20261113052356 +0000" stop="20261113084618 +0000" channel="3544">
+    <title lang="en">The Bengal Files (2025)</title>
+    <desc lang="en">A criminal investigator uncovers a web of corruption during a missing person investigation, while a figure connected to the case reflects on the communal violence which broke out ahead of India's partition.</desc>
+  </programme>
+  <programme start="20261113084618 +0000" stop="20261113103309 +0000" channel="3544">
+    <title lang="en">The Buckingham Murders (2024)</title>
+    <desc lang="en">Fresh wounds are reopened when Jasmeet Bhamra, a cop and a single mother who recently lost her child in a shooting spree, transfers to High Wycombe and is assigned a case of a missing child.</desc>
+  </programme>
+  <programme start="20261113103309 +0000" stop="20261113131722 +0000" channel="3544">
+    <title lang="en">Thugs Of Hindostan (2018)</title>
+    <desc lang="en">After the British company’s officer Clive takes over the kingdom of Mirza, Princess Zafira and Khudabaksh aka Azaad form a band of rebel pirates who swear to defeat the English officer and win their freedom back. The British Company in return, hire the wily thug Firangi track Azaad’s gang and thwart his plans.</desc>
+  </programme>
+  <programme start="20261112230122 +0000" stop="20261113013631 +0000" channel="71745">
+    <title lang="en">Rishtey (2002)</title>
+    <desc lang="en">Suraj Singh is a wrestler by profession and has the misfortune of falling in love with wealthy Yashpaul Chaudhary's daughter Komal. When Yashpaul learns of there relationship he arrogantly disagrees of his daughter's choice but Komal refuses to accept her dad's word and gets married to Suraj without the blessings of Yashpaul. Aggravated by his daughter's act Yashpaul connote some negative scenes which spoil Suraj's character in the eyes of Komal resulting in the couple's separation. Before separation, Komal has given birth to a baby boy, which Yashpaul had wanted to kill but Suraj escapes with the child and single-handily brings him up in a poor environment. Years later Komal will return and demand that her child is handed over to her even if having to appeal to the judicial system.</desc>
+  </programme>
+  <programme start="20261113013631 +0000" stop="20261113040642 +0000" channel="71745">
+    <title lang="en">Secret Superstar (2017)</title>
+    <desc lang="en">A talented teenage singer-songwriter living amid domestic abuse becomes a YouTube sensation after a video in which she hides her identity goes viral.</desc>
+  </programme>
+  <programme start="20261113040642 +0000" stop="20261113063137 +0000" channel="71745">
+    <title lang="en">Singham Again (2024)</title>
+    <desc lang="en">The cop universe expands with newer additions while the old ones return led by Bajirao Singham. Singham Again interweaves the mythological epic Ramayana's good vs evil narrative when his wife Avni Kamath gets abducted by Danger Lanka setting Bajirao and his gang of Sangram Bhalerao and Veer Sooryavanshi along with Satya and Shakti Shetty on a mission to rescue her.</desc>
+  </programme>
+  <programme start="20261113063137 +0000" stop="20261113090743 +0000" channel="71745">
+    <title lang="en">Sitaare Zameen Par (2025)</title>
+    <desc lang="en">A disgraced basketball coach is given the chance to coach a team of players who are intellectually disabled as part of community services. Gulshan has apprehensions at first and feels out of place but soon realizes they just might have what it takes to make it to the national championships.</desc>
+  </programme>
+  <programme start="20261113090743 +0000" stop="20261113112148 +0000" channel="71745">
+    <title lang="en">Srikanth (2024)</title>
+    <desc lang="en">In a world with odds stacked against him in every step of the way, Srikanth defies norms, blazing a trail from rural India to becoming the first visually impaired student at MIT. As he builds Bollant Industries, his success brings challenges for which he would not only chase personal dreams but safeguard a shared future for the ones just like him. This is the tale of an entrepreneur's triumph and sacrifice, both which he welcomed with open arms and a smile.</desc>
+  </programme>
+  <programme start="20261112225800 +0000" stop="20261113023200 +0000" channel="71747">
+    <title lang="en">Jodhaa Akbar (2008)</title>
+    <desc lang="en">A sixteenth century love story about a marriage of alliance that gave birth to true love between a Mughal emperor and a Rajput princess.</desc>
+  </programme>
+  <programme start="20261113023200 +0000" stop="20261113051745 +0000" channel="71747">
+    <title lang="en">Kalank (2019)</title>
+    <desc lang="en">In Pre-Independent India, circa 1945, the elite, opulent and solemn world of the Chaudhry family, and the wild, mysterious and musical underbelly of the town, Hira Mandi, clash when Roop Chaudhry encounters Zafar, a daredevil from Hira Mandi, unleashing deep-buried truths, secrets of betrayal and affairs that threaten to bring both worlds crashing down.</desc>
+  </programme>
+  <programme start="20261113051745 +0000" stop="20261113075103 +0000" channel="71747">
+    <title lang="en">Kesari (2019)</title>
+    <desc lang="en">In 1897, an army of 21 Sikhs battles 10,000 Afghans to prevent the Saragarhi Fort from being taken down.</desc>
+  </programme>
+  <programme start="20261113075103 +0000" stop="20261113100347 +0000" channel="71747">
+    <title lang="en">Kesari Chapter 2 The Untold Story Of Jallianwala Bagh (2025)</title>
+    <desc lang="en">A dramatization of the life story of C. Sankaran Nair, the lawyer who fought for the truth behind the Jallianwala Bagh massacre.</desc>
+  </programme>
+  <programme start="20261113100347 +0000" stop="20261113123641 +0000" channel="71747">
+    <title lang="en">Laal Kaptaan (2019)</title>
+    <desc lang="en">In 18th century India, a Naga Sadhu sets out on a journey across Bundelkhand to seek revenge for an injustice committed in the past.</desc>
+  </programme>
+  <programme start="20261113001743 +0000" stop="20261113024852 +0000" channel="71746">
+    <title lang="en">Bhoothnath Returns (2014)</title>
+    <desc lang="en">Boothnath vows to redeem himself when spirits tease him, and searches for a child to terrify. He befriends Akhrot, a slum kid, and helps him take on the country's most powerful politician.</desc>
+  </programme>
+  <programme start="20261113024852 +0000" stop="20261113053748 +0000" channel="71746">
+    <title lang="en">Brahmastra Partone Shiva (2022)</title>
+    <desc lang="en">HINDI FANTASY MOVIES — Brahmastra Partone Shiva (2022)</desc>
+  </programme>
+  <programme start="20261113053748 +0000" stop="20261113082223 +0000" channel="71746">
+    <title lang="en">Karan Arjun (1995)</title>
+    <desc lang="en">Karan and Arjun reincarnate in the different parts of the country. But the faith of their previous mother brings them together in order to avenge their death.</desc>
+  </programme>
+  <programme start="20261113082223 +0000" stop="20261113103752 +0000" channel="71746">
+    <title lang="en">Krrish (2006)</title>
+    <desc lang="en">In Singapore, Krishna is forced by circumstances to use his superpowers and become a masked superhero named Krrish, before getting drawn towards his lost legacy.</desc>
+  </programme>
+  <programme start="20261113103752 +0000" stop="20261113130908 +0000" channel="71746">
+    <title lang="en">Krrish 3 (2013)</title>
+    <desc lang="en">Krrish and his father must team up to save the world from a psychokinetic evil man named Kaal and his army of mutants.</desc>
+  </programme>
+  <programme start="20261112235010 +0000" stop="20261113021754 +0000" channel="71748">
+    <title lang="en">Chaahat (1996)</title>
+    <desc lang="en">Roop and his father come to the city for medical treatment where Reshma falls in love with Roop. However, Roop loves Pooja but when Reshma threatens to kill herself, Roop agrees to marry her.</desc>
+  </programme>
+  <programme start="20261113021754 +0000" stop="20261113025553 +0000" channel="71748">
+    <title lang="en">Chahat Desire (2025)</title>
+    <desc lang="en">HINDI ROMANTIC MOVIES — Chahat Desire (2025)</desc>
+  </programme>
+  <programme start="20261113025553 +0000" stop="20261113053931 +0000" channel="71748">
+    <title lang="en">Chamatkar (1992)</title>
+    <desc lang="en">When Sunder loses everything, he seeks refuge in a graveyard, where he befriends a ghost.</desc>
+  </programme>
+  <programme start="20261113053931 +0000" stop="20261113083630 +0000" channel="71748">
+    <title lang="en">Darr (1993)</title>
+    <desc lang="en">A woman is caught between one man's love and another man's obsession. She fears one and fears for the other. One stands for love and the other for life. Who will she choose?</desc>
+  </programme>
+  <programme start="20261113083630 +0000" stop="20261113110230 +0000" channel="71748">
+    <title lang="en">De De Pyaar De 2 (2025)</title>
+    <desc lang="en">When Ashish meets his girlfriend's parents for the first time, their age difference sparks outrage and a madcap plot to drive him out of her life.</desc>
+  </programme>
+  <programme start="20261112231635 +0000" stop="20261113015736 +0000" channel="71750">
+    <title lang="en">Dangal (2016)</title>
+    <desc lang="en">Dangal is an extraordinary true story based on the life of Mahavir Singh and his two daughters, Geeta and Babita Phogat. The film traces the inspirational journey of a father who trains his daughters to become world class wrestlers.</desc>
+  </programme>
+  <programme start="20261113015736 +0000" stop="20261113043211 +0000" channel="71750">
+    <title lang="en">Deva (2025)</title>
+    <desc lang="en">Dev Ambre, a ruthless cop, loses his memory in an accident just after he has finished solving a murder case and now has to reinvestigate it while keeping his memory loss a secret from everyone except DCP Farhan Khan.</desc>
+  </programme>
+  <programme start="20261113043211 +0000" stop="20261113072313 +0000" channel="71750">
+    <title lang="en">Dhoom 3 (2013)</title>
+    <desc lang="en">To avenge his father's death, a circus entertainer trained in magic and acrobatics robs banks to take down a corrupt bank owner. Two cops from Mumbai are assigned to the case.</desc>
+  </programme>
+  <programme start="20261113072313 +0000" stop="20261113104847 +0000" channel="71750">
+    <title lang="en">Dhurandhar (2025)</title>
+    <desc lang="en">In the early 2000s, an undercover operative infiltrates Karachi's underworld, breaking into its inner circle to dismantle a violent nexus from within.</desc>
+  </programme>
+  <programme start="20261113104847 +0000" stop="20261113130847 +0000" channel="71750">
+    <title lang="en">Drishyam 2 (2022)</title>
+    <desc lang="en">7 years after the case related to Vijay Salgaonkar and his family was closed, a series of unexpected events bring truth to light that threatens to change everything for the Salgaonkars. Can Vijay save his family this time?</desc>
+  </programme>
+  <programme start="20261113011710 +0000" stop="20261113040812 +0000" channel="71749">
+    <title lang="en">Dhoom 3 (2013)</title>
+    <desc lang="en">To avenge his father's death, a circus entertainer trained in magic and acrobatics robs banks to take down a corrupt bank owner. Two cops from Mumbai are assigned to the case.</desc>
+  </programme>
+  <programme start="20261113040812 +0000" stop="20261113073346 +0000" channel="71749">
+    <title lang="en">Dhurandhar (2025)</title>
+    <desc lang="en">In the early 2000s, an undercover operative infiltrates Karachi's underworld, breaking into its inner circle to dismantle a violent nexus from within.</desc>
+  </programme>
+  <programme start="20261113073346 +0000" stop="20261113101923 +0000" channel="71749">
+    <title lang="en">Dil Se (1998)</title>
+    <desc lang="en">Journalist Amar falls for a mysterious woman on an assignment, but she does not reciprocate his feelings. However, when Amar is about to get married, the woman shows up at his doorstep asking for help.</desc>
+  </programme>
+  <programme start="20261113101923 +0000" stop="20261113130759 +0000" channel="71749">
+    <title lang="en">Don (2006)</title>
+    <desc lang="en">DCP DeSilva sees a way to bring to justice the feared head of a criminal empire by recruiting a man named Vijay, who looks exactly like the crime boss. The ruse works too well, and soon Vijay finds his life in danger when DeSilva, the only one who knows his true identity, dies.</desc>
+  </programme>
+  <programme start="20261113130759 +0000" stop="20261113152758 +0000" channel="71749">
+    <title lang="en">Drishyam 2 (2022)</title>
+    <desc lang="en">7 years after the case related to Vijay Salgaonkar and his family was closed, a series of unexpected events bring truth to light that threatens to change everything for the Salgaonkars. Can Vijay save his family this time?</desc>
+  </programme>
+  <programme start="20261113010208 +0000" stop="20261113034325 +0000" channel="72512">
+    <title lang="en">Annaatthe (2021)</title>
+    <desc lang="en">Kaaliyan is a village president in the Madurai district, who is fondly called Annaatthe. His nieces compete with each other to marry him. But, he falls in love with another woman who visits their village. Kaaliyan has a sister who gets married and shifts to Kolkata where she faces some unknown threats. Soon, her brother comes to her aid.</desc>
+  </programme>
+  <programme start="20261113034325 +0000" stop="20261113060820 +0000" channel="72512">
+    <title lang="en">Auron Mein Kahan Dum Tha (2024)</title>
+    <desc lang="en">After 20 years in prison, a man reunites with his lost love and the truth behind his crimes is revealed.</desc>
+  </programme>
+  <programme start="20261113060820 +0000" stop="20261113093008 +0000" channel="72512">
+    <title lang="en">Border 2 (2026)</title>
+    <desc lang="en">Three idealistic soldiers in the Indian army, navy and air force face grueling combat conditions in this film set during the 1971 Indo-Pak war.</desc>
+  </programme>
+  <programme start="20261113093008 +0000" stop="20261113120302 +0000" channel="72512">
+    <title lang="en">Dasara (2023)</title>
+    <desc lang="en">In 1990s, Set in small village Veerlapally, Dharani, Vennela, and Suri are childhood friends. Dharani loves Vennela, but she has Suri in her mind. Knowing Suri’s interest in Vennela, Dharani sacrifices his love and helps get them married. But Local politics between Rajanna, Shivanna and the latter's son Chinna Nambi threaten to disrupt their lives.</desc>
+  </programme>
+  <programme start="20261113120302 +0000" stop="20261113143913 +0000" channel="72512">
+    <title lang="en">Guntur Kaaram (2024)</title>
+    <desc lang="en">Years after his mother left him and remarried, Ramana is asked to sign documents denying any relations with his mother, but he refuses and demands answer to why his mother left him.</desc>
+  </programme>
+  <programme start="20261113001915 +0000" stop="20261113020125 +0000" channel="72513">
+    <title lang="en">Go Goa Gone (2013)</title>
+    <desc lang="en">A rave party off the coast of Goa goes horrifyingly and hilariously wrong when the island is overrun with zombies.</desc>
+  </programme>
+  <programme start="20261113020125 +0000" stop="20261113034324 +0000" channel="72513">
+    <title lang="en">Gurgaon (2017)</title>
+    <desc lang="en">A real estate baron Kehri Singh manages 'Preet Real Estate' which he runs in his daughter's name whom he consider's to be his lucky mascot. A sidelined and insulted Nikki Singh is ignored by his father and is considered to be insolent, useless and unlucky. In order to pay off a huge debt to a local criminal, Nikki sets off a chilling event that forces his father to revisit his dark past and confront a brutal truth.</desc>
+  </programme>
+  <programme start="20261113034324 +0000" stop="20261113061156 +0000" channel="72513">
+    <title lang="en">Housefull (2010)</title>
+    <desc lang="en">Believing himself to be a jinx and bringing bad luck upon himself and others, a man attempts to find true love, but ends up in very complicated relationships.</desc>
+  </programme>
+  <programme start="20261113061156 +0000" stop="20261113081715 +0000" channel="72513">
+    <title lang="en">Inkaar (2013)</title>
+    <desc lang="en">At a leading ad agency, the battle for the top job between Rahul Verma, the advertising CEO, and Maya Luthra, his ambitious protégée, takes an ugly turn when Maya files a sexual harassment complaint against Rahul.</desc>
+  </programme>
+  <programme start="20261113081715 +0000" stop="20261113102243 +0000" channel="72513">
+    <title lang="en">Jersey (2019)</title>
+    <desc lang="en">After his career fails to take off, a gifted cricketer in his mid-thirties decides that he’s not ready to give up quite yet.</desc>
+  </programme>
+  <programme start="20261112232751 +0000" stop="20261113013912 +0000" channel="72514">
+    <title lang="en">One Two Three (2008)</title>
+    <desc lang="en">Laxminarayan lives a poor lifestyle in Mumbai along with his widowed mother, Kanta, who wants him to be a successful gangster like Batlabhai, and would like him to kill a few people, make enough money, then get married to Khujli's daughter, Meena. In order to fulfill his mother's wish, Laxminarayan accepts a contract to kill D'Mello Yadav, a Pondi-based gangster, who has stolen a diamond from Batl</desc>
+  </programme>
+  <programme start="20261113013912 +0000" stop="20261113034316 +0000" channel="72514">
+    <title lang="en">Parineeta (2005)</title>
+    <desc lang="en">Childhood sweethearts Lalita and Shekhar wish to get married someday. However, Shekhar's growing suspicions about Lalita coupled with his conniving father's antics threaten to tear them apart.</desc>
+  </programme>
+  <programme start="20261113034316 +0000" stop="20261113052630 +0000" channel="72514">
+    <title lang="en">Provoked (2006)</title>
+    <desc lang="en">Provoked is the true story of Kiranjit Ahluwalia, a Punjabi woman who moved to London after her marriage with Deepak Ahluwalia. Her husband seemed caring at first but then began to beat her up. He started drinking a lot and sleeping around with other women. he also subjected her to spousal rape. After ten years and having two children with him, out of fear, she sets him on fire.</desc>
+  </programme>
+  <programme start="20261113052630 +0000" stop="20261113075952 +0000" channel="72514">
+    <title lang="en">Qayamat City Under Threat (2003)</title>
+    <desc lang="en">CBI Officer Akram Sheikh is on the verge of nabbing three dreaded Pakistan-backed arms dealers, the brothers Ali and Abbas and their common moll Laila. When Sheikh busts an important arms deal conducted by his three targets, Ali-Abbas join forces with Gopal, a corrupt scientist to get hold of a deadly virus and take the tourists at the Elphinstone Jail resort as hostage. Akram Sheikh is now compelled to get help from Rachit, a criminal serving jail time who was a former associate of Ali-Abbas and the only person in history to have successfully escaped the Elphinstone jail . Along with a commando team, they try to pull off a rescue attempt by breaking in the jail and rescuing the hostages.</desc>
+  </programme>
+  <programme start="20261113075952 +0000" stop="20261113104612 +0000" channel="72514">
+    <title lang="en">Rehnaa Hai Terre Dil Mein (2001)</title>
+    <desc lang="en">Maddy impersonates Rajeev, the person his love interest, Reena, is about to marry and attempts to woo her. However, he is unprepared for the moment when the truth will be revealed.</desc>
+  </programme>
+  <programme start="20261113011619 +0000" stop="20261113035445 +0000" channel="72515">
+    <title lang="en">Gharana (1989)</title>
+    <desc lang="en">A family's palatial lifestyle and estate are stolen from them in an attempt to frame them for a crime they did not commit.</desc>
+  </programme>
+  <programme start="20261113035445 +0000" stop="20261113054954 +0000" channel="72515">
+    <title lang="en">Guddi (1971)</title>
+    <desc lang="en">A teenage girl will not accept her family's attempt to arrange a marriage for her, as her heart is currently too full of love for the movies and heartthrob actor "Dharmendra."</desc>
+  </programme>
+  <programme start="20261113054954 +0000" stop="20261113090311 +0000" channel="72515">
+    <title lang="en">Hum Aapke Hain Koun (1994)</title>
+    <desc lang="en">Prem and Nisha meet and fall in love at the wedding of their elder siblings, but their plans to be together are put in jeopardy when Nisha's sister dies, leaving behind a baby.</desc>
+  </programme>
+  <programme start="20261113090311 +0000" stop="20261113113329 +0000" channel="72515">
+    <title lang="en">Jeena Marna Tere Sang (1992)</title>
+    <desc lang="en">Amar is the son of a millionaire. He decides to avenge on Asha for slapping him in public, but later falls for her. He also discovers the truth about his father.</desc>
+  </programme>
+  <programme start="20261113113329 +0000" stop="20261113134916 +0000" channel="72515">
+    <title lang="en">Love In Bombay (1974)</title>
+    <desc lang="en">HINDI SUBTITLE BEFORE 2000 — Love In Bombay (1974)</desc>
+  </programme>
+  <programme start="20261112232529 +0000" stop="20261113022543 +0000" channel="71577">
+    <title lang="en">Divya Shakti (1993)</title>
+    <desc lang="en">An idealistic journalist (Devgan) gets weary &amp; tired of witnessing the reign of crime, police corruption &amp; injustice in his city &amp; decides to wage a one-man war against the psychotic king maker 'Tau' played by the legendary Amrish Puri. His journey costs him his limbs &amp; loved ones as he goes on a vigilante style brute fest right into the lair &amp; dark world of the two faced Tau &amp; his cronies. Death &amp; Destruction follow the war path.</desc>
+  </programme>
+  <programme start="20261113022543 +0000" stop="20261113051029 +0000" channel="71577">
+    <title lang="en">Duplicate (1998)</title>
+    <desc lang="en">Manu, a criminal, finds his doppelganger in a budding chef, Bablu, and uses this fact to his advantage. Later, Manu tries to kill the chef so that he can take over his life and escape the law.</desc>
+  </programme>
+  <programme start="20261113051029 +0000" stop="20261113063724 +0000" channel="71577">
+    <title lang="en">Earth (1998)</title>
+    <desc lang="en">In 1947, the borderlines between India and Pakistan are being drawn. A young girl bears witnesses to tragedy as her ayah is caught between the love of two men and the rising tide of political and religious violence.</desc>
+  </programme>
+  <programme start="20261113063724 +0000" stop="20261113092016 +0000" channel="71577">
+    <title lang="en">Fiza (2000)</title>
+    <desc lang="en">In 1993 Fiza's brother disappears during the riots in Mumbai. In 1999 Fiza is tired of waiting and goes looking for him.</desc>
+  </programme>
+  <programme start="20261113092016 +0000" stop="20261113120223 +0000" channel="71577">
+    <title lang="en">Ghulam (1998)</title>
+    <desc lang="en">Sidharth (Aamir Khan), is a Mumbai 'Tapori' and a boxing champion. His elder brother, Jai (Rajat Kapoor) works with Raunak Singh (Sharad Saxena), who now rules their "Basti" through terrorising its people and collecting 'Hafta' from local merchants. Sidharth idolized his father, a freedom fighter, whom he saw falling to his death as a child. This effects Sidharth through his adult life. Sidharth meets a young girl, Alisha (Ranee Mukherjee), who rides with a motorcycle gang and Charlie (Deepak Tijori), the gang leader. Sidharth also meets Hari, whose idealism reminds him of his father. Hari's social work in the community possess a threat to Raunak Singh's evil empire. What happens to Hari changes Sidharth's life forever. How Sidharth breaks Raunak Singh's chains of 'Ghulami' around the community forms the crux of the story. Featuring the superhit song "Aati Kya Khandala" sung by Aamir Khan.</desc>
+  </programme>
+  <programme start="20261112234940 +0000" stop="20261113015813 +0000" channel="71578">
+    <title lang="en">Emi Liya Hai To Chukana Padega (2008)</title>
+    <desc lang="en">(Extension: Easy Monthly Installment - Liya Hai Toh Chukana Padega!) is a 2008 Bollywood social film directed by Saurabh Kabra and starring Malaika Arora, Sanjay Dutt, Urmila Matondkar and lots more. The film released on November 7, 2008.</desc>
+  </programme>
+  <programme start="20261113015813 +0000" stop="20261113044624 +0000" channel="71578">
+    <title lang="en">Fanaa (2006)</title>
+    <desc lang="en">Zooni Ali Beg is a blind Kashmiri girl who travels without her parents for the first time with a dance troupe to Delhi to perform in a ceremony for independence day. On her journey, she meets Rehan Khan, a casanova and tour guide who flirts with her. Although her friends warn Zooni about him, she cannot resist falling in love with him and he takes her on a private tour of New Delhi. But there is more to Rehan than meets the eye and Zooni will have to make a heartbreaking decision.</desc>
+  </programme>
+  <programme start="20261113044624 +0000" stop="20261113070109 +0000" channel="71578">
+    <title lang="en">Fool N Final (2007)</title>
+    <desc lang="en">A bunch of misfits and gangsters embarks on a journey to find a lost and stolen diamond.</desc>
+  </programme>
+  <programme start="20261113070109 +0000" stop="20261113094537 +0000" channel="71578">
+    <title lang="en">Footpath (2003)</title>
+    <desc lang="en">Two friends of a man help him avenge his father's death. Years later, he reunites with his friends who have now become criminals. What they don't know, is that he is now an undercover cop.</desc>
+  </programme>
+  <programme start="20261113094537 +0000" stop="20261113124231 +0000" channel="71578">
+    <title lang="en">Gadar Ek Prem Katha (2001)</title>
+    <desc lang="en">During the partition, Tara marries Sakina and they live a happy life. However their happiness is short-lived when Sakina's father forces her to stay in Pakistan and separates her from her family.</desc>
+  </programme>
+  <programme start="20261113012453 +0000" stop="20261113033558 +0000" channel="71579">
+    <title lang="en">Raja Natwarlal (2014)</title>
+    <desc lang="en">Based on the story of a notorious real-life con man, this twisty Bollywood thriller revolves around cunning fraudster Raja Natwarlal, who pulls off a series of two-bit scams in Mumbai on his way to a big swindle. A small-time con man wants to get into the big leagues and take on a Goliath in the world of scams.</desc>
+  </programme>
+  <programme start="20261113033558 +0000" stop="20261113054229 +0000" channel="71579">
+    <title lang="en">Rascals (2011)</title>
+    <desc lang="en">Two rival con-men attempt to outdo each other to woo a wealthy woman.</desc>
+  </programme>
+  <programme start="20261113054229 +0000" stop="20261113080737 +0000" channel="71579">
+    <title lang="en">Ready (2011)</title>
+    <desc lang="en">Prem believes Sanjana is the girl chosen by his dad and falls in love with her. However, she is a runaway bride escaping from a marriage set up by her mafia uncles against her wishes. On learning the truth, he devises a plan to win her over from her uncles who intend to usurp her huge inheritance.</desc>
+  </programme>
+  <programme start="20261113080737 +0000" stop="20261113100435 +0000" channel="71579">
+    <title lang="en">Rowdy Rathore (2012)</title>
+    <desc lang="en">A small-time thug comes across a young girl who claims him to be her father, following which he realizes he has a lookalike who's being hunted by goons.</desc>
+  </programme>
+  <programme start="20261113100435 +0000" stop="20261113123251 +0000" channel="71579">
+    <title lang="en">Rustom (2016)</title>
+    <desc lang="en">A naval officer is devastated to learn about his wife's extramarital affair with a rich businessman while he was away. He pays him a visit and shoots him to death, following which he surrenders himself but claims to be "not guilty" in the court, much to the surprise of the businessman's sister and the officers dealing with his case.</desc>
+  </programme>
+  <programme start="20261112234731 +0000" stop="20261113023017 +0000" channel="71580">
+    <title lang="en">Bade Miyan Chote Miyan (2024)</title>
+    <desc lang="en">Two elite soldiers with troubled pasts are enlisted for a daring mission when a deadly masked madman threatens India's defenses.</desc>
+  </programme>
+  <programme start="20261113023017 +0000" stop="20261113044727 +0000" channel="71580">
+    <title lang="en">Bawaal (2023)</title>
+    <desc lang="en">Ajay Dixit, an ordinary history teacher in a high school, enjoys mini celebrityhood in his town courtesy of the fake image he has built. He shares a strained relationship with his newly-wed wife. Circumstances force him to take a trip to Europe for the World War II trail accompanied by his wife. Will his relationship with his wife survive this trip? Will he manage to win the war within?</desc>
+  </programme>
+  <programme start="20261113044727 +0000" stop="20261113070908 +0000" channel="71580">
+    <title lang="en">Bhediya (2022)</title>
+    <desc lang="en">Inspired by legendary folklore rooted in Arunachal Pradesh, Bhediya tells the story of Bhaskar, a man who gets bitten by a mythical wolf and begins to transform into the creature himself. As Bhaskar and his ragtag buddies try to find answers, he is worried that the monster in him will wipe out human existence in the local town.</desc>
+  </programme>
+  <programme start="20261113070908 +0000" stop="20261113093101 +0000" channel="71580">
+    <title lang="en">Bhool Bhulaiyaa 2 (2022)</title>
+    <desc lang="en">When strangers Reet and Ruhan cross paths, their journey leads to an abandoned mansion and a dreaded spirit who has been trapped for eighteen years.</desc>
+  </programme>
+  <programme start="20261113093101 +0000" stop="20261113120905 +0000" channel="71580">
+    <title lang="en">Bhool Bhulaiyaa 3 (2024)</title>
+    <desc lang="en">Rooh Baba ventures into a haunted mansion in the kingdom of Raktaghat in West Bengal, where he confronts two vengeful spirits, both asserting to be Manjulika.</desc>
+  </programme>
+  <programme start="20261113010109 +0000" stop="20261113022836 +0000" channel="71537">
+    <title lang="en">Collection (2021)</title>
+    <desc lang="en">The filmed inventory of a private collection, which can be seen as a dubious art collection, but also as a compilation like those usual in stamp collecting and archeology. Also as a series of objects and documents in the style of memento samples. The emotional catalogue of a life becomes, at the same time, a collectible item in itself.</desc>
+  </programme>
+  <programme start="20261113022836 +0000" stop="20261113035754 +0000" channel="71537">
+    <title lang="en">Colors Of Love (2021)</title>
+    <desc lang="en">When librarian Taylor Harris suddenly loses her job, she decides to visit her brother in a small town in Montana. There, she gets involved in the fight to help save her brother's hotel from tycoon Joel Sheenan, who wants to renovate it.</desc>
+  </programme>
+  <programme start="20261113035754 +0000" stop="20261113052923 +0000" channel="71537">
+    <title lang="en">Coyotes (2025)</title>
+    <desc lang="en">Trapped in their Hollywood Hills home, a family fights for survival when caught between a raging wildfire and a pack of savage coyotes.</desc>
+  </programme>
+  <programme start="20261113052923 +0000" stop="20261113070604 +0000" channel="71537">
+    <title lang="en">Curse Of Chucky (2013)</title>
+    <desc lang="en">After her mother's mysterious death, Nica begins to suspect that the talking, red-haired doll her visiting niece has been playing with may be the key to the mounting bloodshed and chaos.</desc>
+  </programme>
+  <programme start="20261113070604 +0000" stop="20261113085034 +0000" channel="71537">
+    <title lang="en">Dirty Angels (2024)</title>
+    <desc lang="en">During the United States' 2021 withdrawal from Afghanistan, a group of female soldiers posing as medical relief are sent back in to rescue a group of kidnapped teenagers caught between ISIS and the Taliban.</desc>
+  </programme>
+  <programme start="20261113000320 +0000" stop="20261113014941 +0000" channel="71538">
+    <title lang="en">Collision Course (2026)</title>
+    <desc lang="en">Spain, 2013. After robbing a bank, a getaway crash reveals the hidden side of each thief, exposing betrayals and lies that began long before the heist.</desc>
+  </programme>
+  <programme start="20261113014941 +0000" stop="20261113031845 +0000" channel="71538">
+    <title lang="en">The Birthday Gift (2026)</title>
+    <desc lang="en">Single mother Marlene Frischmann organizes a birthday party for her son Theo at her brother's chic country villa, which quickly spirals into family drama, world-view quarrels, and chaos.</desc>
+  </programme>
+  <programme start="20261113031845 +0000" stop="20261113050151 +0000" channel="71538">
+    <title lang="en">Creatures (2021)</title>
+    <desc lang="en">A group of astronomy students get more than they bargained for after finding an injured alien who is being targeted by a group of bloodthirsty CREATURES!</desc>
+  </programme>
+  <programme start="20261113050151 +0000" stop="20261113065620 +0000" channel="71538">
+    <title lang="en">Crime Busters (1977)</title>
+    <desc lang="en">An attempted robbery turns to be an unexpected recruitment when two unemployed men mistakenly break into a police office instead of a store.</desc>
+  </programme>
+  <programme start="20261113065620 +0000" stop="20261113085527 +0000" channel="71538">
+    <title lang="en">Crisis (2021)</title>
+    <desc lang="en">HINDI ENGLISH DUBBED MOVIES 2 — Crisis (2021)</desc>
+  </programme>
+  <programme start="20261113011258 +0000" stop="20261113032936 +0000" channel="71539">
+    <title lang="en">Parthenope (2024)</title>
+    <desc lang="en">Parthenope, born in the sea near Naples in 1950, is beautiful, enigmatic, and intelligent. She is shamelessly courted by many. However, beauty comes at a cost.</desc>
+  </programme>
+  <programme start="20261113032936 +0000" stop="20261113052728 +0000" channel="71539">
+    <title lang="en">People We Meet On Vacation (2026)</title>
+    <desc lang="en">Poppy's a free spirit. Alex loves a plan. After years of summer vacations, these polar-opposite pals wonder if they could be a perfect romantic match.</desc>
+  </programme>
+  <programme start="20261113052728 +0000" stop="20261113071159 +0000" channel="71539">
+    <title lang="en">Preschool (2026)</title>
+    <desc lang="en">Two determined fathers engage in a comical battle to enroll their kids in an elite preschool, escalating into an absurd competition with unexpected results.</desc>
+  </programme>
+  <programme start="20261113071159 +0000" stop="20261113085208 +0000" channel="71539">
+    <title lang="en">Pri Sons (2024)</title>
+    <desc lang="en">When an underground marketplace of illegal activities is besieged by an army of bloodthirsty assassins, a ragtag group of criminals must band together to fight for survival.</desc>
+  </programme>
+  <programme start="20261113085208 +0000" stop="20261113104608 +0000" channel="71539">
+    <title lang="en">Remarkably Bright Creatures (2026)</title>
+    <desc lang="en">Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.</desc>
+  </programme>
+  <programme start="20261113003924 +0000" stop="20261113020957 +0000" channel="71540">
+    <title lang="en">The Roughneck (2025)</title>
+    <desc lang="en">An oil worker and his dog embark on a journey to his wedding, but after a violent attack at a rest stop, he teams with his ex-convict father to seek revenge, uncovering dark secrets in their rural community.</desc>
+  </programme>
+  <programme start="20261113020957 +0000" stop="20261113045104 +0000" channel="71540">
+    <title lang="en">The Secret Agent (2025)</title>
+    <desc lang="en">Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.</desc>
+  </programme>
+  <programme start="20261113045104 +0000" stop="20261113062956 +0000" channel="71540">
+    <title lang="en">The Strangers Chapter 2 (2025)</title>
+    <desc lang="en">After learning that one of their victims, Maya, is still alive, The Strangers return to finish the job. With nowhere to run and no one to trust, Maya soon finds herself in a brutal fight for survival against psychopaths more than willing to kill anyone who stands in their way.</desc>
+  </programme>
+  <programme start="20261113062956 +0000" stop="20261113081604 +0000" channel="71540">
+    <title lang="en">The Truthers (2026)</title>
+    <desc lang="en">After her mother's sudden death, Ruth returns to her hometown and reunites with her father, whose odd behavior makes her question what really happened.</desc>
+  </programme>
+  <programme start="20261113081604 +0000" stop="20261113094213 +0000" channel="71540">
+    <title lang="en">Thrash (2026)</title>
+    <desc lang="en">When a catastrophic hurricane slams a coastal town, stranded residents must survive rapidly rising waters swarming with ravenous sharks.</desc>
+  </programme>
+  <programme start="20261113002648 +0000" stop="20261113020554 +0000" channel="71541">
+    <title lang="en">Anaconda (2025)</title>
+    <desc lang="en">HINDI ENGLISH DUBBED MOVIES 5 — Anaconda (2025)</desc>
+  </programme>
+  <programme start="20261113020554 +0000" stop="20261113035235 +0000" channel="71541">
+    <title lang="en">Balls Up (2026)</title>
+    <desc lang="en">Two marketing executives go "balls out" and pitch a bold full‑coverage condom sponsorship with the World Cup. After their drunken celebration in Brazil sparks a global scandal, they must outrun furious fans, criminals, and power-hungry officials to salvage their careers and make it home alive.</desc>
+  </programme>
+  <programme start="20261113035235 +0000" stop="20261113052346 +0000" channel="71541">
+    <title lang="en">Buen Camino (2025)</title>
+    <desc lang="en">Checco's life is a comfortable and luxurious one, and it couldn't be otherwise, considering he's the only son of Eugenio Zalone, a wealthy sofa manufacturer. Stranded by the pool in his luxurious villas, with an unspecified number of Filipinos serving him, a very young Mexican model as a girlfriend, and vacationing on his yacht with friends who share his passion for not wanting to work; it seems like a truly enviable life, considering he lacks nothing, absolutely nothing. Actually, no. Something is missing. It's his underage daughter, Cristal, named after the famous French sparkling wine, who has suddenly disappeared without a trace. Urgently summoned to Rome by his ex-wife, Linda, he finds himself facing the responsibilities of fatherhood for the first time, trying to find the girl—a very complicated task, considering he knows absolutely nothing about Cristal and her life.</desc>
+  </programme>
+  <programme start="20261113052346 +0000" stop="20261113065345 +0000" channel="71541">
+    <title lang="en">Captain Hook The Cursed Tides (2025)</title>
+    <desc lang="en">In the aftermath of a devastating defeat by his archnemesis Admiral Smee, Captain Hook finds refuge in the coastal town of Eldritch Landing.</desc>
+  </programme>
+  <programme start="20261113065345 +0000" stop="20261113090835 +0000" channel="71541">
+    <title lang="en">Christy (2025)</title>
+    <desc lang="en">Christy Martin never imagined life beyond her small-town roots in West Virginia—until she discovered a knack for punching people. Fueled by grit, raw determination, and an unshakable desire to win, she charges into the world of boxing under the guidance of her trainer and manager-turned-husband, Jim. But while Christy flaunts a fiery persona in the ring, her toughest battles unfold outside it—confronting family, identity, and a relationship that just might become life-or-death.</desc>
+  </programme>
+  <programme start="20261112232955 +0000" stop="20261113013936 +0000" channel="3974">
+    <title lang="en">Kadha Innuvare (2024)</title>
+    <desc lang="en">An anthology of four unusual stories where each couple fights to be with the ones they love against all odds.</desc>
+  </programme>
+  <programme start="20261113013936 +0000" stop="20261113040518 +0000" channel="3974">
+    <title lang="en">Kaliyugam Pattanamlo (2024)</title>
+    <desc lang="en">The story revolves around identical twins, Vijay and Sagar. While Vijay leads a normal life, Sagar exhibits troubling behavior, leading to his placement in a mental rehabilitation center. Years later, Sagar remains unchanged, while Vijay becomes an engineering student.</desc>
+  </programme>
+  <programme start="20261113040518 +0000" stop="20261113063608 +0000" channel="3974">
+    <title lang="en">Kannagi (2023)</title>
+    <desc lang="en">Story of four women, whose lives are dominated, crafted, and judged by the society. The movie conveys how the lives of four women are affected changed and disturbed by external influences. The struggle of a women in breaking free, from the stereotypes designed by the society and the limitations that are enforced on them through her constant effort to live a happy life, an unjudged life, a simple life is portrayed though four character in the film.</desc>
+  </programme>
+  <programme start="20261113063608 +0000" stop="20261113090551 +0000" channel="3974">
+    <title lang="en">Kerebete (2024)</title>
+    <desc lang="en">The annual Kerebete fishing event brings together the people of a Karnataka village. During the festivities, a controversial relationship causes tensions.</desc>
+  </programme>
+  <programme start="20261113090551 +0000" stop="20261113120006 +0000" channel="3974">
+    <title lang="en">King Of Kotha (2023)</title>
+    <desc lang="en">Kannan is a gangster who rules the crime-infested town of Kotha. After getting humiliated by Kannan and his men, CI Shahul Haasan tactfully plots the return of former gangster named Kotha Rajendran alias "Raju", thus leading to a transformative turn of events.</desc>
+  </programme>
+  <programme start="20261113002122 +0000" stop="20261113024138 +0000" channel="3975">
+    <title lang="en">Ramya Chaitrakaala (2022)</title>
+    <desc lang="en">Dev (SatyaDev) is a middle-class guy who falls in love with Ammu (Kavya Shetty). But his love story ends in a bad manner. He then gets married to Nidhi (Tamannaah) and starts a happy life. But a sudden twist changes the life of the couple. What is that twist and how does the couple overcome it forms the rest of the story.</desc>
+  </programme>
+  <programme start="20261113024138 +0000" stop="20261113042643 +0000" channel="3975">
+    <title lang="en">Ranga (2022)</title>
+    <desc lang="en">A newly married couple goes to Manali for their honeymoon only to discover that the hotel they are staying in is secretly recording their clients' private moments and uploading them online. With the boss of the criminal operation on their heels, can they survive?</desc>
+  </programme>
+  <programme start="20261113042643 +0000" stop="20261113062536 +0000" channel="3975">
+    <title lang="en">Rangabali (2023)</title>
+    <desc lang="en">Shaurya aka Show, a self-centered &amp; attention seeking youngster moves from Rajavaram to Vizag, and falls for a brilliant medico student Sahaja at Vizag. While attempting to convince Sahaja’s father, Show faces an unique problem and new revelations about his beloved hometown.</desc>
+  </programme>
+  <programme start="20261113062536 +0000" stop="20261113091058 +0000" channel="3975">
+    <title lang="en">Roberrt (2021)</title>
+    <desc lang="en">Raghava lives in Lucknow with his son Arjun and is the head cook in a Brahmin's catering unit. He leads a peaceful existence, wanting the best for his son. All seems to go well, until some skeletons come tumbling out of his closet and he is forced to take on his original avatar.</desc>
+  </programme>
+  <programme start="20261113091058 +0000" stop="20261113111909 +0000" channel="3975">
+    <title lang="en">Rudhran (2024)</title>
+    <desc lang="en">Rudhran is a happy IT man living with his family until the moment his life is turned upside down. He comes upon a major criminal network including a businessman, Rudhran embarks on a mission to expose him the criminal network.</desc>
+  </programme>
+  <programme start="20261113002600 +0000" stop="20261113031047 +0000" channel="3976">
+    <title lang="en">Trisha On The Rocks (2024)</title>
+    <desc lang="en">One fine Night Trisha (Janki Bodiwala) meets Vishal (Ravi gohil) at a party. Both of them are from different backgrounds and follow a different lifestyle. This meeting of both starts a super fun havoc with the cutest romance in their lives.</desc>
+  </programme>
+  <programme start="20261113031047 +0000" stop="20261113053629 +0000" channel="3976">
+    <title lang="en">Tuck Jagadish (2021)</title>
+    <desc lang="en">In a village with greedy property fights among the families, Jagadish carries on his father's legacy to reform all the property issues in his village while trying to reunite his family, which is also split due to property issues.</desc>
+  </programme>
+  <programme start="20261113053629 +0000" stop="20261113080625 +0000" channel="3976">
+    <title lang="en">Turbo (2024)</title>
+    <desc lang="en">An Idukki jeep driver attracts the ire of the head of a shady criminal syndicate after his friends uncover a large-scale financial scam.</desc>
+  </programme>
+  <programme start="20261113080625 +0000" stop="20261113103604 +0000" channel="3976">
+    <title lang="en">Udaan Soorarai Pottru (2020)</title>
+    <desc lang="en">Nedumaaran Rajangam "Maara" sets out to make the common man fly and in the process takes on the world's most capital intensive industry and several enemies who stand in his way.</desc>
+  </programme>
+  <programme start="20261113103604 +0000" stop="20261113130211 +0000" channel="3976">
+    <title lang="en">Ugram (2023)</title>
+    <desc lang="en">CI Shivakumar,a brash police officer, handles a lot of missing cases which has caused great strain on his marriage life. After a serious accident,Shiva admits his wife Aparna and daughter Lucky in hospital, only to find them missing next day. Will Shiva solve the mystery despite suffering from a serious medical condition?</desc>
+  </programme>
+  <programme start="20261113012702 +0000" stop="20261113032940 +0000" channel="4076">
+    <title lang="en">Chittam Maharan (2022)</title>
+    <desc lang="en">Chaitra needs to return to her hometown as PM has announced national lockdown. Raju, a bike mechanic and her friend, agrees to take her. Meanwhile a little girl is kidnapped. Will Chaitra reach home safely? Is the little girl safe? What is Raju hiding from Chaitra?</desc>
+  </programme>
+  <programme start="20261113032940 +0000" stop="20261113052410 +0000" channel="4076">
+    <title lang="en">Churuli (2021)</title>
+    <desc lang="en">Two cops undercover trailing a fugitive enter a hamlet inside a dense forest. At every turn, they encounter a mysterious character who further misleads them into new labyrinths.</desc>
+  </programme>
+  <programme start="20261113052410 +0000" stop="20261113072316 +0000" channel="4076">
+    <title lang="en">College Kumar (2020)</title>
+    <desc lang="en">A father who works as a peon in an office strives to ensure that his son fulfils his dreams. Later, his son falls in love with a girl and starts to rebel against his father.</desc>
+  </programme>
+  <programme start="20261113072316 +0000" stop="20261113092806 +0000" channel="4076">
+    <title lang="en">Danny Jigar (2024)</title>
+    <desc lang="en">Stylish super cop Danny Jigar takes the challenge of recovering a stolen 600-year-old statue. With his style and humor, He showcases his intelligence while solving the case.</desc>
+  </programme>
+  <programme start="20261113092806 +0000" stop="20261113120612 +0000" channel="4076">
+    <title lang="en">Darbar (2020)</title>
+    <desc lang="en">Aaditya, the commissioner of Mumbai Police, sets out to catch Ajay, a drug peddler. However, he uncovers a deeper controversy linked to an international drug lord and must mete out justice.</desc>
+  </programme>
+  <programme start="20261113010414 +0000" stop="20261113033932 +0000" channel="4077">
+    <title lang="en">Ayalaan (2024)</title>
+    <desc lang="en">A lost alien seeks help from four friends to get back to his home planet, while a group of hostile scientists tries to capture it.</desc>
+  </programme>
+  <programme start="20261113033932 +0000" stop="20261113055126 +0000" channel="4077">
+    <title lang="en">Baipan Bhari Deva (2024)</title>
+    <desc lang="en">Six estranged sisters decide to take part in a Mangalgauri competition, and reunite at their childhood home to practice. They must overcome their past and face their struggles head-on.</desc>
+  </programme>
+  <programme start="20261113055126 +0000" stop="20261113082539 +0000" channel="4077">
+    <title lang="en">Bakasuran (2023)</title>
+    <desc lang="en">A street performer is on a killing spree and a retired army man turned YouTuber tracks an online sex racket parallely. How do their lives connect and what is the street performer really seeking?</desc>
+  </programme>
+  <programme start="20261113082539 +0000" stop="20261113103435 +0000" channel="4077">
+    <title lang="en">Balagam (2023)</title>
+    <desc lang="en">A boisterous, bawdy, meddling village patriarch Komurayya’s death just before the engagement changes the course of  his grandson Saayilu's life and the other family members, rattling some skeletons in the closet, exposing the rifts present within the family, causing bigger sociological calamities in the small village.</desc>
+  </programme>
+  <programme start="20261113103435 +0000" stop="20261113131008 +0000" channel="4077">
+    <title lang="en">Bhagavanth Kesari (2023)</title>
+    <desc lang="en">Bhagavanth Kesari's life takes an unexpected turn when he becomes the guardian of Vijaya Lakshmi aka Vijji, daughter of his jailer. Kesari, with his unwavering sense of justice, embarks on a journey to nurture Vijji into a resilient young woman aspiring to join the Indian army. Intertwined in this narrative is the presence of Rahul Sanghvi, a power-hungry tycoon whose connection with Bhagavanth and Vijji, unravels hidden secrets.</desc>
+  </programme>
+  <programme start="20261112235857 +0000" stop="20261113021558 +0000" channel="3523">
+    <title lang="en">Sarzameen (2025)</title>
+    <desc lang="en">Set in Kashmir, the film follows an Indian Army officer who discovers that his estranged son has joined a militant group.</desc>
+  </programme>
+  <programme start="20261113021558 +0000" stop="20261113042938 +0000" channel="3523">
+    <title lang="en">Sikandar (2025)</title>
+    <desc lang="en">A tragic accident pushes the powerful Sikandar to protect the less fortunate by standing up to corruption and greed — using any means necessary.</desc>
+  </programme>
+  <programme start="20261113042938 +0000" stop="20261113064838 +0000" channel="3523">
+    <title lang="en">Single Salma (2025)</title>
+    <desc lang="en">Salma balances work, family and marriage pressure. But after finally accepting a suitor, a trip to London brings an unexpected connection.</desc>
+  </programme>
+  <programme start="20261113064838 +0000" stop="20261113092443 +0000" channel="3523">
+    <title lang="en">Sitaare Zameen Par (2025)</title>
+    <desc lang="en">A disgraced basketball coach is given the chance to coach a team of players who are intellectually disabled as part of community services. Gulshan has apprehensions at first and feels out of place but soon realizes they just might have what it takes to make it to the national championships.</desc>
+  </programme>
+  <programme start="20261113092443 +0000" stop="20261113112718 +0000" channel="3523">
+    <title lang="en">Sky Force (2025)</title>
+    <desc lang="en">In the 1965 Indo-Pak War, India faces a devastating surprise attack. Wing Commander Ahuja leads a retaliatory strike, but Squadron Leader Vijaya goes missing after a heroic solo engagement against a superior enemy jet. Ahuja spends 23 years seeking the truth and uncovering a cover-up.</desc>
+  </programme>
+  <programme start="20261113005506 +0000" stop="20261113030911 +0000" channel="3524">
+    <title lang="en">Srikanth (2024)</title>
+    <desc lang="en">In a world with odds stacked against him in every step of the way, Srikanth defies norms, blazing a trail from rural India to becoming the first visually impaired student at MIT. As he builds Bollant Industries, his success brings challenges for which he would not only chase personal dreams but safeguard a shared future for the ones just like him. This is the tale of an entrepreneur's triumph and sacrifice, both which he welcomed with open arms and a smile.</desc>
+  </programme>
+  <programme start="20261113030911 +0000" stop="20261113053218 +0000" channel="3524">
+    <title lang="en">Stree 2 (2024)</title>
+    <desc lang="en">Following the events of 'Stree', the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it's up to Vicky and friends to save their town and loved ones.</desc>
+  </programme>
+  <programme start="20261113053218 +0000" stop="20261113075310 +0000" channel="3524">
+    <title lang="en">Teri Baaton Mein Aisa Uljha Jiya (2024)</title>
+    <desc lang="en">A robotics engineer searching for his perfect partner finds himself falling in love with a human-like android.</desc>
+  </programme>
+  <programme start="20261113075310 +0000" stop="20261113094001 +0000" channel="3524">
+    <title lang="en">The Buckingham Murders (2024)</title>
+    <desc lang="en">Fresh wounds are reopened when Jasmeet Bhamra, a cop and a single mother who recently lost her child in a shooting spree, transfers to High Wycombe and is assigned a case of a missing child.</desc>
+  </programme>
+  <programme start="20261113094001 +0000" stop="20261113120327 +0000" channel="3524">
+    <title lang="en">Vedaa (2024)</title>
+    <desc lang="en">A court-marshalled soldier with a traumatic past helps a young girl from 'lower' caste and an aspiring boxer work towards her dreams despite her hostile environment.</desc>
+  </programme>
+  <programme start="20261112233528 +0000" stop="20261113021115 +0000" channel="3525">
+    <title lang="en">Tiger 3 (2023)</title>
+    <desc lang="en">Spy couple Tiger and Zoya face a ruthless enemy with a personal vendetta.</desc>
+  </programme>
+  <programme start="20261113021115 +0000" stop="20261113045030 +0000" channel="3525">
+    <title lang="en">Tu Jhoothi Main Makkaar (2023)</title>
+    <desc lang="en">To earn extra cash, Mickey helps couples break up — but life gets complicated when he falls for Tinni, a career woman with an independent streak.</desc>
+  </programme>
+  <programme start="20261113045030 +0000" stop="20261113070256 +0000" channel="3525">
+    <title lang="en">Tumse Na Ho Payega (2023)</title>
+    <desc lang="en">When the world starts regarding Gaurav as a loser, he sets off on a journey to prove everyone (and their mothers) wrong.</desc>
+  </programme>
+  <programme start="20261113070256 +0000" stop="20261113092950 +0000" channel="3525">
+    <title lang="en">12Th Fail (2023)</title>
+    <desc lang="en">Based on the true story of IPS officer Manoj Kumar Sharma, 12th Fail sheds limelight on fearlessly embracing the idea of restarting the academic journey despite the setbacks and challenges and reclaiming one's destiny at a place where millions of students attempt the world's toughest competitive exam: UPSC.</desc>
+  </programme>
+  <programme start="20261113092950 +0000" stop="20261113122735 +0000" channel="3525">
+    <title lang="en">Adipurush (2023)</title>
+    <desc lang="en">7000 years ago, Ayodhya's Prince Raghava and Prince Sesh along with the Mighty Vanar Warriors travels to the island of Lanka with an aim to rescue Raghava's wife Janaki, who has been abducted by Lankesh, the king of Lanka.</desc>
+  </programme>
+  <programme start="20261112225135 +0000" stop="20261113014015 +0000" channel="3526">
+    <title lang="en">Jersey (2022)</title>
+    <desc lang="en">An ex-cricketer struggling to make ends meet, wants to fulfill his child's wish of getting an Indian jersey but in the process comes face to face with his heroic past and is forced to decide if he will rise to the occasion and become a symbol of hope or continue to live a life as a loser?</desc>
+  </programme>
+  <programme start="20261113014015 +0000" stop="20261113043002 +0000" channel="3526">
+    <title lang="en">Jhund (2022)</title>
+    <desc lang="en">A retired sports teacher transforms a bunch of teenage slum goons into disciplined football players against all odds.</desc>
+  </programme>
+  <programme start="20261113043002 +0000" stop="20261113065803 +0000" channel="3526">
+    <title lang="en">Jugjugg Jeeyo (2022)</title>
+    <desc lang="en">A marriage. A re-marriage. A pending divorce. It's been five years since Kukoo and Nainaa got married after knowing each other practically all their lives, and now they need to break it to their family that they want a divorce. Kukoo's parents, Bheem and Geeta, a couple that everyone looks up to, have no plans of making Kukoo and Naina's lives easier. They have their own plans and set of surprises in store for the young couple; all this in the middle of Kukoo's sister's wedding.</desc>
+  </programme>
+  <programme start="20261113065803 +0000" stop="20261113093552 +0000" channel="3526">
+    <title lang="en">Laal Singh Chaddha (2022)</title>
+    <desc lang="en">Events in India's history — from the Emergency and the famous Cricket World Cup win to the Punjab riots ,  unfold from the perspective of an innocent Sikh man Laal Singh Chaddha, a person with a low IQ but high optimism. Laal is able to achieve everything under the sun but his childhood love continues to elude him.</desc>
+  </programme>
+  <programme start="20261113093552 +0000" stop="20261113114211 +0000" channel="3526">
+    <title lang="en">Mili (2022)</title>
+    <desc lang="en">Mili Naudiyal, a nursing graduate is planning to move to Canada. She takes up a job at a food outlet for the time being but her sudden disappearance without a clue leaves her loved ones in a desperate search for her in this survival drama.</desc>
+  </programme>
+  <programme start="20261113000344 +0000" stop="20261113015901 +0000" channel="3527">
+    <title lang="en">Chandigarh Kare Aashiqui (2021)</title>
+    <desc lang="en">Manu, a bodybuilder from Chandigarh, India, falls in love with Maanvi, a Zumba teacher. All seems well until a revelation causes turmoil in their love story.</desc>
+  </programme>
+  <programme start="20261113015901 +0000" stop="20261113041755 +0000" channel="3527">
+    <title lang="en">Chehre (2021)</title>
+    <desc lang="en">An ad agency executive takes shelter at an old man's home in mountains amid a dangerous snow storm, but soon finds himself trapped with no way out when the man and his clan of veterans hook him for a game of crime and punishment.</desc>
+  </programme>
+  <programme start="20261113041755 +0000" stop="20261113060221 +0000" channel="3527">
+    <title lang="en">Dhamaka (2021)</title>
+    <desc lang="en">When a cynical ex-TV news anchor gets an alarming call on his radio show, he sees a chance for a career comeback — but it may cost his conscience.</desc>
+  </programme>
+  <programme start="20261113060221 +0000" stop="20261113075438 +0000" channel="3527">
+    <title lang="en">Dybbuk (2021)</title>
+    <desc lang="en">Mahi, a newly married woman, brings an antique Jewish box into her home. When Mahi and her husband Sam begin to have paranormal experiences, they soon learn that the box is a dybbuk containing an evil spirit. The couple then seeks the help of a rabbi to unravel its mystery. Will they survive this ordeal before their child is born?</desc>
+  </programme>
+  <programme start="20261113075438 +0000" stop="20261113101038 +0000" channel="3527">
+    <title lang="en">Haseen Dillruba (2021)</title>
+    <desc lang="en">Under investigation as a suspect in her husband's murder, a wife reveals details of their thorny marriage that seem to only further blur the truth.</desc>
+  </programme>
+  <programme start="20261113010418 +0000" stop="20261113031718 +0000" channel="3528">
+    <title lang="en">Torbaaz (2020)</title>
+    <desc lang="en">At an Afghanistan refugee camp, an ex-army doctor seeks to bring children joy through cricket and soon realizes that the stakes go beyond the sport.</desc>
+  </programme>
+  <programme start="20261113031718 +0000" stop="20261113050621 +0000" channel="3528">
+    <title lang="en">Ak Vs Ak (2020)</title>
+    <desc lang="en">After a public spat with a movie star,  a disgraced director retaliates by kidnapping the actor's daughter, filming the search for her in real-time.</desc>
+  </programme>
+  <programme start="20261113050621 +0000" stop="20261113073144 +0000" channel="3528">
+    <title lang="en">Angrezi Medium (2020)</title>
+    <desc lang="en">When his daughter decides to further her studies in London, a hardworking Haryanvi businessman does everything in power to make her dreams come true.</desc>
+  </programme>
+  <programme start="20261113073144 +0000" stop="20261113095641 +0000" channel="3528">
+    <title lang="en">Baaghi 3 (2020)</title>
+    <desc lang="en">A man embarks on a bloody rampage to save his kidnapped brother.</desc>
+  </programme>
+  <programme start="20261113095641 +0000" stop="20261113115049 +0000" channel="3528">
+    <title lang="en">Bhoot Part One The Haunted Ship (2020)</title>
+    <desc lang="en">When an abandoned haunted ship called 'Sea Bird' washes up on the shores of Mumbai, surveying officer Prithvi is assigned to solve the mystery and close the case</desc>
+  </programme>
+  <programme start="20261113011620 +0000" stop="20261113033257 +0000" channel="3529">
+    <title lang="en">Uri The Surgical Strike (2019)</title>
+    <desc lang="en">Following the roguish terrorist attacks at Uri Army Base camp in Kashmir, India takes the fight to the enemy, in its most successful covert operation till date with one and only one objective of avenging their fallen heroes.</desc>
+  </programme>
+  <programme start="20261113033257 +0000" stop="20261113060450 +0000" channel="3529">
+    <title lang="en">War (2019)</title>
+    <desc lang="en">Khalid, entrusted with the task of eliminating former soldier turned rogue Kabir, engages in an epic battle with his mentor who taught him everything.</desc>
+  </programme>
+  <programme start="20261113060450 +0000" stop="20261113075847 +0000" channel="3529">
+    <title lang="en">Why Cheat India (2019)</title>
+    <desc lang="en">Rakesh Singh runs a business that allows education scams to flourish in the country. He enrolls bright students into his plan, makes them write proxy exams for students who are unable to score or pass, and then, helps them procure a fake degree.</desc>
+  </programme>
+  <programme start="20261113075847 +0000" stop="20261113101148 +0000" channel="3529">
+    <title lang="en">Bala (2019)</title>
+    <desc lang="en">A man suffering from alopecia copes with his lack of self-confidence and the societal pressure that comes with being bald.</desc>
+  </programme>
+  <programme start="20261113101148 +0000" stop="20261113123052 +0000" channel="3529">
+    <title lang="en">Batla House (2019)</title>
+    <desc lang="en">Following a gunfight with suspects believed to be innocent by the media and public, an honest cop struggles to justify police actions before beginning the hunt for fugitives.</desc>
+  </programme>
+  <programme start="20261113000525 +0000" stop="20261113021543 +0000" channel="3530">
+    <title lang="en">Pad Man (2018)</title>
+    <desc lang="en">Upon realizing the extent to which women are affected by their menses, a man sets out to create a sanitary pad machine and to provide inexpensive sanitary pads to the women of rural India.</desc>
+  </programme>
+  <programme start="20261113021543 +0000" stop="20261113045837 +0000" channel="3530">
+    <title lang="en">Padmaavat (2018)</title>
+    <desc lang="en">Rajputana, India, 13th century. The tyrannical usurper Alauddin Khilji, sultan of Delhi, becomes obsessed with Queen Padmavati, wife of King Ratan Singh of Mewar, and goes to great lengths to satisfy his greed for her.</desc>
+  </programme>
+  <programme start="20261113045837 +0000" stop="20261113070230 +0000" channel="3530">
+    <title lang="en">Parmanu (2018)</title>
+    <desc lang="en">HINDI MOVIES 2018 4K — Parmanu (2018)</desc>
+  </programme>
+  <programme start="20261113070230 +0000" stop="20261113091939 +0000" channel="3530">
+    <title lang="en">Raazi (2018)</title>
+    <desc lang="en">An Indian spy is married to a Pakistani military officer during the Indo-Pakistani War of 1971.</desc>
+  </programme>
+  <programme start="20261113091939 +0000" stop="20261113115840 +0000" channel="3530">
+    <title lang="en">Race 3 (2018)</title>
+    <desc lang="en">The Singh family comprises of Shamsher his step-son Sikandar, twins Suraj and Sanjana. They run a business of illegal arms and trade with the help of their friend Yash. Things get dramatic when Jessica meets Sikandar and the family ties are strained under each character’s ulterior motives.</desc>
+  </programme>
+</tv>
