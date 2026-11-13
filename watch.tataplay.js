@@ -2,94 +2,94 @@ const axios = require('axios');
 const fs = require('fs');
 const zlib = require('zlib');
 
-async function runSamsungDemo() {
-  console.log('=== Samsung & Elitebeam Direct Demo EPG Generator ===');
+async function appendSamsungToExistingEpg() {
+  console.log('=== Adding Samsung TV Plus to existing tataplay.xml.gz ===');
 
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<tv generator-info-name="Demo-Combined-EPG">\n';
-
-  // १. channels.json मधून फक्त samsungtvplus चे चॅनेल्स शोधून त्यांचे <channel> टॅग्ज आणि ईपीजी गोळा करणे
-  if (fs.existsSync('./channels.json')) {
-    try {
-      const fileContent = fs.readFileSync('./channels.json', 'utf-8');
-      const parsed = JSON.parse(fileContent);
-      const channels = Array.isArray(parsed) ? parsed : (parsed.channels || []);
-
-      const samsungChannels = channels.filter(ch => ch.source === 'samsungtvplus');
-      console.log(`Found ${samsungChannels.length} Samsung channels in channels.json.`);
-
-      // सॅमसंगची झिप XML फाईल डाउनलोड करणे
-      console.log('Downloading remote Samsung EPG XML...');
-      const res = await axios.get('https://i.mjh.nz/SamsungTVPlus/in.xml.gz', { responseType: 'arraybuffer', timeout: 30000 });
-      const samsungXml = zlib.gunzipSync(Buffer.from(res.data)).toString('utf-8');
-
-      // प्रत्येक सॅमसंग चॅनेलसाठी चॅनेल टॅग आणि त्याचे प्रोग्राम्स थेट XML मध्ये टाकणे
-      samsungChannels.forEach(ch => {
-        const sId = String(ch.channel_id || ch.id);
-        const sName = ch.name || 'Samsung Channel';
-        const sLogo = ch.logo || '';
-
-        // Channel Tag
-        xml += `  <channel id="${sId}">\n`;
-        xml += `    <display-name>${escapeXML(sName)}</display-name>\n`;
-        if (sLogo) {
-          xml += `    <icon src="${escapeXML(sLogo)}" />\n`;
-        }
-        xml += `  </channel>\n`;
-      });
-
-      // Programme Blocks थेट सॅमसंग फाईलमधून मॅच करून काढणे
-      samsungChannels.forEach(ch => {
-        const sId = String(ch.channel_id || ch.id);
-        const progRegex = new RegExp(`(<programme[^>]*channel=["']${sId}["'][\\s\\S]*?<\/programme>)`, 'gi');
-        let match;
-        let count = 0;
-
-        while ((match = progRegex.exec(samsungXml)) !== null) {
-          xml += `  ${match[1]}\n`;
-          count++;
-        }
-        console.log(`[Samsung] Injected ${count} programmes for channel ID: ${sId}`);
-      });
-
-    } catch (err) {
-      console.error('Error fetching Samsung EPG:', err.message);
+  try {
+    // १. आधीची tataplay.xml फाईल अनझिप करून वाचणे (जर असेल तर)
+    let existingXml = '';
+    if (fs.existsSync('./epg/tataplay.xml.gz')) {
+      const fileBuffer = fs.readFileSync('./epg/tataplay.xml.gz');
+      existingXml = zlib.gunzipSync(fileBuffer).toString('utf-8');
+      console.log('Existing tataplay.xml.gz loaded successfully.');
+    } else if (fs.existsSync('./epg/tataplay.xml')) {
+      existingXml = fs.readFileSync('./epg/tataplay.xml', 'utf-8');
+      console.log('Existing tataplay.xml loaded successfully.');
+    } else {
+      console.log('Error: Existing tataplay.xml or xml.gz not found!');
+      return;
     }
-  } else {
-    console.log('channels.json not found!');
+
+    // २. channels.json मधून सॅमसंगचे चॅनेल्स शोधणे
+    if (!fs.existsSync('./channels.json')) {
+      console.log('Error: channels.json not found!');
+      return;
+    }
+
+    const channelsContent = fs.readFileSync('./channels.json', 'utf-8');
+    const parsedChannels = JSON.parse(channelsContent);
+    const channelsList = Array.isArray(parsedChannels) ? parsedChannels : (parsedChannels.channels || []);
+    const samsungChannels = channelsList.filter(ch => ch.source === 'samsungtvplus');
+
+    if (samsungChannels.length === 0) {
+      console.log('No samsungtvplus channels found in channels.json.');
+      return;
+    }
+
+    console.log(`Found ${samsungChannels.length} Samsung channels. Downloading remote EPG XML...`);
+
+    // ३. सॅमसंगची EPG XML फाईल डाउनलोड करणे
+    const res = await axios.get('https://i.mjh.nz/SamsungTVPlus/in.xml.gz', { responseType: 'arraybuffer', timeout: 30000 });
+    const samsungXml = zlib.gunzipSync(Buffer.from(res.data)).toString('utf-8');
+
+    // ४. सॅमसंगचे चॅनेल आणि प्रोग्राम टॅग्ज तयार करणे
+    let samsungChannelsXml = '';
+    let samsungProgrammesXml = '';
+
+    samsungChannels.forEach(ch => {
+      const sId = String(ch.channel_id || ch.id);
+      const sName = ch.name || 'Samsung Channel';
+      const sLogo = ch.logo || '';
+
+      // जर आधीच फाईलमध्ये हा चॅनेल नसेल तरच चॅनेल टॅग जोडू
+      if (!existingXml.includes(`id="${sId}"`)) {
+        samsungChannelsXml += `  <channel id="${sId}">\n`;
+        samsungChannelsXml += `    <display-name>${escapeXML(sName)}</display-name>\n`;
+        if (sLogo) {
+          samsungChannelsXml += `    <icon src="${escapeXML(sLogo)}" />\n`;
+        }
+        samsungChannelsXml += `  </channel>\n`;
+      }
+
+      // मूळ सॅमसंग फाईलमधून या चॅनेलचे प्रोग्राम्स काढणे
+      const progRegex = new RegExp(`(<programme[^>]*channel=["']${sId}["'][\\s\\S]*?<\/programme>)`, 'gi');
+      let match;
+      let count = 0;
+      while ((match = progRegex.exec(samsungXml)) !== null) {
+        samsungProgrammesXml += `  ${match[1]}\n`;
+        count++;
+      }
+      console.log(`[Samsung] Appended ${count} programmes for channel: ${sName} (${sId})`);
+    });
+
+    // ५. </tv> टॅगच्या आधी सॅमसंगचा डेटा इन्जेक्ट करणे
+    if (existingXml.includes('</tv>')) {
+      // चॅनेल टॅग्ज आणि प्रोग्राम्स </tv> च्या आधी व्यवस्थित बसवणे
+      const insertionText = samsungChannelsXml + samsungProgrammesXml + '</tv>';
+      existingXml = existingXml.replace('</tv>', insertionText);
+    } else {
+      existingXml += samsungChannelsXml + samsungProgrammesXml + '\n</tv>';
+    }
+
+    // ६. फायनल अपडेटेड XML पुन्हा tataplay.xml आणि tataplay.xml.gz मध्ये सेव्ह करणे
+    fs.writeFileSync('./epg/tataplay.xml', existingXml, 'utf-8');
+    fs.writeFileSync('./epg/tataplay.xml.gz', zlib.gzipSync(existingXml));
+
+    console.log('SUCCESS! Samsung TV Plus EPG successfully merged into tataplay.xml.gz without disturbing existing data.');
+
+  } catch (err) {
+    console.error('Error merging Samsung EPG:', err.message);
   }
-
-  // २. Elitebeam Custom Channels (Movies & Music) मॅन्युअली ऍड करणे
-  const elitebeamChannels = [
-    { id: 'Elitebeam_Movies', name: 'Elitebeam Movies' },
-    { id: 'Elitebeam_Music', name: 'Elitebeam Music' }
-  ];
-
-  elitebeamChannels.forEach(eb => {
-    // Channel Tag
-    xml += `  <channel id="${eb.id}">\n`;
-    xml += `    <display-name>${escapeXML(eb.name)}</display-name>\n`;
-    xml += `  </channel>\n`;
-
-    // 2-hour sample Programme block
-    const startTime = '20261113000000 +0530';
-    const stopTime = '20261114000000 +0530';
-    const progTitle = eb.id === 'Elitebeam_Movies' ? 'Blockbuster Movie Stream' : 'Non-Stop Music Playlist';
-    
-    xml += `  <programme start="${startTime}" stop="${stopTime}" channel="${eb.id}">\n`;
-    xml += `    <title lang="en">${escapeXML(progTitle)}</title>\n`;
-    xml += `    <desc lang="en">${escapeXML('Enjoy non-stop entertainment on ' + eb.name)}</desc>\n`;
-    xml += `  </programme>\n`;
-  });
-
-  xml += '</tv>';
-
-  if (!fs.existsSync('./epg')) {
-    fs.mkdirSync('./epg', { recursive: true });
-  }
-
-  fs.writeFileSync('./epg/demo_epg.xml', xml, 'utf-8');
-  console.log('\nSUCCESS! Demo EPG saved as ./epg/demo_epg.xml');
 }
 
 function escapeXML(str) {
@@ -105,4 +105,4 @@ function escapeXML(str) {
   });
 }
 
-runSamsungDemo();
+appendSamsungToExistingEpg();
