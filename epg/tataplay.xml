@@ -908919,4 +908919,695 @@ Sandhya and why.</desc>
     <title lang="en">Non-Stop Music Playlist</title>
     <desc lang="en">Enjoy non-stop entertainment on Elitebeam Music.</desc>
   </programme>
+  <programme channel="IN4900003U3" start="20261113140034 +0000" stop="20261113143030 +0000">
+    <title>Best of Jabardasth</title>
+    <desc>Best of Jabardasth</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535583864_0_20250620T045735820Z_30_imageprocessorclient-tvplus-linear-95576dcd4-nbrt2.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900003U3" start="20261113143030 +0000" stop="20261113163035 +0000">
+    <title>Extra jabardasth</title>
+    <desc>Extra jabardasth</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535583864_0_20250620T045735820Z_30_imageprocessorclient-tvplus-linear-95576dcd4-nbrt2.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900003U3" start="20261113163035 +0000" stop="20261113193049 +0000">
+    <title>Appula Apparao</title>
+    <desc>Appula Apparao</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535583864_0_20250620T045735820Z_30_imageprocessorclient-tvplus-linear-95576dcd4-nbrt2.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900003U3" start="20261113193049 +0000" stop="20261113213041 +0000">
+    <title>Jathi Ratnalu</title>
+    <desc>Jathi Ratnalu</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535583864_0_20250620T045735820Z_30_imageprocessorclient-tvplus-linear-95576dcd4-nbrt2.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900004LP" start="20261113140027 +0000" stop="20261113143032 +0000">
+    <title>Naa Peru Meenakshi</title>
+    <desc>Naa Peru Meenakshi</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535611997_0_20250620T053639102Z_1_imageprocessorclient-tvplus-linear-95576dcd4-t49tv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900004LP" start="20261113143032 +0000" stop="20261113150034 +0000">
+    <title>Manasu Mamatha</title>
+    <desc>Manasu Mamatha</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535611997_0_20250620T053639102Z_1_imageprocessorclient-tvplus-linear-95576dcd4-t49tv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900004LP" start="20261113150034 +0000" stop="20261113153040 +0000">
+    <title>Allare Allari</title>
+    <desc>Allare Allari</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535611997_0_20250620T053639102Z_1_imageprocessorclient-tvplus-linear-95576dcd4-t49tv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900004LP" start="20261113153040 +0000" stop="20261113163050 +0000">
+    <title>Dhee</title>
+    <desc>Dhee</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535611997_0_20250620T053639102Z_1_imageprocessorclient-tvplus-linear-95576dcd4-t49tv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900004LP" start="20261113163050 +0000" stop="20261113170106 +0000">
+    <title>Abhishekam</title>
+    <desc>Abhishekam</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535611997_0_20250620T053639102Z_1_imageprocessorclient-tvplus-linear-95576dcd4-t49tv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900004LP" start="20261113170106 +0000" stop="20261113173100 +0000">
+    <title>Attarintiki Daredi</title>
+    <desc>Attarintiki Daredi</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535611997_0_20250620T053639102Z_1_imageprocessorclient-tvplus-linear-95576dcd4-t49tv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900004LP" start="20261113173100 +0000" stop="20261113203102 +0000">
+    <title>Daddy Daddy</title>
+    <desc>Daddy Daddy</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1535611997_0_20250620T053639102Z_1_imageprocessorclient-tvplus-linear-95576dcd4-t49tv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900002RV" start="20261113140013 +0000" stop="20261113183024 +0000">
+    <title>Padutha Theeyaga</title>
+    <desc>Padutha Theeyaga</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3374945770_0_20260824T105331588Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-mx4zz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4900002RV" start="20261113183024 +0000" stop="20261113220029 +0000">
+    <title>Sardukupodam Randi</title>
+    <desc>Sardukupodam Randi</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3374945770_0_20260824T105331588Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-mx4zz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN3800010SH" start="20261113140643 +0000" stop="20261113160305 +0000">
+    <title>Iron Fan</title>
+    <desc>The prince at the East Palace travels incognito and gets poisoned due to eating inappropriate food. Since the doctors in the royal hospital have no idea how to cure the poisoning, the top medical team start seraching the medicine to cure it.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1170906775_0_20250416T112657481Z_71_imageprocessorclient-tvplus-linear-b76dd9bbb-9fv29.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN3800010SH" start="20261113160305 +0000" stop="20261113175141 +0000">
+    <title>Stuntman</title>
+    <desc>When the industry's two biggest stuntmen are nominated for Stuntman of the Year, an over-ambitious documentarian reignites a dormant rivalry between the two men that results in an all out press war.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1170906775_0_20250416T112657481Z_71_imageprocessorclient-tvplus-linear-b76dd9bbb-9fv29.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN3800010SH" start="20261113175141 +0000" stop="20261113194803 +0000">
+    <title>Iron Fan</title>
+    <desc>The prince at the East Palace travels incognito and gets poisoned due to eating inappropriate food. Since the doctors in the royal hospital have no idea how to cure the poisoning, the top medical team start seraching the medicine to cure it.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1170906775_0_20250416T112657481Z_71_imageprocessorclient-tvplus-linear-b76dd9bbb-9fv29.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN3800010SH" start="20261113194803 +0000" stop="20261113214400 +0000">
+    <title>White Space</title>
+    <desc>The USS Essex is travelling in the furthest reaches of the known Universe when it encounters a gigantic creature. After pirates steal their cargo and most of their supplies the crew decide to capture the creature.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_1170906775_0_20250416T112657481Z_71_imageprocessorclient-tvplus-linear-b76dd9bbb-9fv29.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113140053 +0000" stop="20261113142622 +0000">
+    <title>Super spin Combiner</title>
+    <desc>Twenty years ago, it was “The king of top” Mete that created the peak of top competition and made this competition a sudden craze among the world. He is also the founder of the Top school.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113142622 +0000" stop="20261113144925 +0000">
+    <title>Robinhood</title>
+    <desc>Robin's house was burned to ashes by the order of Alwyn, the Baron of Nottingham. Robin and his cousins Will, Winifred and Jenny flee into Sherwood Forest, hoping to escape persecution.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113144925 +0000" stop="20261113151335 +0000">
+    <title>Simba The King Lion</title>
+    <desc>The Lion King is shot by poachers, as part of Shere Khan the Bengal tiger's plot to overthrow the king from his throne.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3407530432_0_20260831T053351319Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xngsv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113151335 +0000" stop="20261113153856 +0000">
+    <title>Sissi</title>
+    <desc>The smart and beautiful Sissi does everything to be with her beloved charming Prince Franz, but many people try to stop the couple from living happily ever after</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3363031809_0_20260821T134009058Z_25_imageprocessorclient-tvplus-linear-6b56cc9f55-9cclz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113153856 +0000" stop="20261113160325 +0000">
+    <title>Bread Barber shop s04</title>
+    <desc>Master Bread faces fresh challenges in Bakery Town, ranging from a massive town-wide rat invasion that eats residents' hair to high-stakes haircut competitions, royal palace drama involving Prince Butterwaffle, and new musical and environmental awareness corners</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3363031809_0_20260821T134009058Z_25_imageprocessorclient-tvplus-linear-6b56cc9f55-9cclz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113160325 +0000" stop="20261113163204 +0000">
+    <title>GATTU</title>
+    <desc>Dark Joy is brought back to life because of the magic power of the Twin Lake, and he intends to restore the dark power to become the king of Fairy World.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3363031809_0_20260821T134009058Z_25_imageprocessorclient-tvplus-linear-6b56cc9f55-9cclz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113163204 +0000" stop="20261113165903 +0000">
+    <title>Bablu Dablu Cubs</title>
+    <desc>Bablu Dablu Cubs is a brand-new edutainment series showing children that learning can be fun. At this scenic Pine Tree Kindergarten, all the cubs observe the world in their own creative and wondrous ways.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113165903 +0000" stop="20261113171953 +0000">
+    <title>Inspector Chingam</title>
+    <desc>Chingum, an honest and hardworking police inspector, fights crime and attempts to keep his city safe. He also helps his friends, Motu and Patlu, overcome various obstacles.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113171953 +0000" stop="20261113174522 +0000">
+    <title>Super spin Combiner</title>
+    <desc>Twenty years ago, it was “The king of top” Mete that created the peak of top competition and made this competition a sudden craze among the world. He is also the founder of the Top school.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113174522 +0000" stop="20261113180825 +0000">
+    <title>Robinhood</title>
+    <desc>Robin's house was burned to ashes by the order of Alwyn, the Baron of Nottingham. Robin and his cousins Will, Winifred and Jenny flee into Sherwood Forest, hoping to escape persecution.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3407530432_0_20260831T053351319Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xngsv.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113180825 +0000" stop="20261113183235 +0000">
+    <title>Simba The King Lion</title>
+    <desc>The Lion King is shot by poachers, as part of Shere Khan the Bengal tiger's plot to overthrow the king from his throne.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113183235 +0000" stop="20261113185756 +0000">
+    <title>Sissi</title>
+    <desc>The smart and beautiful Sissi does everything to be with her beloved charming Prince Franz, but many people try to stop the couple from living happily ever after</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113185756 +0000" stop="20261113192225 +0000">
+    <title>Bread Barber shop s04</title>
+    <desc>Master Bread faces fresh challenges in Bakery Town, ranging from a massive town-wide rat invasion that eats residents' hair to high-stakes haircut competitions, royal palace drama involving Prince Butterwaffle, and new musical and environmental awareness corners</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3363031809_0_20260821T134009058Z_25_imageprocessorclient-tvplus-linear-6b56cc9f55-9cclz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113192225 +0000" stop="20261113195104 +0000">
+    <title>GATTU</title>
+    <desc>Dark Joy is brought back to life because of the magic power of the Twin Lake, and he intends to restore the dark power to become the king of Fairy World.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3331175829_0_20260814T131945803Z_129_imageprocessorclient-tvplus-linear-9468c5484-gr6fh.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113195104 +0000" stop="20261113201848 +0000">
+    <title>Bablu Dablu Cubs</title>
+    <desc>Bablu Dablu Cubs is a brand-new edutainment series showing children that learning can be fun. At this scenic Pine Tree Kindergarten, all the cubs observe the world in their own creative and wondrous ways.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600009F9" start="20261113201848 +0000" stop="20261113204033 +0000">
+    <title>Inspector Chingam</title>
+    <desc>Chingum, an honest and hardworking police inspector, fights crime and attempts to keep his city safe. He also helps his friends, Motu and Patlu, overcome various obstacles.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3571241085_0_20261005T014116936Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-xp664.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113140200 +0000" stop="20261113143000 +0000">
+    <title>Toddlers Entertainment</title>
+    <desc>Traditional nursery rhymes and original children's songs, but with a modern aesthetic, supporting child development of language through song and repetition</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113143000 +0000" stop="20261113150000 +0000">
+    <title>Bed Time story</title>
+    <desc>Life learing Moral Story from which Kids will Life learning Lessons with it.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113150000 +0000" stop="20261113151500 +0000">
+    <title>Digley and Dazey Rhymes</title>
+    <desc>The construction crew always need to work hard at their jobs, and so as well as building they need to colour things in too with lots of fun ...</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113151500 +0000" stop="20261113154500 +0000">
+    <title>Little Baby Bum Rhymes</title>
+    <desc>Traditional nursery rhymes and original children's songs, but with a modern aesthetic, supporting child development of language through song and repetition</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113154500 +0000" stop="20261113160100 +0000">
+    <title>Morphle Rhymes</title>
+    <desc>Collection Morphle Classics Rhymes</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113160100 +0000" stop="20261113161600 +0000">
+    <title>Playtime Twinkle</title>
+    <desc>The playful and energetic Twinkle, a popular Little Baby Bum character, shines brightly in her own show where she takes kids through a journey of discovery.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113161600 +0000" stop="20261113163000 +0000">
+    <title>Sharkson Rhymes</title>
+    <desc>Nursery Rhymes &amp; Kids Songs of SharkSon's Rhymes</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113163000 +0000" stop="20261113171800 +0000">
+    <title>Lullaby Song</title>
+    <desc>Relaxing music for peace of Mind</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113171800 +0000" stop="20261113174800 +0000">
+    <title>Go Buster</title>
+    <desc>A friendly and eager-to-learn yellow bus who takes on new adventures through stories and song</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113174800 +0000" stop="20261113181700 +0000">
+    <title>Toddlers Entertainment</title>
+    <desc>Traditional nursery rhymes and original children's songs, but with a modern aesthetic, supporting child development of language through song and repetition</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113181700 +0000" stop="20261113183000 +0000">
+    <title>Little Baby Bum Rhymes</title>
+    <desc>Traditional nursery rhymes and original children's songs, but with a modern aesthetic, supporting child development of language through song and repetition</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113183000 +0000" stop="20261113184600 +0000">
+    <title>Digley and Dazey Rhymes</title>
+    <desc>The construction crew always need to work hard at their jobs, and so as well as building they need to colour things in too with lots of fun ...</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113184600 +0000" stop="20261113191400 +0000">
+    <title>Little Baby Bum Rhymes</title>
+    <desc>Traditional nursery rhymes and original children's songs, but with a modern aesthetic, supporting child development of language through song and repetition</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113191400 +0000" stop="20261113193000 +0000">
+    <title>Morphle Rhymes</title>
+    <desc>Collection Morphle Classics Rhymes</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113193000 +0000" stop="20261113194500 +0000">
+    <title>Playtime Twinkle</title>
+    <desc>The playful and energetic Twinkle, a popular Little Baby Bum character, shines brightly in her own show where she takes kids through a journey of discovery.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113194500 +0000" stop="20261113195900 +0000">
+    <title>Sharkson Rhymes</title>
+    <desc>Nursery Rhymes &amp; Kids Songs of SharkSon's Rhymes</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN4600007TC" start="20261113195900 +0000" stop="20261113203100 +0000">
+    <title>Go Buster</title>
+    <desc>A friendly and eager-to-learn yellow bus who takes on new adventures through stories and song</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3139384983_0_20260703T130507320Z_45_imageprocessorclient-tvplus-linear-75df688c49-wb9lz.png"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="INBD4700015M0" start="20261113133000 +0000" stop="20261113153000 +0000">
+    <title>Lage Raho</title>
+    <desc>Lage Raho</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_544325218_0_20240709T052800515Z_140.png"/>
+  </programme>
+  <programme channel="INBD4700015M0" start="20261113153000 +0000" stop="20261113163000 +0000">
+    <title>Love Connection</title>
+    <desc>Love Connection</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_544325218_0_20240709T052800515Z_140.png"/>
+  </programme>
+  <programme channel="INBD4700015M0" start="20261113163000 +0000" stop="20261113183000 +0000">
+    <title>Lage Raho</title>
+    <desc>Lage Raho</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_544325218_0_20240709T052800515Z_140.png"/>
+  </programme>
+  <programme channel="INBD4700015M0" start="20261113183000 +0000" stop="20261113203000 +0000">
+    <title>Lage Raho</title>
+    <desc>Lage Raho</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_544325218_0_20240709T052800515Z_140.png"/>
+  </programme>
+  <programme channel="IN400061DB" start="20261113121348 +0000" stop="20261113153748 +0000">
+    <title>Aathi Parasakthi</title>
+    <desc>A man rescued from death by divine intervention shares stories of God's help to others, spreading hope and faith through his miraculous experience.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3593961490_0_20261009T195546174Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-9cclz.jpeg"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN400061DB" start="20261113153748 +0000" stop="20261113190035 +0000">
+    <title>Pangali</title>
+    <desc>A man kills his sister and her husband for their wealth and locks up their son, Sakthivel. With the help of his father's former loyalist, Sakthivel escapes and seeks vengeance.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3418890882_0_20260902T153336164Z_73_imageprocessorclient-tvplus-linear-6b56cc9f55-rz4jv.jpeg"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN400061DB" start="20261113190035 +0000" stop="20261113214310 +0000">
+    <title>Mouna Ragam</title>
+    <desc>An unpretentious Divya, studying in college, is pressurised by her father to marry Chandrakumar. In grief after her ex-lover, Manohar, is killed, she tries to bite the bullet and get on with life.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3418946267_0_20260902T153335896Z_47_imageprocessorclient-tvplus-linear-6b56cc9f55-rz4jv.jpeg"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN21000014R" start="20261113113000 +0000" stop="20261113143954 +0000">
+    <title>Radha Ka Sangam</title>
+    <desc>Radha and Govinda fall for each other and get married. Their life turns upside down when Govinda is arrested under false charges leaving Radha helpless to deal with some serious issues</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1914010925_0_20250908T071832277Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-gpgsk.jpeg"/>
+  </programme>
+  <programme channel="IN21000014R" start="20261113143954 +0000" stop="20261113175619 +0000">
+    <title>Bol Radha Bol</title>
+    <desc>Kishen travels to a village to expand his business, where he meets Radha. While he is here an imposter lookalike has taken Kishen's place. Now the real Kishen has to prove himself. But how?</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1914010925_0_20250908T071832277Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-gpgsk.jpeg"/>
+  </programme>
+  <programme channel="IN21000014R" start="20261113175619 +0000" stop="20261113210127 +0000">
+    <title>Qayamat Se Qayamat Tak</title>
+    <desc>Raj and Rashmi belong to two rival families. The duo falls in love and decides to get married despite severe opposition from their families. With their families trying to separate them, will their love stand the test of time</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1914010925_0_20250908T071832277Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-gpgsk.jpeg"/>
+  </programme>
+  <programme channel="IN2100002GD" start="20261113141337 +0000" stop="20261113163715 +0000">
+    <title>Happy Bhaag Jayegi</title>
+    <desc>Happy elopes with Guddu and breaks her marriage with Bagga, who travels to Lahore to bring Happy back.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887172_0_20250828T094537786Z_46_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100002GD" start="20261113163715 +0000" stop="20261113170301 +0000">
+    <title>Happu Ki Ultan Paltan</title>
+    <desc>Happu Singh, a family man and constable, faces endless struggles that turn his life into a comedy of errors.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1985866897_0_20250929T113727679Z_105_imageprocessorclient-tvplus-linear-d7c8c765b-8jmws.jpeg"/>
+  </programme>
+  <programme channel="IN2100002GD" start="20261113170301 +0000" stop="20261113172905 +0000">
+    <title>Happu Ki Ultan Paltan</title>
+    <desc>Happu Singh, a family man and constable, faces endless struggles that turn his life into a comedy of errors.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1985866897_0_20250929T113727679Z_105_imageprocessorclient-tvplus-linear-d7c8c765b-8jmws.jpeg"/>
+  </programme>
+  <programme channel="IN2100002GD" start="20261113172905 +0000" stop="20261113175512 +0000">
+    <title>Bhabi Ji Ghar Par Hai!</title>
+    <desc>Two neighbours scheme to woo each other's wives, sparking comic chaos and nonstop misunderstandings.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887172_0_20250828T094537786Z_46_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100002GD" start="20261113175512 +0000" stop="20261113182053 +0000">
+    <title>Bhabi Ji Ghar Par Hai!</title>
+    <desc>Two neighbours scheme to woo each other's wives, sparking comic chaos and nonstop misunderstandings.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887172_0_20250828T094537786Z_46_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100002GD" start="20261113182053 +0000" stop="20261113204430 +0000">
+    <title>Happy Bhaag Jayegi</title>
+    <desc>Happy elopes with Guddu and breaks her marriage with Bagga, who travels to Lahore to bring Happy back.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887172_0_20250828T094537786Z_46_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113141804 +0000" stop="20261113151233 +0000">
+    <title>Jodha Akbar</title>
+    <desc>A political union between Emperor Akbar and Jodha turns into love, reshaping India's history and his legacy.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1989607108_0_20250930T115359412Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-8jmws.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113151233 +0000" stop="20261113153911 +0000">
+    <title>Jodha Akbar</title>
+    <desc>A political union between Emperor Akbar and Jodha turns into love, reshaping India's history and his legacy.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1989607108_0_20250930T115359412Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-8jmws.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113153911 +0000" stop="20261113160458 +0000">
+    <title>Ek Tha Raja Ek Thi Rani</title>
+    <desc>Indravadhan is all set to fight Avdesh Singh Chauhan. Gayatri, meanwhile, prays for her husband's safety. Avdesh shows up and confronts Indravadhan. He insults Indravadhan in front of the people gathered at Raj Mahal. Avdesh ties his signature anklet to one of his legs and picks up a spear. Seeing Avdesh armed with a spear, Indravadhan too exchanges his sword with a spear. Will Indravadhan be able to defeat Avdesh Singh Chauhan? Keep watching the captivating episode of 'Ek Tha Raja Ek Thi Raani' to find out.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_3406784302_0_20260831T013948137Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-6psn6.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113160458 +0000" stop="20261113163103 +0000">
+    <title>Ek Tha Raja Ek Thi Rani</title>
+    <desc>Indravadhan tends to his wound which got from his battle with Avdesh Singh Chauhan. Gayatri helps him and asks whether is he hurt bad. Indravadhan tells Gayatri that he was hurt when his wife did not trust his capability. Avdesh too gets medicine applied on his wounds and he thinks about Gayatri all this while. Indravadhan meets Avdesh and they discuss about their friendship. Gayatri discusses with Raj Mata about Indravadhan's anger on her. What advice would Raj Mata give Gayatri? Keep watching the captivating episode of 'Ek Tha Raja Ek Thi Raani' to find out.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_3406784302_0_20260831T013948137Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-6psn6.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113163103 +0000" stop="20261113165437 +0000">
+    <title>Jamai Raja</title>
+    <desc>Hotelier Sid marries Roshni and gives up luxury to heal family rifts and strengthen relationships.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1985533060_0_20250929T081210619Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-kpk6m.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113165437 +0000" stop="20261113171947 +0000">
+    <title>Jamai Raja</title>
+    <desc>Hotelier Sid marries Roshni and gives up luxury to heal family rifts and strengthen relationships.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1985533060_0_20250929T081210619Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-kpk6m.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113171947 +0000" stop="20261113174546 +0000">
+    <title>Ishq Subhan Allah</title>
+    <desc>Kabir and Zara's differing views on Islam test their love—can they reunite after turmoil drives them apart?</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2297529969_0_20251218T014443405Z_1_imageprocessorclient-tvplus-linear-584c967455-9zm4d.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113174546 +0000" stop="20261113181151 +0000">
+    <title>Ishq Subhan Allah</title>
+    <desc>Kabir and Zara's differing views on Islam test their love—can they reunite after turmoil drives them apart?</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2297529969_0_20251218T014443405Z_1_imageprocessorclient-tvplus-linear-584c967455-9zm4d.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113181151 +0000" stop="20261113184257 +0000">
+    <title>Tujhse Hai Raabta</title>
+    <desc>Kalyani and Malhar start off rocky, but slowly fall in love, brought together by Malhar's son Moksh.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2983512612_0_20260529T113739695Z_1_imageprocessorclient-tvplus-linear-75df688c49-xxssl.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113184257 +0000" stop="20261113190751 +0000">
+    <title>Tujhse Hai Raabta</title>
+    <desc>Kalyani and Malhar start off rocky, but slowly fall in love, brought together by Malhar's son Moksh.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2983512612_0_20260529T113739695Z_1_imageprocessorclient-tvplus-linear-75df688c49-xxssl.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113190751 +0000" stop="20261113194013 +0000">
+    <title>Jodha Akbar</title>
+    <desc>A political union between Emperor Akbar and Jodha turns into love, reshaping India's history and his legacy.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1989607108_0_20250930T115359412Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-8jmws.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113194013 +0000" stop="20261113200613 +0000">
+    <title>Ishq Subhan Allah</title>
+    <desc>Kabir and Zara's differing views on Islam test their love—can they reunite after turmoil drives them apart?</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2297529969_0_20251218T014443405Z_1_imageprocessorclient-tvplus-linear-584c967455-9zm4d.jpeg"/>
+  </programme>
+  <programme channel="IN2100003OJ" start="20261113200613 +0000" stop="20261113203218 +0000">
+    <title>Ishq Subhan Allah</title>
+    <desc>Kabir and Zara's differing views on Islam test their love—can they reunite after turmoil drives them apart?</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2297529969_0_20251218T014443405Z_1_imageprocessorclient-tvplus-linear-584c967455-9zm4d.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113141831 +0000" stop="20261113150429 +0000">
+    <title>Ssshh Koi Hai</title>
+    <desc>Three brave ghostbusters put everything on the line as they fight to stop dangerous ghosts and evil spirits wreaking havoc across the world.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887175_0_20250828T094538293Z_76_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113150429 +0000" stop="20261113155042 +0000">
+    <title>Ssshh Koi Hai</title>
+    <desc>Three brave ghostbusters put everything on the line as they fight to stop dangerous ghosts and evil spirits wreaking havoc across the world.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887175_0_20250828T094538293Z_76_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113155042 +0000" stop="20261113164511 +0000">
+    <title>Brahmarakshas</title>
+    <desc>In Kamalpura, terrified brides abandon color as a deadly, mysterious demon stalks the village.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2725494495_0_20260330T011902383Z_1_imageprocessorclient-tvplus-linear-796646965d-bw4fq.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113164511 +0000" stop="20261113171305 +0000">
+    <title>The Zee Horror Show</title>
+    <desc>The Zee Horror Show is a Hindi horror television series. Presented by Ramsay brothers, the series features a collection of short stories. It was the first horror show aired on television to gain mass popularity and its stories continue to scare the audience to this date.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_3580772255_0_20261007T015002969Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-t79l9.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113171305 +0000" stop="20261113174042 +0000">
+    <title>The Zee Horror Show</title>
+    <desc>The Zee Horror Show is a Hindi horror television series. Presented by Ramsay brothers, the series features a collection of short stories. It was the first horror show aired on television to gain mass popularity and its stories continue to scare the audience to this date.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_3580772255_0_20261007T015002969Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-t79l9.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113174042 +0000" stop="20261113183518 +0000">
+    <title>Fear Files</title>
+    <sub-title>Darr Ki Sachchi Tasveerein</sub-title>
+    <desc>Fear Files explores real-life paranormal events in India, blending mystery, drama and expert insights.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2228298672_0_20251201T021149572Z_99_imageprocessorclient-tvplus-linear-584c967455-z2fx8.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113183518 +0000" stop="20261113192914 +0000">
+    <title>Fear Files</title>
+    <sub-title>Darr Ki Sachchi Tasveerein</sub-title>
+    <desc>Fear Files explores real-life paranormal events in India, blending mystery, drama and expert insights.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2228298672_0_20251201T021149572Z_99_imageprocessorclient-tvplus-linear-584c967455-z2fx8.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113192914 +0000" stop="20261113201512 +0000">
+    <title>Ssshh Koi Hai</title>
+    <desc>Three brave ghostbusters put everything on the line as they fight to stop dangerous ghosts and evil spirits wreaking havoc across the world.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887175_0_20250828T094538293Z_76_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100004C4" start="20261113201512 +0000" stop="20261113210124 +0000">
+    <title>Ssshh Koi Hai</title>
+    <desc>Three brave ghostbusters put everything on the line as they fight to stop dangerous ghosts and evil spirits wreaking havoc across the world.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887175_0_20250828T094538293Z_76_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN2100005T2" start="20261113141708 +0000" stop="20261113163738 +0000">
+    <title>Muqaddar</title>
+    <desc>Muqaddar is a Hindi rom-com where two friends, cheated in business, must repay a debt to a local goon.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2067153920_0_20251022T070800951Z_1_imageprocessorclient-tvplus-linear-76c46fff7-n6tjg.jpeg"/>
+  </programme>
+  <programme channel="IN2100005T2" start="20261113163738 +0000" stop="20261113195419 +0000">
+    <title>The Smart Hunt</title>
+    <desc>The Smart Hunt (2006) crime thriller: Detective Raghavan teams with NYPD to chase a serial killer targeting innocents.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_2029074651_0_20251011T133554988Z_1_imageprocessorclient-tvplus-linear-d7c8c765b-kpk6m.jpeg"/>
+  </programme>
+  <programme channel="IN2100005T2" start="20261113195419 +0000" stop="20261113213956 +0000">
+    <title>Khoon Ki Pyaasi</title>
+    <desc>Cop Murugavel battles a gangster after failing to reform his brother drawn to a life of crime.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQO570425A_1876887268_0_20250828T094537747Z_108_imageprocessorclient-tvplus-linear-d7c8c765b-fnqc2.jpeg"/>
+  </programme>
+  <programme channel="IN38000072R" start="20261113120150 +0000" stop="20261113142307 +0000">
+    <title>Fida</title>
+    <desc>Jai, an ambitious man, falls in love with a beautiful young girl Neha. Oblivious to her and her boyfriend's nefarious intentions, Jai gets involved in some illegal activities for Neha. However, upon realising the truth, Jai devices vengeance.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3599703651_0_20261011T010844088Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-cvmx2.jpeg"/>
+    <rating>
+      <value>12</value>
+    </rating>
+  </programme>
+  <programme channel="IN38000072R" start="20261113142307 +0000" stop="20261113170544 +0000">
+    <title>Anwar</title>
+    <desc>Anwar, a Muslim young boy, falls in love with Mehru, a Hindu young girl. When Mehru dies, police apprehend Anwar and a further misunderstanding leads them to believe that he is a terrorist.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3590349374_1_20261009T014417527Z_85_imageprocessorclient-tvplus-linear-6b56cc9f55-d5g9z.jpeg"/>
+    <rating>
+      <value>12</value>
+    </rating>
+  </programme>
+  <programme channel="IN38000072R" start="20261113170544 +0000" stop="20261113202329 +0000">
+    <title>Garv</title>
+    <sub-title>Pride and Honour</sub-title>
+    <desc>Garv: Pride &amp; Honour is a 2004 action drama film about honest police officers fighting a corrupt political and criminal nexus in Mumbai</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3655924114_0_20261023T002432956Z_1_imageprocessorclient-tvplus-linear-6b56cc9f55-fngwt.jpeg"/>
+    <rating>
+      <value>7</value>
+    </rating>
+  </programme>
+  <programme channel="IN40000100Y" start="20261113124051 +0000" stop="20261113151252 +0000">
+    <title>Highway</title>
+    <desc>A young bride-to-be is kidnapped just before her wedding and taken on a transformative journey. As she travels with her captor, they form an unlikely bond, challenging societal norms and healing from past traumas in unexpected ways.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3599843286_0_20261011T015204405Z_62_imageprocessorclient-tvplus-linear-6b56cc9f55-mwj2d.jpeg"/>
+    <rating>
+      <value>12</value>
+    </rating>
+  </programme>
+  <programme channel="IN40000100Y" start="20261113151252 +0000" stop="20261113174821 +0000">
+    <title>Ishq Vishk</title>
+    <desc>Rajiv pretends to be in love with Payal to gain popularity at their college. Upon realising the truth, Payal breaks-up with him, and it takes a lot longer for Rajiv to realise his mistake.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3590348893_0_20261009T014417147Z_42_imageprocessorclient-tvplus-linear-6b56cc9f55-mx4zz.jpeg"/>
+    <rating>
+      <value>3</value>
+    </rating>
+  </programme>
+  <programme channel="IN40000100Y" start="20261113174821 +0000" stop="20261113203525 +0000">
+    <title>Biwi No. 1</title>
+    <desc>Pooja, a simple housewife, lives with her husband and two children. However, when her husband leaves her for a beautiful model, Rupali, she gets a glamorous makeover to grab his attention.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_3623710526_0_20261016T030636214Z_61_imageprocessorclient-tvplus-linear-6b56cc9f55-xsq55.jpeg"/>
+    <rating>
+      <value>7</value>
+    </rating>
+  </programme>
+  <programme channel="IN3800008CX" start="20261113134104 +0000" stop="20261113162139 +0000">
+    <title>Citizen</title>
+    <desc>Antony assumes several identities and kidnaps three government officials in order to succeed in his secret mission. However, a CBI officer sets out to find the real identity of the kidnapper.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_2859017766_1_20260430T123053798Z_141_imageprocessorclient-tvplus-linear-796646965d-vhr29.jpeg"/>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN3800008CX" start="20261113162139 +0000" stop="20261113190310 +0000">
+    <title>Operation Java</title>
+    <desc>A team of police officers from the Kochi cyber cell embarks on a mission to investigate a series of mysterious crimes and unlawful activities.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_2859005066_0_20260430T123053206Z_103_imageprocessorclient-tvplus-linear-796646965d-ps72z.jpeg"/>
+    <episode-num system="onscreen">S07E02</episode-num>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="IN3800008CX" start="20261113190310 +0000" stop="20261113215503 +0000">
+    <title>International Rowdy</title>
+    <desc>South Station</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/IN_USQT620324A_2859004984_0_20260430T123055976Z_43_imageprocessorclient-tvplus-linear-796646965d-ps72z.png"/>
+    <episode-num system="onscreen">S07E02</episode-num>
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
 </tv>
