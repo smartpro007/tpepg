@@ -11745,7 +11745,7 @@
     "id": "tp_1738",
     "name": "OSD - 2",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1737",
