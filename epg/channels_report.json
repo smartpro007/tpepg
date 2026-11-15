@@ -4041,7 +4041,7 @@
     "id": "1705",
     "name": "Shri Hingulambika Devi Temple",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "1706",
@@ -11733,7 +11733,7 @@
     "id": "tp_1739",
     "name": "Alias-3 of 2714",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1747",
@@ -11769,7 +11769,7 @@
     "id": "tp_1734",
     "name": "OSD - 3",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1733",
