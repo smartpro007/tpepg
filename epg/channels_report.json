@@ -7752,12 +7752,6 @@
     "epg_generated": true
   },
   {
-    "id": "tp_322",
-    "name": "DD News",
-    "provider": "TataPlay",
-    "epg_generated": true
-  },
-  {
     "id": "tp_783",
     "name": "Tata Play Seniors",
     "provider": "TataPlay",
@@ -11721,19 +11715,19 @@
     "id": "tp_1741",
     "name": "Alias-1 of 2714",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1740",
     "name": "Alias-2 of 2714",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1739",
     "name": "Alias-3 of 2714",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1747",
@@ -11745,19 +11739,19 @@
     "id": "tp_1738",
     "name": "OSD - 2",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1737",
     "name": "Alias-1 of 2715",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1736",
     "name": "Alias-2 of 2715",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1735",
@@ -11769,19 +11763,19 @@
     "id": "tp_1734",
     "name": "OSD - 3",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1733",
     "name": "Alias-1 of 2725",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1732",
     "name": "Alias-2 of 2725",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1731",
@@ -11853,7 +11847,7 @@
     "id": "tp_1825",
     "name": "A ONE NEWS",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1826",
@@ -11931,13 +11925,13 @@
     "id": "tp_1948",
     "name": "Rashtram",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1947",
     "name": "Newz Room Gujarat",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1946",
@@ -11949,19 +11943,19 @@
     "id": "tp_1945",
     "name": "Growth Now News",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1944",
     "name": "Yug Abhiyan Times",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1949",
     "name": "S Bharat News",
     "provider": "TataPlay",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1752",
