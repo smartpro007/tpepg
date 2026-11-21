@@ -6405,7 +6405,7 @@
     "id": "3463",
     "name": "Times of Maharashtra",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3464",
@@ -6651,7 +6651,7 @@
     "id": "3541",
     "name": "TV5 Info",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3542",
@@ -6675,13 +6675,13 @@
     "id": "3546",
     "name": "FIA TCR World Tour",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3548",
     "name": "NKR TV",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3550",
@@ -6693,25 +6693,25 @@
     "id": "3553",
     "name": "Padel Time TV ",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3554",
     "name": "Vedant Ras",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3555",
     "name": "Knock TV",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3558",
     "name": "ETV News",
     "provider": "JioTV",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "3559",
@@ -8256,14 +8256,14 @@
     "epg_generated": true
   },
   {
-    "id": "tp_626",
-    "name": "Tata Play Fun Learn Rhymes",
+    "id": "tp_627",
+    "name": "Tata Play Fun Learn Junior",
     "provider": "TataPlay",
     "epg_generated": true
   },
   {
-    "id": "tp_627",
-    "name": "Tata Play Fun Learn Junior",
+    "id": "tp_626",
+    "name": "Tata Play Fun Learn Rhymes",
     "provider": "TataPlay",
     "epg_generated": true
   },
