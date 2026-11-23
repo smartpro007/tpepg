@@ -11703,19 +11703,19 @@
     "id": "tp_1742",
     "name": "OSD - 1",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1741",
     "name": "Alias-1 of 2714",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1740",
     "name": "Alias-2 of 2714",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1739",
@@ -11739,13 +11739,13 @@
     "id": "tp_1737",
     "name": "Alias-1 of 2715",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1736",
     "name": "Alias-2 of 2715",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1735",
@@ -11757,19 +11757,19 @@
     "id": "tp_1734",
     "name": "OSD - 3",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1733",
     "name": "Alias-1 of 2725",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1732",
     "name": "Alias-2 of 2725",
     "provider": "TataPlay",
-    "epg_generated": true
+    "epg_generated": false
   },
   {
     "id": "tp_1731",
