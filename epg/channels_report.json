@@ -11172,12 +11172,6 @@
     "epg_generated": true
   },
   {
-    "id": "tp_912",
-    "name": "Haryana Beats",
-    "provider": "TataPlay",
-    "epg_generated": false
-  },
-  {
     "id": "tp_807",
     "name": "In Goa 24x7",
     "provider": "TataPlay",
@@ -11272,12 +11266,6 @@
     "name": "Oye Music",
     "provider": "TataPlay",
     "epg_generated": true
-  },
-  {
-    "id": "tp_1257",
-    "name": "Sangam TV",
-    "provider": "TataPlay",
-    "epg_generated": false
   },
   {
     "id": "tp_1255",
@@ -11556,12 +11544,6 @@
     "epg_generated": true
   },
   {
-    "id": "tp_1384",
-    "name": "SURIYAN TV",
-    "provider": "TataPlay",
-    "epg_generated": false
-  },
-  {
     "id": "tp_1385",
     "name": "SUBIN TV",
     "provider": "TataPlay",
@@ -11578,12 +11560,6 @@
     "name": "Sadvidya",
     "provider": "TataPlay",
     "epg_generated": true
-  },
-  {
-    "id": "tp_1393",
-    "name": "In24 Live News",
-    "provider": "TataPlay",
-    "epg_generated": false
   },
   {
     "id": "tp_1448",
@@ -11606,12 +11582,6 @@
   {
     "id": "tp_1462",
     "name": "PULSE 24 NEWS",
-    "provider": "TataPlay",
-    "epg_generated": true
-  },
-  {
-    "id": "tp_1463",
-    "name": "Express News Bharat",
     "provider": "TataPlay",
     "epg_generated": true
   },
@@ -11926,12 +11896,6 @@
     "name": "Newz Room Gujarat",
     "provider": "TataPlay",
     "epg_generated": true
-  },
-  {
-    "id": "tp_1946",
-    "name": "Today24 UP/UK",
-    "provider": "TataPlay",
-    "epg_generated": false
   },
   {
     "id": "tp_1945",
