@@ -3,4039 +3,4039 @@
     "id": "142",
     "name": "BBC World News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "143",
     "name": "CNBC TV18 Prime",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "144",
     "name": "Colors HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "146",
     "name": "History TV18 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "151",
     "name": "Movies Now HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "153",
     "name": "Zee Talkies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "154",
     "name": "Sony SAB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "155",
     "name": "Sony Ten 5 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "156",
     "name": "Star Gold HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "162",
     "name": "Sony Ten 1 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "164",
     "name": "Travelxp HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "165",
     "name": "Zee Cinema HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "166",
     "name": "Cartoon Network Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "167",
     "name": "Zee TV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "173",
     "name": "Aaj Tak",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "175",
     "name": "Aastha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "177",
     "name": "ABP News India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "180",
     "name": "Asianet News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "182",
     "name": "B4U Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "183",
     "name": "B4U Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "185",
     "name": "And Pictures HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "190",
     "name": "CNBC Awaaz",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "193",
     "name": "CNN",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "196",
     "name": "Colors Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "202",
     "name": "DD National",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "203",
     "name": "DD News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "204",
     "name": "DD Sports",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "212",
     "name": "ET Now",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "231",
     "name": "News 18 India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "232",
     "name": "News18 Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "235",
     "name": "India TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "242",
     "name": "Discovery English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "248",
     "name": "MTV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "250",
     "name": "Music India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "252",
     "name": "ETV Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "255",
     "name": "NDTV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "258",
     "name": "NDTV India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "259",
     "name": "NDTV Profit",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "279",
     "name": "Colors Rishtey",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "286",
     "name": "Animal Planet HD English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "288",
     "name": "Sanskar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "289",
     "name": "Sony Max SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "290",
     "name": "sonic Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "291",
     "name": "SET HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "317",
     "name": "Star Jalsha HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "336",
     "name": "Star Pravah HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "368",
     "name": "Star Vijay HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "370",
     "name": "Suvarna HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "383",
     "name": "Times NOW",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "400",
     "name": "PM e Vidya 01",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "401",
     "name": "Swayam Prabha 19",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "402",
     "name": "PM e Vidya 02",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "403",
     "name": "Swayam Prabha 20",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "404",
     "name": "PM e Vidya 07",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "405",
     "name": "PM e Vidya 03",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "406",
     "name": "PM e Vidya 04",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "407",
     "name": "PM e Vidya 05",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "408",
     "name": "PM e Vidya 06",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "409",
     "name": "PM e Vidya 08",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "410",
     "name": "PM e Vidya 09",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "411",
     "name": "PM e Vidya 10",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "412",
     "name": "Wion",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "413",
     "name": "Zee Cinemalu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "414",
     "name": "Zee Yuva",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "415",
     "name": "Zee Anmol Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "417",
     "name": "J Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "418",
     "name": "Jaya Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "419",
     "name": "Jaya TV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "420",
     "name": "Jaya Max",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "422",
     "name": "In Goa 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "429",
     "name": "Colors Tamil HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "440",
     "name": "9X Jalwa",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "441",
     "name": "9x Jhakaas",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "442",
     "name": "Zee 24 Taas",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "443",
     "name": "Asianet HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "445",
     "name": "Zee Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "457",
     "name": "Jalsha Movies HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "459",
     "name": "Asianet Movies HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "462",
     "name": "MNX",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "463",
     "name": "Discovery HD English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "464",
     "name": "Zee 24 Ghanta",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "465",
     "name": "Jaihind tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "466",
     "name": "Dharma Sandesh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "471",
     "name": "Sony SAB HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "472",
     "name": "And TV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "473",
     "name": "Anmol TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "474",
     "name": "Sony Pal",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "476",
     "name": "Sony Max HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "477",
     "name": "MN+ HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "478",
     "name": "Romedy Now HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "479",
     "name": "TLC HD English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "481",
     "name": "Epic",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "482",
     "name": "Colors Cineplex",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "483",
     "name": "Sony MAX2",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "484",
     "name": "Zee Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "486",
     "name": "Bhojpuri Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "487",
     "name": "Zee Bollywood",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "488",
     "name": "Zee Action",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "489",
     "name": "CNBC TV18",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "490",
     "name": "CNBC Bajar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "491",
     "name": "Mirror Now",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "492",
     "name": "CNN NEWS18",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "493",
     "name": "India Today",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "494",
     "name": "AL Jazeera",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "495",
     "name": "News X",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "496",
     "name": "dw",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "498",
     "name": "India news",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "499",
     "name": "News Nation",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "501",
     "name": "News 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "502",
     "name": "Good News Today",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "503",
     "name": "IBC24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "504",
     "name": "Zee News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "510",
     "name": "VIP News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "511",
     "name": "Mh One News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "512",
     "name": "India News UP",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "513",
     "name": "India News Rajasthan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "514",
     "name": "Sony Ten 1",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "515",
     "name": "India News MP",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "516",
     "name": "India News Haryana",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "517",
     "name": "Chardikla Time TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "518",
     "name": "Sudarshan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "519",
     "name": "Sadhna News Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "520",
     "name": "Sansad TV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "522",
     "name": "Sansad TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "523",
     "name": "Ten 2",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "524",
     "name": "Sony Ten 3 Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "525",
     "name": "Sony Ten 5",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "527",
     "name": "Investigation Discovery Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "528",
     "name": "DD India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "529",
     "name": "News18 MP Chhattisgarh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "530",
     "name": "News18 UP Uttarakhand",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "531",
     "name": "News18 Rajasthan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "533",
     "name": "Raj Pariwar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "536",
     "name": "DD Madhya Pradesh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "538",
     "name": "DD Rajasthan (Jaipur)",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "539",
     "name": "DD Bihar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "540",
     "name": "DD Uttar Pradesh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "541",
     "name": "Discovery Turbo",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "542",
     "name": "Pogo Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "543",
     "name": "Nick Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "544",
     "name": "Nick Junior",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "545",
     "name": "Nick Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "546",
     "name": "Nick Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "548",
     "name": "Nickelodeon Jr.",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "550",
     "name": "Discovery Kids Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "551",
     "name": "TEST14 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "554",
     "name": "Discovery Kids Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "555",
     "name": "Chintu TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "556",
     "name": "Kochu TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "557",
     "name": "Chutti TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "558",
     "name": "Kushi TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "559",
     "name": "Pogo Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "560",
     "name": "GOOD TiMES",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "561",
     "name": "Food Food",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "562",
     "name": "Travelxp HD Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "563",
     "name": "Kaumudy TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "565",
     "name": "ETV Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "566",
     "name": "Animal Planet Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "567",
     "name": "Animal Planet English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "568",
     "name": "Discovery Science English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "569",
     "name": "D Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "570",
     "name": "ETV Life",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "571",
     "name": "TLC Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "572",
     "name": "Zee UP UK",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "573",
     "name": "Discovery Bengali",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "574",
     "name": "TLC English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "575",
     "name": "Discovery Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "576",
     "name": "Discovery Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "577",
     "name": "History TV18 HD Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "578",
     "name": "History TV18 HD Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "579",
     "name": "History TV18 HD Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "580",
     "name": "DD bharati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "583",
     "name": "DD Kisan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "585",
     "name": "Zing",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "587",
     "name": "9XM",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "591",
     "name": "E 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "592",
     "name": "ZOOM",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "593",
     "name": "Sadhna",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "594",
     "name": "Aastha Bhajan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "595",
     "name": "Prarthana Life",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "596",
     "name": "Jinvani TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "597",
     "name": "Satsang TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "598",
     "name": "Sri Venkateshwar Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "599",
     "name": "Disha tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "601",
     "name": "Ishwar TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "602",
     "name": "Paras tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "603",
     "name": "Nambikkai",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "605",
     "name": "Channel Win",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "606",
     "name": "Shalom",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "607",
     "name": "Subhavartha TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "608",
     "name": "Shubhsandesh TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "609",
     "name": "mh1 Shraddha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "611",
     "name": "Darshan 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "612",
     "name": "ABP Majha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "613",
     "name": "Newslive",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "614",
     "name": "ETV Andhra pradesh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "615",
     "name": "News18 Tamil nadu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "616",
     "name": "TV9 Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "617",
     "name": "TV9 Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "618",
     "name": "TV9 Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "619",
     "name": "TV9 Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "620",
     "name": "News18 Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "623",
     "name": "Rang",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "624",
     "name": "Prag News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "625",
     "name": "Zee Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "626",
     "name": "Suvarna News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "627",
     "name": "News18 Assam NE",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "628",
     "name": "Zee Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "629",
     "name": "ETV Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "630",
     "name": "ETV Telangana",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "631",
     "name": "MBC",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "632",
     "name": "Sakshi tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "633",
     "name": "DY 365",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "634",
     "name": "Flower TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "635",
     "name": "Rengoni",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "636",
     "name": "Polimer News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "637",
     "name": "North East Live",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "638",
     "name": "Zee Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "639",
     "name": "Ramdhenu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "641",
     "name": "ABP Asmita",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "642",
     "name": "VTV Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "643",
     "name": "GS TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "646",
     "name": "NTV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "647",
     "name": "Pratidin Time",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "648",
     "name": "Mazhavil Manorama",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "650",
     "name": "Raj News Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "651",
     "name": "Raj News Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "652",
     "name": "Zee Bharat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "653",
     "name": "News18 Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "654",
     "name": "Zee Punjab Haryana HP",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "655",
     "name": "News18 Punjab Haryana Himachal",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "656",
     "name": "News 9",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "657",
     "name": "Zee Business",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "658",
     "name": "Zee MP Chattisgarh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "659",
     "name": "Zee Rajasthan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "661",
     "name": "Zee Bihar Jharkhand",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "662",
     "name": "Manorama News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "664",
     "name": "Raj News Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "665",
     "name": "HM TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "666",
     "name": "ABN Andhra Jyothi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "667",
     "name": "T News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "668",
     "name": "TV 5 News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "670",
     "name": "6 TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "671",
     "name": "Sathiyam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "672",
     "name": "ABP Ananda",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "673",
     "name": "News7 Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "675",
     "name": "Assam Talks",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "676",
     "name": "Sun News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "677",
     "name": "Puthiya Thalimurai",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "678",
     "name": "Sun Udaya Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "682",
     "name": "Sun Life",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "683",
     "name": "Raj Digital Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "684",
     "name": "Sun Gemini Life",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "685",
     "name": "Zee Bangla Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "686",
     "name": "Alankar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "687",
     "name": "News Time TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "689",
     "name": "Zee Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "690",
     "name": "DD Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "691",
     "name": "Saam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "692",
     "name": "ETV Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "693",
     "name": "News18 Bihar Jharkhand",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "694",
     "name": "News18 Delhi NCR JK",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "695",
     "name": "DD Sahayadri",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "696",
     "name": "News18 Odia",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "697",
     "name": "Sony aath",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "698",
     "name": "Aakash Aath",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "699",
     "name": "DD Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "701",
     "name": "Dangal",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "702",
     "name": "DD Oriya",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "703",
     "name": "Tarang",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "704",
     "name": "OTV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "705",
     "name": "Polimer TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "706",
     "name": "DD Saptagiri",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "707",
     "name": "Raj TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "708",
     "name": "Makkal TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "709",
     "name": "Adithya TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "710",
     "name": "Kairali TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "712",
     "name": "DD urdu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "713",
     "name": "DD9 chandana (kannada)",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "714",
     "name": "DD Girnar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "715",
     "name": "DD Punjabi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "716",
     "name": "DD Kashir",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "717",
     "name": "News18 Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "718",
     "name": "Kanak News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "719",
     "name": "Nepal one",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "722",
     "name": "Zee Sarthak",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "723",
     "name": "Amrita TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "724",
     "name": "Zee Delhi NCR Haryana",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "725",
     "name": "Kairali News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "726",
     "name": "DD Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "727",
     "name": "Vasanth TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "728",
     "name": "Salaam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "729",
     "name": "Sun Gemini Comedy",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "731",
     "name": "Kairali WE TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "732",
     "name": "9X Tashan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "733",
     "name": "Sun Udaya Comedy",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "734",
     "name": "Vissa TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "735",
     "name": "Sangeet Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "737",
     "name": "Raj Music Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "738",
     "name": "Fakt Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "739",
     "name": "Raj Music Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "740",
     "name": "Sangeet Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "741",
     "name": "Sangeet Bhojpuri",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "742",
     "name": "mh1 (Music)",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "743",
     "name": "Raj Music Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "744",
     "name": "Sun Udaya Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "747",
     "name": "Sun Surya Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "748",
     "name": "Raj Musix",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "751",
     "name": "Tarang Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "755",
     "name": "Colors Marathi HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "756",
     "name": "Colors Bangla HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "757",
     "name": "Colors Kannada HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "760",
     "name": "Maa Movies HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "762",
     "name": "Sony Pix HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "764",
     "name": "Channel News Asia International",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "765",
     "name": "Jonack",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "767",
     "name": "Raj News 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "768",
     "name": "Jan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "769",
     "name": "V6 News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "770",
     "name": "Kashish News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "772",
     "name": "CVR OM Spiritual",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "773",
     "name": "Public Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "774",
     "name": "CVR Health",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "775",
     "name": "Vanitha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "776",
     "name": "Bhakti TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "777",
     "name": "Aradhana TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "778",
     "name": "Public TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "779",
     "name": "Prameya News 7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "780",
     "name": "Mathrubhumi News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "781",
     "name": "Kalinga TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "782",
     "name": "Sandesh News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "783",
     "name": "K News India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "784",
     "name": "CVR News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "785",
     "name": "Colors Super",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "786",
     "name": "Kappa TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "787",
     "name": "CVR English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "788",
     "name": "India Voice",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "789",
     "name": "JK 24x7 News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "790",
     "name": "I News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "791",
     "name": "Taaza TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "792",
     "name": "News State UK UP",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "794",
     "name": "Peace of Mind",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "795",
     "name": "testa",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "796",
     "name": "Peppers TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "801",
     "name": "Divya TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "803",
     "name": "Tunes 6",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "804",
     "name": "Samachar Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "807",
     "name": "Gulistan News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "808",
     "name": "Hindi Khabar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "810",
     "name": "Janam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "814",
     "name": "Travelxp Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "815",
     "name": "Sonic Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "816",
     "name": "Cartoon Network Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "817",
     "name": "Cartoon Network Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "821",
     "name": "Sony BBC Earth HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "823",
     "name": "Sony BBC Earth SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "824",
     "name": "Puthu Yugam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "826",
     "name": "Malaimurasu Seithigal",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "828",
     "name": "Shubh TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "829",
     "name": "Sri Sankara",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "830",
     "name": "Thanthi TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "831",
     "name": "Living India News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "832",
     "name": "10 TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "835",
     "name": "Angel TV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "837",
     "name": "Euro News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "838",
     "name": "France 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "842",
     "name": "Jeevan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "843",
     "name": "Madhimugam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "844",
     "name": "Mazhavil Manorama HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "846",
     "name": "MKN News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "850",
     "name": "News India 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "851",
     "name": "SMBC TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "852",
     "name": "Sony BBC Earth HD English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "853",
     "name": "Sony BBC Earth HD Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "854",
     "name": "Sony BBC Earth HD Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "855",
     "name": "Total TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "856",
     "name": "Vedic TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "857",
     "name": "Vendhar TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "858",
     "name": "Republic TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "872",
     "name": "Sony Yay Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "873",
     "name": "Sony Yay Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "874",
     "name": "Sony Yay Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "875",
     "name": "Eurosport HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "876",
     "name": "Times Now World",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "877",
     "name": "MNX HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "879",
     "name": "Hare krsna",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "880",
     "name": "Janta TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "882",
     "name": "News11",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "883",
     "name": "Oscar Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "885",
     "name": "TV5 Monde",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "886",
     "name": "Lakshya TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "887",
     "name": "Vedant Ras Swar Shree",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "891",
     "name": "Sony Ten 2 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "892",
     "name": "Sony Ten 3 HD Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "894",
     "name": "KTV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "895",
     "name": "Sun Music HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "896",
     "name": "Sun TV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "897",
     "name": "Sun Gemini HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "898",
     "name": "Sun Gemini Music HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "899",
     "name": "Sun Gemini Movies HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "900",
     "name": "Sun Surya HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "901",
     "name": "Sun Udaya HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "903",
     "name": "Only Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "904",
     "name": "Sanjha TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "906",
     "name": "Desi Channel",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "907",
     "name": "GoodNews Channel",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "908",
     "name": "Newslive Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "910",
     "name": "Media One TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "915",
     "name": "Khabar Fast",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "916",
     "name": "TV 100",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "917",
     "name": "APN News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "918",
     "name": "Bharat Samachar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "919",
     "name": "Anjan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "921",
     "name": "Prime News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "923",
     "name": "R.Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "924",
     "name": "Mercy TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "927",
     "name": "First India News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "929",
     "name": "Zee 24 Kalak",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "931",
     "name": "Star Bharat HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "933",
     "name": "4 TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "934",
     "name": "Divya Vani",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "936",
     "name": "News 1 India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "937",
     "name": "Sai TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "939",
     "name": "Bhakti Sagar TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "944",
     "name": "Mantavya News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "946",
     "name": "Pitaara",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "950",
     "name": "R Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "952",
     "name": "Garv Punjabi Gurbani",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "953",
     "name": "Propex TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "955",
     "name": "Hindu Dharmam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "956",
     "name": "TV 5 Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "957",
     "name": "INH 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "958",
     "name": "DNN",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "959",
     "name": "JUS PUNJABI HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "961",
     "name": "JUS ONE HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "962",
     "name": "Boogle Bollywood",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "964",
     "name": "Om Shanti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "965",
     "name": "News18 Kerala",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "970",
     "name": "Win TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "971",
     "name": "Vaanavil TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "972",
     "name": "Sarv Dharam Sangam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "975",
     "name": "Jantantra",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "977",
     "name": "Calvary",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "978",
     "name": "TEST1 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "979",
     "name": "TEST2 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "980",
     "name": "Swayam Prabha 01",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "981",
     "name": "Swayam Prabha 02",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "982",
     "name": "Swayam Prabha 03",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "983",
     "name": "Swayam Prabha 08",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "984",
     "name": "Swayam Prabha 04",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "985",
     "name": "Swayam Prabha 07",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "986",
     "name": "Swayam Prabha 05",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "987",
     "name": "Swayam Prabha 06",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "988",
     "name": "Swayam Prabha 09",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "989",
     "name": "Swayam Prabha 10",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "990",
     "name": "Swayam Prabha 11",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "991",
     "name": "Swayam Prabha 12",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "992",
     "name": "Swayam Prabha 13",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "993",
     "name": "Swayam Prabha 14",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "994",
     "name": "Swayam Prabha 16",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "995",
     "name": "Swayam Prabha 15",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "996",
     "name": "Swayam Prabha 17",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "997",
     "name": "Swayam Prabha 21",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "998",
     "name": "Swayam Prabha 22",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "999",
     "name": "Swayam Prabha 18",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1059",
     "name": "TEST3 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1061",
     "name": "TEST5 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1062",
     "name": "TEST6 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1069",
     "name": "Vande Gujarat 1",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1070",
     "name": "Vande Gujarat 2",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1071",
     "name": "Vande Gujarat 4",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1075",
     "name": "Ayush TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1077",
     "name": "Sharnam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1078",
     "name": "Soham TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1079",
     "name": "Cartoon Network HD+ English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1080",
     "name": "Cartoon Network HD+ Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1081",
     "name": "Cartoon Network HD+ Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1082",
     "name": "Vande Gujarat 3",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1083",
     "name": "Vande Gujarat 5",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1084",
     "name": "Vande Gujarat 6",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1085",
     "name": "Vande Gujarat 7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1086",
     "name": "Vande Gujarat 8",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1087",
     "name": "Vande Gujarat 9",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1088",
     "name": "Vande Gujarat 10",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1089",
     "name": "Vande Gujarat 11",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1090",
     "name": "Vande Gujarat 12",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1091",
     "name": "Vande Gujarat 13",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1092",
     "name": "Vande Gujarat 14",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1093",
     "name": "Vande Gujarat 15",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1094",
     "name": "Vande Gujarat 16",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1103",
     "name": "PEACE MUSIC",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1104",
     "name": "Star Movies HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1110",
     "name": "Star Movies Select HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1112",
     "name": "Maa HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1113",
     "name": "Star Gold Select HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1129",
     "name": "Maa Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1132",
     "name": "Star Plus HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1136",
     "name": "Star Utsav Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1137",
     "name": "Maa Gold",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1139",
     "name": "Asianet Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1140",
     "name": "Suvarna Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1143",
     "name": "Star Utsav",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1145",
     "name": "MTV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1146",
     "name": "Sony Marathi SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1148",
     "name": "TEST8 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1151",
     "name": "Rangamanch",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1158",
     "name": "Colors Infinity HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1159",
     "name": "Tulja Bhavani",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1163",
     "name": "JioGames HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1170",
     "name": "PTC News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1171",
     "name": "PTC Punjabi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1172",
     "name": "PTC Chak De",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1174",
     "name": "Fateh TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1175",
     "name": "Awakening",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1179",
     "name": "Bansal News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1185",
     "name": "Swadesh News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1186",
     "name": "Kartavya TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1187",
     "name": "Valam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1189",
     "name": "PTC Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1190",
     "name": "PTC Punjabi Gold ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1191",
     "name": "PTC Simran",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1192",
     "name": "Brit Asia",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1193",
     "name": "Hare Krsna Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1205",
     "name": "ABP Ganga",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1209",
     "name": "Kalaignar TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1210",
     "name": "Kalaignar Seithigal ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1212",
     "name": "Hare Krsna Pravachan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1219",
     "name": "Animal Planet HD Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1220",
     "name": "Rajyoga TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1221",
     "name": "Rajyoga TV Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1224",
     "name": "Nimbark TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1226",
     "name": "Nick HD+",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1227",
     "name": "Digishala",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1229",
     "name": "TEST9 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1232",
     "name": "Hi Dost!",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1240",
     "name": "TEST10 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1241",
     "name": "God TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1242",
     "name": "Sonic Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1243",
     "name": "Sonic Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1244",
     "name": "Nick Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1250",
     "name": "Twenty Four News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1251",
     "name": "TV9 Bharatvarsh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1252",
     "name": "Tehzeeb TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1254",
     "name": "Aastha Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1255",
     "name": "Aastha Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1256",
     "name": "Aastha Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1257",
     "name": "Surya Samachar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1260",
     "name": "Ctvn Akd Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1261",
     "name": "Calcutta News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1263",
     "name": "BRK News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1264",
     "name": "Kolkata TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1265",
     "name": "Global Sanjh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1273",
     "name": "Gomantak TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1274",
     "name": "Studio One",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1278",
     "name": "Prarthana Bhawan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1284",
     "name": "Vignesh TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1286",
     "name": "Insync",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1287",
     "name": "ANB News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1291",
     "name": "ABP Sanjha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1293",
     "name": "Lokshahi News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1294",
     "name": "Eurosport",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1295",
     "name": "B4U Kadak",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1296",
     "name": "B4U Bhojpuri",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1315",
     "name": "HHDL",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1319",
     "name": "Zee Cafe HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1322",
     "name": "And Flix HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1324",
     "name": "Colors Gujarati Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1325",
     "name": "Colors Infinity SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1326",
     "name": "Colors Marathi SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1328",
     "name": "DD Arunprabha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1329",
     "name": "DD Gyandarshan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1332",
     "name": "Nat Geo Wild HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1335",
     "name": "National Geographic HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1338",
     "name": "RT India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1340",
     "name": "Nick Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1341",
     "name": "Nick Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1342",
     "name": "Nick Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1344",
     "name": "Sonic Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1345",
     "name": "Sonic Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1346",
     "name": "Sonic Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1351",
     "name": "Zee TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1354",
     "name": "Zee Telugu HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1355",
     "name": "ALI TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1356",
     "name": "Zee Tamil HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1358",
     "name": "Zee Talkies HD ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1359",
     "name": "Big Magic",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1360",
     "name": "Zee Marathi HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1362",
     "name": "Zee Kannada HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1363",
     "name": "Zee Cinemalu HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1364",
     "name": "Zee Cafe SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1368",
     "name": "Colors SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1369",
     "name": "Colors Bangla SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1370",
     "name": "Colors Kannada SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1371",
     "name": "Colors Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1373",
     "name": "Disney Channel",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1374",
     "name": "Disney Junior",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1375",
     "name": "Disney International HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1388",
     "name": "Goodness",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1391",
     "name": "Hungama",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1392",
     "name": "Super Hungama",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1393",
     "name": "Sony Wah",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1394",
     "name": "Jai Maharashtra",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1396",
     "name": "Set SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1401",
     "name": "Romedy Now",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1403",
     "name": "Republic Bharat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1405",
     "name": "NHK World Japan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1407",
     "name": "Sai Leela",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1408",
     "name": "Reporter TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1410",
     "name": "PM e Vidya 11",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1411",
     "name": "SongDew TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1414",
     "name": "Prati Shirdi Saibaba",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1415",
     "name": "Ganga Darshan Varanasi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1417",
     "name": "SVBC2",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1418",
     "name": "Ichhapuran Balaji Rajasthan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1426",
     "name": "Santvani",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1427",
     "name": "Nandighosha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1429",
     "name": "KITE VICTERS",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1440",
     "name": "Krishna Vani",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1450",
     "name": "Colors Cineplex Superhit",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1452",
     "name": "Shemaroo MarathiBana",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1453",
     "name": "Balle Balle TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1454",
     "name": "Shiksha TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1455",
     "name": "Janapriyam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1458",
     "name": "Gurkibani",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1471",
     "name": "History TV18",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1475",
     "name": "TEST11 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1476",
     "name": "TEST12 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1477",
     "name": "Colors Cineplex HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1481",
     "name": "Argus News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1514",
     "name": "Kannur One",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1515",
     "name": "News J",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1516",
     "name": "DD Yadagiri",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1518",
     "name": "Moon TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1525",
     "name": "TEST13 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1527",
     "name": "Haryanvi Hits",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1528",
     "name": "Network 10",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1532",
     "name": "PM e Vidya 12",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1537",
     "name": "RadheKrishna TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1543",
     "name": "Subharti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1545",
     "name": "Punjab School TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1549",
     "name": "Dharm Granth TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1552",
     "name": "Malanadu TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1554",
     "name": "Sanatan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1555",
     "name": "News First",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1560",
     "name": "35mm",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1561",
     "name": "Sristi TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1568",
     "name": "Atmadarshan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1598",
     "name": "FTV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1605",
     "name": "Bangla Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1607",
     "name": "Manav Dharam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1632",
     "name": "Colors Kannada Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1633",
     "name": "Public Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1634",
     "name": "Siri Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1635",
     "name": "News State MPCG ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1641",
     "name": "Zee Keralam HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1643",
     "name": "Harvest TV 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1644",
     "name": "Powervision TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1647",
     "name": "MK Six",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1655",
     "name": "Madha TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1657",
     "name": "Colors Bangla Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1662",
     "name": "Sun Surya Comedy",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1664",
     "name": "7S Music ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1665",
     "name": "ETV Cinema HD ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1666",
     "name": "Safari TV ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1667",
     "name": "Rongeen TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1668",
     "name": "And Xplor HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1669",
     "name": "Sun Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1690",
     "name": "BVTV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1691",
     "name": "Zee Classic",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1692",
     "name": "Badakhabar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1697",
     "name": "FM News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1698",
     "name": "IND 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1699",
     "name": "ANN News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1705",
@@ -4047,2359 +4047,2359 @@
     "id": "1706",
     "name": "Shri Mangal Dev Grah Temple",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1728",
     "name": "Anaadi TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1733",
     "name": "ND 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1735",
     "name": "TV9 Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1736",
     "name": "LUXE TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1738",
     "name": "Hosanna TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1740",
     "name": "Purnima TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1742",
     "name": "Sanskrit Ganga",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1743",
     "name": "Hornbill TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1746",
     "name": "Zee Power HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1747",
     "name": "India News Gujarat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1751",
     "name": "Zee Punjabi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1754",
     "name": "Sun Surya Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1757",
     "name": "NK TV Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1762",
     "name": "Channel Vision",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1763",
     "name": "Colors Cineplex Bollywood",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1764",
     "name": "Dada Bhagwan Foundation",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1772",
     "name": "Sony Ten 4 HD Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1773",
     "name": "Sony Ten 4 HD Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1774",
     "name": "Sony Ten 4 Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1775",
     "name": "Sony Ten 4 Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1780",
     "name": "HooplaKidz TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1788",
     "name": "Yeshuaa TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1789",
     "name": "Dada Bhagwan Foundation Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1794",
     "name": "Mangalmay Live",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1797",
     "name": "DA News Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1798",
     "name": "Pasand",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1799",
     "name": "Studio Yuva",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1817",
     "name": "NEWS 24 MPCG",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1826",
     "name": "Swaralasika Sangeetalaya",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1834",
     "name": "Green Chillies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1839",
     "name": "And Pictures",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1847",
     "name": "Z10 TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1850",
     "name": "SVBC",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1853",
     "name": "News11 Bharat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1854",
     "name": "STV Haryana News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1855",
     "name": "NL TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1858",
     "name": "SVBC3",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1859",
     "name": "SVBC4",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1868",
     "name": "Punjab Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1871",
     "name": "7X Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1883",
     "name": "Pogo Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1885",
     "name": "Kripa TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1886",
     "name": "Sansad TV Rajya Sabha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1891",
     "name": "KTV Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1896",
     "name": "News Flash",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1901",
     "name": "Adhyatma TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1906",
     "name": "Times Now Navbharat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1907",
     "name": "ET Now Swadesh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1925",
     "name": "MH1 Dil Se",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1954",
     "name": "News Tamil 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1955",
     "name": "Foodxp",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1956",
     "name": "Sidharth TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1957",
     "name": "Sidharth Gold",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1958",
     "name": "Sidharth Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1961",
     "name": "Shemaroo TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1962",
     "name": "Amar Bangla TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1967",
     "name": "PMC Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1973",
     "name": "ETV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1974",
     "name": "Gujarat 1st 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1975",
     "name": "PMC Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1976",
     "name": "BBC Cbeebies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1977",
     "name": "Zee Bangla HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1984",
     "name": "Star Sports 2 Hindi HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1985",
     "name": "Star Sports 2 Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1998",
     "name": "Star Sports Khel",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "1999",
     "name": "Raftaar Media",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2001",
     "name": "PlusTest2 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2002",
     "name": "Aadinath TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2003",
     "name": "3.0 TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2004",
     "name": "Shekinah TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2017",
     "name": "Munsif TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2021",
     "name": "HNN 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2022",
     "name": "Asom Live 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2024",
     "name": "And TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2028",
     "name": "Sadvidya TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2029",
     "name": "Aaryaa Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2031",
     "name": "Fashion India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2064",
     "name": "Merchant Records",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2077",
     "name": "Gangaur",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2079",
     "name": "Bharat 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2081",
     "name": "TV27 News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2082",
     "name": "22Scope News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2184",
     "name": "U Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2187",
     "name": "Swatantra News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2189",
     "name": "Aaryaa Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2224",
     "name": "India News Punjab",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2225",
     "name": "TV24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2229",
     "name": "Bhojpuri Junction",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2252",
     "name": "Desi Music Station",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2256",
     "name": "Zee Thirai",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2258",
     "name": "Animax",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2322",
     "name": "Divyalok TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2325",
     "name": "Punjabi Melodies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2326",
     "name": "Firstpost",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2327",
     "name": "Lionsgate Play",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2328",
     "name": "CyberPeace TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2353",
     "name": "Bharat Express",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2424",
     "name": "Sun Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2434",
     "name": "M Nadu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2435",
     "name": "Spondon",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2436",
     "name": "Prime 9 News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2437",
     "name": "Wild Earth",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2686",
     "name": "Jyothishavartha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2732",
     "name": "Vistara News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2741",
     "name": "Shri Disha Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2742",
     "name": "Zee Kannada News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2743",
     "name": "Power TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2750",
     "name": "Saga Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2751",
     "name": "Saga Music Haryanvi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2752",
     "name": "Ghaint Punjab",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2753",
     "name": "YRF Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2754",
     "name": "Sikh Ratnavali",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2757",
     "name": "Zee Zest HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2759",
     "name": "DD North East",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2761",
     "name": "Zee Anmol Cinema 2",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2764",
     "name": "News State Bihar Jharkhand",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2765",
     "name": "BSTV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2766",
     "name": "BRAVE TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2768",
     "name": "Jothi TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2770",
     "name": "Har Khabar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2771",
     "name": "Sadhna News MP CG",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2772",
     "name": "India Daily 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2773",
     "name": "Aaj Ki Khabar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2774",
     "name": "Power Kids TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2775",
     "name": "Grace TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2777",
     "name": "Asian News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2778",
     "name": "Tabbar Hits",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2779",
     "name": "Red Bull TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2780",
     "name": "R Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2782",
     "name": "ABC Australia",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2783",
     "name": "Big TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2784",
     "name": "ISKCON Bangalore",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2832",
     "name": "Sony Max HD EPG",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2834",
     "name": "Sony MAX2 EPG",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2835",
     "name": "Sony Wah EPG",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2852",
     "name": "Star Sports 2 Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2853",
     "name": "Star Sports 2 Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2854",
     "name": "KCM",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2862",
     "name": "Mahaa News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2916",
     "name": "Daily Post News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2917",
     "name": "Sadhna Gold",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2918",
     "name": "WPN World Punjabi News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2932",
     "name": "99 TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2933",
     "name": "NK TV Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2934",
     "name": "Punjabi Hits",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2935",
     "name": "Pudhari News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2936",
     "name": "Oye Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2947",
     "name": "Jeewan Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2954",
     "name": "TV45",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2956",
     "name": "ETV Plus HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2957",
     "name": "Public First",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2958",
     "name": "Tamilan Television",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "2962",
     "name": "NoFilterNeha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3004",
     "name": "Velicham Tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3005",
     "name": "Rupashi Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3006",
     "name": "Dhoom Music Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3007",
     "name": "AMV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3008",
     "name": "Maya Tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3011",
     "name": "Lancs TV HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3017",
     "name": "News Hour",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3018",
     "name": "News 360",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3022",
     "name": "Unique TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3024",
     "name": "India TV Yoga Channel",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3025",
     "name": "India TV Aap Ki Adalat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3026",
     "name": "India TV Speed News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3028",
     "name": "BH Style Icons Awards",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3029",
     "name": "Bollywood Masala",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3031",
     "name": "Zee Telugu News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3032",
     "name": "Pogo Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3033",
     "name": "Pogo Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3034",
     "name": "Pogo Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3035",
     "name": "Cartoon Network Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3036",
     "name": "Cartoon Network Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3037",
     "name": "Kalyan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3038",
     "name": "Amritwani TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3039",
     "name": "Garvi Gujarat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3040",
     "name": "Zee Keralam SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3043",
     "name": "Prime Asia HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3045",
     "name": "Tamil Janam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3046",
     "name": "& flix SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3047",
     "name": "Zee Picchar SD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3048",
     "name": "BVG",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3051",
     "name": "Zee Thirai HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3053",
     "name": "TNP News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3058",
     "name": "News Capital Gujarat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3059",
     "name": "Thanthi One",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3068",
     "name": "Bharat Update",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3069",
     "name": "Captain",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3070",
     "name": "Vistaar News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3074",
     "name": "Shemaroo Filmy Gaane",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3075",
     "name": "Shemaroo Bollywood",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3083",
     "name": "Sundrani TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3084",
     "name": "Taiwan Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3085",
     "name": "Sach Bedhadak",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3086",
     "name": "NAXATRA SAMACHAR PLUS",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3087",
     "name": "Sai TV Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3088",
     "name": "Sun Neo HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3089",
     "name": "Sangam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3091",
     "name": "RedBull UltraView",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3092",
     "name": "RedBull 360degree",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3093",
     "name": "RedBull Cam01",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3094",
     "name": "RedBull Cam02",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3095",
     "name": "NDTV Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3096",
     "name": "Star Gold 2 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3097",
     "name": "Star Gold Romance",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3098",
     "name": "Star Gold Thrills",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3100",
     "name": "Star Pravah Picture HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3107",
     "name": "Bhakthi Siri ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3108",
     "name": "Garvi Gujarat Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3112",
     "name": "Sanmarg Tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3115",
     "name": "Jay Jagannath",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3118",
     "name": "DD Swayam Prabha 23",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3119",
     "name": "DD Swayam Prabha 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3120",
     "name": "DD Swayam Prabha 25",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3121",
     "name": "DD Swayam Prabha 26",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3122",
     "name": "DD Swayam Prabha 27",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3123",
     "name": "DD Swayam Prabha 28",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3124",
     "name": "DD Swayam Prabha 29",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3125",
     "name": "DD Swayam Prabha 30",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3126",
     "name": "DD Swayam Prabha 31",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3127",
     "name": "DD Swayam Prabha 32",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3128",
     "name": "DD Swayam Prabha 33",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3129",
     "name": "DD Swayam Prabha 34",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3130",
     "name": "DD Swayam Prabha 35",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3131",
     "name": "DD Swayam Prabha 36",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3132",
     "name": "DD Swayam Prabha 37",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3133",
     "name": "DD Swayam Prabha 38",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3134",
     "name": "DD Swayam Prabha 39",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3135",
     "name": "DD Swayam Prabha 40",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3136",
     "name": "DD Sathee 1",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3137",
     "name": "DD Sathee 2",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3138",
     "name": "DD Sathee 3",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3139",
     "name": "DD Sathee 4",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3140",
     "name": "DD Sathee 5",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3141",
     "name": "DD Sathee 6",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3142",
     "name": "DD Sathee 7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3143",
     "name": "Mahaa Max",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3145",
     "name": "DD Sathee 8",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3146",
     "name": "All Women's Sports Network",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3147",
     "name": "RedBull Cam03",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3148",
     "name": "Live India News 24",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3152",
     "name": "News State Punjab Haryana Himachal",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3154",
     "name": "Bloomberg Originals",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3155",
     "name": "Bloomberg TV+",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3162",
     "name": "Prabhu Vani Tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3166",
     "name": "Live Times",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3174",
     "name": "Malyalam Naaptol",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3175",
     "name": "Tamil Naaptol",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3176",
     "name": "Telugu Naaptol",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3177",
     "name": "Adhya Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3178",
     "name": "Ishwar Vani Tv",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3182",
     "name": "Animal Planet HD Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3183",
     "name": "Animal Planet Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3184",
     "name": "News Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3187",
     "name": "Prabhu Sandesh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3201",
     "name": "Sana TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3204",
     "name": "Penta TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3205",
     "name": "Taaza Khabrein on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3206",
     "name": "Pramukha Suddi on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3207",
     "name": "Ungal Seithigal on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3208",
     "name": "Itivali Varthalu on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3209",
     "name": "Taajya Baatmya on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3210",
     "name": "Tatka Sangbad on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3211",
     "name": "Taaza Samachar on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3212",
     "name": "Puthiya Varthakal on JioNews",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3213",
     "name": "Gusto TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3214",
     "name": "Vertent Samachar Plus 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3216",
     "name": "Krishi Pitaara",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3217",
     "name": "NE News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3221",
     "name": "Sri Naga Sai Mandir",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3223",
     "name": "Shark Tank India S5",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3231",
     "name": "Apex Entertainment",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3232",
     "name": "Sadhguru Television Dolby",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3236",
     "name": "Bhakti Dhara",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3237",
     "name": "Namma Bangalore",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3238",
     "name": "Yoga for Beginners",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3239",
     "name": "Mahaa Bhakthi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3240",
     "name": "News X World",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3241",
     "name": "Nation 27",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3243",
     "name": "Pickleball Now",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3244",
     "name": "Sanatan Bharat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3246",
     "name": "Sabka Bazaar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3247",
     "name": "Manage Stress",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3248",
     "name": "Weight Loss Yoga",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3249",
     "name": "Guided Meditation",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3250",
     "name": "Flexibility Yoga",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3251",
     "name": "Restful Sleep",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3252",
     "name": "Muscle Strength",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3259",
     "name": "Pocket Films",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3260",
     "name": "Sanatan Sandesh TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3262",
     "name": "Jio Adipoli Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3263",
     "name": "VROTT",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3264",
     "name": "Jio Semma Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3266",
     "name": "Vijay Super HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3267",
     "name": "Star Kiran",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3269",
     "name": "Vijay Takkar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3279",
     "name": "OM TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3281",
     "name": "Mahua Play",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3284",
     "name": "Rozana Spokesman 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3285",
     "name": "Stingray Naturescape",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3286",
     "name": "ZenLIFE by Stingray",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3287",
     "name": "Holidaycapes by Stingray",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3288",
     "name": "Movie Music by Stingray",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3289",
     "name": "Qello Concerts by Stingray",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3290",
     "name": "Stingray Djazz",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3294",
     "name": "Anand TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3295",
     "name": "Mahotsav TV ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3297",
     "name": "Amar Digital TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3298",
     "name": "Mon TV Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3300",
     "name": "R TV Bhakthi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3302",
     "name": "T SAT Nipuna",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3304",
     "name": "T SAT Vidya",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3313",
     "name": "LOVEWORLD TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3314",
     "name": "Gujarat  Wild TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3319",
     "name": "ZB Music",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3320",
     "name": "ZB Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3321",
     "name": "ZB Cartoon",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3322",
     "name": "ZB Cinema ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3323",
     "name": "Stingray The Spa",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3324",
     "name": "Stingray Todays K-Pop",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3325",
     "name": "Stingray Easy Listening",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3327",
     "name": "Stingray 2000s",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3331",
     "name": "STV Bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3333",
     "name": "Popli Live",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3334",
     "name": "Sanatan Vedic TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3336",
     "name": "NH BollyFlix",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3338",
     "name": "NH BollyGold",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3343",
     "name": "NH BollyRaga",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3345",
     "name": "Superfine Films",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3346",
     "name": "Yahoo Finance",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3354",
     "name": "Fast1",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3356",
     "name": "Rock TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3357",
     "name": "Dharsan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3358",
     "name": "Bhagyam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3359",
     "name": "Sana Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3360",
     "name": "Subin TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3361",
     "name": "Shri Shyam TV ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3368",
     "name": "News TV India",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3369",
     "name": "TV13 Gujarati",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3370",
     "name": "Gospel TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3372",
     "name": "Sony LIV Sports 1",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3373",
     "name": "Sony LIV Sports 2",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3374",
     "name": "Sony LIV Sports 3",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3381",
     "name": "Brio TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3382",
     "name": "EPIC TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3383",
     "name": "Epic Bharat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3384",
     "name": "EPIC Bhojpuri",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3385",
     "name": "Epic Kids",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3389",
     "name": "INWILD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3392",
     "name": "INTRAVEL",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3393",
     "name": "NTC TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3394",
     "name": "Suriya TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3395",
     "name": "Aaryaa TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3396",
     "name": "Ultimate TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3397",
     "name": "Sony LIV Sports 4 Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3398",
     "name": "Sony LIV Sports 4 Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3399",
     "name": "Sony LIV Sports 5",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3401",
     "name": "Swastik Stories",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3402",
     "name": "DocuBay",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3409",
     "name": "Roja TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3417",
     "name": "Roja Movies",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3418",
     "name": "Sony MAX1",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3420",
     "name": "SONY YAY Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3423",
     "name": "SONY YAY Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3424",
     "name": "SONY YAY Bengali",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3425",
     "name": "Discovery Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3427",
     "name": "Sansad TV 1 HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3428",
     "name": "Discovery HD Bengali",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3429",
     "name": "Discovery Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3430",
     "name": "Discovery Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3431",
     "name": "Discovery HD Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3432",
     "name": "Discovery HD Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3433",
     "name": "Discovery Kids Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3434",
     "name": "Investigation Discovery HD Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3435",
     "name": "Investigation Discovery HD English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3436",
     "name": "Cartoon Network HD+ Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3440",
     "name": "TOI Global",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3444",
     "name": "Discovery HD Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3445",
     "name": "Discovery HD Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3446",
     "name": "Discovery HD Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3447",
     "name": "Discovery Kids Telugu",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3448",
     "name": "Discovery Kids Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3450",
     "name": "Animal Planet Tamil",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3451",
     "name": "Animal Planet HD Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3452",
     "name": "Investigation Discovery English",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3453",
     "name": "Discovery Science Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3454",
     "name": "Cartoon Network Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3455",
     "name": "Cartoon Network HD+ Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3456",
     "name": "Cartoon Network HD+ Malayalam",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3457",
     "name": "Cartoon Network HD+ Marathi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3458",
     "name": "TLC HD Hindi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3459",
     "name": "Swastik TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3463",
@@ -6411,547 +6411,547 @@
     "id": "3464",
     "name": "Guarantee News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3467",
     "name": "Green Gold TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3470",
     "name": "GTC Punjabi",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3471",
     "name": "Punjabi Shorts",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3473",
     "name": "Jio Home",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3476",
     "name": "Zee Bangla Sonar",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3478",
     "name": "Stingray Classic Rock",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3479",
     "name": "Stingray Greatest Hits",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3481",
     "name": "Stingray Cozy Cafe",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3483",
     "name": "Amar Ujala",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3490",
     "name": "GTC News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3492",
     "name": "Alright TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3493",
     "name": "Shree Sanatan TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3497",
     "name": "Village TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3498",
     "name": "India Ahead",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3499",
     "name": "World Chess",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3502",
     "name": "Kadak",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3503",
     "name": "Manas Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3507",
     "name": "Sony YAY",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3508",
     "name": "Valam TV Dayro",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3509",
     "name": "SET HD STB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3510",
     "name": "Sony Sports Ten 1 HD STB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3511",
     "name": "Sony Sports Ten 2 HD STB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3512",
     "name": "Sony Sports Ten 3 Hindi HD STB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3513",
     "name": "Sony Sports Ten 4 Telugu STB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3514",
     "name": "Sony Sports Ten 4 Tamil STB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3515",
     "name": "Sony Sports Ten 5 HD STB",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3518",
     "name": "Cine Jomjomat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3519",
     "name": "Shree Salangpur Dham",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3524",
     "name": "Journy",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3528",
     "name": "Sony Liv Sports 4 Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3530",
     "name": "UIPM Pentathlon World Cup",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3531",
     "name": "Tamil Times",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3533",
     "name": "Dice Media",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3534",
     "name": "FilterCopy",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3535",
     "name": "Mr. Bean",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3536",
     "name": "Anand Wari TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3537",
     "name": "Duck TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3538",
     "name": "R Plus Gold",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3540",
     "name": "TV5 Voyage",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3541",
     "name": "TV5 Info",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3542",
     "name": "TV5 Chefs",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3543",
     "name": "Eros Universe Bollywood Cinema",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3544",
     "name": "Eros Universe Entertainment",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3546",
     "name": "FIA TCR World Tour",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3548",
     "name": "NKR TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3550",
     "name": "Nijam TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3553",
     "name": "Padel Time TV ",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3554",
     "name": "Vedant Ras",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3555",
     "name": "Knock TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3558",
     "name": "ETV News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3559",
     "name": "ETV Beats",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3560",
     "name": "ETV Josh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3561",
     "name": "ETV Comedy",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3562",
     "name": "Akhon Kolkata Plus",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3563",
     "name": "Pure Pink",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3564",
     "name": "Rashtram",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3565",
     "name": "Globeon Television",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3566",
     "name": "Knock Bhakti",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3567",
     "name": "Big TV 24x7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3568",
     "name": "Onkar News",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3570",
     "name": "ANN Entertainment",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3571",
     "name": "Panjab TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3572",
     "name": "Focus Plus TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3578",
     "name": "Disney Channel HD",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3579",
     "name": "Sampoorna News 24X7",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3584",
     "name": "News Capital Market",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3585",
     "name": "Sony Sports Ten 4 Kannada",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3587",
     "name": "JOJO TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3588",
     "name": "FAST TEST",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3589",
     "name": "Divya Bhajan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3591",
     "name": "Pitaara Comedy",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3592",
     "name": "Vietnam Today",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3594",
     "name": "TeluguOne",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3595",
     "name": "Khabhar Bharat 360",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3601",
     "name": "Icarus Sports",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3602",
     "name": "Sonar bangla",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3603",
     "name": "Namma TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3604",
     "name": "ID Times",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3605",
     "name": "ID TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3607",
     "name": "News Leader",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3608",
     "name": "Tv7 Bharat",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3609",
     "name": "Tv7 National",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3610",
     "name": "Dhool TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3611",
     "name": "Hello Meghalaya",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3617",
     "name": "Jallosh",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3618",
     "name": "NDTV MPCG",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3619",
     "name": "NDTV Rajasthan",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3622",
     "name": "Sony Vizha",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3623",
     "name": "Mantra TV",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "3625",
     "name": "R Business",
     "provider": "JioTV",
-    "epg_generated": false
+    "epg_generated": true
   },
   {
     "id": "tp_1301",
@@ -11894,6 +11894,12 @@
   {
     "id": "tp_1947",
     "name": "Newz Room Gujarat",
+    "provider": "TataPlay",
+    "epg_generated": true
+  },
+  {
+    "id": "tp_1946",
+    "name": "Today24 UP/UK",
     "provider": "TataPlay",
     "epg_generated": true
   },
